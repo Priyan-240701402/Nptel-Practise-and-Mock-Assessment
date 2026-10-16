@@ -1,0 +1,2806 @@
+{
+  "courseId": "llm",
+  "totalQuestions": 100,
+  "questions": [
+    {
+      "id": "LLM001",
+      "courseId": "llm",
+      "topic": "Foundations of NLP & Language Modeling",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is the fundamental goal of statistical language modeling?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To maximize computer CPU clock frequency"
+        },
+        {
+          "id": "B",
+          "text": "To estimate the probability distribution over sequences of words or tokens"
+        },
+        {
+          "id": "C",
+          "text": "To render 3D computer graphics from text"
+        },
+        {
+          "id": "D",
+          "text": "To translate machine code into assembly language"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Language modeling fundamentally assigns probabilities P(w1, w2, ..., wn) to sequences of words or tokens."
+    },
+    {
+      "id": "LLM002",
+      "courseId": "llm",
+      "topic": "Foundations of NLP & Language Modeling",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "In an n-gram language model, the Markov assumption states that:",
+      "options": [
+        {
+          "id": "A",
+          "text": "The probability of a word depends only on the previous n-1 words"
+        },
+        {
+          "id": "B",
+          "text": "Every word is completely independent of all context"
+        },
+        {
+          "id": "C",
+          "text": "Words have infinite long-range dependencies across chapters"
+        },
+        {
+          "id": "D",
+          "text": "Word order does not matter at all"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "The n-gram Markov assumption approximates the probability of the current token by conditioning only on the prior n-1 tokens."
+    },
+    {
+      "id": "LLM003",
+      "courseId": "llm",
+      "topic": "Foundations of NLP & Language Modeling",
+      "difficulty": "Hard",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "Which classic smoothing technique handles zero-probability unseen n-grams by reallocating probability mass?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kneser-Ney smoothing"
+        },
+        {
+          "id": "B",
+          "text": "Gradient descent"
+        },
+        {
+          "id": "C",
+          "text": "Backpropagation through time"
+        },
+        {
+          "id": "D",
+          "text": "AdamW optimization"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "Kneser-Ney smoothing is a renowned technique that accounts for the continuation probability of unseen n-grams."
+    },
+    {
+      "id": "LLM004",
+      "courseId": "llm",
+      "topic": "Foundations of NLP & Language Modeling",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What limitation of traditional Bag-of-Words (BoW) models do distributed word representations (Word2Vec) overcome?",
+      "options": [
+        {
+          "id": "A",
+          "text": "BoW ignores word order and treats words as orthogonal one-hot vectors with zero semantic similarity"
+        },
+        {
+          "id": "B",
+          "text": "BoW is too slow to execute on modern computers"
+        },
+        {
+          "id": "C",
+          "text": "BoW cannot represent punctuation marks"
+        },
+        {
+          "id": "D",
+          "text": "BoW requires deep transformers with millions of parameters"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "BoW one-hot vectors are orthogonal and cannot represent semantic relatedness (e.g., king - man + woman = queen)."
+    },
+    {
+      "id": "LLM005",
+      "courseId": "llm",
+      "topic": "Foundations of NLP & Language Modeling",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "The Continuous Bag-of-Words (CBOW) architecture in Word2Vec predicts:",
+      "options": [
+        {
+          "id": "A",
+          "text": "The surrounding context words given a single target word"
+        },
+        {
+          "id": "B",
+          "text": "The target center word given its surrounding context words"
+        },
+        {
+          "id": "C",
+          "text": "The sentiment score of an entire sentence"
+        },
+        {
+          "id": "D",
+          "text": "The next paragraph in a document"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "CBOW predicts the target center word from context tokens, whereas the Skip-Gram model predicts context from the target."
+    },
+    {
+      "id": "LLM006",
+      "courseId": "llm",
+      "topic": "Foundations of NLP & Language Modeling",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What problem plagued standard Recurrent Neural Networks (RNNs) when processing long text sequences?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Vanishing and exploding gradients making it difficult to capture long-range dependencies"
+        },
+        {
+          "id": "B",
+          "text": "Inability to run on CPU processors"
+        },
+        {
+          "id": "C",
+          "text": "Inability to work with floating point numbers"
+        },
+        {
+          "id": "D",
+          "text": "Instant overfitting on single sentences"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "Standard RNNs suffer from vanishing and exploding gradients over long unrolled recurrent steps."
+    },
+    {
+      "id": "LLM007",
+      "courseId": "llm",
+      "topic": "Foundations of NLP & Language Modeling",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "How do Long Short-Term Memory (LSTM) networks address the vanishing gradient problem?",
+      "options": [
+        {
+          "id": "A",
+          "text": "By removing all non-linear activation functions"
+        },
+        {
+          "id": "B",
+          "text": "Through gated memory cells (input, forget, and output gates) maintaining constant error carousels"
+        },
+        {
+          "id": "C",
+          "text": "By processing all sequence words simultaneously in parallel"
+        },
+        {
+          "id": "D",
+          "text": "By ignoring all past context tokens"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "LSTMs use explicit forget, input, and output gates along a continuous cell state line to preserve gradients."
+    },
+    {
+      "id": "LLM008",
+      "courseId": "llm",
+      "topic": "Foundations of NLP & Language Modeling",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is perplexity in the context of language model evaluation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The exponentiated cross-entropy loss measuring how surprised the model is by test data"
+        },
+        {
+          "id": "B",
+          "text": "The speed at which tokens are generated per second"
+        },
+        {
+          "id": "C",
+          "text": "The total number of parameters in the neural network"
+        },
+        {
+          "id": "D",
+          "text": "The percentage of misspelled words in training corpora"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "Perplexity is exp(cross-entropy); lower perplexity indicates the model assigns higher probability to ground-truth tokens."
+    },
+    {
+      "id": "LLM009",
+      "courseId": "llm",
+      "topic": "Foundations of NLP & Language Modeling",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "Why can standard RNNs and LSTMs not be parallelized across time steps during training?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Because they use GPU acceleration"
+        },
+        {
+          "id": "B",
+          "text": "Because calculation at step t depends sequentially on hidden state h_(t-1)"
+        },
+        {
+          "id": "C",
+          "text": "Because text datasets have irregular line endings"
+        },
+        {
+          "id": "D",
+          "text": "Because they do not have weight matrices"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "The sequential recurrence relation h_t = f(h_{t-1}, x_t) prevents parallel forward and backward computation."
+    },
+    {
+      "id": "LLM010",
+      "courseId": "llm",
+      "topic": "Foundations of NLP & Language Modeling",
+      "difficulty": "Hard",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "In Word2Vec Skip-Gram with Negative Sampling (SGNS), what does negative sampling do?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It samples noise words to train a binary logistic regression classifier efficiently without calculating full softmax over vocabulary"
+        },
+        {
+          "id": "B",
+          "text": "It discards all negative sentiments from sentences"
+        },
+        {
+          "id": "C",
+          "text": "It removes grammatically incorrect words from text"
+        },
+        {
+          "id": "D",
+          "text": "It inverts matrix values during backpropagation"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "Negative sampling avoids the prohibitive expense of normalising over the entire vocabulary by sampling k noise words."
+    },
+    {
+      "id": "LLM011",
+      "courseId": "llm",
+      "topic": "Foundations of NLP & Language Modeling",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is the primary role of an embedding layer in neural language models?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To compress text into a single integer"
+        },
+        {
+          "id": "B",
+          "text": "To map discrete vocabulary indices into continuous dense vector representations in d-dimensional space"
+        },
+        {
+          "id": "C",
+          "text": "To translate English words into French"
+        },
+        {
+          "id": "D",
+          "text": "To format output text with HTML styling"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Embedding layers map high-cardinality discrete token IDs into dense semantic vector representations."
+    },
+    {
+      "id": "LLM012",
+      "courseId": "llm",
+      "topic": "Foundations of NLP & Language Modeling",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "Which loss function is universally used to train autoregressive language models?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mean Squared Error (MSE)"
+        },
+        {
+          "id": "B",
+          "text": "Cross-Entropy Loss (Negative Log-Likelihood)"
+        },
+        {
+          "id": "C",
+          "text": "Hinge Loss"
+        },
+        {
+          "id": "D",
+          "text": "Kullback-Leibler divergence with zero prior"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Autoregressive models maximize the log-likelihood of target tokens, equivalent to minimizing cross-entropy loss."
+    },
+    {
+      "id": "LLM013",
+      "courseId": "llm",
+      "topic": "Foundations of NLP & Language Modeling",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is the difference between static embeddings (like GloVe) and contextualized embeddings (like BERT)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Static embeddings assign a single vector per word regardless of context; contextual embeddings assign representations based on surrounding tokens"
+        },
+        {
+          "id": "B",
+          "text": "Static embeddings can only be used on GPUs"
+        },
+        {
+          "id": "C",
+          "text": "Contextual embeddings do not use vectors"
+        },
+        {
+          "id": "D",
+          "text": "Static embeddings require 100x more parameters"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "Contextualized representations dynamically disambiguate words (e.g., bank of a river vs. money bank) based on context."
+    },
+    {
+      "id": "LLM014",
+      "courseId": "llm",
+      "topic": "Transformer Architecture & Self-Attention",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "Who introduced the Transformer architecture in the landmark 2017 paper 'Attention Is All You Need'?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Yann LeCun et al. at Meta"
+        },
+        {
+          "id": "B",
+          "text": "Vaswani et al. at Google Brain and Google Research"
+        },
+        {
+          "id": "C",
+          "text": "Geoffrey Hinton et al. at University of Toronto"
+        },
+        {
+          "id": "D",
+          "text": "Demis Hassabis at DeepMind"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Vaswani et al. introduced the Transformer architecture in 2017, revolutionizing sequence modeling."
+    },
+    {
+      "id": "LLM015",
+      "courseId": "llm",
+      "topic": "Transformer Architecture & Self-Attention",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is the mathematical formulation of Scaled Dot-Product Attention?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Attention(Q,K,V) = softmax(Q * K^T / sqrt(d_k)) * V"
+        },
+        {
+          "id": "B",
+          "text": "Attention(Q,K,V) = sigmoid(Q + K + V)"
+        },
+        {
+          "id": "C",
+          "text": "Attention(Q,K,V) = ReLU(Q * V^T) * K"
+        },
+        {
+          "id": "D",
+          "text": "Attention(Q,K,V) = norm(Q - K) * V"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "Scaled Dot-Product Attention multiplies Queries with transposed Keys, scales by 1/sqrt(d_k), applies softmax, and weights Values."
+    },
+    {
+      "id": "LLM016",
+      "courseId": "llm",
+      "topic": "Transformer Architecture & Self-Attention",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "Why is the dot product scaled by 1/sqrt(d_k) in Scaled Dot-Product Attention?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To invert negative weights into positive values"
+        },
+        {
+          "id": "B",
+          "text": "To prevent dot products from growing excessively large for large dimensions, which would push softmax into regions with tiny gradients"
+        },
+        {
+          "id": "C",
+          "text": "To ensure total sum of weights equals zero"
+        },
+        {
+          "id": "D",
+          "text": "To reduce RAM consumption on GPU chips"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Scaling prevents large magnitude dot products from causing vanishing gradients in the saturated tails of softmax."
+    },
+    {
+      "id": "LLM017",
+      "courseId": "llm",
+      "topic": "Transformer Architecture & Self-Attention",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is the primary motivation for Multi-Head Attention over single-head attention?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It reduces total parameter count by 50%"
+        },
+        {
+          "id": "B",
+          "text": "It allows the model to jointly attend to information from different representation subspaces at different positions"
+        },
+        {
+          "id": "C",
+          "text": "It removes the need for feed-forward layers"
+        },
+        {
+          "id": "D",
+          "text": "It eliminates the need for GPUs"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Multi-head attention lets different attention heads focus on distinct linguistic relations (e.g., syntax, coreference, semantics)."
+    },
+    {
+      "id": "LLM018",
+      "courseId": "llm",
+      "topic": "Transformer Architecture & Self-Attention",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "Why are Positional Encodings necessary in Transformers?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Transformers have no built-in recurrence or convolution, making self-attention inherently permutation-invariant without position signals"
+        },
+        {
+          "id": "B",
+          "text": "To ensure sentences have an even number of characters"
+        },
+        {
+          "id": "C",
+          "text": "To encrypt tokens before sending across the internet"
+        },
+        {
+          "id": "D",
+          "text": "To translate token embeddings into audio frequencies"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "Because self-attention operates as a set-to-set function, positional encodings must explicitly inject token order information."
+    },
+    {
+      "id": "LLM019",
+      "courseId": "llm",
+      "topic": "Transformer Architecture & Self-Attention",
+      "difficulty": "Hard",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "Which of the following is a relative positional encoding method popular in modern LLMs like Llama and Mistral?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sinusoidal absolute positional encoding"
+        },
+        {
+          "id": "B",
+          "text": "RoPE (Rotary Position Embedding)"
+        },
+        {
+          "id": "C",
+          "text": "ASCII character index addition"
+        },
+        {
+          "id": "D",
+          "text": "One-hot sequential encoding"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "RoPE (Rotary Position Embedding) encodes relative position by rotating key and query representations in complex space."
+    },
+    {
+      "id": "LLM020",
+      "courseId": "llm",
+      "topic": "Transformer Architecture & Self-Attention",
+      "difficulty": "Hard",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is the difference between Pre-LN (Layer Normalization before sub-layers) and Post-LN Transformers?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Pre-LN stabilizes gradient flow through residual connections, making deep models easier to train without warm-up"
+        },
+        {
+          "id": "B",
+          "text": "Post-LN is only used for speech recognition"
+        },
+        {
+          "id": "C",
+          "text": "Pre-LN requires three times more memory"
+        },
+        {
+          "id": "D",
+          "text": "Post-LN eliminates all attention layers"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "Pre-LN routes the residual path directly without normalization, preventing gradient decay and improving training stability."
+    },
+    {
+      "id": "LLM021",
+      "courseId": "llm",
+      "topic": "Transformer Architecture & Self-Attention",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is the role of causal masking in decoder-only Transformers (like GPT)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To blur out profanity in training text"
+        },
+        {
+          "id": "B",
+          "text": "To prevent attention from looking at future tokens (positions > t) during autoregressive generation"
+        },
+        {
+          "id": "C",
+          "text": "To compress the model weights into 8-bit integers"
+        },
+        {
+          "id": "D",
+          "text": "To force the model to translate text backwards"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Causal masking sets upper-triangular attention logits to -infinity so position t cannot attend to subsequent future tokens."
+    },
+    {
+      "id": "LLM022",
+      "courseId": "llm",
+      "topic": "Transformer Architecture & Self-Attention",
+      "difficulty": "Hard",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "How does FlashAttention optimize the self-attention operation on modern GPUs?",
+      "options": [
+        {
+          "id": "A",
+          "text": "By quantizing all matrix values to 1-bit weights"
+        },
+        {
+          "id": "B",
+          "text": "By tiling computation and recomputing attention on-chip in fast SRAM to minimize high-bandwidth memory (HBM) IO bottlenecks"
+        },
+        {
+          "id": "C",
+          "text": "By replacing all matrix multiplications with addition operations"
+        },
+        {
+          "id": "D",
+          "text": "By skipping every alternate token in the sequence"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "FlashAttention reorganizes attention computation to minimize slow memory transfers between GPU HBM and SRAM."
+    },
+    {
+      "id": "LLM023",
+      "courseId": "llm",
+      "topic": "Transformer Architecture & Self-Attention",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "In the Transformer architecture, what constitutes the Feed-Forward Network (FFN) block?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Two linear transformations with a non-linear activation (e.g., GeLU or SwiGLU) in between, applied position-wise"
+        },
+        {
+          "id": "B",
+          "text": "A recurrent LSTM gate loop"
+        },
+        {
+          "id": "C",
+          "text": "A 3D spatial convolution filter"
+        },
+        {
+          "id": "D",
+          "text": "A random forest ensemble"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "The position-wise FFN consists of two linear projections with an activation function like GELU or SwiGLU."
+    },
+    {
+      "id": "LLM024",
+      "courseId": "llm",
+      "topic": "Transformer Architecture & Self-Attention",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What distinguishes encoder-decoder models (like T5) from decoder-only models (like GPT)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Encoder-decoder uses bidirectional attention on input and causal attention on target; decoder-only uses causal attention throughout"
+        },
+        {
+          "id": "B",
+          "text": "Decoder-only models cannot output text"
+        },
+        {
+          "id": "C",
+          "text": "Encoder-decoder models have no attention layers"
+        },
+        {
+          "id": "D",
+          "text": "Decoder-only models cannot be trained on GPUs"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "Encoder-decoder models encode input prompts bidirectionally and generate output tokens autoregressively."
+    },
+    {
+      "id": "LLM025",
+      "courseId": "llm",
+      "topic": "Transformer Architecture & Self-Attention",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "KV Caching (Key-Value Caching) during LLM inference is used to:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Prevent retraining on updated Wikipedia articles"
+        },
+        {
+          "id": "B",
+          "text": "Store previously computed key and value states of prompt tokens so they don't need recomputation at each generated token step"
+        },
+        {
+          "id": "C",
+          "text": "Cache user prompts in local browser storage"
+        },
+        {
+          "id": "D",
+          "text": "Compress model weights into zip archives"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "KV caching preserves K and V tensors across decoding steps, reducing inference time from O(N^2) to O(N) per step."
+    },
+    {
+      "id": "LLM026",
+      "courseId": "llm",
+      "topic": "Pre-training, Tokenization & Datasets",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is Byte-Pair Encoding (BPE) in LLM tokenization?",
+      "options": [
+        {
+          "id": "A",
+          "text": "An encryption standard for secure model weights"
+        },
+        {
+          "id": "B",
+          "text": "A subword tokenization algorithm that iteratively merges the most frequent pairs of bytes or characters"
+        },
+        {
+          "id": "C",
+          "text": "A lossless audio compression algorithm"
+        },
+        {
+          "id": "D",
+          "text": "A method to delete punctuation marks"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "BPE is an iterative data compression technique that constructs subword vocabularies by merging frequent adjacent symbol pairs."
+    },
+    {
+      "id": "LLM027",
+      "courseId": "llm",
+      "topic": "Pre-training, Tokenization & Datasets",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "Why is subword tokenization (e.g., BPE, WordPiece, SentencePiece) preferred over word-level tokenization in LLMs?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It solves the out-of-vocabulary (OOV) problem while maintaining a compact, manageable vocabulary size"
+        },
+        {
+          "id": "B",
+          "text": "It guarantees zero training loss in one epoch"
+        },
+        {
+          "id": "C",
+          "text": "It converts all words into emoji representations"
+        },
+        {
+          "id": "D",
+          "text": "It eliminates the need for embedding matrices"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "Subword tokenization splits rare or unseen words into familiar subword pieces, preventing out-of-vocabulary failures."
+    },
+    {
+      "id": "LLM028",
+      "courseId": "llm",
+      "topic": "Pre-training, Tokenization & Datasets",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is the typical objective function during the pre-training phase of an autoregressive LLM?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Next-token prediction (causal language modeling)"
+        },
+        {
+          "id": "B",
+          "text": "Masked sentence classification"
+        },
+        {
+          "id": "C",
+          "text": "Image segmentation regression"
+        },
+        {
+          "id": "D",
+          "text": "Binary sentiment analysis"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "Autoregressive LLMs are pre-trained on massive corpora using the self-supervised objective of predicting the next token."
+    },
+    {
+      "id": "LLM029",
+      "courseId": "llm",
+      "topic": "Pre-training, Tokenization & Datasets",
+      "difficulty": "Hard",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What did the Chinchilla scaling laws (Hoffmann et al., 2022) reveal regarding compute-optimal LLM training?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Model parameter count should scale 10x faster than dataset tokens"
+        },
+        {
+          "id": "B",
+          "text": "Model parameters and training token counts should be scaled in approximately equal proportions"
+        },
+        {
+          "id": "C",
+          "text": "Training tokens should remain constant while parameters increase infinitely"
+        },
+        {
+          "id": "D",
+          "text": "Compute budget does not affect final model performance"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Chinchilla demonstrated that for compute-optimal training, model size and training tokens should scale equally (1:1)."
+    },
+    {
+      "id": "LLM030",
+      "courseId": "llm",
+      "topic": "Pre-training, Tokenization & Datasets",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "In pre-training data curation, why is deduplication of documents crucial?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To prevent the model from memorizing repetitive text, regurgitating private data, and degrading perplexity"
+        },
+        {
+          "id": "B",
+          "text": "To increase the physical size of SSD storage required"
+        },
+        {
+          "id": "C",
+          "text": "To double the compute power consumed by GPUs"
+        },
+        {
+          "id": "D",
+          "text": "To introduce random spelling mistakes"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "Deduplicating training corpora reduces verbatim memorization, mitigates bias amplification, and improves sample efficiency."
+    },
+    {
+      "id": "LLM031",
+      "courseId": "llm",
+      "topic": "Pre-training, Tokenization & Datasets",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "Which dataset was originally created by scraping outbound links from Reddit with at least 3 karma?",
+      "options": [
+        {
+          "id": "A",
+          "text": "WebText (used for GPT-2)"
+        },
+        {
+          "id": "B",
+          "text": "Common Crawl"
+        },
+        {
+          "id": "C",
+          "text": "ImageNet"
+        },
+        {
+          "id": "D",
+          "text": "MNIST"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "OpenAI created WebText by scraping outbound Reddit links with >=3 upvotes as a proxy for human curation."
+    },
+    {
+      "id": "LLM032",
+      "courseId": "llm",
+      "topic": "Pre-training, Tokenization & Datasets",
+      "difficulty": "Hard",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is the 'curse of multilinguality' observed when pre-training cross-lingual LLMs?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Adding more languages without increasing model capacity degrades performance on individual high-resource languages"
+        },
+        {
+          "id": "B",
+          "text": "The model stops speaking any human language"
+        },
+        {
+          "id": "C",
+          "text": "GPUs cannot handle non-Latin alphabets"
+        },
+        {
+          "id": "D",
+          "text": "Word order differences crash the training loss to infinity"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "When model capacity is fixed, allocating parameters across dozens of languages dilutes representation fidelity for each."
+    },
+    {
+      "id": "LLM033",
+      "courseId": "llm",
+      "topic": "Pre-training, Tokenization & Datasets",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "SentencePiece tokenizer is notable because:",
+      "options": [
+        {
+          "id": "A",
+          "text": "It treats the input text purely as a raw byte stream without requiring language-specific pre-tokenization or whitespace splitting"
+        },
+        {
+          "id": "B",
+          "text": "It only works on English text with Oxford commas"
+        },
+        {
+          "id": "C",
+          "text": "It deletes all numbers from training data"
+        },
+        {
+          "id": "D",
+          "text": "It translates input text into Python code before tokenizing"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "SentencePiece treats whitespace as a regular symbol (_), providing universal tokenizer support across languages."
+    },
+    {
+      "id": "LLM034",
+      "courseId": "llm",
+      "topic": "Pre-training, Tokenization & Datasets",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What does synthetic data generation contribute to modern frontier LLM pre-training and post-training?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It exhausts GPU memory without producing tokens"
+        },
+        {
+          "id": "B",
+          "text": "It augments scarce high-quality reasoning and math datasets through curated, filtered AI-generated examples"
+        },
+        {
+          "id": "C",
+          "text": "It introduces guaranteed zero hallucination permanently"
+        },
+        {
+          "id": "D",
+          "text": "It eliminates the need for human safety audits"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "High-quality synthetic datasets (e.g., textbook-quality examples, verified math proofs) enrich specialized reasoning capabilities."
+    },
+    {
+      "id": "LLM035",
+      "courseId": "llm",
+      "topic": "Pre-training, Tokenization & Datasets",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is the Common Crawl foundation in LLM pre-training?",
+      "options": [
+        {
+          "id": "A",
+          "text": "An open repository of petabytes of web crawl data used as the primary raw source for web text datasets"
+        },
+        {
+          "id": "B",
+          "text": "A proprietary Google database closed to researchers"
+        },
+        {
+          "id": "C",
+          "text": "A benchmark test evaluating LLM reasoning speed"
+        },
+        {
+          "id": "D",
+          "text": "A hardware protocol for connecting NVIDIA GPUs"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "Common Crawl provides open web scrapes that serve as the foundation for filtered datasets like C4, RefinedWeb, and FineWeb."
+    },
+    {
+      "id": "LLM036",
+      "courseId": "llm",
+      "topic": "Pre-training, Tokenization & Datasets",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is the primary role of data decontamination in benchmark evaluation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Removing test set questions and answers from pre-training and fine-tuning corpora to prevent benchmark contamination"
+        },
+        {
+          "id": "B",
+          "text": "Scrubbing bacteria from server racks"
+        },
+        {
+          "id": "C",
+          "text": "Formatting text files to utf-8 encoding"
+        },
+        {
+          "id": "D",
+          "text": "Deleting all negative reviews from e-commerce sites"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "Decontamination ensures test benchmark samples are not leaked into the training set, preventing inflated evaluation metrics."
+    },
+    {
+      "id": "LLM037",
+      "courseId": "llm",
+      "topic": "Pre-training, Tokenization & Datasets",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "Which tokenizer token represents the start or end of a sequence in transformer vocabularies?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Special tokens such as <BOS>, <EOS>, or <|endoftext|>"
+        },
+        {
+          "id": "B",
+          "text": "Punctuation periods only"
+        },
+        {
+          "id": "C",
+          "text": "The uppercase character 'Z'"
+        },
+        {
+          "id": "D",
+          "text": "The escape key ASCII code"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "Special tokens like <s>, </s>, or <|endoftext|> mark boundary conditions like sequence beginning and termination."
+    },
+    {
+      "id": "LLM038",
+      "courseId": "llm",
+      "topic": "Fine-Tuning & Adaptation (PEFT, LoRA, Prompt Tuning)",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What does PEFT stand for in modern LLM fine-tuning?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Parallelized Execution of Floating Tensors"
+        },
+        {
+          "id": "B",
+          "text": "Parameter-Efficient Fine-Tuning"
+        },
+        {
+          "id": "C",
+          "text": "Predictive Error Filtering Technique"
+        },
+        {
+          "id": "D",
+          "text": "Pre-trained Embedding Fast Translation"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "PEFT stands for Parameter-Efficient Fine-Tuning, adapting large models without updating all pre-trained weights."
+    },
+    {
+      "id": "LLM039",
+      "courseId": "llm",
+      "topic": "Fine-Tuning & Adaptation (PEFT, LoRA, Prompt Tuning)",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "How does LoRA (Low-Rank Adaptation) reduce trainable parameters in fine-tuning?",
+      "options": [
+        {
+          "id": "A",
+          "text": "By pruning 90% of model layers entirely"
+        },
+        {
+          "id": "B",
+          "text": "By decomposing weight update matrices into low-rank factor matrices delta_W = B * A"
+        },
+        {
+          "id": "C",
+          "text": "By rounding all weights to 0 or 1"
+        },
+        {
+          "id": "D",
+          "text": "By training only the embedding layer"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "LoRA decomposes the delta update matrix delta_W (d x k) into the product of two low-rank matrices B (d x r) and A (r x k) where r << d."
+    },
+    {
+      "id": "LLM040",
+      "courseId": "llm",
+      "topic": "Fine-Tuning & Adaptation (PEFT, LoRA, Prompt Tuning)",
+      "difficulty": "Hard",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "In LoRA, if hidden dimension d=4096 and rank r=8, how do trainable parameters compare to full weight matrix W (4096 x 4096)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "LoRA trains 4096*8*2 = 65,536 parameters instead of ~16.7 million (~0.39%)"
+        },
+        {
+          "id": "B",
+          "text": "LoRA trains twice as many parameters"
+        },
+        {
+          "id": "C",
+          "text": "LoRA trains zero parameters"
+        },
+        {
+          "id": "D",
+          "text": "LoRA trains 8 million parameters"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "Full rank requires 4096*4096 = 16,777,216 params, while LoRA factorizes into B (4096x8) + A (8x4096) = 65,536 params."
+    },
+    {
+      "id": "LLM041",
+      "courseId": "llm",
+      "topic": "Fine-Tuning & Adaptation (PEFT, LoRA, Prompt Tuning)",
+      "difficulty": "Hard",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is QLoRA?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Quantum Computing LoRA"
+        },
+        {
+          "id": "B",
+          "text": "LoRA applied on top of 4-bit quantized base models using NormalFloat4 (NF4) and double quantization"
+        },
+        {
+          "id": "C",
+          "text": "Quick LoRA without backward pass"
+        },
+        {
+          "id": "D",
+          "text": "LoRA implemented exclusively in SQL queries"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "QLoRA reduces memory footprint by keeping the frozen base model in 4-bit NF4 while training 16-bit LoRA adapter matrices."
+    },
+    {
+      "id": "LLM042",
+      "courseId": "llm",
+      "topic": "Fine-Tuning & Adaptation (PEFT, LoRA, Prompt Tuning)",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is Prefix Tuning?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Adding learnable continuous virtual prefix vectors to the keys and values of every Transformer layer"
+        },
+        {
+          "id": "B",
+          "text": "Prefixing every user prompt with 'Please answer honestly:'"
+        },
+        {
+          "id": "C",
+          "text": "Deleting the first 100 tokens of every document"
+        },
+        {
+          "id": "D",
+          "text": "Converting all output text into JSON strings"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "Prefix Tuning prepends learnable, task-specific continuous vectors to the Keys and Values across all attention layers."
+    },
+    {
+      "id": "LLM043",
+      "courseId": "llm",
+      "topic": "Fine-Tuning & Adaptation (PEFT, LoRA, Prompt Tuning)",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "How does Prompt Tuning (Lester et al., 2021) differ from Prefix Tuning?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Prompt Tuning adds learnable soft prompt virtual tokens only to the input embedding layer, rather than every transformer layer"
+        },
+        {
+          "id": "B",
+          "text": "Prompt Tuning updates all model parameters"
+        },
+        {
+          "id": "C",
+          "text": "Prompt Tuning modifies only the last linear layer"
+        },
+        {
+          "id": "D",
+          "text": "Prompt Tuning cannot be used with transformers"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "Prompt Tuning injects tunable continuous virtual tokens strictly at the input embedding sequence level."
+    },
+    {
+      "id": "LLM044",
+      "courseId": "llm",
+      "topic": "Fine-Tuning & Adaptation (PEFT, LoRA, Prompt Tuning)",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is Instruction Fine-Tuning (IFT)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Training models on prompt-response pairs formatted as explicit instructions to follow user intent"
+        },
+        {
+          "id": "B",
+          "text": "Compiling LLM code into x86 machine instructions"
+        },
+        {
+          "id": "C",
+          "text": "Writing user manuals for neural networks"
+        },
+        {
+          "id": "D",
+          "text": "Teaching LLMs how to play chess only"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "Instruction tuning trains base models on structured (instruction, input, output) datasets so they behave as helpful assistants."
+    },
+    {
+      "id": "LLM045",
+      "courseId": "llm",
+      "topic": "Fine-Tuning & Adaptation (PEFT, LoRA, Prompt Tuning)",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is 'catastrophic forgetting' during full fine-tuning of LLMs?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The GPU loses power and drops unsaved checkpoint files"
+        },
+        {
+          "id": "B",
+          "text": "The model loses general capabilities and knowledge learned during pre-training when updated heavily on a narrow task"
+        },
+        {
+          "id": "C",
+          "text": "The tokenizer forgets punctuation marks"
+        },
+        {
+          "id": "D",
+          "text": "The model output becomes completely blank"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Catastrophic forgetting occurs when gradient updates on a specialized dataset overwrite foundational knowledge."
+    },
+    {
+      "id": "LLM046",
+      "courseId": "llm",
+      "topic": "Fine-Tuning & Adaptation (PEFT, LoRA, Prompt Tuning)",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is Supervised Fine-Tuning (SFT) in the standard LLM post-training pipeline?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The first stage after pre-training where models are trained on curated demonstrations of desired assistant behavior"
+        },
+        {
+          "id": "B",
+          "text": "A technique where humans write code live in the GPU"
+        },
+        {
+          "id": "C",
+          "text": "A method to calculate corporate payroll"
+        },
+        {
+          "id": "D",
+          "text": "A training process that uses no labels or human data"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "SFT fine-tunes pre-trained models on high-quality demonstrative dialogues before reinforcement learning alignment."
+    },
+    {
+      "id": "LLM047",
+      "courseId": "llm",
+      "topic": "Fine-Tuning & Adaptation (PEFT, LoRA, Prompt Tuning)",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "Which library developed by Hugging Face is standard for training LoRA and adapter configurations?",
+      "options": [
+        {
+          "id": "A",
+          "text": "peft"
+        },
+        {
+          "id": "B",
+          "text": "numpy"
+        },
+        {
+          "id": "C",
+          "text": "pandas"
+        },
+        {
+          "id": "D",
+          "text": "requests"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "The Hugging Face `peft` library is the industry standard for configuring and training PEFT methods like LoRA."
+    },
+    {
+      "id": "LLM048",
+      "courseId": "llm",
+      "topic": "Fine-Tuning & Adaptation (PEFT, LoRA, Prompt Tuning)",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "Why can LoRA adapters be merged back into original base model weights for zero-overhead inference?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Because matrix addition W_final = W_base + (B * A) is linear and can be pre-computed before deployment"
+        },
+        {
+          "id": "B",
+          "text": "Because adapters delete the original base model"
+        },
+        {
+          "id": "C",
+          "text": "Because LoRA runs in JavaScript inside the browser"
+        },
+        {
+          "id": "D",
+          "text": "Because GPUs don't support matrix multiplication"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "Since W_new = W_0 + (alpha/r)*B*A, the products can be added directly into W_0, eliminating runtime latency."
+    },
+    {
+      "id": "LLM049",
+      "courseId": "llm",
+      "topic": "Fine-Tuning & Adaptation (PEFT, LoRA, Prompt Tuning)",
+      "difficulty": "Hard",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "Full parameter fine-tuning of a 70B parameter model in FP16 requires approximately how much GPU memory for optimizer states alone (Adam)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "~8 GB"
+        },
+        {
+          "id": "B",
+          "text": "~40 GB"
+        },
+        {
+          "id": "C",
+          "text": "~560 GB to 1 TB+ (due to 16 bytes per parameter across weights, gradients, and first/second Adam moments)"
+        },
+        {
+          "id": "D",
+          "text": "~10 MB"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "Adam requires 8 bytes per param for moments + 4 bytes for grads + 4 bytes FP32 master weights = 16 bytes/param (~1.1 TB for 70B)."
+    },
+    {
+      "id": "LLM050",
+      "courseId": "llm",
+      "topic": "Alignment & RLHF (DPO, PPO, Instruction Tuning)",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What does RLHF stand for in LLM alignment?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Reinforcement Learning from Human Feedback"
+        },
+        {
+          "id": "B",
+          "text": "Real-time Logic with Hardware Filtering"
+        },
+        {
+          "id": "C",
+          "text": "Recursive Language Heuristics Framework"
+        },
+        {
+          "id": "D",
+          "text": "Relational Learning with Hyperparameter Tuning"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "RLHF stands for Reinforcement Learning from Human Feedback, steering model outputs to match human preferences."
+    },
+    {
+      "id": "LLM051",
+      "courseId": "llm",
+      "topic": "Alignment & RLHF (DPO, PPO, Instruction Tuning)",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What are the '3 Hs' of AI alignment popularized by Anthropic?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Helpful, Honest, Harmless"
+        },
+        {
+          "id": "B",
+          "text": "Heavy, High-speed, Heuristic"
+        },
+        {
+          "id": "C",
+          "text": "Hardware, Hybrid, Hostile"
+        },
+        {
+          "id": "D",
+          "text": "Human-level, Hyper-parameterized, High-yield"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "The 3 Hs characterize desirable aligned assistant behavior: being Helpful, Honest, and Harmless."
+    },
+    {
+      "id": "LLM052",
+      "courseId": "llm",
+      "topic": "Alignment & RLHF (DPO, PPO, Instruction Tuning)",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "In traditional RLHF (Christiano et al., 2017 / InstructGPT), what is the role of the Reward Model?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To generate random prompt questions"
+        },
+        {
+          "id": "B",
+          "text": "To predict a scalar reward score indicating human preference given a prompt and candidate response"
+        },
+        {
+          "id": "C",
+          "text": "To punish users who ask difficult questions"
+        },
+        {
+          "id": "D",
+          "text": "To measure GPU thermal temperature"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "A reward model is trained on human pairwise preference comparisons to assign scalar scores to model generations."
+    },
+    {
+      "id": "LLM053",
+      "courseId": "llm",
+      "topic": "Alignment & RLHF (DPO, PPO, Instruction Tuning)",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "Which reinforcement learning algorithm was predominantly used in early RLHF pipelines (e.g., InstructGPT, ChatGPT)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "PPO (Proximal Policy Optimization)"
+        },
+        {
+          "id": "B",
+          "text": "Q-Learning (tabular)"
+        },
+        {
+          "id": "C",
+          "text": "SARSA"
+        },
+        {
+          "id": "D",
+          "text": "Monte Carlo Tree Search with Minimax only"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "PPO is the policy gradient algorithm widely used to update language model policy weights based on reward model feedback."
+    },
+    {
+      "id": "LLM054",
+      "courseId": "llm",
+      "topic": "Alignment & RLHF (DPO, PPO, Instruction Tuning)",
+      "difficulty": "Hard",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "Why is a KL-divergence penalty added to the RLHF optimization objective?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To speed up network data transfer rates"
+        },
+        {
+          "id": "B",
+          "text": "To prevent the policy model from drifting too far from the initial SFT model and exploiting the reward model ('reward hacking')"
+        },
+        {
+          "id": "C",
+          "text": "To force the model to output shorter answers"
+        },
+        {
+          "id": "D",
+          "text": "To prevent the model from using English words"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "The KL penalty D_KL(pi_theta || pi_ref) prevents 'reward hacking' where the model produces gibberish that tricks the reward model."
+    },
+    {
+      "id": "LLM055",
+      "courseId": "llm",
+      "topic": "Alignment & RLHF (DPO, PPO, Instruction Tuning)",
+      "difficulty": "Hard",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "Direct Preference Optimization (DPO, Rafailov et al., 2023) improves upon standard RLHF by:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Deriving a closed-form substitution that optimizes the policy directly on preference data without training a separate reward model or using RL loops"
+        },
+        {
+          "id": "B",
+          "text": "Adding 10 additional reward models in an ensemble"
+        },
+        {
+          "id": "C",
+          "text": "Replacing neural networks with decision trees"
+        },
+        {
+          "id": "D",
+          "text": "Requiring 100x more GPU clusters"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "DPO mathematically reparameterizes the reward model in terms of the policy, allowing direct cross-entropy optimization on preference pairs."
+    },
+    {
+      "id": "LLM056",
+      "courseId": "llm",
+      "topic": "Alignment & RLHF (DPO, PPO, Instruction Tuning)",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "In preference datasets for alignment, each training instance typically consists of:",
+      "options": [
+        {
+          "id": "A",
+          "text": "A prompt, a chosen (preferred) response, and a rejected (dispreferred) response"
+        },
+        {
+          "id": "B",
+          "text": "A single word and its dictionary definition"
+        },
+        {
+          "id": "C",
+          "text": "An image and its RGB pixel coordinates"
+        },
+        {
+          "id": "D",
+          "text": "A Python compiler error log"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "Preference pairs consist of a prompt x along with a chosen response y_w and a rejected response y_l."
+    },
+    {
+      "id": "LLM057",
+      "courseId": "llm",
+      "topic": "Alignment & RLHF (DPO, PPO, Instruction Tuning)",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is 'Jailbreaking' in the context of aligned LLMs?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Rooting an iPhone using iOS exploits"
+        },
+        {
+          "id": "B",
+          "text": "Crafting adversarial prompts that bypass safety guardrails and force the model to generate prohibited content"
+        },
+        {
+          "id": "C",
+          "text": "Running an LLM on an unsupported operating system"
+        },
+        {
+          "id": "D",
+          "text": "Cracking the encryption of the model checkpoint"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Jailbreaking uses adversarial framing, roleplay, or encoding to trick safety-aligned models into violating policy."
+    },
+    {
+      "id": "LLM058",
+      "courseId": "llm",
+      "topic": "Alignment & RLHF (DPO, PPO, Instruction Tuning)",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is 'Sycophancy' in aligned language models?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The tendency of a model to agree with the user's stated opinion or bias, even when factually incorrect"
+        },
+        {
+          "id": "B",
+          "text": "The model speaking only in ancient Greek"
+        },
+        {
+          "id": "C",
+          "text": "The model crashing when handling numeric tables"
+        },
+        {
+          "id": "D",
+          "text": "The model refusing to reply to polite greetings"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Sycophancy refers to models tailoring answers to flatter or confirm user prejudices rather than stating objective truths."
+    },
+    {
+      "id": "LLM059",
+      "courseId": "llm",
+      "topic": "Alignment & RLHF (DPO, PPO, Instruction Tuning)",
+      "difficulty": "Hard",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is Constitutional AI (RLAIF) developed by Anthropic?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A legal system where judges are replaced with LLMs"
+        },
+        {
+          "id": "B",
+          "text": "An alignment method where the model critiques and refines its own responses using a written set of principles (a constitution) rather than human feedback"
+        },
+        {
+          "id": "C",
+          "text": "A method to train models only on national constitutions"
+        },
+        {
+          "id": "D",
+          "text": "A government law mandating open weights for all models"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Constitutional AI replaces human feedback loops with AI feedback guided by written behavioral principles and self-critiques."
+    },
+    {
+      "id": "LLM060",
+      "courseId": "llm",
+      "topic": "Alignment & RLHF (DPO, PPO, Instruction Tuning)",
+      "difficulty": "Hard",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "KTO (Kahneman-Tversky Optimization) differs from DPO by:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Aligning models directly using unpaired binary feedback (thumbs up / thumbs down) inspired by behavioral prospect theory"
+        },
+        {
+          "id": "B",
+          "text": "Requiring 10-way ranking tournaments"
+        },
+        {
+          "id": "C",
+          "text": "Using exclusively quadratic regression"
+        },
+        {
+          "id": "D",
+          "text": "Excluding all safety guidelines"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "KTO operates on unpaired signal data (whether an individual response is desirable or undesirable) using prospect theory principles."
+    },
+    {
+      "id": "LLM061",
+      "courseId": "llm",
+      "topic": "Alignment & RLHF (DPO, PPO, Instruction Tuning)",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is 'Reward Hacking' or 'Goodhart's Law' in AI alignment?",
+      "options": [
+        {
+          "id": "A",
+          "text": "When a measure becomes a target, it ceases to be a good measure — the model finds degenerate ways to maximize the reward model score without fulfilling the true intent"
+        },
+        {
+          "id": "B",
+          "text": "When hackers steal the model weights from the server"
+        },
+        {
+          "id": "C",
+          "text": "When human annotators demand higher wages"
+        },
+        {
+          "id": "D",
+          "text": "When the training loss hits exactly zero"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "Reward hacking occurs when policies optimize proxy rewards via unintended loopholes (e.g., generating repetitive pleasantries)."
+    },
+    {
+      "id": "LLM062",
+      "courseId": "llm",
+      "topic": "Prompt Engineering & In-Context Learning",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is 'Zero-Shot' prompting?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Feeding zero tokens to the model and expecting output"
+        },
+        {
+          "id": "B",
+          "text": "Asking the model to perform a task with instructions only, without providing any input-output examples"
+        },
+        {
+          "id": "C",
+          "text": "Training the model from scratch with zero parameters"
+        },
+        {
+          "id": "D",
+          "text": "Running an LLM with zero electrical power"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Zero-shot prompting gives the model a direct instruction or question without supplying demonstration examples."
+    },
+    {
+      "id": "LLM063",
+      "courseId": "llm",
+      "topic": "Prompt Engineering & In-Context Learning",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "Few-Shot prompting (In-Context Learning) involves:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Fine-tuning model weights with backpropagation on 3 examples"
+        },
+        {
+          "id": "B",
+          "text": "Providing a few input-output demonstration examples directly within the context window prompt"
+        },
+        {
+          "id": "C",
+          "text": "Prompting the model only 3 times a day"
+        },
+        {
+          "id": "D",
+          "text": "Deleting few layers from the transformer model"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Few-shot prompting provides exemplars inside the prompt context to steer format and task behavior without updating model weights."
+    },
+    {
+      "id": "LLM064",
+      "courseId": "llm",
+      "topic": "Prompt Engineering & In-Context Learning",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is Chain-of-Thought (CoT) prompting (Wei et al., 2022)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Connecting multiple GPUs in a daisy chain"
+        },
+        {
+          "id": "B",
+          "text": "Prompting the model to generate intermediate reasoning steps before arriving at a final answer ('Let's think step by step')"
+        },
+        {
+          "id": "C",
+          "text": "Encrypting prompts with blockchain hashes"
+        },
+        {
+          "id": "D",
+          "text": "Limiting the model to generating only one word at a time"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Chain-of-Thought prompting induces explicit reasoning trajectories, significantly improving multi-step math and logic solving."
+    },
+    {
+      "id": "LLM065",
+      "courseId": "llm",
+      "topic": "Prompt Engineering & In-Context Learning",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is the 'Lost in the Middle' phenomenon in long-context LLMs (Liu et al., 2023)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Models fail to download middle chapters of books"
+        },
+        {
+          "id": "B",
+          "text": "LLMs retrieve and reason over information located at the beginning or end of long prompts far better than information in the middle"
+        },
+        {
+          "id": "C",
+          "text": "Middle-aged engineers write poorer prompts"
+        },
+        {
+          "id": "D",
+          "text": "Transformers skip attention for tokens located in the middle of a sentence"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Empirical studies show LLM performance degrades severely when relevant facts are situated in the middle of long context windows."
+    },
+    {
+      "id": "LLM066",
+      "courseId": "llm",
+      "topic": "Prompt Engineering & In-Context Learning",
+      "difficulty": "Hard",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is Tree-of-Thoughts (ToT) prompting framework?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Generating a single linear paragraph of text"
+        },
+        {
+          "id": "B",
+          "text": "Exploring multiple reasoning paths over tree-like decision structures with lookahead and backtracking"
+        },
+        {
+          "id": "C",
+          "text": "Converting text into binary search trees for sorting"
+        },
+        {
+          "id": "D",
+          "text": "Using Decision Trees instead of Deep Neural Networks"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Tree-of-Thoughts allows models to deliberate over multiple distinct reasoning branches, evaluate progress, and backtrack."
+    },
+    {
+      "id": "LLM067",
+      "courseId": "llm",
+      "topic": "Prompt Engineering & In-Context Learning",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is Prompt Injection?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A security vulnerability where untrusted external user input manipulates the LLM into ignoring system instructions and executing rogue commands"
+        },
+        {
+          "id": "B",
+          "text": "Inserting SQL queries into database tables directly"
+        },
+        {
+          "id": "C",
+          "text": "Injecting electrical signals into GPU transistors"
+        },
+        {
+          "id": "D",
+          "text": "Updating system RAM with faster DDR5 memory"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "Prompt injection occurs when user data overrides developer system prompts to hijack model behavior."
+    },
+    {
+      "id": "LLM068",
+      "courseId": "llm",
+      "topic": "Prompt Engineering & In-Context Learning",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is the difference between direct and indirect prompt injection?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Direct injection comes from the user prompt; indirect injection enters via external data ingested by the model (e.g., a poisoned webpage or email)"
+        },
+        {
+          "id": "B",
+          "text": "Direct injection uses Python; indirect injection uses C++"
+        },
+        {
+          "id": "C",
+          "text": "Direct injection is harmless; indirect injection breaks the hardware"
+        },
+        {
+          "id": "D",
+          "text": "There is no difference"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "Indirect prompt injection occurs when third-party content (e.g., retrieved web text or PDF) contains hidden hostile instructions."
+    },
+    {
+      "id": "LLM069",
+      "courseId": "llm",
+      "topic": "Prompt Engineering & In-Context Learning",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "How does Self-Consistency decoding improve reasoning in LLMs (Wang et al., 2022)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "By forcing the model temperature to zero"
+        },
+        {
+          "id": "B",
+          "text": "By sampling multiple diverse CoT reasoning paths with nonzero temperature and taking the majority vote answer"
+        },
+        {
+          "id": "C",
+          "text": "By asking the model if it is confident in its answer"
+        },
+        {
+          "id": "D",
+          "text": "By retraining the model on its own outputs"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Self-consistency generates multiple stochastic reasoning paths and selects the consensus answer via marginalization/majority voting."
+    },
+    {
+      "id": "LLM070",
+      "courseId": "llm",
+      "topic": "Prompt Engineering & In-Context Learning",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is the purpose of the 'System Prompt' in ChatML and modern chat APIs?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To tell the computer operating system which port to open"
+        },
+        {
+          "id": "B",
+          "text": "To set foundational behavioral guardrails, persona, tone, and operational boundaries for the conversation"
+        },
+        {
+          "id": "C",
+          "text": "To compile Python scripts before running them"
+        },
+        {
+          "id": "D",
+          "text": "To configure user billing details"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "System prompts establish persistent instructions and persona constraints governing assistant behavior throughout the session."
+    },
+    {
+      "id": "LLM071",
+      "courseId": "llm",
+      "topic": "Prompt Engineering & In-Context Learning",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "Which decoding parameter controls the randomness of token selection by scaling logits prior to softmax?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Temperature"
+        },
+        {
+          "id": "B",
+          "text": "Learning Rate"
+        },
+        {
+          "id": "C",
+          "text": "Batch Size"
+        },
+        {
+          "id": "D",
+          "text": "Weight Decay"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "Temperature scales logits (z_i / T); higher T flattens the distribution for creative diversity, while T->0 approaches greedy decoding."
+    },
+    {
+      "id": "LLM072",
+      "courseId": "llm",
+      "topic": "Prompt Engineering & In-Context Learning",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What does Top-p (Nucleus) sampling do?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Samples only from the top p% of all model weights"
+        },
+        {
+          "id": "B",
+          "text": "Samples only from the smallest set of tokens whose cumulative probability exceeds threshold p"
+        },
+        {
+          "id": "C",
+          "text": "Samples exactly p tokens per sentence"
+        },
+        {
+          "id": "D",
+          "text": "Rejects any token containing the letter 'p'"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Nucleus sampling dynamically cuts off the long tail of low-probability tokens by truncating when cumulative sum reaches p."
+    },
+    {
+      "id": "LLM073",
+      "courseId": "llm",
+      "topic": "Prompt Engineering & In-Context Learning",
+      "difficulty": "Hard",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is ReAct (Reason + Act) prompting framework (Yao et al., 2022)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A JavaScript UI framework for displaying chatbots"
+        },
+        {
+          "id": "B",
+          "text": "A paradigm combining reasoning traces (thoughts) and task-specific actions (e.g., API calls, searches) in an interleaved loop"
+        },
+        {
+          "id": "C",
+          "text": "A method to suppress all emotional words in responses"
+        },
+        {
+          "id": "D",
+          "text": "A technique to compile React components using Python"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "ReAct interleaves reasoning ('Thought') with action ('Action: Search[...]') and observations to solve complex interactive tasks."
+    },
+    {
+      "id": "LLM074",
+      "courseId": "llm",
+      "topic": "LLM Evaluation, Hallucination & Ethics",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is 'hallucination' in the context of Large Language Models?",
+      "options": [
+        {
+          "id": "A",
+          "text": "When the model experiences hardware GPU thermal overthrottling"
+        },
+        {
+          "id": "B",
+          "text": "When the model generates plausible-sounding statements that are factually false, unfaithful, or unsupported by evidence"
+        },
+        {
+          "id": "C",
+          "text": "When the user hallucinates while reading responses"
+        },
+        {
+          "id": "D",
+          "text": "When the model outputs text in colorful fonts"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Hallucination occurs when an LLM produces confident, coherent, yet factually untrue or fabricated assertions."
+    },
+    {
+      "id": "LLM075",
+      "courseId": "llm",
+      "topic": "LLM Evaluation, Hallucination & Ethics",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is the MMLU (Massive Multitask Language Understanding) benchmark used for?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Measuring GPU memory bandwidth during training"
+        },
+        {
+          "id": "B",
+          "text": "Evaluating cross-domain knowledge and reasoning across 57 subjects ranging from elementary math to professional law and medicine"
+        },
+        {
+          "id": "C",
+          "text": "Testing optical character recognition on scanned PDFs"
+        },
+        {
+          "id": "D",
+          "text": "Benchmarking audio transcription accuracy"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "MMLU is an industry-standard benchmark spanning 57 academic subjects to measure general knowledge and reasoning."
+    },
+    {
+      "id": "LLM076",
+      "courseId": "llm",
+      "topic": "LLM Evaluation, Hallucination & Ethics",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What does GSM8K benchmark test?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Grammar and spelling metrics in 8,000 documents"
+        },
+        {
+          "id": "B",
+          "text": "Grade school math multi-step word problem reasoning"
+        },
+        {
+          "id": "C",
+          "text": "Global social media sentiment trends"
+        },
+        {
+          "id": "D",
+          "text": "Speech recognition on 8,000 audio clips"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "GSM8K comprises 8,500 grade school math word problems requiring multi-step arithmetic and natural language reasoning."
+    },
+    {
+      "id": "LLM077",
+      "courseId": "llm",
+      "topic": "LLM Evaluation, Hallucination & Ethics",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "HumanEval benchmark developed by OpenAI evaluates:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Functional correctness of Python code generation based on unit test pass rates (pass@k)"
+        },
+        {
+          "id": "B",
+          "text": "Human emotional intelligence during therapy chat"
+        },
+        {
+          "id": "C",
+          "text": "Medical diagnosis accuracy on radiology images"
+        },
+        {
+          "id": "D",
+          "text": "Grammatical correctness of poetry translations"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "HumanEval evaluates code synthesis on 164 Python coding challenges verified by rigorous unit test execution."
+    },
+    {
+      "id": "LLM078",
+      "courseId": "llm",
+      "topic": "LLM Evaluation, Hallucination & Ethics",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is 'LLM-as-a-Judge' evaluation methodology (e.g., MT-Bench, AlpacaEval)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Appointing neural networks as judges in civil courtrooms"
+        },
+        {
+          "id": "B",
+          "text": "Using a strong frontier LLM (e.g., GPT-4) to grade and compare model responses against reference criteria or pairwise baselines"
+        },
+        {
+          "id": "C",
+          "text": "Letting the model write its own evaluation benchmarks"
+        },
+        {
+          "id": "D",
+          "text": "Grading models based on line count of generated text"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "LLM-as-a-Judge employs high-capability models to evaluate quality, coherence, and instruction following at scale."
+    },
+    {
+      "id": "LLM079",
+      "courseId": "llm",
+      "topic": "LLM Evaluation, Hallucination & Ethics",
+      "difficulty": "Hard",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "Which bias is common when using LLM-as-a-Judge for pairwise evaluations?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Position bias (preferring whichever candidate response is presented first)"
+        },
+        {
+          "id": "B",
+          "text": "Verbosity bias (preferring longer, more verbose responses regardless of quality)"
+        },
+        {
+          "id": "C",
+          "text": "Self-enhancement bias (preferring responses generated by the judge's own model family)"
+        },
+        {
+          "id": "D",
+          "text": "All of the above"
+        }
+      ],
+      "correctOptionId": "D",
+      "explanation": "LLM judges exhibit well-documented biases including position bias, verbosity bias, and self-preference bias."
+    },
+    {
+      "id": "LLM080",
+      "courseId": "llm",
+      "topic": "LLM Evaluation, Hallucination & Ethics",
+      "difficulty": "Hard",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is the difference between intrinsic and extrinsic hallucination in summarization tasks?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Intrinsic directly contradicts information in the source document; extrinsic introduces claims that cannot be verified from the source"
+        },
+        {
+          "id": "B",
+          "text": "Intrinsic is harmless; extrinsic causes hardware errors"
+        },
+        {
+          "id": "C",
+          "text": "Intrinsic happens on GPUs; extrinsic happens on CPUs"
+        },
+        {
+          "id": "D",
+          "text": "There is no difference"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "Intrinsic hallucination asserts facts conflicting with the prompt text; extrinsic hallucination adds unverifiable outside facts."
+    },
+    {
+      "id": "LLM081",
+      "courseId": "llm",
+      "topic": "LLM Evaluation, Hallucination & Ethics",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "Why is exact-string match accuracy (EM) inadequate for evaluating open-ended generative tasks?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Because valid answers can be phrased in thousands of semantically equivalent variations not matching the single ground truth string"
+        },
+        {
+          "id": "B",
+          "text": "Because computers cannot compare strings"
+        },
+        {
+          "id": "C",
+          "text": "Because EM is computationally impossible on GPUs"
+        },
+        {
+          "id": "D",
+          "text": "Because open-ended tasks only generate images"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "Language allows infinite paraphrasing; an accurate answer may not match the exact reference characters."
+    },
+    {
+      "id": "LLM082",
+      "courseId": "llm",
+      "topic": "LLM Evaluation, Hallucination & Ethics",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is BOLD (Bias in Open-Ended Language Generation Dataset) designed to evaluate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Model generation speed across server locations"
+        },
+        {
+          "id": "B",
+          "text": "Fairness and demographic biases across gender, race, religion, and professions"
+        },
+        {
+          "id": "C",
+          "text": "The maximum token length supported by attention layers"
+        },
+        {
+          "id": "D",
+          "text": "The financial cost of running API calls"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "BOLD benchmarks social bias and representation across diverse demographic domains in open-ended generation."
+    },
+    {
+      "id": "LLM083",
+      "courseId": "llm",
+      "topic": "LLM Evaluation, Hallucination & Ethics",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What does the 'pass@k' metric measure in code and formal generation benchmarks?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The probability that at least one of the k generated candidate samples passes all unit test testcases"
+        },
+        {
+          "id": "B",
+          "text": "The percentage of students who pass a computer science exam"
+        },
+        {
+          "id": "C",
+          "text": "The number of tokens generated per millisecond"
+        },
+        {
+          "id": "D",
+          "text": "The percentage of lines that contain comments"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "pass@k calculates the probability that among k independently sampled code solutions, at least one passes unit tests."
+    },
+    {
+      "id": "LLM084",
+      "courseId": "llm",
+      "topic": "LLM Evaluation, Hallucination & Ethics",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is TruthfulQA benchmark specifically constructed to measure?",
+      "options": [
+        {
+          "id": "A",
+          "text": "How fast a model can search Google"
+        },
+        {
+          "id": "B",
+          "text": "How often a model mimics human falsehoods, common myths, and conspiracy theories versus stating verified facts"
+        },
+        {
+          "id": "C",
+          "text": "The quantum physics proficiency of models"
+        },
+        {
+          "id": "D",
+          "text": "The grammar accuracy in Shakespearean plays"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "TruthfulQA tests whether language models mimic widespread human superstitions, false beliefs, and conspiracy theories."
+    },
+    {
+      "id": "LLM085",
+      "courseId": "llm",
+      "topic": "LLM Evaluation, Hallucination & Ethics",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "Which mitigation technique significantly reduces factual hallucination in factual query answering?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Retrieval-Augmented Generation (RAG) grounding responses in retrieved authoritative documents"
+        },
+        {
+          "id": "B",
+          "text": "Increasing temperature to 2.0"
+        },
+        {
+          "id": "C",
+          "text": "Deleting system prompts completely"
+        },
+        {
+          "id": "D",
+          "text": "Disabling attention layers"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "RAG anchors model generation in external, retrieved factual evidence, drastically reducing ungrounded hallucinations."
+    },
+    {
+      "id": "LLM086",
+      "courseId": "llm",
+      "topic": "Retrieval-Augmented Generation (RAG) & Agentic Workflows",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is the core architecture of Retrieval-Augmented Generation (RAG)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Fine-tuning a billion parameter model on every single user query"
+        },
+        {
+          "id": "B",
+          "text": "Retrieving relevant documents from an external knowledge store and passing them as context inside the LLM prompt"
+        },
+        {
+          "id": "C",
+          "text": "Storing all company data directly inside transformer neural weights"
+        },
+        {
+          "id": "D",
+          "text": "Using speech synthesis to read text out loud"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "RAG retrieves relevant external documents via vector search and includes them in the context prompt for grounded generation."
+    },
+    {
+      "id": "LLM087",
+      "courseId": "llm",
+      "topic": "Retrieval-Augmented Generation (RAG) & Agentic Workflows",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "In vector search for RAG, what metric is most commonly used to compute similarity between dense embeddings?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cosine Similarity (or inner dot product of normalized vectors)"
+        },
+        {
+          "id": "B",
+          "text": "Hamming distance on ASCII strings"
+        },
+        {
+          "id": "C",
+          "text": "Levenshtein edit distance"
+        },
+        {
+          "id": "D",
+          "text": "Mean Absolute Error"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "Cosine similarity measures the cosine of the angle between two dense semantic embedding vectors in latent space."
+    },
+    {
+      "id": "LLM088",
+      "courseId": "llm",
+      "topic": "Retrieval-Augmented Generation (RAG) & Agentic Workflows",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is 'Chunking' in a RAG ingestion pipeline?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Throwing away 50% of files at random"
+        },
+        {
+          "id": "B",
+          "text": "Breaking large documents into smaller, semantically coherent segments suitable for embedding and context retrieval"
+        },
+        {
+          "id": "C",
+          "text": "Renaming files with numeric prefixes"
+        },
+        {
+          "id": "D",
+          "text": "Translating text into hexadecimal strings"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Chunking divides large text corpora into manageable pieces that respect embedding model token limits and optimize retrieval focus."
+    },
+    {
+      "id": "LLM089",
+      "courseId": "llm",
+      "topic": "Retrieval-Augmented Generation (RAG) & Agentic Workflows",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is a Vector Database (e.g., Pinecone, Chroma, Milvus, Qdrant)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A relational database that only accepts SVG vector images"
+        },
+        {
+          "id": "B",
+          "text": "A specialized database designed for indexing, storing, and fast nearest-neighbor search over high-dimensional vector embeddings"
+        },
+        {
+          "id": "C",
+          "text": "A spreadsheet software like Microsoft Excel"
+        },
+        {
+          "id": "D",
+          "text": "A hardware processor inside GPU clusters"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Vector databases index high-dimensional embeddings to perform ultra-fast approximate nearest neighbor (ANN) retrieval."
+    },
+    {
+      "id": "LLM090",
+      "courseId": "llm",
+      "topic": "Retrieval-Augmented Generation (RAG) & Agentic Workflows",
+      "difficulty": "Hard",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "How does HNSW (Hierarchical Navigable Small World) improve vector search performance?",
+      "options": [
+        {
+          "id": "A",
+          "text": "By performing brute-force exact comparison across all billion vectors"
+        },
+        {
+          "id": "B",
+          "text": "By building a multi-layer graph index for fast approximate nearest neighbor (ANN) search with logarithmic time complexity"
+        },
+        {
+          "id": "C",
+          "text": "By compressing all text into 1-bit integers"
+        },
+        {
+          "id": "D",
+          "text": "By deleting 90% of index nodes"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "HNSW organizes vector indices into hierarchical skip-list graphs to deliver fast approximate nearest neighbor search."
+    },
+    {
+      "id": "LLM091",
+      "courseId": "llm",
+      "topic": "Retrieval-Augmented Generation (RAG) & Agentic Workflows",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is Hybrid Search in modern RAG systems?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Searching across both desktop and mobile devices"
+        },
+        {
+          "id": "B",
+          "text": "Combining dense semantic retrieval (vector embeddings) with sparse keyword retrieval (BM25) using reciprocal rank fusion"
+        },
+        {
+          "id": "C",
+          "text": "Searching text and audio files simultaneously"
+        },
+        {
+          "id": "D",
+          "text": "Using two different web browsers"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Hybrid search fuses sparse lexical search (BM25 for exact codes/names) and dense semantic vectors for optimal recall."
+    },
+    {
+      "id": "LLM092",
+      "courseId": "llm",
+      "topic": "Retrieval-Augmented Generation (RAG) & Agentic Workflows",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is the function of a Cross-Encoder Reranker in an advanced RAG pipeline?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To embed documents into vector databases"
+        },
+        {
+          "id": "B",
+          "text": "To jointly score the query and each candidate passage through full cross-attention to re-order the top retrieved chunks accurately"
+        },
+        {
+          "id": "C",
+          "text": "To translate English documents into foreign languages"
+        },
+        {
+          "id": "D",
+          "text": "To encrypt user search queries"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Rerankers apply joint cross-attention over (query, document) pairs to dramatically refine the relevance ranking of candidates."
+    },
+    {
+      "id": "LLM093",
+      "courseId": "llm",
+      "topic": "Retrieval-Augmented Generation (RAG) & Agentic Workflows",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is 'Tool Calling' or 'Function Calling' in agentic LLMs?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The LLM generating a structured output (like JSON) specifying a function name and arguments to invoke an external API or tool"
+        },
+        {
+          "id": "B",
+          "text": "The LLM calling a telephone customer service representative"
+        },
+        {
+          "id": "C",
+          "text": "A programmer calling the LLM from a Python terminal"
+        },
+        {
+          "id": "D",
+          "text": "A hardware crash error code"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "Tool calling enables models to output structured invocation payloads (e.g., function name, args) to execute external software tools."
+    },
+    {
+      "id": "LLM094",
+      "courseId": "llm",
+      "topic": "Retrieval-Augmented Generation (RAG) & Agentic Workflows",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "In an autonomous agent loop, what are the core components often structured around?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Planning, Memory, Tool Use, and Reflection/Action Execution"
+        },
+        {
+          "id": "B",
+          "text": "Accounting, Payroll, Shipping, and Invoicing"
+        },
+        {
+          "id": "C",
+          "text": "HTML, CSS, JavaScript, and Webpack"
+        },
+        {
+          "id": "D",
+          "text": "Microphone, Speaker, Monitor, and Keyboard"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "AI agents integrate planning (decomposition), memory (short-term context & long-term vector retrieval), tools, and self-reflection."
+    },
+    {
+      "id": "LLM095",
+      "courseId": "llm",
+      "topic": "Retrieval-Augmented Generation (RAG) & Agentic Workflows",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What does the 'Self-Refine' pattern enable in an LLM agent workflow?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The agent generates an initial draft, critiques its own output against constraints, and iteratively rewrites to improve quality"
+        },
+        {
+          "id": "B",
+          "text": "The agent shuts itself down after 5 minutes"
+        },
+        {
+          "id": "C",
+          "text": "The agent deletes user prompt history"
+        },
+        {
+          "id": "D",
+          "text": "The agent asks for financial compensation"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "Self-Refine allows agents to iteratively inspect intermediate work product, identify flaws, and rewrite improved versions."
+    },
+    {
+      "id": "LLM096",
+      "courseId": "llm",
+      "topic": "Retrieval-Augmented Generation (RAG) & Agentic Workflows",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is the primary vulnerability of Naive RAG without reranking or metadata filtering?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Retrieving irrelevant or noisy chunks that distract the LLM, introduce conflicting information, or trigger hallucination"
+        },
+        {
+          "id": "B",
+          "text": "Overheating the computer motherboard"
+        },
+        {
+          "id": "C",
+          "text": "Exceeding the maximum RAM of the internet"
+        },
+        {
+          "id": "D",
+          "text": "Accidental deletion of source database files"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "Naive semantic retrieval can pull irrelevant chunks that pollute context, causing the LLM to synthesize flawed or distracted answers."
+    },
+    {
+      "id": "LLM097",
+      "courseId": "llm",
+      "topic": "Retrieval-Augmented Generation (RAG) & Agentic Workflows",
+      "difficulty": "Easy",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is Multi-Agent Collaboration (e.g., AutoGen, CrewAI)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Multiple humans writing prompts simultaneously"
+        },
+        {
+          "id": "B",
+          "text": "Multiple specialized LLM agents assuming distinct roles (e.g., researcher, coder, reviewer) and conversing to solve complex multi-step tasks"
+        },
+        {
+          "id": "C",
+          "text": "Running the same LLM on two different computers"
+        },
+        {
+          "id": "D",
+          "text": "A software license allowing multiple users"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Multi-agent frameworks coordinate specialized agents with unique personas and toolkits to cooperatively accomplish complex goals."
+    },
+    {
+      "id": "LLM098",
+      "courseId": "llm",
+      "topic": "Retrieval-Augmented Generation (RAG) & Agentic Workflows",
+      "difficulty": "Hard",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "How does HyDE (Hypothetical Document Embeddings) enhance dense passage retrieval in RAG?",
+      "options": [
+        {
+          "id": "A",
+          "text": "By asking the LLM to generate a hypothetical answer to the query first, then using that document's embedding to search for real passages"
+        },
+        {
+          "id": "B",
+          "text": "By deleting questions that have no answers"
+        },
+        {
+          "id": "C",
+          "text": "By indexing only fictional novels"
+        },
+        {
+          "id": "D",
+          "text": "By encrypting document vectors with private keys"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "HyDE generates a zero-shot pseudo-document to bridge semantic distance between concise queries and long factual passages."
+    },
+    {
+      "id": "LLM099",
+      "courseId": "llm",
+      "topic": "Retrieval-Augmented Generation (RAG) & Agentic Workflows",
+      "difficulty": "Hard",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "What is GraphRAG and how does it advance conventional vector-based chunk retrieval?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It relies solely on pie charts and bar graphs"
+        },
+        {
+          "id": "B",
+          "text": "It constructs knowledge graphs of entities and relationships across documents to answer complex global, multi-hop queries"
+        },
+        {
+          "id": "C",
+          "text": "It replaces LLMs with graphics processing units"
+        },
+        {
+          "id": "D",
+          "text": "It limits retrieval to image files only"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "GraphRAG extracts semantic entities and community summaries into knowledge graphs, excelling at holistic sensemaking questions."
+    },
+    {
+      "id": "LLM100",
+      "courseId": "llm",
+      "topic": "Retrieval-Augmented Generation (RAG) & Agentic Workflows",
+      "difficulty": "Medium",
+      "sourceType": "Course-Aligned Practice Question",
+      "question": "In agentic workflows, what is the role of a state graph (as in LangGraph)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To track and persist agent memory, decision nodes, tool results, and conditional routing over multi-turn cycles"
+        },
+        {
+          "id": "B",
+          "text": "To draw flowchart diagrams on the user's screen"
+        },
+        {
+          "id": "C",
+          "text": "To monitor GPU fan speeds"
+        },
+        {
+          "id": "D",
+          "text": "To terminate network connections when errors occur"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "State graphs define cyclic workflows where agent states evolve, branch conditionally, and loop until tasks finish."
+    }
+  ]
+}
