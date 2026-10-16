@@ -3,271 +3,488 @@
   "moduleId": 3,
   "moduleName": "Customer Value Proposition",
   "assessmentTitle": "Week 3 Assessment",
-  "sourceNote": "Original practice questions. Official Week 3 assessment requires login at https://onlinecourses.nptel.ac.in/e-learning/course/noc26_mg80",
+  "sourceFile": "Week_3_Assignment_Final.pdf",
+  "sourceNote": "Official Week 3 Assignment (15 questions)",
   "questions": [
     {
-      "id": "ENT-W03-001",
+      "id": "ENT-W03-Q01",
       "courseId": "entrepreneurship",
       "week": 3,
       "moduleId": 3,
       "moduleName": "Customer Value Proposition",
       "topic": "Concept of Customer Value",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 3 practice — noc26_mg80 Module 3",
-      "verified": true,
-      "difficulty": "Easy",
-      "question": "A Customer Value Proposition (CVP) primarily answers which fundamental question?",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_3_Assignment_Final.pdf",
+      "question": "According to the lecture, what is the root cause of a company's high valuation?",
       "options": [
         {
           "id": "A",
-          "text": "How much does it cost to manufacture our product?"
+          "text": "High advertising budget"
         },
         {
           "id": "B",
-          "text": "Why should a specific customer buy from us rather than from competitors?"
+          "text": "Customer value delivery"
         },
         {
           "id": "C",
-          "text": "How many employees do we need to hire?"
+          "text": "Competitor failure"
         },
         {
           "id": "D",
-          "text": "When should we file for an IPO?"
+          "text": "Large office space"
         }
       ],
       "correctOptionId": "B",
-      "explanation": "A CVP clearly articulates the unique value delivered to a specific customer segment and why that customer should choose your offering over all available alternatives."
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W03-002",
+      "id": "ENT-W03-Q02",
       "courseId": "entrepreneurship",
       "week": 3,
       "moduleId": 3,
       "moduleName": "Customer Value Proposition",
       "topic": "Market and Customer Segmentation",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 3 practice — noc26_mg80 Module 3",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "Which of the following best describes 'customer segmentation'?",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_3_Assignment_Final.pdf",
+      "question": "What does the term 'n = all' mean in market segmentation?",
       "options": [
         {
           "id": "A",
-          "text": "Dividing a market into distinct groups of buyers with different needs or behaviours"
+          "text": "Targeting a small niche market"
         },
         {
           "id": "B",
-          "text": "Selling the same product to all possible buyers without any targeting"
+          "text": "Targeting no customers at all"
         },
         {
           "id": "C",
-          "text": "A pricing strategy for premium products only"
+          "text": "Making one product for everybody"
         },
         {
           "id": "D",
-          "text": "The process of hiring specialised sales teams"
+          "text": "Focusing only on premium clients"
         }
       ],
-      "correctOptionId": "A",
-      "explanation": "Customer segmentation divides the market into groups sharing similar characteristics, needs, or behaviours, allowing targeted value creation and marketing."
+      "correctOptionId": "C",
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W03-003",
+      "id": "ENT-W03-Q03",
+      "courseId": "entrepreneurship",
+      "week": 3,
+      "moduleId": 3,
+      "moduleName": "Customer Value Proposition",
+      "topic": "Market and Customer Segmentation",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_3_Assignment_Final.pdf",
+      "question": "Lifestyle variables like 'health conscious' or 'fashion conscious' belong to which \nsegmentation category?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Demographics"
+        },
+        {
+          "id": "B",
+          "text": "Geography"
+        },
+        {
+          "id": "C",
+          "text": "Psychographics"
+        },
+        {
+          "id": "D",
+          "text": "Economics"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W03-Q04",
       "courseId": "entrepreneurship",
       "week": 3,
       "moduleId": 3,
       "moduleName": "Customer Value Proposition",
       "topic": "Creating a Customer Value Proposition",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 3 practice — noc26_mg80 Module 3",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "Which three components are central to a well-crafted Customer Value Proposition?",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_3_Assignment_Final.pdf",
+      "question": "What is the primary target of a Customer Value Proposition (CVP)?",
       "options": [
         {
           "id": "A",
-          "text": "Price, place, and promotion"
+          "text": "A well-defined customer segment"
         },
         {
           "id": "B",
-          "text": "Target customer, jobs to be done (needs), and the unique benefit your solution provides"
+          "text": "The entire global population"
         },
         {
           "id": "C",
-          "text": "Revenue model, cost structure, and key partners"
+          "text": "company investors"
         },
         {
           "id": "D",
-          "text": "Technology stack, team size, and funding round"
+          "text": "Competitor executives"
         }
       ],
-      "correctOptionId": "B",
-      "explanation": "A strong CVP identifies who the customer is, what job or need they have, and why your offering uniquely addresses that need better than alternatives."
+      "correctOptionId": "A",
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W03-004",
-      "courseId": "entrepreneurship",
-      "week": 3,
-      "moduleId": 3,
-      "moduleName": "Customer Value Proposition",
-      "topic": "Customer Discovery",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 3 practice — noc26_mg80 Module 3",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "What is the primary purpose of customer discovery in early-stage entrepreneurship?",
-      "options": [
-        {
-          "id": "A",
-          "text": "To finalise the company logo and branding"
-        },
-        {
-          "id": "B",
-          "text": "To validate or invalidate assumptions about the customer and their problems before investing heavily in a solution"
-        },
-        {
-          "id": "C",
-          "text": "To negotiate contracts with suppliers"
-        },
-        {
-          "id": "D",
-          "text": "To determine the exact number of shares to issue"
-        }
-      ],
-      "correctOptionId": "B",
-      "explanation": "Customer discovery involves talking to potential customers to test assumptions about the problem, solution, and business model before spending significant resources on development."
-    },
-    {
-      "id": "ENT-W03-005",
-      "courseId": "entrepreneurship",
-      "week": 3,
-      "moduleId": 3,
-      "moduleName": "Customer Value Proposition",
-      "topic": "Business Models",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 3 practice — noc26_mg80 Module 3",
-      "verified": true,
-      "difficulty": "Hard",
-      "question": "Which statement about business models is most accurate?",
-      "options": [
-        {
-          "id": "A",
-          "text": "A business model is a synonym for a financial projection spreadsheet"
-        },
-        {
-          "id": "B",
-          "text": "A business model describes how a company creates, delivers, and captures value"
-        },
-        {
-          "id": "C",
-          "text": "Business models are static and never need to change after launch"
-        },
-        {
-          "id": "D",
-          "text": "Only product companies need a defined business model"
-        }
-      ],
-      "correctOptionId": "B",
-      "explanation": "A business model describes the logic of how an organisation creates value for customers, delivers that value, and in return captures economic value for itself."
-    },
-    {
-      "id": "ENT-W03-006",
+      "id": "ENT-W03-Q05",
       "courseId": "entrepreneurship",
       "week": 3,
       "moduleId": 3,
       "moduleName": "Customer Value Proposition",
       "topic": "CVP Formats and References",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 3 practice — noc26_mg80 Module 3",
-      "verified": true,
-      "difficulty": "Easy",
-      "question": "A standard CVP statement format typically includes which of the following elements?",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_3_Assignment_Final.pdf",
+      "question": "A proposition that claims a product 'saves 10% energy' is an example of what?",
       "options": [
         {
           "id": "A",
-          "text": "Company registration number and tax ID"
+          "text": "Qualitative proposition"
         },
         {
           "id": "B",
-          "text": "For [target customer], who [need or problem], our [product/service] provides [key benefit] unlike [alternative]"
+          "text": "Quantitative proposition"
         },
         {
           "id": "C",
-          "text": "Monthly burn rate and runway"
+          "text": "Geographic proposition"
         },
         {
           "id": "D",
-          "text": "Number of GitHub commits and code coverage percentage"
+          "text": "Psychographic proposition"
         }
       ],
       "correctOptionId": "B",
-      "explanation": "A CVP format explicitly names the target customer, their need, the solution, the key benefit delivered, and differentiation from alternatives — making it clear and testable."
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W03-007",
+      "id": "ENT-W03-Q06",
       "courseId": "entrepreneurship",
       "week": 3,
       "moduleId": 3,
       "moduleName": "Customer Value Proposition",
-      "topic": "Market and Customer Segmentation",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 3 practice — noc26_mg80 Module 3",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "Which segmentation basis divides customers by their lifestyle, attitudes, and values?",
+      "topic": "CVP Formats and References",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_3_Assignment_Final.pdf",
+      "question": "Which of the following is NOT a format for a Customer Value Proposition (CVP) \nmentioned in the course?",
       "options": [
         {
           "id": "A",
-          "text": "Geographic segmentation"
+          "text": "Elevator pitch"
         },
         {
           "id": "B",
-          "text": "Demographic segmentation"
+          "text": "Text concept"
         },
         {
           "id": "C",
-          "text": "Psychographic segmentation"
+          "text": "Visual format"
         },
         {
           "id": "D",
-          "text": "Behavioural segmentation"
+          "text": "Financial balance sheet"
+        }
+      ],
+      "correctOptionId": "D",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W03-Q07",
+      "courseId": "entrepreneurship",
+      "week": 3,
+      "moduleId": 3,
+      "moduleName": "Customer Value Proposition",
+      "topic": "Creating a Customer Value Proposition",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_3_Assignment_Final.pdf",
+      "question": "According to the lecture, what should a founder focus on before starting actual product \ndevelopment?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hiring a large team"
+        },
+        {
+          "id": "B",
+          "text": "Renting an expensive office"
+        },
+        {
+          "id": "C",
+          "text": "Understanding the customer and developing a product brief"
+        },
+        {
+          "id": "D",
+          "text": "Mass media advertising"
         }
       ],
       "correctOptionId": "C",
-      "explanation": "Psychographic segmentation categorises customers by personality traits, values, interests, and lifestyles — going beyond demographics to understand motivations."
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W03-008",
+      "id": "ENT-W03-Q08",
       "courseId": "entrepreneurship",
       "week": 3,
       "moduleId": 3,
       "moduleName": "Customer Value Proposition",
       "topic": "Customer Discovery",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 3 practice — noc26_mg80 Module 3",
-      "verified": true,
-      "difficulty": "Hard",
-      "question": "Which of the following customer discovery practices is most likely to yield unreliable insights?",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_3_Assignment_Final.pdf",
+      "question": "What is the main purpose of the customer discovery process?",
       "options": [
         {
           "id": "A",
-          "text": "Conducting open-ended interviews without leading questions"
+          "text": "To sell products instantly"
         },
         {
           "id": "B",
-          "text": "Asking customers if they 'would buy' a hypothetical product"
+          "text": "To validate or invalidate assumptions"
         },
         {
           "id": "C",
-          "text": "Observing customers in their natural environment"
+          "text": "To secure bank loans immediately"
         },
         {
           "id": "D",
-          "text": "Analysing existing customer support complaints"
+          "text": "To design corporate logos"
         }
       ],
       "correctOptionId": "B",
-      "explanation": "Asking hypothetical purchase-intent questions is notoriously unreliable — people say they would buy but often do not. Observational and behavioural data yield more reliable insights."
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W03-Q09",
+      "courseId": "entrepreneurship",
+      "week": 3,
+      "moduleId": 3,
+      "moduleName": "Customer Value Proposition",
+      "topic": "Customer Discovery",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_3_Assignment_Final.pdf",
+      "question": "Where is the ONE place where customer discovery CANNOT be done?",
+      "options": [
+        {
+          "id": "A",
+          "text": "In a customer's office"
+        },
+        {
+          "id": "B",
+          "text": "In public cafes"
+        },
+        {
+          "id": "C",
+          "text": "At industry conferences"
+        },
+        {
+          "id": "D",
+          "text": "In your own office, home, or hostel room"
+        }
+      ],
+      "correctOptionId": "D",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W03-Q10",
+      "courseId": "entrepreneurship",
+      "week": 3,
+      "moduleId": 3,
+      "moduleName": "Customer Value Proposition",
+      "topic": "Customer Discovery Example",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_3_Assignment_Final.pdf",
+      "question": "In the course example, what does the platform 'sareelibrary.com' primarily allow metro \nwomen to do?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Manufacture raw silk textles"
+        },
+        {
+          "id": "B",
+          "text": "Share their cherished curated sarees with community members"
+        },
+        {
+          "id": "C",
+          "text": "Learn professional tailoring"
+        },
+        {
+          "id": "D",
+          "text": "Open physical retail stores"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W03-Q11",
+      "courseId": "entrepreneurship",
+      "week": 3,
+      "moduleId": 3,
+      "moduleName": "Customer Value Proposition",
+      "topic": "Concept of Customer Value",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_3_Assignment_Final.pdf",
+      "question": "According to the instructor, what is more important than just having a great startup \nidea?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Keeping the idea a complete secret"
+        },
+        {
+          "id": "B",
+          "text": "How you go about executing the idea"
+        },
+        {
+          "id": "C",
+          "text": "Registering a fancy company name"
+        },
+        {
+          "id": "D",
+          "text": "Designing a premium logo"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W03-Q12",
+      "courseId": "entrepreneurship",
+      "week": 3,
+      "moduleId": 3,
+      "moduleName": "Customer Value Proposition",
+      "topic": "Business Models",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_3_Assignment_Final.pdf",
+      "question": "Which business model requires a massive amount of advertising money for acquiring \nindividual customers?",
+      "options": [
+        {
+          "id": "A",
+          "text": "B2B (Business to Business)"
+        },
+        {
+          "id": "B",
+          "text": "B2G (Business to Government)"
+        },
+        {
+          "id": "C",
+          "text": "B2C (Business to Consumer)"
+        },
+        {
+          "id": "D",
+          "text": "NGO models"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W03-Q13",
+      "courseId": "entrepreneurship",
+      "week": 3,
+      "moduleId": 3,
+      "moduleName": "Customer Value Proposition",
+      "topic": "Business Models",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_3_Assignment_Final.pdf",
+      "question": "In a B2G business model, who is the primary customer?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Retail individual consumers"
+        },
+        {
+          "id": "B",
+          "text": "Local ,State or Central Government"
+        },
+        {
+          "id": "C",
+          "text": "College students"
+        },
+        {
+          "id": "D",
+          "text": "Private startup accelerators"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W03-Q14",
+      "courseId": "entrepreneurship",
+      "week": 3,
+      "moduleId": 3,
+      "moduleName": "Customer Value Proposition",
+      "topic": "Business Models",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_3_Assignment_Final.pdf",
+      "question": "Why do B2B businesses typically require less advertising money compared to B2C?",
+      "options": [
+        {
+          "id": "A",
+          "text": "They use direct sales channels to reach known corporate customers"
+        },
+        {
+          "id": "B",
+          "text": "They do not wish to expand their business"
+        },
+        {
+          "id": "C",
+          "text": "Their products are always free of cost"
+        },
+        {
+          "id": "D",
+          "text": "They rely solely on viral social media trends"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W03-Q15",
+      "courseId": "entrepreneurship",
+      "week": 3,
+      "moduleId": 3,
+      "moduleName": "Customer Value Proposition",
+      "topic": "Creating a Customer Value Proposition",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_3_Assignment_Final.pdf",
+      "question": "The course notes that the term 'pitching' is used almost equivalently to which everyday \nactivity?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Manufacturing"
+        },
+        {
+          "id": "B",
+          "text": "Selling"
+        },
+        {
+          "id": "C",
+          "text": "Coding"
+        },
+        {
+          "id": "D",
+          "text": "Recruiting"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "",
+      "difficulty": "Unclassified"
     }
   ]
 }

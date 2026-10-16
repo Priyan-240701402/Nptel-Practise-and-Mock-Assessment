@@ -3,271 +3,488 @@
   "moduleId": 6,
   "moduleName": "Finance for Entrepreneurs",
   "assessmentTitle": "Week 9 Assessment",
-  "sourceNote": "Original practice questions. Official Week 9 assessment requires login at https://onlinecourses.nptel.ac.in/e-learning/course/noc26_mg80",
+  "sourceFile": "Week_9_Assignment.pdf",
+  "sourceNote": "Official Week 9 Assignment (15 questions)",
   "questions": [
     {
-      "id": "ENT-W09-001",
+      "id": "ENT-W09-Q01",
       "courseId": "entrepreneurship",
       "week": 9,
       "moduleId": 6,
       "moduleName": "Finance for Entrepreneurs",
-      "topic": "Fundraising at Different Startup Stages",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 9 practice — noc26_mg80 Module 6",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "At the seed stage, startup funding is most commonly provided by:",
+      "topic": "Business Planning",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_9_Assignment.pdf",
+      "question": "What is the primary purpose of business planning in the early stages of a startup?",
       "options": [
         {
           "id": "A",
-          "text": "Public stock exchanges"
+          "text": "To document assumptions and hypotheses"
         },
         {
           "id": "B",
-          "text": "Founders, family, friends, angel investors, and early-stage seed funds"
+          "text": "To design logos"
         },
         {
           "id": "C",
-          "text": "Large commercial banks without collateral"
+          "text": "To hire the HR team"
         },
         {
           "id": "D",
-          "text": "Government pension funds"
+          "text": "To buy raw materials"
         }
       ],
-      "correctOptionId": "B",
-      "explanation": "Seed-stage funding typically comes from founders' own capital, friends and family, angel investors, and seed-stage VC funds — before the company has enough traction for institutional Series A funding."
+      "correctOptionId": "A",
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W09-002",
-      "courseId": "entrepreneurship",
-      "week": 9,
-      "moduleId": 6,
-      "moduleName": "Finance for Entrepreneurs",
-      "topic": "Venture Finance",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 9 practice — noc26_mg80 Module 6",
-      "verified": true,
-      "difficulty": "Hard",
-      "question": "What does a venture capital firm's 'term sheet' represent?",
-      "options": [
-        {
-          "id": "A",
-          "text": "The final legally binding investment contract"
-        },
-        {
-          "id": "B",
-          "text": "A non-binding document outlining the key terms and conditions of a proposed investment"
-        },
-        {
-          "id": "C",
-          "text": "The company's monthly expense report"
-        },
-        {
-          "id": "D",
-          "text": "A government approval document for foreign investment"
-        }
-      ],
-      "correctOptionId": "B",
-      "explanation": "A term sheet is a non-binding letter of intent that outlines proposed investment terms — valuation, equity stake, governance rights, anti-dilution clauses — before a full legal agreement is drafted."
-    },
-    {
-      "id": "ENT-W09-003",
-      "courseId": "entrepreneurship",
-      "week": 9,
-      "moduleId": 6,
-      "moduleName": "Finance for Entrepreneurs",
-      "topic": "Investor Expectations",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 9 practice — noc26_mg80 Module 6",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "Venture capital investors typically target which type of investment return?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Moderate, stable 8-10% annual returns similar to public equity markets"
-        },
-        {
-          "id": "B",
-          "text": "Very high returns (10x or more) on successful investments to compensate for the majority that fail"
-        },
-        {
-          "id": "C",
-          "text": "Guaranteed 100% return on every investment"
-        },
-        {
-          "id": "D",
-          "text": "Returns primarily from interest on loans made to startups"
-        }
-      ],
-      "correctOptionId": "B",
-      "explanation": "VC investors accept very high failure rates (most portfolio companies fail) and therefore require home-run returns (10x-100x) from their successful investments to generate overall fund returns."
-    },
-    {
-      "id": "ENT-W09-004",
-      "courseId": "entrepreneurship",
-      "week": 9,
-      "moduleId": 6,
-      "moduleName": "Finance for Entrepreneurs",
-      "topic": "Incubation and Grant Programs",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 9 practice — noc26_mg80 Module 6",
-      "verified": true,
-      "difficulty": "Easy",
-      "question": "What is a primary advantage of joining an incubator for an early-stage startup?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Immediate profitability guaranteed by the incubator"
-        },
-        {
-          "id": "B",
-          "text": "Access to mentorship, networking, workspace, and sometimes non-dilutive funding or grants"
-        },
-        {
-          "id": "C",
-          "text": "Guaranteed acquisition by the incubator's parent company"
-        },
-        {
-          "id": "D",
-          "text": "Exemption from all tax obligations"
-        }
-      ],
-      "correctOptionId": "B",
-      "explanation": "Incubators provide structured support including mentoring, co-working space, networks of investors and peers, and often non-dilutive grants — reducing early-stage risk and accelerating development."
-    },
-    {
-      "id": "ENT-W09-005",
+      "id": "ENT-W09-Q02",
       "courseId": "entrepreneurship",
       "week": 9,
       "moduleId": 6,
       "moduleName": "Finance for Entrepreneurs",
       "topic": "Financial Planning",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 9 practice — noc26_mg80 Module 6",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "What is the primary purpose of a startup's financial forecast?",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_9_Assignment.pdf",
+      "question": "Which step logically precedes Financial Planning for a startup?",
       "options": [
         {
           "id": "A",
-          "text": "To predict the exact future revenue with no uncertainty"
+          "text": "Mass Manufacturing"
         },
         {
           "id": "B",
-          "text": "To provide a structured scenario for planning resources, testing assumptions, and communicating with investors"
+          "text": "Business Planning"
         },
         {
           "id": "C",
-          "text": "To satisfy accounting regulations under GAAP"
+          "text": "National Advertising"
         },
         {
           "id": "D",
-          "text": "To determine employee salaries only"
+          "text": "Legal Disputes"
         }
       ],
       "correctOptionId": "B",
-      "explanation": "Financial forecasts are planning tools — they help test assumptions, identify funding needs, guide resource allocation, and communicate the business model's scalability to investors."
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W09-006",
+      "id": "ENT-W09-Q03",
       "courseId": "entrepreneurship",
       "week": 9,
       "moduleId": 6,
       "moduleName": "Finance for Entrepreneurs",
-      "topic": "Product Costing",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 9 practice — noc26_mg80 Module 6",
-      "verified": true,
-      "difficulty": "Hard",
-      "question": "Contribution margin is calculated as:",
+      "topic": "Financial Planning",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_9_Assignment.pdf",
+      "question": "Because early-stage startups lack historical data, their financial planning is heavily based \non what?",
       "options": [
         {
           "id": "A",
-          "text": "Revenue minus all fixed costs"
+          "text": "Past 10 years of audit reports"
         },
         {
           "id": "B",
-          "text": "Revenue minus variable costs, representing how much each unit sold contributes to covering fixed costs"
+          "text": "Assumptions and hypotheses"
         },
         {
           "id": "C",
-          "text": "Total revenue minus total expenses"
+          "text": "Competitors' exact bank balances"
         },
         {
           "id": "D",
-          "text": "Net profit divided by number of units sold"
+          "text": "Stock market daily prices"
         }
       ],
       "correctOptionId": "B",
-      "explanation": "Contribution Margin = Revenue - Variable Costs. It shows the amount each unit sold contributes toward covering fixed overhead and generating profit."
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W09-007",
+      "id": "ENT-W09-Q04",
+      "courseId": "entrepreneurship",
+      "week": 9,
+      "moduleId": 6,
+      "moduleName": "Finance for Entrepreneurs",
+      "topic": "Fundraising at Different Startup Stages",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_9_Assignment.pdf",
+      "question": "Which of the following is considered an early-stage source of funding?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Stock Market IPO"
+        },
+        {
+          "id": "B",
+          "text": "Series D Funding"
+        },
+        {
+          "id": "C",
+          "text": "Government grants and incubators"
+        },
+        {
+          "id": "D",
+          "text": "Retained earnings from large profits"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W09-Q05",
+      "courseId": "entrepreneurship",
+      "week": 9,
+      "moduleId": 6,
+      "moduleName": "Finance for Entrepreneurs",
+      "topic": "Fundraising at Different Startup Stages",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_9_Assignment.pdf",
+      "question": "What do we call individuals who invest early in a startup and often provide mentorship?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Angel Investors"
+        },
+        {
+          "id": "B",
+          "text": "Auditors"
+        },
+        {
+          "id": "C",
+          "text": "Tax Collectors"
+        },
+        {
+          "id": "D",
+          "text": "Retail customers"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W09-Q06",
+      "courseId": "entrepreneurship",
+      "week": 9,
+      "moduleId": 6,
+      "moduleName": "Finance for Entrepreneurs",
+      "topic": "Role of Finance in Startups",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_9_Assignment.pdf",
+      "question": "The early stage of a startup where expenditures are certain but revenues are uncertain is \noften called:",
+      "options": [
+        {
+          "id": "A",
+          "text": "The Golden Era"
+        },
+        {
+          "id": "B",
+          "text": "The Valley of Death"
+        },
+        {
+          "id": "C",
+          "text": "The Profit Zone"
+        },
+        {
+          "id": "D",
+          "text": "The Break-even Point"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W09-Q07",
+      "courseId": "entrepreneurship",
+      "week": 9,
+      "moduleId": 6,
+      "moduleName": "Finance for Entrepreneurs",
+      "topic": "Venture Finance",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_9_Assignment.pdf",
+      "question": "What does a 'Cap Table' (Capitalization Table) primarily show?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Daily cash expenses"
+        },
+        {
+          "id": "B",
+          "text": "The ownership percentage of founders and investors"
+        },
+        {
+          "id": "C",
+          "text": "Employee daily attendance"
+        },
+        {
+          "id": "D",
+          "text": "Website traffic analytics"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W09-Q08",
+      "courseId": "entrepreneurship",
+      "week": 9,
+      "moduleId": 6,
+      "moduleName": "Finance for Entrepreneurs",
+      "topic": "Venture Finance",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_9_Assignment.pdf",
+      "question": "When a startup issues new shares to a new investor, what happens to the founders' \nownership percentage?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It gets diluted (reduces)"
+        },
+        {
+          "id": "B",
+          "text": "It increases"
+        },
+        {
+          "id": "C",
+          "text": "It remains exactly 100%"
+        },
+        {
+          "id": "D",
+          "text": "It becomes negative"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W09-Q09",
+      "courseId": "entrepreneurship",
+      "week": 9,
+      "moduleId": 6,
+      "moduleName": "Finance for Entrepreneurs",
+      "topic": "Investor Expectations",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_9_Assignment.pdf",
+      "question": "The value of a startup just before an investor puts new money into it is called:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Post-money valuation"
+        },
+        {
+          "id": "B",
+          "text": "Pre-money valuation"
+        },
+        {
+          "id": "C",
+          "text": "Fixed asset value"
+        },
+        {
+          "id": "D",
+          "text": "Depreciated value"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W09-Q10",
+      "courseId": "entrepreneurship",
+      "week": 9,
+      "moduleId": 6,
+      "moduleName": "Finance for Entrepreneurs",
+      "topic": "Investor Expectations",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_9_Assignment.pdf",
+      "question": "The value of a startup immediately after an investor puts new money into it is called:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Post-money valuation"
+        },
+        {
+          "id": "B",
+          "text": "Pre-money valuation"
+        },
+        {
+          "id": "C",
+          "text": "Amortization"
+        },
+        {
+          "id": "D",
+          "text": "Revenue"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W09-Q11",
       "courseId": "entrepreneurship",
       "week": 9,
       "moduleId": 6,
       "moduleName": "Finance for Entrepreneurs",
       "topic": "Finance as Strategy",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 9 practice — noc26_mg80 Module 6",
-      "verified": true,
-      "difficulty": "Hard",
-      "question": "How can financing strategy serve as a competitive advantage for a startup?",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_9_Assignment.pdf",
+      "question": "According to the guest speaker Salil Donde, what is the negative aspect of 'Jugaad' that \nholds Indian companies back globally?",
       "options": [
         {
           "id": "A",
-          "text": "By raising as much money as possible regardless of dilution or terms"
+          "text": "It costs too much money"
         },
         {
           "id": "B",
-          "text": "By securing capital at the right time and terms to outinvest competitors in key growth areas"
+          "text": "Cutting corners and compromising on global quality standards"
         },
         {
           "id": "C",
-          "text": "By avoiding all forms of external investment"
+          "text": "It takes too long to build"
         },
         {
           "id": "D",
-          "text": "By spending the minimum possible on all business activities"
+          "text": "It requires too much machinery"
         }
       ],
       "correctOptionId": "B",
-      "explanation": "Strategic fundraising — timing raises at inflection points, securing favourable terms, and deploying capital into differentiating capabilities — can create durable competitive advantages."
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W09-008",
+      "id": "ENT-W09-Q12",
       "courseId": "entrepreneurship",
       "week": 9,
       "moduleId": 6,
       "moduleName": "Finance for Entrepreneurs",
-      "topic": "Unit Economics",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 9 practice — noc26_mg80 Module 6",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "Break-even analysis determines which business milestone?",
+      "topic": "Finance as Strategy",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_9_Assignment.pdf",
+      "question": "According to the speaker, startups in India should aim to build world -class products \nfor:",
       "options": [
         {
           "id": "A",
-          "text": "The point at which the company reaches its maximum possible profit"
+          "text": "their local city"
         },
         {
           "id": "B",
-          "text": "The level of sales at which total revenue equals total costs and the business neither makes a profit nor a loss"
+          "text": "the Indian market"
         },
         {
           "id": "C",
-          "text": "The market share required to become the category leader"
+          "text": "The global/world market"
         },
         {
           "id": "D",
-          "text": "The valuation at which the company should raise its Series A"
+          "text": "rural areas"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W09-Q13",
+      "courseId": "entrepreneurship",
+      "week": 9,
+      "moduleId": 6,
+      "moduleName": "Finance for Entrepreneurs",
+      "topic": "Finance as Strategy",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_9_Assignment.pdf",
+      "question": "How does the speaker describe Artificial Intelligence (AI) in the context of startups?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A passing trend"
+        },
+        {
+          "id": "B",
+          "text": "A physical hardware robot"
+        },
+        {
+          "id": "C",
+          "text": "A tool used to deploy products and services rapidly"
+        },
+        {
+          "id": "D",
+          "text": "A complete replacement for human founders"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W09-Q14",
+      "courseId": "entrepreneurship",
+      "week": 9,
+      "moduleId": 6,
+      "moduleName": "Finance for Entrepreneurs",
+      "topic": "Role of Finance in Startups",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_9_Assignment.pdf",
+      "question": "What is the ultimate financial goal of an entrepreneurial activity's economic model?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Getting the maximum office space"
+        },
+        {
+          "id": "B",
+          "text": "Converting revenue from customers into free cash flow"
+        },
+        {
+          "id": "C",
+          "text": "Hiring the maximum number of employees"
+        },
+        {
+          "id": "D",
+          "text": "Winning newspaper awards"
         }
       ],
       "correctOptionId": "B",
-      "explanation": "Break-even is the sales volume at which total revenue exactly covers total costs (fixed + variable). Beyond this point every additional unit sold generates profit."
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W09-Q15",
+      "courseId": "entrepreneurship",
+      "week": 9,
+      "moduleId": 6,
+      "moduleName": "Finance for Entrepreneurs",
+      "topic": "Role of Finance in Startups",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_9_Assignment.pdf",
+      "question": "According to the final summary, who MUST have a good understanding of the basic \nfinancial model of the business?",
+      "options": [
+        {
+          "id": "A",
+          "text": "the Chartered Accountant"
+        },
+        {
+          "id": "B",
+          "text": "The entrepreneur/founder"
+        },
+        {
+          "id": "C",
+          "text": "the government"
+        },
+        {
+          "id": "D",
+          "text": "the investors"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "",
+      "difficulty": "Unclassified"
     }
   ]
 }

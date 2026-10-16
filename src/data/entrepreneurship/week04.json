@@ -3,271 +3,488 @@
   "moduleId": 4,
   "moduleName": "New Product Development",
   "assessmentTitle": "Week 4 Assessment",
-  "sourceNote": "Original practice questions. Official Week 4 assessment requires login at https://onlinecourses.nptel.ac.in/e-learning/course/noc26_mg80",
+  "sourceFile": "Week_4_Assignment_Final.pdf",
+  "sourceNote": "Official Week 4 Assignment (15 questions)",
   "questions": [
     {
-      "id": "ENT-W04-001",
+      "id": "ENT-W04-Q01",
+      "courseId": "entrepreneurship",
+      "week": 4,
+      "moduleId": 4,
+      "moduleName": "New Product Development",
+      "topic": "Stages of New Product Development",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_4_Assignment_Final.pdf",
+      "question": "Which module typically follows the Customer Value Proposition and Customer Discovery in the \ncourse?",
+      "options": [
+        {
+          "id": "A",
+          "text": "New Product Development"
+        },
+        {
+          "id": "B",
+          "text": "Mass Manufacturing"
+        },
+        {
+          "id": "C",
+          "text": "Financial Accounting"
+        },
+        {
+          "id": "D",
+          "text": "Legal Registration"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W04-Q02",
       "courseId": "entrepreneurship",
       "week": 4,
       "moduleId": 4,
       "moduleName": "New Product Development",
       "topic": "CVP to Benefits and Features",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 4 practice — noc26_mg80 Module 4",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "What is the key difference between a product 'feature' and a customer 'benefit'?",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_4_Assignment_Final.pdf",
+      "question": "According to the lesson, a product concept is broken down into benefits, and benefits are further \nbroken down into what?",
       "options": [
         {
           "id": "A",
-          "text": "Features describe what the product does; benefits describe the value the customer gains"
+          "text": "Competitors"
         },
         {
           "id": "B",
-          "text": "Benefits are technical specifications; features are marketing slogans"
+          "text": "Features"
         },
         {
           "id": "C",
-          "text": "They are identical — every feature is automatically a benefit"
+          "text": "Investors"
         },
         {
           "id": "D",
-          "text": "Features are more important than benefits in customer purchase decisions"
+          "text": "Advertisements"
         }
       ],
-      "correctOptionId": "A",
-      "explanation": "Features are product attributes (e.g., '5000 mAh battery'); benefits are what those features mean to the customer (e.g., 'never run out of power during a long day'). Customers buy benefits, not features."
+      "correctOptionId": "B",
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W04-002",
+      "id": "ENT-W04-Q03",
+      "courseId": "entrepreneurship",
+      "week": 4,
+      "moduleId": 4,
+      "moduleName": "New Product Development",
+      "topic": "CVP to Benefits and Features",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_4_Assignment_Final.pdf",
+      "question": "In the computer example, services like installation and delivery are considered to be:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Core technology"
+        },
+        {
+          "id": "B",
+          "text": "Unnecessary costs"
+        },
+        {
+          "id": "C",
+          "text": "Layers or features of the product offering"
+        },
+        {
+          "id": "D",
+          "text": "Legal requirements"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W04-Q04",
       "courseId": "entrepreneurship",
       "week": 4,
       "moduleId": 4,
       "moduleName": "New Product Development",
       "topic": "Stages of New Product Development",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 4 practice — noc26_mg80 Module 4",
-      "verified": true,
-      "difficulty": "Easy",
-      "question": "In the traditional Stage-Gate new product development process, what happens at a 'gate'?",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_4_Assignment_Final.pdf",
+      "question": "What does POC stand for in the new product development cycle?",
       "options": [
         {
           "id": "A",
-          "text": "The product is automatically approved for launch"
+          "text": "Product of Company"
         },
         {
           "id": "B",
-          "text": "A review decision is made whether to proceed, revise, or terminate the project"
+          "text": "Proof of Concept"
         },
         {
           "id": "C",
-          "text": "The engineering team begins coding without any review"
+          "text": "Point of Contact"
         },
         {
           "id": "D",
-          "text": "Customer feedback is collected for the first time"
+          "text": "Price of Consumer"
         }
       ],
       "correctOptionId": "B",
-      "explanation": "In the Stage-Gate model, gates are checkpoint reviews where management evaluates the project's progress, feasibility, and alignment with strategy before approving the next stage."
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W04-003",
+      "id": "ENT-W04-Q05",
       "courseId": "entrepreneurship",
       "week": 4,
       "moduleId": 4,
       "moduleName": "New Product Development",
-      "topic": "Design Thinking",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 4 practice — noc26_mg80 Module 4",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "Which of the following correctly lists the five stages of Design Thinking?",
+      "topic": "Stages of New Product Development",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_4_Assignment_Final.pdf",
+      "question": "The primary purpose of a Proof of Concept (POC) is to understand:",
       "options": [
         {
           "id": "A",
-          "text": "Plan, Design, Build, Test, Launch"
+          "text": "Customer aesthetics"
         },
         {
           "id": "B",
-          "text": "Empathise, Define, Ideate, Prototype, Test"
+          "text": "Technical feasibility"
         },
         {
           "id": "C",
-          "text": "Research, Strategy, Execution, Feedback, Scale"
+          "text": "Marketing budget"
         },
         {
           "id": "D",
-          "text": "Discover, Define, Develop, Deliver, Deploy"
+          "text": "Office location"
         }
       ],
       "correctOptionId": "B",
-      "explanation": "The Stanford d.school Design Thinking framework comprises five stages: Empathise (understand users), Define (frame the problem), Ideate (generate solutions), Prototype (build), and Test (validate)."
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W04-004",
+      "id": "ENT-W04-Q06",
+      "courseId": "entrepreneurship",
+      "week": 4,
+      "moduleId": 4,
+      "moduleName": "New Product Development",
+      "topic": "Stages of New Product Development",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_4_Assignment_Final.pdf",
+      "question": "Which stage of product development tests both functionality and desirability, before mass \ncustomer trials?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Idea stage"
+        },
+        {
+          "id": "B",
+          "text": "Prototype"
+        },
+        {
+          "id": "C",
+          "text": "Advertising stage"
+        },
+        {
+          "id": "D",
+          "text": "Retail stage"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W04-Q07",
       "courseId": "entrepreneurship",
       "week": 4,
       "moduleId": 4,
       "moduleName": "New Product Development",
       "topic": "Minimum Viable Product",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 4 practice — noc26_mg80 Module 4",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "What is the primary purpose of a Minimum Viable Product (MVP)?",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_4_Assignment_Final.pdf",
+      "question": "What does MVP stand for in the context of startups?",
       "options": [
         {
           "id": "A",
-          "text": "To launch the most feature-complete product possible from day one"
+          "text": "Maximum Value Pricing"
         },
         {
           "id": "B",
-          "text": "To test the riskiest assumptions with the minimum effort and investment"
+          "text": "Minimum Viable Product"
         },
         {
           "id": "C",
-          "text": "To create a product with zero bugs before any customer testing"
+          "text": "Most Valuable Player"
         },
         {
           "id": "D",
-          "text": "To generate maximum revenue in the first month"
+          "text": "Mass Volume Production"
         }
       ],
       "correctOptionId": "B",
-      "explanation": "An MVP is a product version with just enough features to test the most critical hypotheses and gather validated learning with minimum wasted effort."
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W04-005",
+      "id": "ENT-W04-Q08",
       "courseId": "entrepreneurship",
       "week": 4,
       "moduleId": 4,
       "moduleName": "New Product Development",
-      "topic": "Design Thinking",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 4 practice — noc26_mg80 Module 4",
-      "verified": true,
-      "difficulty": "Easy",
-      "question": "The 'Empathise' stage of Design Thinking primarily involves:",
+      "topic": "Minimum Viable Product",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_4_Assignment_Final.pdf",
+      "question": "In which stage does a customer actually try your product in a real-world setting?",
       "options": [
         {
           "id": "A",
-          "text": "Writing technical specifications for the product"
+          "text": "Idea phase"
         },
         {
           "id": "B",
-          "text": "Understanding users' needs, experiences, and motivations deeply"
+          "text": "Proof of Concept"
         },
         {
           "id": "C",
-          "text": "Presenting the final product to investors"
+          "text": "Prototype"
         },
         {
           "id": "D",
-          "text": "Setting the price for the product"
+          "text": "Minimum Viable Product (MVP)"
         }
       ],
-      "correctOptionId": "B",
-      "explanation": "Empathising means understanding the human perspective by observing users, conducting interviews, and immersing oneself in the user experience to discover real needs."
+      "correctOptionId": "D",
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W04-006",
-      "courseId": "entrepreneurship",
-      "week": 4,
-      "moduleId": 4,
-      "moduleName": "New Product Development",
-      "topic": "Intellectual Property Basics",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 4 practice — noc26_mg80 Module 4",
-      "verified": true,
-      "difficulty": "Hard",
-      "question": "Which type of intellectual property protection is most appropriate for a unique software algorithm?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Trademark"
-        },
-        {
-          "id": "B",
-          "text": "Copyright alone (automatically applies to code)"
-        },
-        {
-          "id": "C",
-          "text": "Patent (if it meets novelty and non-obviousness criteria)"
-        },
-        {
-          "id": "D",
-          "text": "Trade dress"
-        }
-      ],
-      "correctOptionId": "C",
-      "explanation": "A novel and non-obvious software algorithm may be patentable. While code is automatically copyrighted, patents provide broader protection for the underlying functional method."
-    },
-    {
-      "id": "ENT-W04-007",
+      "id": "ENT-W04-Q09",
       "courseId": "entrepreneurship",
       "week": 4,
       "moduleId": 4,
       "moduleName": "New Product Development",
       "topic": "Stages of New Product Development",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 4 practice — noc26_mg80 Module 4",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "At which stage of new product development does concept screening primarily occur?",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_4_Assignment_Final.pdf",
+      "question": "What does the abbreviation FMCG stand for in the course examples?",
       "options": [
         {
           "id": "A",
-          "text": "After full-scale manufacturing has begun"
+          "text": "Fast Moving Consumer Goods"
         },
         {
           "id": "B",
-          "text": "After idea generation, to evaluate which concepts merit further development"
+          "text": "Free Market Capital Goods"
         },
         {
           "id": "C",
-          "text": "Only after the product has been sold to customers"
+          "text": "Final Manufactured Consumer Goods"
         },
         {
           "id": "D",
-          "text": "During the advertising campaign planning stage"
+          "text": "First Moving Corporate Goods"
         }
       ],
-      "correctOptionId": "B",
-      "explanation": "Concept screening follows idea generation and uses criteria such as market potential, strategic fit, and technical feasibility to shortlist concepts worth investing in."
+      "correctOptionId": "A",
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W04-008",
+      "id": "ENT-W04-Q10",
       "courseId": "entrepreneurship",
       "week": 4,
       "moduleId": 4,
       "moduleName": "New Product Development",
-      "topic": "Intellectual Property Basics",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 4 practice — noc26_mg80 Module 4",
-      "verified": true,
-      "difficulty": "Easy",
-      "question": "A trademark primarily protects which element of a company's intellectual property?",
+      "topic": "Design Thinking",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_4_Assignment_Final.pdf",
+      "question": "Within the framework of the design process, which of the following statements accurately \ncharacterises 'designed' (artificial) products?",
       "options": [
         {
           "id": "A",
-          "text": "The technical design of the product's internal mechanism"
+          "text": "They are naturally occurring"
         },
         {
           "id": "B",
-          "text": "A brand name, logo, or slogan that distinguishes goods or services"
+          "text": "They are artificial and conceived for specific properties and functions"
         },
         {
           "id": "C",
-          "text": "The company's financial statements"
+          "text": "They have no real-world use"
         },
         {
           "id": "D",
-          "text": "The confidential source code of software"
+          "text": "They are only used in sports"
         }
       ],
       "correctOptionId": "B",
-      "explanation": "A trademark protects brand identifiers — names, logos, slogans — that distinguish a company's goods or services from competitors, preventing consumer confusion."
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W04-Q11",
+      "courseId": "entrepreneurship",
+      "week": 4,
+      "moduleId": 4,
+      "moduleName": "New Product Development",
+      "topic": "Stages of New Product Development",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_4_Assignment_Final.pdf",
+      "question": "What two key characteristics are essential in a prototype?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Price and packaging"
+        },
+        {
+          "id": "B",
+          "text": "Functionality and desirability (form)"
+        },
+        {
+          "id": "C",
+          "text": "Weight and color"
+        },
+        {
+          "id": "D",
+          "text": "Advertising and sales"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W04-Q12",
+      "courseId": "entrepreneurship",
+      "week": 4,
+      "moduleId": 4,
+      "moduleName": "New Product Development",
+      "topic": "Minimum Viable Product",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_4_Assignment_Final.pdf",
+      "question": "What does the abbreviation 'MVP' commonly stand for in the world of sports, as mentioned in \nthe lesson?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Minimum Viable Product"
+        },
+        {
+          "id": "B",
+          "text": "Most Valuable Player"
+        },
+        {
+          "id": "C",
+          "text": "Major Victory Points"
+        },
+        {
+          "id": "D",
+          "text": "Maximum Velocity Pitch"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W04-Q13",
+      "courseId": "entrepreneurship",
+      "week": 4,
+      "moduleId": 4,
+      "moduleName": "New Product Development",
+      "topic": "Minimum Viable Product",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_4_Assignment_Final.pdf",
+      "question": "Should a startup founder attempt to include all possible features in their MVP?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Yes, to impress competitors"
+        },
+        {
+          "id": "B",
+          "text": "No, they should focus only on the minimum required features"
+        },
+        {
+          "id": "C",
+          "text": "Yes, to justify a high price"
+        },
+        {
+          "id": "D",
+          "text": "No, an MVP should have zero features"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W04-Q14",
+      "courseId": "entrepreneurship",
+      "week": 4,
+      "moduleId": 4,
+      "moduleName": "New Product Development",
+      "topic": "Minimum Viable Product",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_4_Assignment_Final.pdf",
+      "question": "How should a startup build and add new features after launching an MVP?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Iteratively, based on feedback from customers"
+        },
+        {
+          "id": "B",
+          "text": "By guessing what the market wants"
+        },
+        {
+          "id": "C",
+          "text": "By copying exactly what competitors do"
+        },
+        {
+          "id": "D",
+          "text": "By waiting five years before making any changes"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W04-Q15",
+      "courseId": "entrepreneurship",
+      "week": 4,
+      "moduleId": 4,
+      "moduleName": "New Product Development",
+      "topic": "Stages of New Product Development",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_4_Assignment_Final.pdf",
+      "question": "In the Atomberg fan example, what core technology remained the same while other features \nchanged?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The remote control design"
+        },
+        {
+          "id": "B",
+          "text": "The fin colors"
+        },
+        {
+          "id": "C",
+          "text": "The Brushless DC (BLDC) motor"
+        },
+        {
+          "id": "D",
+          "text": "The automated assembly line"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "",
+      "difficulty": "Unclassified"
     }
   ]
 }

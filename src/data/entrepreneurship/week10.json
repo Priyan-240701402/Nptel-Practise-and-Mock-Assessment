@@ -3,271 +3,488 @@
   "moduleId": 7,
   "moduleName": "Strategy, Leadership & Business Planning",
   "assessmentTitle": "Week 10 Assessment",
-  "sourceNote": "Original practice questions. Official Week 10 assessment requires login at https://onlinecourses.nptel.ac.in/e-learning/course/noc26_mg80",
+  "sourceFile": "Week_10_Assignment.pdf",
+  "sourceNote": "Official Week 10 Assignment (15 questions)",
   "questions": [
     {
-      "id": "ENT-W10-001",
+      "id": "ENT-W10-Q01",
       "courseId": "entrepreneurship",
       "week": 10,
       "moduleId": 7,
       "moduleName": "Strategy, Leadership & Business Planning",
       "topic": "Strategy Fundamentals",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 10 practice — noc26_mg80 Module 7",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "In Michael Porter's framework, which two generic competitive strategies involve either cost leadership or differentiation?",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_10_Assignment.pdf",
+      "question": "What is the recommended approach to developing a business strategy according to the \nexpert guest speaker Ramesh Mangaleswaran?",
       "options": [
         {
           "id": "A",
-          "text": "Blue Ocean and Red Ocean strategies"
+          "text": "Develop it completely alone"
         },
         {
           "id": "B",
-          "text": "Cost leadership and differentiation (broad or focused)"
+          "text": "Make it consultative and involve the best talent inside and outside the organization"
         },
         {
           "id": "C",
-          "text": "Penetration and skimming strategies"
+          "text": "Copy it exactly from competitors"
         },
         {
           "id": "D",
-          "text": "Vertical integration and horizontal diversification"
+          "text": "Wait for the government to provide one"
         }
       ],
       "correctOptionId": "B",
-      "explanation": "Porter's Generic Strategies identify two primary sources of competitive advantage: having the lowest costs (cost leadership) or offering something uniquely valuable (differentiation), each applicable broadly or in a focused niche."
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W10-002",
+      "id": "ENT-W10-Q02",
       "courseId": "entrepreneurship",
       "week": 10,
       "moduleId": 7,
       "moduleName": "Strategy, Leadership & Business Planning",
-      "topic": "Business Model Canvas: Demand Side",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 10 practice — noc26_mg80 Module 7",
-      "verified": true,
-      "difficulty": "Easy",
-      "question": "Which components of the Business Model Canvas (BMC) represent the 'demand side' of the business?",
+      "topic": "Strategy Fundamentals",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_10_Assignment.pdf",
+      "question": "What analogy is used to describe how a strategist should look at the future and the present \nsimultaneously?",
       "options": [
         {
           "id": "A",
-          "text": "Key activities, key resources, and key partners"
+          "text": "A telescope on one eye and a microscope on the other"
         },
         {
           "id": "B",
-          "text": "Customer segments, customer relationships, channels, and value proposition"
+          "text": "Wearing dark sunglasses"
         },
         {
           "id": "C",
-          "text": "Cost structure and revenue streams"
+          "text": "Looking through a rear-view mirror only"
         },
         {
           "id": "D",
-          "text": "Patent portfolio and supplier agreements"
+          "text": "Using a magnifying glass for everything"
         }
       ],
-      "correctOptionId": "B",
-      "explanation": "The demand side of the BMC describes how value is delivered to customers: the segments targeted, the relationships maintained, the channels used, and the value proposition offered."
+      "correctOptionId": "A",
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W10-003",
+      "id": "ENT-W10-Q03",
       "courseId": "entrepreneurship",
       "week": 10,
       "moduleId": 7,
       "moduleName": "Strategy, Leadership & Business Planning",
-      "topic": "Business Model Canvas: Supply Side",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 10 practice — noc26_mg80 Module 7",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "The 'supply side' of the Business Model Canvas includes which key building blocks?",
+      "topic": "Strategy Fundamentals",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_10_Assignment.pdf",
+      "question": "Why is strategy described as being made 'ahead of time in the wake of uncertainty'?",
       "options": [
         {
           "id": "A",
-          "text": "Customer segments, revenue streams, and value proposition"
+          "text": "Because the outcome happens at another point in time"
         },
         {
           "id": "B",
-          "text": "Key activities, key resources, and key partnerships"
+          "text": "Because it is always wrong"
         },
         {
           "id": "C",
-          "text": "Channels, customer relationships, and cost structure"
+          "text": "Because it is copied from the past"
         },
         {
           "id": "D",
-          "text": "Revenue streams, channels, and market size"
+          "text": "Because it requires zero planning"
         }
       ],
-      "correctOptionId": "B",
-      "explanation": "The supply side describes how value is created and delivered: the activities performed, the resources required, and the partners needed to operate the business model."
+      "correctOptionId": "A",
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W10-004",
+      "id": "ENT-W10-Q04",
       "courseId": "entrepreneurship",
       "week": 10,
       "moduleId": 7,
       "moduleName": "Strategy, Leadership & Business Planning",
       "topic": "Ten Tests of Strategy",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 10 practice — noc26_mg80 Module 7",
-      "verified": true,
-      "difficulty": "Hard",
-      "question": "The 'Ten Tests of a Good Strategy' (Rumelt's criteria) includes which of the following?",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_10_Assignment.pdf",
+      "question": "Which framework is mentioned as a simple way to evaluate if elements of strategy are \nwell covered?",
       "options": [
         {
           "id": "A",
-          "text": "The strategy must guarantee 100% market share within two years"
+          "text": "The 10 tests of strategy"
         },
         {
           "id": "B",
-          "text": "The strategy must be coherent, feasible, and create a sustainable competitive advantage"
+          "text": "The 4 Ps of marketing"
         },
         {
           "id": "C",
-          "text": "The strategy must avoid all international markets"
+          "text": "The Balance Sheet equation"
         },
         {
           "id": "D",
-          "text": "The strategy must be kept entirely secret from employees"
+          "text": "The Customer Journey map"
         }
       ],
-      "correctOptionId": "B",
-      "explanation": "Good strategy (Rumelt's tests) requires internal coherence among objectives, policies, and actions; feasibility with available resources; and the creation of a durable competitive position."
+      "correctOptionId": "A",
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W10-005",
-      "courseId": "entrepreneurship",
-      "week": 10,
-      "moduleId": 7,
-      "moduleName": "Strategy, Leadership & Business Planning",
-      "topic": "Entrepreneurial Leadership",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 10 practice — noc26_mg80 Module 7",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "Which leadership style is most associated with inspiring followers by articulating a compelling vision and appealing to higher-order motivations?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Transactional leadership"
-        },
-        {
-          "id": "B",
-          "text": "Transformational leadership"
-        },
-        {
-          "id": "C",
-          "text": "Autocratic leadership"
-        },
-        {
-          "id": "D",
-          "text": "Laissez-faire leadership"
-        }
-      ],
-      "correctOptionId": "B",
-      "explanation": "Transformational leaders motivate followers by connecting their work to a meaningful vision, inspiring intrinsic motivation and above-and-beyond performance rather than just exchanging rewards for compliance."
-    },
-    {
-      "id": "ENT-W10-006",
+      "id": "ENT-W10-Q05",
       "courseId": "entrepreneurship",
       "week": 10,
       "moduleId": 7,
       "moduleName": "Strategy, Leadership & Business Planning",
       "topic": "Strategy Fundamentals",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 10 practice — noc26_mg80 Module 7",
-      "verified": true,
-      "difficulty": "Easy",
-      "question": "A SWOT analysis helps an entrepreneur by:",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_10_Assignment.pdf",
+      "question": "Which of the following is NOT a characteristic of a good strategy?",
       "options": [
         {
           "id": "A",
-          "text": "Calculating the exact financial returns of a business plan"
+          "text": "Converting data into insight"
         },
         {
           "id": "B",
-          "text": "Systematically mapping internal strengths and weaknesses against external opportunities and threats"
+          "text": "Spotting trends and acting on them"
         },
         {
           "id": "C",
-          "text": "Automating the sales forecasting process"
+          "text": "Accepting uncertainty and planning for scenarios"
         },
         {
           "id": "D",
-          "text": "Determining the legal structure of the company"
+          "text": "Assuming the market will never change"
         }
       ],
-      "correctOptionId": "B",
-      "explanation": "SWOT analysis provides a structured framework for evaluating a company's internal capabilities and external environment, informing strategic choices by matching strengths to opportunities and mitigating threats."
+      "correctOptionId": "D",
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W10-007",
+      "id": "ENT-W10-Q06",
       "courseId": "entrepreneurship",
       "week": 10,
       "moduleId": 7,
       "moduleName": "Strategy, Leadership & Business Planning",
-      "topic": "Business Model Canvas Examples",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 10 practice — noc26_mg80 Module 7",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "In a platform business model, what makes the model more valuable as more users join?",
+      "topic": "Entrepreneurial Leadership",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_10_Assignment.pdf",
+      "question": "According to the summary of leadership skills, a founder should be obsessed with:",
       "options": [
         {
           "id": "A",
-          "text": "The company automatically raises prices when demand increases"
+          "text": "Their own original idea"
         },
         {
           "id": "B",
-          "text": "Network effects — each additional user increases the value of the platform for all existing users"
+          "text": "The problem they are solving"
         },
         {
           "id": "C",
-          "text": "Platform costs decline below zero when scale is reached"
+          "text": "Raising the maximum amount of money"
         },
         {
           "id": "D",
-          "text": "Government subsidies increase proportionally with user count"
+          "text": "Having a fancy office"
         }
       ],
       "correctOptionId": "B",
-      "explanation": "Network effects mean that the value of a platform increases with each additional participant — more buyers attract more sellers and vice versa — creating a self-reinforcing competitive moat."
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W10-008",
+      "id": "ENT-W10-Q07",
+      "courseId": "entrepreneurship",
+      "week": 10,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Entrepreneurial Leadership",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_10_Assignment.pdf",
+      "question": "In the context of entrepreneurship, how is failure described?",
+      "options": [
+        {
+          "id": "A",
+          "text": "As the opposite of success"
+        },
+        {
+          "id": "B",
+          "text": "As a reason to permanently quit"
+        },
+        {
+          "id": "C",
+          "text": "As a part and parcel of success"
+        },
+        {
+          "id": "D",
+          "text": "As a completely avoidable mistake"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W10-Q08",
+      "courseId": "entrepreneurship",
+      "week": 10,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Entrepreneurial Leadership",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_10_Assignment.pdf",
+      "question": "What is 'resilience' compared to in the lesson on leadership competencies?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A magical gift"
+        },
+        {
+          "id": "B",
+          "text": "A muscle that needs to be practiced and built"
+        },
+        {
+          "id": "C",
+          "text": "A physical tool bought in a store"
+        },
+        {
+          "id": "D",
+          "text": "A software program"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W10-Q09",
       "courseId": "entrepreneurship",
       "week": 10,
       "moduleId": 7,
       "moduleName": "Strategy, Leadership & Business Planning",
       "topic": "Infiheal Founder Case Study",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 10 practice — noc26_mg80 Module 7",
-      "verified": true,
-      "difficulty": "Hard",
-      "question": "The Infiheal case study primarily demonstrates which intersection of entrepreneurship and social need?",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_10_Assignment.pdf",
+      "question": "Srishti Srivastava is the co-founder of which startup mentioned in the course?",
       "options": [
         {
           "id": "A",
-          "text": "How to avoid the mental health sector entirely due to regulatory complexity"
+          "text": "Atomberg"
         },
         {
           "id": "B",
-          "text": "Building a digital mental health platform to address the large unmet need for accessible, affordable psychological support"
+          "text": "Script Box"
         },
         {
           "id": "C",
-          "text": "Why hardware products are superior to digital health services"
+          "text": "InfiHeal"
         },
         {
           "id": "D",
-          "text": "The importance of international expansion before achieving product-market fit domestically"
+          "text": "Zoho"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W10-Q10",
+      "courseId": "entrepreneurship",
+      "week": 10,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Infiheal Founder Case Study",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_10_Assignment.pdf",
+      "question": "InfiHeal's product 'Hilo' is an AI-based companion focused on which sector?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mental Health"
+        },
+        {
+          "id": "B",
+          "text": "Food Delivery"
+        },
+        {
+          "id": "C",
+          "text": "Ride-sharing"
+        },
+        {
+          "id": "D",
+          "text": "Aerospace engineering"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W10-Q11",
+      "courseId": "entrepreneurship",
+      "week": 10,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Entrepreneurial Leadership",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_10_Assignment.pdf",
+      "question": "What does having an 'internal locus of control' mean for an entrepreneur?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Blaming others for every failure"
+        },
+        {
+          "id": "B",
+          "text": "Believing you are responsible for your own life and outcomes"
+        },
+        {
+          "id": "C",
+          "text": "Controlling employee salaries strictly"
+        },
+        {
+          "id": "D",
+          "text": "Ignoring customer feedback"
         }
       ],
       "correctOptionId": "B",
-      "explanation": "Infiheal illustrates how an entrepreneur can address a large, stigmatised, and underserved social need (mental health support) through a digital platform that improves accessibility and reduces cost."
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W10-Q12",
+      "courseId": "entrepreneurship",
+      "week": 10,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Entrepreneurial Leadership",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_10_Assignment.pdf",
+      "question": "How is 'perpetual optimism' reframed in the fireside chat?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ignoring all negative facts"
+        },
+        {
+          "id": "B",
+          "text": "Being blindly happy every single day"
+        },
+        {
+          "id": "C",
+          "text": "Combining passion with the resilience to bounce back"
+        },
+        {
+          "id": "D",
+          "text": "Only reading positive news"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W10-Q13",
+      "courseId": "entrepreneurship",
+      "week": 10,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Ten Tests of Strategy",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_10_Assignment.pdf",
+      "question": "Why is it important to de-bias a strategy?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Because human beings naturally have biases that can affect decisions"
+        },
+        {
+          "id": "B",
+          "text": "Because investors dislike the word bias"
+        },
+        {
+          "id": "C",
+          "text": "To make the presentation look longer"
+        },
+        {
+          "id": "D",
+          "text": "Because computers cannot read biased data"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W10-Q14",
+      "courseId": "entrepreneurship",
+      "week": 10,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Strategy Fundamentals",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_10_Assignment.pdf",
+      "question": "What is essential to have alongside an action plan to ensure strategy execution?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A brand new logo"
+        },
+        {
+          "id": "B",
+          "text": "Monitoring progress and allocating resources"
+        },
+        {
+          "id": "C",
+          "text": "Firing the sales team"
+        },
+        {
+          "id": "D",
+          "text": "Changing the company name"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W10-Q15",
+      "courseId": "entrepreneurship",
+      "week": 10,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Entrepreneurial Leadership",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_10_Assignment.pdf",
+      "question": "The ability to adapt, change, and pivot with times is highlighted as:",
+      "options": [
+        {
+          "id": "A",
+          "text": "A sign of weakness"
+        },
+        {
+          "id": "B",
+          "text": "A failure of original planning"
+        },
+        {
+          "id": "C",
+          "text": "A critical leadership competency for entrepreneurs"
+        },
+        {
+          "id": "D",
+          "text": "An unnecessary skill for tech startups"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "",
+      "difficulty": "Unclassified"
     }
   ]
 }

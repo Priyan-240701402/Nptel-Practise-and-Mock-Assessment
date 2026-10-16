@@ -3,271 +3,488 @@
   "moduleId": 1,
   "moduleName": "Introduction to Innovation & Entrepreneurship",
   "assessmentTitle": "Week 1 Assessment",
-  "sourceNote": "Original practice questions. Official Week 1 assessment requires login at https://onlinecourses.nptel.ac.in/e-learning/course/noc26_mg80",
+  "sourceFile": "Week_1_Assignment.pdf",
+  "sourceNote": "Official Week 1 Assignment (15 questions)",
   "questions": [
     {
-      "id": "ENT-W01-001",
+      "id": "ENT-W01-Q01",
+      "courseId": "entrepreneurship",
+      "week": 1,
+      "moduleId": 1,
+      "moduleName": "Introduction to Innovation & Entrepreneurship",
+      "topic": "Course Expectations",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_1_Assignment.pdf",
+      "question": "What is the main goal of the Foundations of Entrepreneurship course?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To learn hardware assembly"
+        },
+        {
+          "id": "B",
+          "text": "To build an entrepreneurial mindset and skillset"
+        },
+        {
+          "id": "C",
+          "text": "To prepare for civil services"
+        },
+        {
+          "id": "D",
+          "text": "To learn software coding"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W01-Q02",
       "courseId": "entrepreneurship",
       "week": 1,
       "moduleId": 1,
       "moduleName": "Introduction to Innovation & Entrepreneurship",
       "topic": "Why Entrepreneurship, Why Now",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 1 practice — noc26_mg80 Module 1",
-      "verified": true,
-      "difficulty": "Easy",
-      "question": "Which of the following best describes the primary reason entrepreneurship is considered important in the current economic context?",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_1_Assignment.pdf",
+      "question": "According to the course, India primarily needs more of what kind of people?",
       "options": [
         {
           "id": "A",
-          "text": "It guarantees high personal income for all entrepreneurs"
+          "text": "Job seekers"
         },
         {
           "id": "B",
-          "text": "It drives innovation, creates jobs, and addresses societal challenges"
+          "text": "Importers"
         },
         {
           "id": "C",
-          "text": "It is the only career path with no financial risk"
+          "text": "Job creators"
         },
         {
           "id": "D",
-          "text": "It eliminates competition in any given market"
+          "text": "Assemblers"
         }
       ],
-      "correctOptionId": "B",
-      "explanation": "Entrepreneurship is central to economic development because it generates innovation, creates employment, and can address critical societal problems at scale."
+      "correctOptionId": "C",
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W01-002",
-      "courseId": "entrepreneurship",
-      "week": 1,
-      "moduleId": 1,
-      "moduleName": "Introduction to Innovation & Entrepreneurship",
-      "topic": "Creativity, Innovation, and Entrepreneurship",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 1 practice — noc26_mg80 Module 1",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "How does innovation differ from invention in the context of entrepreneurship?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Invention is the commercial application of a new idea; innovation is the idea itself"
-        },
-        {
-          "id": "B",
-          "text": "Innovation is the successful application of a creative idea to create value for customers"
-        },
-        {
-          "id": "C",
-          "text": "They are identical in meaning and used interchangeably"
-        },
-        {
-          "id": "D",
-          "text": "Invention requires market research; innovation does not"
-        }
-      ],
-      "correctOptionId": "B",
-      "explanation": "Invention refers to creating something new, while innovation is translating that creation into a product, service, or process that delivers tangible value."
-    },
-    {
-      "id": "ENT-W01-003",
+      "id": "ENT-W01-Q03",
       "courseId": "entrepreneurship",
       "week": 1,
       "moduleId": 1,
       "moduleName": "Introduction to Innovation & Entrepreneurship",
       "topic": "What It Entails to Be an Entrepreneur",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 1 practice — noc26_mg80 Module 1",
-      "verified": true,
-      "difficulty": "Easy",
-      "question": "Which of the following is NOT typically considered a core characteristic of an entrepreneur?",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_1_Assignment.pdf",
+      "question": "What do you call a person who is innovative and creates new business units within a \nlarge organization?",
       "options": [
         {
           "id": "A",
-          "text": "Tolerance for uncertainty and ambiguity"
+          "text": "An intrapreneur"
         },
         {
           "id": "B",
-          "text": "Preference for delegating all decision-making to others"
+          "text": "An auditor"
         },
         {
           "id": "C",
-          "text": "Passion and drive to solve a problem"
+          "text": "A traditional manager"
         },
         {
           "id": "D",
-          "text": "Resilience in the face of failure"
+          "text": "A freelancer"
         }
       ],
-      "correctOptionId": "B",
-      "explanation": "Entrepreneurs must be decisive, especially in early stages when teams are small. Delegating all decisions is inconsistent with entrepreneurial drive."
+      "correctOptionId": "A",
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W01-004",
+      "id": "ENT-W01-Q04",
       "courseId": "entrepreneurship",
       "week": 1,
       "moduleId": 1,
       "moduleName": "Introduction to Innovation & Entrepreneurship",
       "topic": "The Indian Economy Rising",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 1 practice — noc26_mg80 Module 1",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "Which factor is highlighted as a key enabler of the growing entrepreneurial ecosystem in India?",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_1_Assignment.pdf",
+      "question": "Which of the following is given as an example of an \"enterprise tech\" company in the \nlectures?",
       "options": [
         {
           "id": "A",
-          "text": "Restriction of foreign direct investment"
+          "text": "Zomato"
         },
         {
           "id": "B",
-          "text": "A large, young, and increasingly digital consumer base"
+          "text": "Swiggy"
         },
         {
           "id": "C",
-          "text": "Reduction in government infrastructure spending"
+          "text": "Zepto"
         },
         {
           "id": "D",
-          "text": "Decline in mobile internet penetration"
+          "text": "Zoho"
+        }
+      ],
+      "correctOptionId": "D",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W01-Q05",
+      "courseId": "entrepreneurship",
+      "week": 1,
+      "moduleId": 1,
+      "moduleName": "Introduction to Innovation & Entrepreneurship",
+      "topic": "The Indian Economy Rising",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_1_Assignment.pdf",
+      "question": "What is the current approximate GDP of India as mentioned in the lecture?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1.5 trillion dollars"
+        },
+        {
+          "id": "B",
+          "text": "4.5 trillion dollars"
+        },
+        {
+          "id": "C",
+          "text": "10 trillion dollars"
+        },
+        {
+          "id": "D",
+          "text": "15 trillion dollars"
         }
       ],
       "correctOptionId": "B",
-      "explanation": "India's large youth population, growing smartphone and internet penetration, and an expanding middle class create fertile ground for entrepreneurial ventures."
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W01-005",
+      "id": "ENT-W01-Q06",
+      "courseId": "entrepreneurship",
+      "week": 1,
+      "moduleId": 1,
+      "moduleName": "Introduction to Innovation & Entrepreneurship",
+      "topic": "The Indian Economy Rising",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_1_Assignment.pdf",
+      "question": "In the year 1700, what was India's approximate share of the world's GDP?",
+      "options": [
+        {
+          "id": "A",
+          "text": "5%"
+        },
+        {
+          "id": "B",
+          "text": "15%"
+        },
+        {
+          "id": "C",
+          "text": "25%"
+        },
+        {
+          "id": "D",
+          "text": "50%"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W01-Q07",
       "courseId": "entrepreneurship",
       "week": 1,
       "moduleId": 1,
       "moduleName": "Introduction to Innovation & Entrepreneurship",
       "topic": "Atomberg Founder Case Study",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 1 practice — noc26_mg80 Module 1",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "The Atomberg founder case study is primarily used to illustrate which entrepreneurial lesson?",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_1_Assignment.pdf",
+      "question": "Atomberg, a BLDC fan company, was co-founded by which guest speaker?",
       "options": [
         {
           "id": "A",
-          "text": "The importance of copying existing products exactly"
+          "text": "Salil Donde"
         },
         {
           "id": "B",
-          "text": "How identifying an inefficiency in a mainstream product can lead to a differentiated startup"
+          "text": "Shibam Das"
         },
         {
           "id": "C",
-          "text": "Why large corporations always outperform startups"
+          "text": "Anu Narasimhan"
         },
         {
           "id": "D",
-          "text": "The need to avoid the consumer electronics sector"
+          "text": "Manoj Meena"
         }
       ],
       "correctOptionId": "B",
-      "explanation": "Atomberg identified high energy consumption of conventional ceiling fans and built an energy-efficient BLDC motor fan, showing how product insight creates a market leader."
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W01-006",
+      "id": "ENT-W01-Q08",
+      "courseId": "entrepreneurship",
+      "week": 1,
+      "moduleId": 1,
+      "moduleName": "Introduction to Innovation & Entrepreneurship",
+      "topic": "Atomberg Founder Case Study",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_1_Assignment.pdf",
+      "question": "According to Shibam Das, what is a crucial quality for an entrepreneur?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Having a large inherited wealth"
+        },
+        {
+          "id": "B",
+          "text": "Being a specialist in only one subject"
+        },
+        {
+          "id": "C",
+          "text": "Risk appetite and first principle thinking"
+        },
+        {
+          "id": "D",
+          "text": "Avoiding all changes and adaptations"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W01-Q09",
       "courseId": "entrepreneurship",
       "week": 1,
       "moduleId": 1,
       "moduleName": "Introduction to Innovation & Entrepreneurship",
       "topic": "Creativity, Innovation, and Entrepreneurship",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 1 practice — noc26_mg80 Module 1",
-      "verified": true,
-      "difficulty": "Hard",
-      "question": "Which type of innovation involves creating an entirely new market rather than improving on existing offerings?",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_1_Assignment.pdf",
+      "question": "In the course terminology, what does the abbreviation \"INV\" stand for?",
       "options": [
         {
           "id": "A",
-          "text": "Sustaining innovation"
+          "text": "Investment"
         },
         {
           "id": "B",
-          "text": "Incremental innovation"
+          "text": "Inventory"
         },
         {
           "id": "C",
-          "text": "Disruptive or radical innovation"
+          "text": "Innovation"
         },
         {
           "id": "D",
-          "text": "Process innovation"
+          "text": "Invention"
         }
       ],
       "correctOptionId": "C",
-      "explanation": "Disruptive or radical innovation creates entirely new markets or dramatically transforms existing ones, unlike sustaining or incremental innovations that improve current offerings."
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W01-007",
+      "id": "ENT-W01-Q10",
       "courseId": "entrepreneurship",
       "week": 1,
       "moduleId": 1,
       "moduleName": "Introduction to Innovation & Entrepreneurship",
-      "topic": "Why Entrepreneurship, Why Now",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 1 practice — noc26_mg80 Module 1",
-      "verified": true,
-      "difficulty": "Easy",
-      "question": "Which statement best captures the relationship between entrepreneurship and employment?",
+      "topic": "Creativity, Innovation, and Entrepreneurship",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_1_Assignment.pdf",
+      "question": "In the course terminology, what does the abbreviation \"ENT\" stand for?",
       "options": [
         {
           "id": "A",
-          "text": "Entrepreneurship only benefits the entrepreneur personally"
+          "text": "Enterprise"
         },
         {
           "id": "B",
-          "text": "Startups and new ventures are among the largest net creators of jobs in an economy"
+          "text": "Entertainment"
         },
         {
           "id": "C",
-          "text": "Large corporations create more net new jobs than startups in every economy"
+          "text": "Entrepreneurship"
         },
         {
           "id": "D",
-          "text": "Entrepreneurship leads to unemployment by disrupting existing industries"
+          "text": "Entity"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W01-Q11",
+      "courseId": "entrepreneurship",
+      "week": 1,
+      "moduleId": 1,
+      "moduleName": "Introduction to Innovation & Entrepreneurship",
+      "topic": "Creativity, Innovation, and Entrepreneurship",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_1_Assignment.pdf",
+      "question": "Which industry is used as an example to show the fast pace of innovation over the last \n40 years?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The music industry (cassettes to digital)"
+        },
+        {
+          "id": "B",
+          "text": "The agriculture industry"
+        },
+        {
+          "id": "C",
+          "text": "The mining industry"
+        },
+        {
+          "id": "D",
+          "text": "The shipping industry"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W01-Q12",
+      "courseId": "entrepreneurship",
+      "week": 1,
+      "moduleId": 1,
+      "moduleName": "Introduction to Innovation & Entrepreneurship",
+      "topic": "Course Expectations",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_1_Assignment.pdf",
+      "question": "Salil Donde, a guest speaker in the course, is an alumni of which institute?",
+      "options": [
+        {
+          "id": "A",
+          "text": "IIT Delhi"
+        },
+        {
+          "id": "B",
+          "text": "IIT Bombay"
+        },
+        {
+          "id": "C",
+          "text": "IIM Ahmedabad"
+        },
+        {
+          "id": "D",
+          "text": "IIT Madras"
         }
       ],
       "correctOptionId": "B",
-      "explanation": "Research consistently shows that new and young firms are disproportionately responsible for net job creation in modern economies."
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W01-008",
+      "id": "ENT-W01-Q13",
       "courseId": "entrepreneurship",
       "week": 1,
       "moduleId": 1,
       "moduleName": "Introduction to Innovation & Entrepreneurship",
       "topic": "What It Entails to Be an Entrepreneur",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 1 practice — noc26_mg80 Module 1",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "Which of the following best describes the concept of an entrepreneurial mindset?",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_1_Assignment.pdf",
+      "question": "What does \"LP partner\" stand for in the context of private equity and venture capital?",
       "options": [
         {
           "id": "A",
-          "text": "A fixed belief that success is determined solely by external circumstances"
+          "text": "Lead Promoter"
         },
         {
           "id": "B",
-          "text": "A way of thinking that embraces opportunity recognition, calculated risk, and continuous learning"
+          "text": "Legal Partner"
         },
         {
           "id": "C",
-          "text": "An approach that avoids any form of failure at all costs"
+          "text": "Limited Partner"
         },
         {
           "id": "D",
-          "text": "A mindset exclusive to people who start technology companies"
+          "text": "Local Producer"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W01-Q14",
+      "courseId": "entrepreneurship",
+      "week": 1,
+      "moduleId": 1,
+      "moduleName": "Introduction to Innovation & Entrepreneurship",
+      "topic": "What It Entails to Be an Entrepreneur",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_1_Assignment.pdf",
+      "question": "According to the lectures, what should a startup founder be obsessed with?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Solving customer problems"
+        },
+        {
+          "id": "B",
+          "text": "making personal profits"
+        },
+        {
+          "id": "C",
+          "text": "Writing every line of code themselves"
+        },
+        {
+          "id": "D",
+          "text": "Working alone"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W01-Q15",
+      "courseId": "entrepreneurship",
+      "week": 1,
+      "moduleId": 1,
+      "moduleName": "Introduction to Innovation & Entrepreneurship",
+      "topic": "Course Expectations",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_1_Assignment.pdf",
+      "question": "Why are external experts invited to this entrepreneurship course?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To make the exams harder"
+        },
+        {
+          "id": "B",
+          "text": "To provide real-life and practical knowledge"
+        },
+        {
+          "id": "C",
+          "text": "To teach purely theoretical concepts"
+        },
+        {
+          "id": "D",
+          "text": "To increase the duration of the videos"
         }
       ],
       "correctOptionId": "B",
-      "explanation": "An entrepreneurial mindset involves actively seeking opportunities, being comfortable with calculated risk, learning from failure, and continuously adapting — applicable across all industries."
+      "explanation": "",
+      "difficulty": "Unclassified"
     }
   ]
 }

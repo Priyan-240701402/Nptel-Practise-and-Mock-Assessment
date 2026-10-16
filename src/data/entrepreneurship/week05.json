@@ -3,271 +3,488 @@
   "moduleId": 4,
   "moduleName": "New Product Development",
   "assessmentTitle": "Week 5 Assessment",
-  "sourceNote": "Original practice questions. Official Week 5 assessment requires login at https://onlinecourses.nptel.ac.in/e-learning/course/noc26_mg80",
+  "sourceFile": "Week_5_Assignment_Final.pdf",
+  "sourceNote": "Official Week 5 Assignment (15 questions)",
   "questions": [
     {
-      "id": "ENT-W05-001",
+      "id": "ENT-W05-Q01",
       "courseId": "entrepreneurship",
       "week": 5,
       "moduleId": 4,
       "moduleName": "New Product Development",
       "topic": "Britannia Case Study",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 5 practice — noc26_mg80 Module 4",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "The Britannia case study illustrates which critical lesson about product innovation?",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_5_Assignment_Final.pdf",
+      "question": "According to the Britannia case study, the innovation process requires which two \nthings?",
       "options": [
         {
           "id": "A",
-          "text": "Established companies never need to innovate"
+          "text": "Invention and Adoption"
         },
         {
           "id": "B",
-          "text": "Innovation in a legacy company requires understanding changing consumer needs and acting on them"
+          "text": "Manufacturing and Selling"
         },
         {
           "id": "C",
-          "text": "Only startups can innovate in the food sector"
+          "text": "Coding and Designing"
         },
         {
           "id": "D",
-          "text": "Product innovation is less important than advertising spend"
+          "text": "Advertising and Pricing"
         }
       ],
-      "correctOptionId": "B",
-      "explanation": "Britannia's case demonstrates that even well-established legacy brands must continuously innovate in product lines and formats to stay relevant as consumer preferences evolve."
+      "correctOptionId": "A",
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W05-002",
+      "id": "ENT-W05-Q02",
       "courseId": "entrepreneurship",
       "week": 5,
       "moduleId": 4,
       "moduleName": "New Product Development",
-      "topic": "Medical Devices Case Study",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 5 practice — noc26_mg80 Module 4",
-      "verified": true,
-      "difficulty": "Hard",
-      "question": "The medical devices case study highlights which unique challenge in product development for regulated industries?",
+      "topic": "Britannia Case Study",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_5_Assignment_Final.pdf",
+      "question": "Which FMCG brand is used as a case study for the journey from proactive to \nfunctional health?",
       "options": [
         {
           "id": "A",
-          "text": "Regulated industries have no product development challenges"
+          "text": "Parle-G"
         },
         {
           "id": "B",
-          "text": "Products must meet stringent regulatory and clinical validation requirements before launch"
+          "text": "Britannia Nutri Choice"
         },
         {
           "id": "C",
-          "text": "Medical devices can be launched without any testing"
+          "text": "Sunfeast"
         },
         {
           "id": "D",
-          "text": "Regulation always accelerates the development process"
+          "text": "Patanjali"
         }
       ],
       "correctOptionId": "B",
-      "explanation": "In regulated sectors like medical devices, products must demonstrate clinical safety and efficacy through structured trials and receive regulatory approvals before market launch."
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W05-003",
+      "id": "ENT-W05-Q03",
       "courseId": "entrepreneurship",
       "week": 5,
       "moduleId": 4,
       "moduleName": "New Product Development",
-      "topic": "Intellectual Property Patents",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 5 practice — noc26_mg80 Module 4",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "What are the three standard criteria an invention must meet to be patentable?",
+      "topic": "Britannia Case Study",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_5_Assignment_Final.pdf",
+      "question": "In the FMCG industry, how are prototypes usually tested before becoming a Minimum \nViable Product?",
       "options": [
         {
           "id": "A",
-          "text": "Expensive, complex, and technology-based"
+          "text": "By guessing what people like"
         },
         {
           "id": "B",
-          "text": "Novel, non-obvious, and industrially applicable"
+          "text": "By asking investors"
         },
         {
           "id": "C",
-          "text": "Profitable, unique-looking, and filed before launch"
+          "text": "Through taste tests with hundreds of customers"
         },
         {
           "id": "D",
-          "text": "Registered, branded, and marketed"
+          "text": "By looking at competitors only"
         }
       ],
-      "correctOptionId": "B",
-      "explanation": "Patent criteria require the invention to be novel (not previously known), non-obvious (not trivially derivable by someone skilled in the field), and have industrial applicability."
+      "correctOptionId": "C",
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W05-004",
+      "id": "ENT-W05-Q04",
       "courseId": "entrepreneurship",
       "week": 5,
       "moduleId": 4,
       "moduleName": "New Product Development",
-      "topic": "Minimum Viable Product",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 5 practice — noc26_mg80 Module 4",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "Which of the following is an example of a high-fidelity concierge MVP?",
+      "topic": "Britannia Case Study",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_5_Assignment_Final.pdf",
+      "question": "What analogy is used in the lecture to describe bringing innovation and wealth creation \ntogether?",
       "options": [
         {
           "id": "A",
-          "text": "A fully automated software platform serving 10,000 users"
+          "text": "Saraswati and Lakshmi"
         },
         {
           "id": "B",
-          "text": "Manually fulfilling a service for early users to test demand before building automation"
+          "text": "Ram and Sita"
         },
         {
           "id": "C",
-          "text": "A printed brochure with no working product"
+          "text": "Brahma and Vishnu"
         },
         {
           "id": "D",
-          "text": "Filing a patent application without any prototype"
+          "text": "Yin and Yang"
         }
       ],
-      "correctOptionId": "B",
-      "explanation": "A concierge MVP delivers the promised value manually (e.g., a team personally performing what the software would eventually automate), allowing rapid learning about real demand."
+      "correctOptionId": "A",
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W05-005",
-      "courseId": "entrepreneurship",
-      "week": 5,
-      "moduleId": 4,
-      "moduleName": "New Product Development",
-      "topic": "Design Thinking",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 5 practice — noc26_mg80 Module 4",
-      "verified": true,
-      "difficulty": "Easy",
-      "question": "In Design Thinking, the 'Ideate' stage is best described as:",
-      "options": [
-        {
-          "id": "A",
-          "text": "Selecting the only one possible solution to the defined problem"
-        },
-        {
-          "id": "B",
-          "text": "Generating a broad range of creative ideas without immediate judgement"
-        },
-        {
-          "id": "C",
-          "text": "Presenting the final product to the board for approval"
-        },
-        {
-          "id": "D",
-          "text": "Conducting financial analysis of the business model"
-        }
-      ],
-      "correctOptionId": "B",
-      "explanation": "The Ideate stage encourages divergent thinking — generating as many creative ideas as possible (often via brainstorming) before converging on the most promising ones."
-    },
-    {
-      "id": "ENT-W05-006",
-      "courseId": "entrepreneurship",
-      "week": 5,
-      "moduleId": 4,
-      "moduleName": "New Product Development",
-      "topic": "CVP to Benefits and Features",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 5 practice — noc26_mg80 Module 4",
-      "verified": true,
-      "difficulty": "Hard",
-      "question": "How should the product roadmap be derived from the Customer Value Proposition?",
-      "options": [
-        {
-          "id": "A",
-          "text": "The roadmap should list every possible feature regardless of CVP"
-        },
-        {
-          "id": "B",
-          "text": "Only features that directly deliver the promised customer benefit should be prioritised"
-        },
-        {
-          "id": "C",
-          "text": "The roadmap should be created before the CVP is finalised"
-        },
-        {
-          "id": "D",
-          "text": "CVP and product roadmap are unrelated planning documents"
-        }
-      ],
-      "correctOptionId": "B",
-      "explanation": "A CVP-driven roadmap ensures that development resources are allocated to features that deliver the core customer benefit, preventing feature bloat and misaligned investment."
-    },
-    {
-      "id": "ENT-W05-007",
-      "courseId": "entrepreneurship",
-      "week": 5,
-      "moduleId": 4,
-      "moduleName": "New Product Development",
-      "topic": "Intellectual Property Patents",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 5 practice — noc26_mg80 Module 4",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "Which statement about trade secrets is correct?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Trade secrets must be publicly disclosed to obtain protection"
-        },
-        {
-          "id": "B",
-          "text": "Trade secrets are protected as long as they remain confidential and have commercial value"
-        },
-        {
-          "id": "C",
-          "text": "Trade secrets expire after 20 years like patents"
-        },
-        {
-          "id": "D",
-          "text": "Trade secrets offer no legal protection"
-        }
-      ],
-      "correctOptionId": "B",
-      "explanation": "Trade secrets (e.g., Coca-Cola's formula) are protected indefinitely as long as the holder takes reasonable steps to maintain confidentiality and the information has commercial value."
-    },
-    {
-      "id": "ENT-W05-008",
+      "id": "ENT-W05-Q05",
       "courseId": "entrepreneurship",
       "week": 5,
       "moduleId": 4,
       "moduleName": "New Product Development",
       "topic": "Stages of New Product Development",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 5 practice — noc26_mg80 Module 4",
-      "verified": true,
-      "difficulty": "Easy",
-      "question": "What is a 'pilot launch' in the context of new product development?",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_5_Assignment_Final.pdf",
+      "question": "What is the final stage of new product development after the Minimum Viable Product \n(MVP)?",
       "options": [
         {
           "id": "A",
-          "text": "A full national launch with maximum advertising"
+          "text": "Proof of Concept"
         },
         {
           "id": "B",
-          "text": "A limited market rollout to test the product and marketing mix before full launch"
+          "text": "Idea generation"
         },
         {
           "id": "C",
-          "text": "The internal testing of a product among employees only"
+          "text": "Prototype"
         },
         {
           "id": "D",
-          "text": "A product recall due to quality issues"
+          "text": "Mass manufacturing and distribution"
+        }
+      ],
+      "correctOptionId": "D",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W05-Q06",
+      "courseId": "entrepreneurship",
+      "week": 5,
+      "moduleId": 4,
+      "moduleName": "New Product Development",
+      "topic": "Medical Devices Case Study",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_5_Assignment_Final.pdf",
+      "question": "What does POC stand for in the medical devices case study?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Point of Contact"
+        },
+        {
+          "id": "B",
+          "text": "Proof of Concept"
+        },
+        {
+          "id": "C",
+          "text": "Plan of Company"
+        },
+        {
+          "id": "D",
+          "text": "Product of Consumer"
         }
       ],
       "correctOptionId": "B",
-      "explanation": "A pilot or test-market launch introduces the product in a limited geography or customer segment to validate assumptions about demand and execution before committing to a full launch."
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W05-Q07",
+      "courseId": "entrepreneurship",
+      "week": 5,
+      "moduleId": 4,
+      "moduleName": "New Product Development",
+      "topic": "Intellectual Property Basics",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_5_Assignment_Final.pdf",
+      "question": "In the Intellectual Property lesson, how is a startup primarily defined?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A large multinational company"
+        },
+        {
+          "id": "B",
+          "text": "An enterprise engaged in early-stage technology"
+        },
+        {
+          "id": "C",
+          "text": "A government office"
+        },
+        {
+          "id": "D",
+          "text": "A traditional retail shop"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W05-Q08",
+      "courseId": "entrepreneurship",
+      "week": 5,
+      "moduleId": 4,
+      "moduleName": "New Product Development",
+      "topic": "Intellectual Property Patents",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_5_Assignment_Final.pdf",
+      "question": "What happens if you publish your invention in a library or exhibition before filing a \npatent?",
+      "options": [
+        {
+          "id": "A",
+          "text": "You get an automatic patent"
+        },
+        {
+          "id": "B",
+          "text": "You lose the novelty and cannot get a patent"
+        },
+        {
+          "id": "C",
+          "text": "You get a cash reward"
+        },
+        {
+          "id": "D",
+          "text": "The government buys your idea"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W05-Q09",
+      "courseId": "entrepreneurship",
+      "week": 5,
+      "moduleId": 4,
+      "moduleName": "New Product Development",
+      "topic": "Intellectual Property Patents",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_5_Assignment_Final.pdf",
+      "question": "Which country currently offers a one-year grace period for patent filing after public \ndisclosure?",
+      "options": [
+        {
+          "id": "A",
+          "text": "India"
+        },
+        {
+          "id": "B",
+          "text": "USA"
+        },
+        {
+          "id": "C",
+          "text": "UK"
+        },
+        {
+          "id": "D",
+          "text": "Japan"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W05-Q10",
+      "courseId": "entrepreneurship",
+      "week": 5,
+      "moduleId": 4,
+      "moduleName": "New Product Development",
+      "topic": "Intellectual Property Basics",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_5_Assignment_Final.pdf",
+      "question": "What is the primary purpose of a trademark?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To hide company profits"
+        },
+        {
+          "id": "B",
+          "text": "To distinguish the goods of one enterprise from competitors"
+        },
+        {
+          "id": "C",
+          "text": "To pay less taxes"
+        },
+        {
+          "id": "D",
+          "text": "To hire more employees"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W05-Q11",
+      "courseId": "entrepreneurship",
+      "week": 5,
+      "moduleId": 4,
+      "moduleName": "New Product Development",
+      "topic": "Intellectual Property Basics",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_5_Assignment_Final.pdf",
+      "question": "Using the word 'Apple' for a computer is an example of what kind of trademark?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Distinctive"
+        },
+        {
+          "id": "B",
+          "text": "Descriptive"
+        },
+        {
+          "id": "C",
+          "text": "Deceptive"
+        },
+        {
+          "id": "D",
+          "text": "Generic"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W05-Q12",
+      "courseId": "entrepreneurship",
+      "week": 5,
+      "moduleId": 4,
+      "moduleName": "New Product Development",
+      "topic": "Intellectual Property Basics",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_5_Assignment_Final.pdf",
+      "question": "Using the word 'Apple' to sell actual apples is an example of what kind of trademark?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Distinctive"
+        },
+        {
+          "id": "B",
+          "text": "Descriptive"
+        },
+        {
+          "id": "C",
+          "text": "Deceptive"
+        },
+        {
+          "id": "D",
+          "text": "Innovative"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W05-Q13",
+      "courseId": "entrepreneurship",
+      "week": 5,
+      "moduleId": 4,
+      "moduleName": "New Product Development",
+      "topic": "Intellectual Property Basics",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_5_Assignment_Final.pdf",
+      "question": "Why is the trademark 'Texmati' for ordinary rice considered deceptive?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Because it is very cheap"
+        },
+        {
+          "id": "B",
+          "text": "Because it is grown in Texas"
+        },
+        {
+          "id": "C",
+          "text": "Because it claims the quality of Basmati which it does not have"
+        },
+        {
+          "id": "D",
+          "text": "Because it is a tech company"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W05-Q14",
+      "courseId": "entrepreneurship",
+      "week": 5,
+      "moduleId": 4,
+      "moduleName": "New Product Development",
+      "topic": "Intellectual Property Basics",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_5_Assignment_Final.pdf",
+      "question": "Patents, copyrights, and trademarks are collectively known as what kind of assets?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Physical assets"
+        },
+        {
+          "id": "B",
+          "text": "Intangible assets (Intellectual Property)"
+        },
+        {
+          "id": "C",
+          "text": "Liquid cash"
+        },
+        {
+          "id": "D",
+          "text": "Real estate"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W05-Q15",
+      "courseId": "entrepreneurship",
+      "week": 5,
+      "moduleId": 4,
+      "moduleName": "New Product Development",
+      "topic": "Intellectual Property Patents",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_5_Assignment_Final.pdf",
+      "question": "What does the speaker strongly advise startups regarding filing for Intellectual \nProperty?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Do it yourself to save money"
+        },
+        {
+          "id": "B",
+          "text": "Do not do it yourself; go to professionals"
+        },
+        {
+          "id": "C",
+          "text": "Never file for IP"
+        },
+        {
+          "id": "D",
+          "text": "Wait for 10 years before filing"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "",
+      "difficulty": "Unclassified"
     }
   ]
 }

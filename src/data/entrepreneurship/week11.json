@@ -3,271 +3,488 @@
   "moduleId": 7,
   "moduleName": "Strategy, Leadership & Business Planning",
   "assessmentTitle": "Week 11 Assessment",
-  "sourceNote": "Original practice questions. Official Week 11 assessment requires login at https://onlinecourses.nptel.ac.in/e-learning/course/noc26_mg80",
+  "sourceFile": "Week_11_Assignment.pdf",
+  "sourceNote": "Official Week 11 Assignment (15 questions)",
   "questions": [
     {
-      "id": "ENT-W11-001",
-      "courseId": "entrepreneurship",
-      "week": 11,
-      "moduleId": 7,
-      "moduleName": "Strategy, Leadership & Business Planning",
-      "topic": "Social Business Model with Dr. Narendra Shah",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 11 practice — noc26_mg80 Module 7",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "What distinguishes a social business model from a purely commercial one?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Social businesses must always be non-profit and cannot charge customers"
-        },
-        {
-          "id": "B",
-          "text": "Social businesses explicitly integrate a social or environmental mission alongside commercial viability"
-        },
-        {
-          "id": "C",
-          "text": "Social businesses do not require a revenue model"
-        },
-        {
-          "id": "D",
-          "text": "Social businesses operate exclusively in government-sponsored sectors"
-        }
-      ],
-      "correctOptionId": "B",
-      "explanation": "Social businesses deliberately embed a social or environmental purpose into their business model and measure success on both impact metrics and financial sustainability."
-    },
-    {
-      "id": "ENT-W11-002",
-      "courseId": "entrepreneurship",
-      "week": 11,
-      "moduleId": 7,
-      "moduleName": "Strategy, Leadership & Business Planning",
-      "topic": "Business Model Canvas: Demand Side",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 11 practice — noc26_mg80 Module 7",
-      "verified": true,
-      "difficulty": "Easy",
-      "question": "The 'Customer Relationships' block in the Business Model Canvas describes:",
-      "options": [
-        {
-          "id": "A",
-          "text": "The employment contracts between the company and its staff"
-        },
-        {
-          "id": "B",
-          "text": "The type of relationship the company establishes and maintains with each customer segment"
-        },
-        {
-          "id": "C",
-          "text": "Legal agreements with suppliers and partners"
-        },
-        {
-          "id": "D",
-          "text": "The CRM software tool the company uses"
-        }
-      ],
-      "correctOptionId": "B",
-      "explanation": "Customer Relationships in the BMC describes the nature of the interaction with customers — self-service, personalised support, community, co-creation — and how relationships are acquired, retained, and grown."
-    },
-    {
-      "id": "ENT-W11-003",
-      "courseId": "entrepreneurship",
-      "week": 11,
-      "moduleId": 7,
-      "moduleName": "Strategy, Leadership & Business Planning",
-      "topic": "Entrepreneurial Leadership",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 11 practice — noc26_mg80 Module 7",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "Which of the following best describes 'servant leadership' in an entrepreneurial context?",
-      "options": [
-        {
-          "id": "A",
-          "text": "A leader who prioritises their own advancement above the team's needs"
-        },
-        {
-          "id": "B",
-          "text": "A leader who focuses on enabling, empowering, and removing obstacles for the team"
-        },
-        {
-          "id": "C",
-          "text": "A leader who gives all strategic decisions to employees without guidance"
-        },
-        {
-          "id": "D",
-          "text": "A leader who follows every instruction from investors without question"
-        }
-      ],
-      "correctOptionId": "B",
-      "explanation": "Servant leaders see their primary role as supporting their team — providing resources, removing blockers, and enabling people to do their best work — rather than commanding from above."
-    },
-    {
-      "id": "ENT-W11-004",
+      "id": "ENT-W11-Q01",
       "courseId": "entrepreneurship",
       "week": 11,
       "moduleId": 7,
       "moduleName": "Strategy, Leadership & Business Planning",
       "topic": "Business Models",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 11 practice — noc26_mg80 Module 7",
-      "verified": true,
-      "difficulty": "Hard",
-      "question": "A 'freemium' business model generates revenue by:",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_11_Assignment.pdf",
+      "question": "What does the Business Model Canvas (BMC) primarily help a startup do?",
       "options": [
         {
           "id": "A",
-          "text": "Charging all users the same monthly fee regardless of usage"
+          "text": "Understand, plan, test, and refine the business"
         },
         {
           "id": "B",
-          "text": "Offering a free basic tier to attract users and converting a proportion to a paid premium tier"
+          "text": "Just write software code"
         },
         {
           "id": "C",
-          "text": "Providing all features free of charge and monetising only through advertising"
+          "text": "calculate taxes"
         },
         {
           "id": "D",
-          "text": "Charging once upfront for permanent access with no recurring revenue"
+          "text": "Hire people"
         }
       ],
-      "correctOptionId": "B",
-      "explanation": "Freemium gives away a functional free version to grow a large user base, then monetises by converting a subset of users to paid tiers with advanced features or higher usage limits."
+      "correctOptionId": "A",
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W11-005",
+      "id": "ENT-W11-Q02",
       "courseId": "entrepreneurship",
       "week": 11,
       "moduleId": 7,
       "moduleName": "Strategy, Leadership & Business Planning",
-      "topic": "Strategy Fundamentals",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 11 practice — noc26_mg80 Module 7",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "Porter's Five Forces framework evaluates competitive intensity in an industry by examining which five forces?",
+      "topic": "Business Models",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_11_Assignment.pdf",
+      "question": "In the Business Model Canvas, what is placed right at the center?",
       "options": [
         {
           "id": "A",
-          "text": "Cost, quality, speed, service, and innovation"
+          "text": "Cost Structure"
         },
         {
           "id": "B",
-          "text": "Competitive rivalry, threat of new entrants, bargaining power of buyers, bargaining power of suppliers, threat of substitutes"
+          "text": "Value Proposition"
         },
         {
           "id": "C",
-          "text": "Revenue growth, margin expansion, capital efficiency, market size, and regulatory risk"
+          "text": "Key Partners"
         },
         {
           "id": "D",
-          "text": "Leadership, culture, strategy, execution, and funding"
+          "text": "Revenue Streams"
         }
       ],
       "correctOptionId": "B",
-      "explanation": "Porter's Five Forces analyses an industry's structural attractiveness by examining the rivalry among competitors, the threat from new entrants and substitutes, and the relative power of customers and suppliers."
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W11-006",
+      "id": "ENT-W11-Q03",
+      "courseId": "entrepreneurship",
+      "week": 11,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Business Model Canvas: Demand Side",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_11_Assignment.pdf",
+      "question": "According to the course, the right-hand side of the Business Model Canvas is known as \nthe:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Supply side"
+        },
+        {
+          "id": "B",
+          "text": "Demand side"
+        },
+        {
+          "id": "C",
+          "text": "Finance side"
+        },
+        {
+          "id": "D",
+          "text": "HR side"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W11-Q04",
+      "courseId": "entrepreneurship",
+      "week": 11,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Business Model Canvas: Demand Side",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_11_Assignment.pdf",
+      "question": "Which of the following is an element of the 'Demand side' of the Business Model \nCanvas?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Key resources"
+        },
+        {
+          "id": "B",
+          "text": "Cost structure"
+        },
+        {
+          "id": "C",
+          "text": "Customer segments"
+        },
+        {
+          "id": "D",
+          "text": "Key partners"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W11-Q05",
+      "courseId": "entrepreneurship",
+      "week": 11,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Business Model Canvas: Supply Side",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_11_Assignment.pdf",
+      "question": "Which of the following is an element of the 'Supply side' of the Business Model \nCanvas?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Revenue streams"
+        },
+        {
+          "id": "B",
+          "text": "Channels"
+        },
+        {
+          "id": "C",
+          "text": "Customer relationships"
+        },
+        {
+          "id": "D",
+          "text": "Key activities"
+        }
+      ],
+      "correctOptionId": "D",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W11-Q06",
+      "courseId": "entrepreneurship",
+      "week": 11,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Business Models",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_11_Assignment.pdf",
+      "question": "Why do startup founders prefer using the Business Model Canvas over heavy \nnumerical spreadsheets?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Because they have too much historical data"
+        },
+        {
+          "id": "B",
+          "text": "Because they don't know maths"
+        },
+        {
+          "id": "C",
+          "text": "Because startups lack historical data and need a dynamic text-based tool"
+        },
+        {
+          "id": "D",
+          "text": "Because the government forces them to"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W11-Q07",
+      "courseId": "entrepreneurship",
+      "week": 11,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Business Models",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_11_Assignment.pdf",
+      "question": "What do startup founders typically use to write their assumptions on a printed Business \nModel Canvas?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Permanent markers"
+        },
+        {
+          "id": "B",
+          "text": "Carving tools"
+        },
+        {
+          "id": "C",
+          "text": "Post-it sticky notes"
+        },
+        {
+          "id": "D",
+          "text": "Spray paint"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W11-Q08",
+      "courseId": "entrepreneurship",
+      "week": 11,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Business Model Canvas: Demand Side",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_11_Assignment.pdf",
+      "question": "In terms of revenue streams, which type of revenue is considered significantly superior \nfor building customer lifetime value?",
+      "options": [
+        {
+          "id": "A",
+          "text": "One-time transactional revenue"
+        },
+        {
+          "id": "B",
+          "text": "Zero revenue"
+        },
+        {
+          "id": "C",
+          "text": "Recurring revenue"
+        },
+        {
+          "id": "D",
+          "text": "Cash-only revenue"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W11-Q09",
+      "courseId": "entrepreneurship",
+      "week": 11,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Business Models",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_11_Assignment.pdf",
+      "question": "In financial terminology, when a startup moves from the 'red' to the 'black', what does \nit mean?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It moved from profit to loss"
+        },
+        {
+          "id": "B",
+          "text": "It changed its logo color"
+        },
+        {
+          "id": "C",
+          "text": "It moved from losses to positive profits"
+        },
+        {
+          "id": "D",
+          "text": "It stopped working"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W11-Q10",
+      "courseId": "entrepreneurship",
+      "week": 11,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Social Business Model",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_11_Assignment.pdf",
+      "question": "Dr. Narendra Shah was associated with which center at IIT Bombay working on \nfrugal and grassroots innovation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SITARA"
+        },
+        {
+          "id": "B",
+          "text": "NPTEL"
+        },
+        {
+          "id": "C",
+          "text": "DESAI SETHI"
+        },
+        {
+          "id": "D",
+          "text": "SINE"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W11-Q11",
+      "courseId": "entrepreneurship",
+      "week": 11,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Social Business Model",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_11_Assignment.pdf",
+      "question": "Which of the following is a characteristic of 'Appropriate Technology'?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Capital intensive"
+        },
+        {
+          "id": "B",
+          "text": "Relies on imported resources"
+        },
+        {
+          "id": "C",
+          "text": "Simple, low cost, and labour friendly"
+        },
+        {
+          "id": "D",
+          "text": "Highly automated"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W11-Q12",
+      "courseId": "entrepreneurship",
+      "week": 11,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Social Business Model",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_11_Assignment.pdf",
+      "question": "In the KVIC example for appropriate technology, what was the employment criteria \nfor a capital investment of 1 lakh rupees?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Employ 100 people"
+        },
+        {
+          "id": "B",
+          "text": "Employ 1 person"
+        },
+        {
+          "id": "C",
+          "text": "Employ 0 people"
+        },
+        {
+          "id": "D",
+          "text": "Employ 1000 people"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W11-Q13",
+      "courseId": "entrepreneurship",
+      "week": 11,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Social Business Model",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_11_Assignment.pdf",
+      "question": "In the STEM, LEAF, and ROOT(social entrepreneurship) model for students, what \ndoes the 'ROOT' represent?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Science and Technology"
+        },
+        {
+          "id": "B",
+          "text": "Languages and Arts"
+        },
+        {
+          "id": "C",
+          "text": "Family, friends, and social support system"
+        },
+        {
+          "id": "D",
+          "text": "Finance"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W11-Q14",
+      "courseId": "entrepreneurship",
+      "week": 11,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Social Business Model",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_11_Assignment.pdf",
+      "question": "Which of the following is an example of an appropriate technology mentioned in the \nlesson?",
+      "options": [
+        {
+          "id": "A",
+          "text": "High-speed bullet trains"
+        },
+        {
+          "id": "B",
+          "text": "Solar lanterns and biogas plants"
+        },
+        {
+          "id": "C",
+          "text": "Supersonic jets"
+        },
+        {
+          "id": "D",
+          "text": "AI Supercomputers"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W11-Q15",
       "courseId": "entrepreneurship",
       "week": 11,
       "moduleId": 7,
       "moduleName": "Strategy, Leadership & Business Planning",
       "topic": "Business Model Canvas Examples",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 11 practice — noc26_mg80 Module 7",
-      "verified": true,
-      "difficulty": "Easy",
-      "question": "In the Business Model Canvas, 'Revenue Streams' describes:",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_11_Assignment.pdf",
+      "question": "According to the lesson on BMC, if an assumption on a post-it fails after testing in \nthe market, what should the founder do?",
       "options": [
         {
           "id": "A",
-          "text": "The river networks near the company's manufacturing plant"
+          "text": "Trash the entire business"
         },
         {
           "id": "B",
-          "text": "The ways in which the company generates cash from each customer segment"
+          "text": "Keep the post-it aside to know what didn't work and change the assumption"
         },
         {
           "id": "C",
-          "text": "Only one-time product sales"
+          "text": "Cry and give up"
         },
         {
           "id": "D",
-          "text": "The company's bank account transaction history"
+          "text": "Blame the customers"
         }
       ],
       "correctOptionId": "B",
-      "explanation": "Revenue Streams in the BMC describes how a company monetises its value propositions — through asset sales, usage fees, subscriptions, licensing, commissions, advertising, etc."
-    },
-    {
-      "id": "ENT-W11-007",
-      "courseId": "entrepreneurship",
-      "week": 11,
-      "moduleId": 7,
-      "moduleName": "Strategy, Leadership & Business Planning",
-      "topic": "Ten Tests of Strategy",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 11 practice — noc26_mg80 Module 7",
-      "verified": true,
-      "difficulty": "Hard",
-      "question": "Which of the following is the best example of a company 'stuck in the middle' as described by Porter?",
-      "options": [
-        {
-          "id": "A",
-          "text": "A company that is the clear cost leader in its industry"
-        },
-        {
-          "id": "B",
-          "text": "A niche luxury brand with a focused differentiation strategy"
-        },
-        {
-          "id": "C",
-          "text": "A company that cannot claim either the lowest cost or a distinctly superior product"
-        },
-        {
-          "id": "D",
-          "text": "A startup that has achieved product-market fit in a defined segment"
-        }
-      ],
-      "correctOptionId": "C",
-      "explanation": "Being 'stuck in the middle' means having neither a cost advantage nor a meaningful differentiation — making the company vulnerable to both cost leaders below and differentiators above."
-    },
-    {
-      "id": "ENT-W11-008",
-      "courseId": "entrepreneurship",
-      "week": 11,
-      "moduleId": 7,
-      "moduleName": "Strategy, Leadership & Business Planning",
-      "topic": "Entrepreneurial Leadership",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 11 practice — noc26_mg80 Module 7",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "Building a strong organisational culture as an entrepreneur primarily involves:",
-      "options": [
-        {
-          "id": "A",
-          "text": "Writing a long culture document and filing it with HR"
-        },
-        {
-          "id": "B",
-          "text": "Consistently modelling the values, behaviours, and standards you want the organisation to embody"
-        },
-        {
-          "id": "C",
-          "text": "Hiring only experienced managers from large corporations"
-        },
-        {
-          "id": "D",
-          "text": "Avoiding any discussion of values in the workplace"
-        }
-      ],
-      "correctOptionId": "B",
-      "explanation": "Culture is shaped by the founder's daily behaviour and decision-making. Employees observe what leaders do, not just what they say — consistent modelling is the most powerful culture-building tool."
+      "explanation": "",
+      "difficulty": "Unclassified"
     }
   ]
 }

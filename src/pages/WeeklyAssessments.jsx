@@ -1,4 +1,4 @@
-﻿import React, { useState, useMemo } from "react";
+import React, { useState, useMemo } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import {
   SYLLABUS,
@@ -135,12 +135,12 @@ function WeekCard({ weekMeta, onStart }) {
         onClick={() => onStart(week)}
         className={`w-full py-2.5 rounded-xl text-xs font-bold inline-flex items-center justify-center gap-2 transition-colors ${
           questionCount > 0
-            ? "bg-blue-600 text-white hover:bg-blue-700 shadow-xs"
+            ? "bg-blue-600 text-white hover:bg-blue-700 shadow-xs cursor-pointer"
             : "bg-slate-100 text-slate-400 cursor-not-allowed"
         }`}
       >
         <BookOpen className="w-3.5 h-3.5" />
-        {questionCount > 0 ? "Start Practice" : "Not Available"}
+        {questionCount > 0 ? "Start Assessment" : "Not Available"}
       </button>
     </div>
   );
@@ -188,8 +188,8 @@ export default function WeeklyAssessments() {
       courseId: "entrepreneurship",
       week: weekNum,
       count: "all",
-      shuffle: true,
-      shuffleOptions: true
+      shuffle: false,
+      shuffleOptions: false
     });
     if (!qs.length) return;
     stopTimer();
@@ -282,23 +282,12 @@ export default function WeeklyAssessments() {
         </div>
 
         {/* Info banner */}
-        <div className="mb-8 p-4 rounded-2xl bg-amber-50 border border-amber-200 text-sm text-amber-900 flex gap-3">
-          <AlertCircle className="w-4 h-4 mt-0.5 shrink-0 text-amber-600" />
+        <div className="mb-8 p-4 rounded-2xl bg-blue-50/80 border border-blue-200 text-sm text-blue-900 flex gap-3">
+          <CheckCircle2 className="w-4 h-4 mt-0.5 shrink-0 text-blue-600" />
           <div>
-            <p className="font-semibold mb-1">About these questions</p>
-            <p className="text-xs leading-relaxed">
-              The official NPTEL weekly assessments for noc26_mg80 require login at{" "}
-              <a
-                href="https://onlinecourses.nptel.ac.in/e-learning/course/noc26_mg80"
-                target="_blank"
-                rel="noreferrer"
-                className="underline hover:text-amber-700"
-              >
-                onlinecourses.nptel.ac.in
-              </a>{" "}
-              and cannot be retrieved automatically. The questions below are{" "}
-              <strong>original practice questions</strong> covering each week&apos;s syllabus topics.
-              They are clearly labelled as practice questions — not official NPTEL assessment questions.
+            <p className="font-semibold mb-1">Official Weekly Assignment Question Bank</p>
+            <p className="text-xs leading-relaxed text-blue-800">
+              All 12 weekly assessments are populated with all 15 MCQs directly extracted from the official weekly assignment PDFs (Weeks 1–12, 180 total questions). Every assessment displays questions in the original PDF order with authentic answer keys.
             </p>
           </div>
         </div>

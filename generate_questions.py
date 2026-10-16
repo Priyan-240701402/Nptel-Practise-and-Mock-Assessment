@@ -1,328 +1,355 @@
-# Python script to generate comprehensive question banks for both courses
-import json
+# Python script to generate authoritative question banks for both courses
+# Foundations of Entrepreneurship: 180 MCQs extracted directly from 12 uploaded assignment PDFs.
+# Introduction to Large Language Models: 100 MCQs preserved.
+
 import os
+import re
+import json
+import pypdf
 
 os.makedirs('src/data', exist_ok=True)
+os.makedirs('src/data/entrepreneurship', exist_ok=True)
 
 # ----------------- Course 1: Foundations of Entrepreneurship -----------------
-ent_topics = [
-    ("Entrepreneurial Mindset & Characteristics", [
-        ("Which trait is most consistently cited as a core characteristic of successful entrepreneurs?",
-         ["Extreme aversion to any financial or social risk", "Tolerance for ambiguity and calculated risk-taking", "Preference for repetitive, highly structured tasks", "Total reliance on external direction"],
-         "B", "Entrepreneurs demonstrate tolerance for ambiguity, adaptability, and the ability to evaluate and undertake calculated risks.", "Easy"),
-        ("According to Joseph Schumpeter, entrepreneurship is primarily driven by:",
-         ["Creative destruction and innovation", "Passive capital accumulation", "Strict price controls and regulations", "Maintaining existing market equilibriums"],
-         "A", "Schumpeter defined entrepreneurship as the process of 'creative destruction', introducing new combinations of factors of production.", "Medium"),
-        ("What is the primary difference between an entrepreneur and an intrapreneur?",
-         ["Entrepreneurs work inside existing corporations, intrapreneurs do not", "Intrapreneurs innovate within an existing organization using company resources", "Intrapreneurs take 100% personal financial liability", "Entrepreneurs never innovate; they only manage"],
-         "B", "An intrapreneur behaves like an entrepreneur while working within a larger existing corporate structure.", "Easy"),
-        ("David McClelland's Human Motivation Theory highlights which need as strongest in entrepreneurial behavior?",
-         ["Need for Affiliation (nAff)", "Need for Power (nPower)", "Need for Achievement (nAch)", "Need for Avoidance (nAvoid)"],
-         "C", "McClelland identified high Need for Achievement (nAch) as a primary psychological driver for entrepreneurial ventures.", "Medium"),
-        ("An entrepreneurial locus of control is usually:",
-         ["External (attributing success to luck)", "Internal (believing actions directly influence outcomes)", "Neutral (fatalistic worldview)", "Socially determined"],
-         "B", "Entrepreneurs typically exhibit an internal locus of control, believing their proactive efforts directly shape outcomes.", "Easy"),
-        ("Which of the following describes effectuation in entrepreneurial decision-making (Saras Sarasvathy)?",
-         ["Starting with given goals and selecting optimal means", "Starting with available means and co-creating goals as you proceed", "Conducting 10-year forecasts before starting", "Relying purely on algorithmic financial modeling"],
-         "B", "Effectuation focuses on starting with available means (who you are, what you know, who you know) and iterating dynamically.", "Hard"),
-        ("The 'Bird-in-Hand' principle in effectuation advises entrepreneurs to:",
-         ["Look for multi-million dollar venture capital before launching", "Start with existing resources, contacts, and personal strengths", "Pursue perfection before showing prototypes to users", "Avoid partnering with any potential stakeholder"],
-         "B", "The Bird-in-Hand principle encourages entrepreneurs to act based on means readily available right now.", "Medium"),
-        ("What does the 'Affordable Loss' principle emphasize?",
-         ["Maximizing potential return at any cost", "Investing only what you can afford to lose if things go wrong", "Borrowing as much leverage as possible", "Focusing strictly on competitor moves"],
-         "B", "Entrepreneurs limit risk by deciding upfront what they are willing to lose, rather than calculating expected returns.", "Medium"),
-        ("The 'Lemonade Principle' in effectuation refers to:",
-         ["Selling beverages in summer", "Leveraging unexpected surprises and contingencies to your advantage", "Rejecting negative customer feedback", "Liquidating assets immediately upon failure"],
-         "B", "The Lemonade Principle states that surprises and setbacks should be embraced and converted into new opportunities.", "Easy"),
-        ("Which entrepreneurial mindset component helps founders persist through adversity and pivot when needed?",
-         ["Fixed cognitive bias", "Grit and emotional resilience", "Hyper-specialization in legal matters", "Complete dismissal of customer feedback"],
-         "B", "Grit and psychological resilience enable founders to navigate inevitable hurdles and setbacks.", "Easy"),
-        ("In entrepreneurial terminology, what is a 'serial entrepreneur'?",
-         ["Someone who only invests in food processing companies", "An individual who continuously starts, grows, and exits multiple new ventures", "An executive who works at one startup for their entire career", "An investor who buys public stocks regularly"],
-         "B", "A serial entrepreneur founds, builds, and moves on to launch several business ventures sequentially.", "Easy"),
-        ("Which cognitive bias causes entrepreneurs to overestimate their chances of venture success?",
-         ["Status quo bias", "Overconfidence bias", "Hindsight bias", "Anchoring on past failures"],
-         "B", "Overconfidence bias leads entrepreneurs to overestimate positive outcomes and underestimate competitive hazards.", "Medium")
-    ]),
-    ("Opportunity Identification & Idea Generation", [
-        ("An entrepreneurial opportunity is distinct from a mere idea because:",
-         ["It has commercial viability, customer demand, and creates sustainable value", "It is patented immediately before any validation", "It requires no initial capital or effort", "It has zero competition anywhere in the world"],
-         "A", "An opportunity represents a validated market need with economic potential, whereas an idea is simply a concept.", "Easy"),
-        ("Which framework is widely used for creative problem solving and lateral idea generation?",
-         ["SCAMPER (Substitute, Combine, Adapt, Modify, Put to another use, Eliminate, Reverse)", "FIFO (First In First Out)", "GAAP (Generally Accepted Accounting Principles)", "COCOMO model"],
-         "A", "SCAMPER is a recognized creative brainstorming tool used to generate new product variations and business concepts.", "Medium"),
-        ("Trend analysis for opportunity spotting typically evaluates changes in PESTLE factors. What does 'P' represent?",
-         ["Product", "Political", "Psychological", "Procurement"],
-         "B", "PESTLE stands for Political, Economic, Social, Technological, Legal, and Environmental factors.", "Easy"),
-        ("Which source of opportunity arises from frictions in existing supply chains or service delivery?",
-         ["Government deregulation only", "Market inefficiencies and customer pain points", "Random academic research without market interest", "Competitor monopoly lock-in"],
-         "B", "Frictions, bottlenecks, and unaddressed pain points are prime fertile grounds for entrepreneurial solutions.", "Easy"),
-        ("What is the core premise of Blue Ocean Strategy in market opportunity identification?",
-         ["Compete aggressively on existing price points in crowded markets", "Create uncontested market space and render competition irrelevant", "Copy the market leader's exact feature set", "Focus purely on hostile corporate takeovers"],
-         "B", "Blue Ocean Strategy advocates opening uncontested market domains by creating novel value propositions.", "Medium"),
-        ("In design thinking, what is the initial phase essential for discovering real user pain points?",
-         ["Prototyping", "Empathize", "Testing", "Scaling"],
-         "B", "Empathizing with end users through observations and interviews helps uncover unspoken problems and latent needs.", "Easy"),
-        ("A 'painkiller' product differs from a 'vitamin' product in that:",
-         ["Painkillers solve acute, urgent, must-solve problems for customers", "Vitamins are much more expensive to manufacture", "Vitamins are legally required for enterprise clients", "Painkillers only target healthcare industries"],
-         "A", "Painkillers address acute pain points that customers actively search and urgently pay to resolve.", "Easy"),
-        ("Reverse engineering an existing product to identify shortcomings and build a superior alternative is called:",
-         ["Deconstruction & gap analysis", "Patent infringement", "Hostile franchising", "Speculative arbitrage"],
-         "A", "Gap analysis and product deconstruction identify deficiencies in incumbent offerings to create superior value.", "Medium"),
-        ("Which of the following describes serendipity in entrepreneurial discovery?",
-         ["Strict mathematical optimization of linear constraints", "Accidental discovery of value while pursuing an unrelated pursuit", "Carefully staged multi-round RFP processes", "Government tender allocation"],
-         "B", "Serendipitous discoveries occur when observant entrepreneurs notice value in unexpected accidents or anomalies.", "Easy"),
-        ("Customer discovery interviews in early validation should prioritize:",
-         ["Pitching your solution and getting compliments", "Listening to past behaviors and specific pain points without pitching", "Getting NDA agreements signed immediately", "Negotiating final discount prices"],
-         "B", "The 'Mom Test' guideline recommends asking about past behaviors and real problems rather than hypothetical praise.", "Hard"),
-        ("Which technique involves observing users in their natural habitat to discover unarticulated needs?",
-         ["Ethnographic research / fly-on-the-wall observation", "Cold email surveys with binary questions", "Focus groups in artificial boardrooms", "A/B testing of hypothetical landing pages"],
-         "A", "Ethnographic observation reveals unarticulated pain points that users often fail to describe verbally.", "Medium"),
-        ("What role do regulatory shifts (e.g., data privacy laws, clean energy subsidies) play in entrepreneurship?",
-         ["They eliminate all entrepreneurial incentives", "They create new market demands and compliance requirements for startups to address", "They guarantee profitability for all incumbents", "They strictly ban new venture creation"],
-         "B", "Regulatory shifts often unlock new markets and mandate compliance tools that agile startups can supply.", "Medium")
-    ]),
-    ("Feasibility Analysis & Business Models", [
-        ("What are the three pillars of a comprehensive venture feasibility analysis?",
-         ["Product/Service, Industry/Target Market, and Financial feasibility", "Packaging, Advertisement, and Celebrity endorsement", "Auditing, Taxation, and Liquidation", "Social media, PR, and Press releases"],
-         "A", "Feasibility analysis systematically evaluates Product/Service, Industry/Market, and Organizational/Financial aspects.", "Easy"),
-        ("In Alexander Osterwalder's Business Model Canvas, how many building blocks are defined?",
-         ["4", "7", "9", "12"],
-         "C", "The Business Model Canvas comprises 9 building blocks covering customer segments, value proposition, channels, etc.", "Easy"),
-        ("Which block in the Business Model Canvas outlines how the company delivers its value proposition to customers?",
-         ["Key Partners", "Channels", "Cost Structure", "Key Resources"],
-         "B", "Channels describe how a company communicates with and reaches its customer segments to deliver value.", "Easy"),
-        ("What does MVP stand for in Eric Ries's Lean Startup methodology?",
-         ["Maximum Viable Product", "Minimum Viable Product", "Most Valuable Player", "Minimum Verified Parameter"],
-         "B", "A Minimum Viable Product is the version of a new product which allows a team to collect validated learning with least effort.", "Easy"),
-        ("The Build-Measure-Learn feedback loop is central to which framework?",
-         ["Waterfall Software Engineering", "Lean Startup methodology", "Six Sigma Black Belt", "Taylorism Scientific Management"],
-         "B", "The Lean Startup emphasizes continuous cycles of Build-Measure-Learn to minimize wasted development resources.", "Easy"),
-        ("A 'pivot' in startup development refers to:",
-         ["Shutting down the company permanently", "A structured course correction designed to test a new hypothesis about product or business model", "Firing the founding team", "Switching accounting software"],
-         "B", "A pivot is a substantive change to the business model or product strategy based on validated customer insights.", "Medium"),
-        ("What is the primary objective of smoke testing or landing page validation before product development?",
-         ["Generating accounting profit immediately", "Measuring genuine customer interest and click-through intent before building", "Filing international trademarks", "Preventing competitors from buying domains"],
-         "B", "Smoke tests measure real intent (e.g., email sign-ups, pre-orders) to gauge market demand with minimal code.", "Medium"),
-        ("Which business model monetizes by providing core services free while charging for advanced capabilities?",
-         ["Direct wholesale model", "Freemium model", "Loss leader retail model", "Consignment inventory model"],
-         "B", "Freemium provides basic features at no cost while gating premium capabilities behind a subscription or payment.", "Easy"),
-        ("What distinguishes a two-sided platform business model (e.g., Uber, Airbnb)?",
-         ["It manufactures all physical assets internally", "It facilitates interactions and transactions between two distinct, interdependent user groups", "It charges only government subsidies", "It has no operating costs"],
-         "B", "Two-sided platforms connect distinct participant groups (e.g., riders and drivers) and derive network effects.", "Medium"),
-        ("In a SaaS (Software as a Service) business model, what does CAC represent?",
-         ["Customer Acquisition Cost", "Capital Asset Capitalization", "Credit Adjustment Clause", "Cash Accumulation Capacity"],
-         "A", "CAC represents the total cost of sales and marketing required to acquire a single paying customer.", "Easy"),
-        ("If LTV (Customer Lifetime Value) is less than CAC (Customer Acquisition Cost), the business model is:",
-         ["Highly profitable and ready to scale", "Unsustainable and burning cash for each acquired customer", "Break-even at all production volumes", "Exempt from taxes"],
-         "B", "When LTV < CAC, acquiring customers loses money, making the unit economics fundamentally unsustainable.", "Medium"),
-        ("What is unit economics?",
-         ["Macroeconomic inflation numbers of a nation", "Direct revenues and costs associated with an individual unit of production or per customer", "The salary of a single software engineer", "The tax rate applied to foreign exports"],
-         "B", "Unit economics measures the profitability and variable costs tied to delivering one discrete unit of product or service.", "Medium"),
-        ("The Lean Canvas developed by Ash Maurya replaces 'Key Partners' and 'Key Resources' primarily with:",
-         ["Problem and Solution", "Office layout and Furniture", "Vendor contracts and Dividends", "Patents and Trademarks"],
-         "A", "The Lean Canvas focuses startups on Problem, Solution, Key Metrics, and Unfair Advantage.", "Hard")
-    ]),
-    ("Market Research & Customer Discovery", [
-        ("Primary market research differs from secondary research in that:",
-         ["Primary research uses previously published industry reports", "Primary research collects firsthand data directly tailored to the specific problem", "Primary research is always free of cost", "Secondary research only surveys friends and family"],
-         "B", "Primary research gathers new, original data (interviews, surveys) directly from the target population.", "Easy"),
-        ("TAM in market sizing methodology stands for:",
-         ["Total Addressable Market", "Target Allocated Margin", "Technological Assessment Model", "Temporary Annual Movement"],
-         "A", "TAM stands for Total Addressable Market, representing the total overall demand for a product or service.", "Easy"),
-        ("In the TAM-SAM-SOM hierarchy, what does SOM stand for?",
-         ["Sales Optimization Matrix", "Serviceable Obtainable Market", "Standard Operational Metric", "Subsidized Ongoing Market"],
-         "B", "SOM is the Serviceable Obtainable Market — the realistic portion of the market a startup can capture in the near term.", "Medium"),
-        ("A buyer persona or customer archetype should primarily include:",
-         ["Irrelevant generic demographics only", "Goals, pain points, motivations, purchasing habits, and behavioral context", "The founder's personal aspirations", "The legal incorporation details of suppliers"],
-         "B", "Personas synthesize behavioral patterns, pain triggers, job titles, and buying constraints of key customer segments.", "Easy"),
-        ("Which concept explains why early adopters are crucial for innovative technology products?",
-         ["Geoffrey Moore's 'Crossing the Chasm'", "Ohm's Law", "Heisenberg Uncertainty Principle", "Parkinson's Law"],
-         "A", "Geoffrey Moore showed how startups must leverage enthusiastic early adopters before crossing the chasm to pragmatists.", "Medium"),
-        ("In the 'Crossing the Chasm' framework, the chasm exists between:",
-         ["Innovators and Early Adopters", "Early Adopters and Early Majority (Pragmatists)", "Early Majority and Late Majority", "Late Majority and Laggards"],
-         "B", "The perilous chasm separates visionary Early Adopters from pragmatic Early Majority buyers who demand references.", "Hard"),
-        ("What is 'confirmation bias' in customer discovery interviews?",
-         ["Asking open-ended questions and listening neutrally", "Leading interviewees to confirm the founder's pre-existing beliefs about the product", "Recording interviews for team review", "Cross-checking quantitative data with survey results"],
-         "B", "Confirmation bias happens when interviewers unconsciously phrase questions to elicit agreeable answers validating their idea.", "Medium"),
-        ("Which metric measures customer willingness to recommend a product to friends or colleagues?",
-         ["Net Promoter Score (NPS)", "Return on Equity (ROE)", "Debt-to-Equity Ratio", "Compound Annual Growth Rate (CAGR)"],
-         "A", "NPS calculates customer loyalty based on responses to how likely they are to recommend the product on a 0-10 scale.", "Easy"),
-        ("A negative NPS score implies that:",
-         ["The company has more Detractors (0-6) than Promoters (9-10)", "The company is growing 100% year over year", "All customers are completely neutral", "The product cannot legally be sold"],
-         "A", "NPS is % Promoters minus % Detractors; a negative score indicates dissatisfaction among the customer base.", "Medium"),
-        ("What is a cohort analysis used for in SaaS and customer retention?",
-         ["Measuring total annual company electricity consumption", "Tracking the behavior and retention rate of user groups acquired in specific time periods", "Auditing employee tax deductions", "Estimating competitor factory floor size"],
-         "B", "Cohort analysis breaks user data into related groups over time to assess product stickiness and retention improvements.", "Hard"),
-        ("Customer churn rate is calculated as:",
-         ["(Customers lost during period) / (Customers at start of period)", "(Revenue) / (Number of employees)", "(Marketing spend) / (Total sales)", "(Total assets) - (Total liabilities)"],
-         "A", "Churn rate calculates the percentage of existing customers who cancel or discontinue service within a given timeframe.", "Easy"),
-        ("Which of the following is considered a qualitative market research technique?",
-         ["Large-scale multiple choice census survey", "In-depth one-on-one semi-structured user interviews", "Server log hit counter analysis", "Credit card transaction volume aggregation"],
-         "B", "In-depth user interviews yield rich qualitative narrative insights regarding emotional pain points and motivations.", "Easy")
-    ]),
-    ("Financial Planning & Funding for Startups", [
-        ("What does 'burn rate' mean for an early-stage startup?",
-         ["The speed at which company computers become obsolete", "The monthly rate at which the startup spends its venture capital before generating positive cash flow", "The interest penalty charged on late corporate taxes", "The discount rate offered to retail customers"],
-         "B", "Burn rate is the net rate of monthly cash expenditure while working toward profitability or next financing.", "Easy"),
-        ("If a startup has $300,000 cash in the bank and a net burn rate of $30,000 per month, what is its runway?",
-         ["3 months", "6 months", "10 months", "30 months"],
-         "C", "Runway = Total Cash / Monthly Burn Rate = $300,000 / $30,000 = 10 months.", "Easy"),
-        ("What is 'bootstrapping' in venture creation?",
-         ["Funding the startup purely using personal savings, early customer revenues, and lean operations without external equity", "Taking a 50-million-dollar sovereign wealth fund investment", "Merging with a publicly traded multinational conglomerate", "Defaulting on government venture loans"],
-         "A", "Bootstrapping means self-funding the company via internal resources and sales cash flows rather than venture equity.", "Easy"),
-        ("What is the difference between pre-money and post-money valuation?",
-         ["Post-money valuation = Pre-money valuation + New investment amount", "Pre-money valuation includes future earnings after 10 years", "Post-money valuation deducts all founder salaries", "There is no difference between them"],
-         "A", "Post-money valuation reflects the enterprise value immediately following the infusion of new investment capital.", "Medium"),
-        ("If an angel investor invests $500,000 at a pre-money valuation of $2,000,000, what equity percentage do they own?",
-         ["25%", "20%", "33.3%", "15%"],
-         "B", "Post-money valuation = $2M + $0.5M = $2.5M. Investor equity = $0.5M / $2.5M = 20%.", "Medium"),
-        ("What is a SAFE (Simple Agreement for Future Equity)?",
-         ["A standard 30-year fixed-rate mortgage contract", "A flexible financing contract where investor capital converts into equity in a future priced round", "A permanent non-disclosure agreement", "A bankruptcy liquidation protocol"],
-         "B", "Created by Y Combinator, a SAFE allows startups to raise early capital without immediately fixing a rigid valuation.", "Medium"),
-        ("What is dilution in the context of startup capitalization?",
-         ["Liquidating physical inventory at discounted prices", "The reduction in existing shareholders' ownership percentage when new shares are issued", "Adding water to chemical consumer goods", "Lowering software subscription prices over time"],
-         "B", "Dilution occurs whenever newly created equity shares are granted or sold, reducing existing owners' proportional stakes.", "Easy"),
-        ("A Cap Table (Capitalization Table) details:",
-         ["The hardware equipment depreciating in the server room", "The ownership percentages, share classes, and equity stakes of all company shareholders", "The quarterly tax obligations owed to state authorities", "The office seating chart for executive management"],
-         "B", "A Cap Table tracks who owns what equity, options, convertibles, and share classes within the company.", "Easy"),
-        ("What is break-even point?",
-         ["The point where total revenue equals total costs, resulting in zero profit and zero loss", "The moment all founders resign", "The time when a startup spends its last dollar of capital", "The point where government tax audits occur"],
-         "A", "Break-even occurs when total revenues perfectly cover both fixed and variable operating costs.", "Easy"),
-        ("Venture Capital (VC) firms typically invest capital sourced from:",
-         ["Individual founder personal bank accounts only", "Limited Partners (LPs) such as pension funds, university endowments, and family offices", "Unregulated high-interest payday loan agencies", "Direct retail crowdfunding campaigns only"],
-         "B", "Venture Capital funds are managed by General Partners (GPs) deploying capital raised from institutional Limited Partners (LPs).", "Hard"),
-        ("What does a liquidation preference protect in a venture term sheet?",
-         ["It guarantees common shareholders get paid before preferred investors in bankruptcy", "It dictates the order and multiplier of payout that preferred investors receive upon an exit or liquidation", "It forces employees to forfeit vested options", "It guarantees founder bonuses regardless of sale price"],
-         "B", "Liquidation preference ensures preferred shareholders recoup their capital prior to distributions to common shareholders.", "Hard"),
-        ("Convertible debt differs from straight equity because:",
-         ["It begins as a loan with interest that converts into equity upon a qualified future funding round", "It can never be repaid or converted under any circumstance", "It does not involve any legal paperwork", "It grants 100% board control immediately"],
-         "A", "Convertible debt is structured as debt that converts into shares upon specified future equity financings.", "Medium")
-    ]),
-    ("Legal, IP & Regulatory Aspects", [
-        ("Which form of intellectual property protects original inventions, machines, and novel processes?",
-         ["Copyright", "Patent", "Trademark", "Trade secret only"],
-         "B", "Utility patents protect novel, non-obvious, and useful inventions, processes, and technical mechanisms.", "Easy"),
-        ("What does a Trademark protect?",
-         ["Source code algorithms and software comments", "Brand names, logos, slogans, and distinctive identifying commercial symbols", "Chemical formulas kept strictly secret", "Industrial machine component dimensions"],
-         "B", "Trademarks protect signs, words, symbols, or phrases that distinguish goods or services in the marketplace.", "Easy"),
-        ("Copyright law primarily protects:",
-         ["Underlying abstract mathematical ideas and concepts", "Original works of authorship fixed in a tangible medium of expression (e.g., text, art, music, code)", "Functional machinery mechanisms", "Company financial valuation multiples"],
-         "B", "Copyright protects original expressions of ideas in tangible form, though not the underlying abstract ideas themselves.", "Easy"),
-        ("A Trade Secret is protected by:",
-         ["Public disclosure and registration with the patent office", "Maintaining strict confidentiality, NDAs, and physical/digital security measures", "Publishing the secret in peer-reviewed journals", "Filing an annual government disclosure form"],
-         "B", "Trade secrets (like the Coca-Cola formula) remain protected solely by maintaining confidentiality and internal controls.", "Medium"),
-        ("What is the primary role of a Non-Disclosure Agreement (NDA)?",
-         ["To grant equity options to new hires automatically", "To legally bind parties from disclosing or misusing proprietary confidential information", "To establish salary scale benchmarks", "To eliminate company tax liabilities"],
-         "B", "An NDA protects proprietary trade information by imposing legal consequences for unauthorized dissemination.", "Easy"),
-        ("In the context of startup founders, what is a 'Vesting Schedule' with a 1-year cliff?",
-         ["Founders receive all their equity on day one with no restrictions", "Founders earn zero equity if they leave before one year; after year one, a 25% tranche vests, followed by monthly vesting", "Founders are forced to leave the company after 12 months", "Employees can never buy equity in the company"],
-         "B", "A 1-year cliff ensures commitment; leaving prior to 12 months forfeits all equity, aligning long-term incentives.", "Hard"),
-        ("Which business structure provides limited liability to owners while operating as an independent legal entity in India?",
-         ["Sole Proprietorship", "Private Limited Company (Pvt Ltd)", "General Unregistered Partnership", "Hindu Undivided Family (HUF) business"],
-         "B", "A Private Limited Company provides distinct corporate personality and limited financial liability to shareholders.", "Easy"),
-        ("Why is a Sole Proprietorship risky for high-growth tech ventures?",
-         ["The owner has unlimited personal liability for all venture debts and legal claims", "It requires too many board directors", "It is legally barred from using computer software", "It cannot sell physical products"],
-         "A", "In a sole proprietorship, there is no legal distinction between business debts and the owner's personal personal assets.", "Medium"),
-        ("Freedom to Operate (FTO) analysis determines whether:",
-         ["The startup's employees are allowed to work remotely", "Commercializing a product infringes on existing, active third-party patents", "The company has paid its monthly electricity bills", "Competitors have agreed not to advertise in the same city"],
-         "B", "An FTO search verifies that producing and selling the product does not infringe on valid patents held by others.", "Hard"),
-        ("What does an Assignment of Intellectual Property agreement ensure when hiring developers?",
-         ["That developers retain all rights to sell company code to competitors", "That all IP created during employment belongs exclusively to the company", "That the company pays zero salary", "That software code can never be rewritten"],
-         "B", "IP assignment agreements transfer ownership of all work product created by contributors directly to the company entity.", "Medium"),
-        ("What is regulatory compliance risk?",
-         ["The risk that customers prefer competitor designs", "The exposure to legal penalties, fines, or operational bans due to failing to adhere to laws and mandates", "The risk of office internet downtime", "The fluctuation of foreign exchange rates"],
-         "B", "Regulatory compliance risk refers to potential operational and financial damage arising from violating statutory mandates.", "Easy"),
-        ("Which of the following is essential before issuing stock options to employees under an ESOP?",
-         ["Adopting a formal ESOP plan approved by the board and allocating an option pool", "Closing all company bank accounts", "Eliminating all customer contracts", "Filing for chapter 7 liquidation"],
-         "A", "An ESOP requires board approval, shareholder ratification, and a formal pool reserved from common equity.", "Medium")
-    ]),
-    ("Team Building & Organizational Leadership", [
-        ("When selecting co-founders, what combination is traditionally regarded as most resilient?",
-         ["Identical skill sets and conflicting personal ethics", "Complementary skills (e.g., technical builder + business operator) with shared values", "Complete strangers who refuse to sign legal agreements", "Solo ownership with no communication"],
-         "B", "Complementary skills paired with alignment on fundamental work ethic, values, and vision form resilient founding teams.", "Easy"),
-        ("What is the primary danger of a homogenous founding team where all members have identical backgrounds?",
-         ["Blind spots in functional areas like sales, compliance, or engineering", "Having too many different viewpoints on marketing", "Too fast decision making", "High government tax audits"],
-         "A", "Homogenous teams often excel in their shared specialty but suffer severe blind spots in unrepresented business disciplines.", "Medium"),
-        ("In Tuckman's stages of team development, what is the sequence?",
-         ["Forming, Storming, Norming, Performing, Adjourning", "Performing, Forming, Storming, Dissolving", "Norming, Storming, Performing, Hiring", "Forming, Auditing, Paying, Retiring"],
-         "A", "Bruce Tuckman identified team progression through Forming, Storming, Norming, Performing, and finally Adjourning.", "Medium"),
-        ("What does psychological safety within a startup team foster?",
-         ["Willingness to take interpersonal risks, admit errors, and voice innovative ideas without fear of ridicule", "Absolute obedience to founder edicts without question", "Elimination of all performance evaluations", "Zero accountability for deliverables"],
-         "A", "Psychological safety allows team members to propose bold ideas, highlight critical defects, and learn from mistakes.", "Medium"),
-        ("Which leadership style is most effective during early crisis navigation and urgent turnarounds?",
-         ["Strict Laissez-faire / hands-off leadership", "Decisive situational or authoritative leadership with clear direction", "Complete delegation to outsourced third parties", "Passive democratic voting on minor tactical tasks"],
-         "B", "In crises, decisive, authoritative situational leadership clarifies priorities and executes necessary triage swiftly.", "Easy"),
-        ("Why do startups utilize stock options (ESOPs) as compensation?",
-         ["To avoid paying any taxes ever", "To align employee incentives with company growth and conserve early cash reserves", "Because cash salaries are illegal for startups", "To dilute institutional investors against their will"],
-         "B", "ESOPs align long-term incentives between employees and company valuation upside while preserving startup runway.", "Easy"),
-        ("A key employee resigns 6 months after starting. Under standard 4-year vesting with a 1-year cliff, they receive:",
-         ["50% of their options", "25% of their options", "Zero vested options", "100% of their options"],
-         "C", "Because they departed prior to reaching the 1-year cliff threshold, zero options vest.", "Medium"),
-        ("What is founder conflict and why is it fatal to early startups?",
-         ["Healthy disagreement on product features", "Deep interpersonal discord over vision, equity, or effort that paralyzes company execution", "A competitive lawsuit between two rival companies", "Government mediation during labor strikes"],
-         "B", "Founder disputes over control, contribution, and strategy are among the top causes of early-stage startup demise.", "Easy"),
-        ("Which role in a startup executive team typically oversees engineering, architecture, and technology roadmap?",
-         ["Chief Operating Officer (COO)", "Chief Technology Officer (CTO)", "Chief Marketing Officer (CMO)", "Chief Financial Officer (CFO)"],
-         "B", "The CTO leads technical strategy, software development, architecture decisions, and technology talent recruitment.", "Easy"),
-        ("Which of the following best describes an advisory board for an early-stage startup?",
-         ["A panel with legal fiduciary liability and voting power to fire founders", "An informal group of industry veterans offering guidance, networks, and credibility without legal fiduciary control", "The local city government chamber of commerce", "A committee of junior interns"],
-         "B", "Advisory boards provide strategic wisdom, market access, and mentorship without possessing legal fiduciary governance power.", "Medium"),
-        ("What is 'culture debt' in a rapidly scaling startup?",
-         ["Unpaid invoices to catering vendors", "The compounding negative organizational consequences of neglecting culture, values, and hiring standards during rapid headcount growth", "The cost of building cultural heritage museums", "Government penalties for not translating software"],
-         "B", "Culture debt accumulates when companies hire hastily without vetting cultural fit, resulting in low morale and dysfunction.", "Hard"),
-        ("Transformational leadership in entrepreneurship focuses on:",
-         ["Inspiring and empowering team members toward a shared, compelling future vision", "Tracking hourly keystrokes on employee monitors", "Offering minimal praise and enforcing punitive measures", "Micromanaging day-to-day administrative errands"],
-         "A", "Transformational leaders inspire intrinsic motivation, personal growth, and commitment to transcendent venture objectives.", "Easy")
-    ]),
-    ("Growth Strategies & Scaling Up", [
-        ("What is 'Product-Market Fit' (PMF) as described by Marc Andreessen?",
-         ["Being in a good market with a product that can satisfy that market", "Filing an IPO on NASDAQ", "Hiring more than 500 employees", "Having a functional website with zero bugs"],
-         "A", "PMF occurs when a startup builds a product that genuinely resonates with and satisfies substantial customer demand.", "Easy"),
-        ("The 'Sean Ellis Test' benchmark for Product-Market Fit states PMF is likely achieved when:",
-         ["10% of users would be slightly disappointed without the product", "At least 40% of surveyed users say they would be 'very disappointed' if the product disappeared", "All competitors close their operations", "The company spends $1M on Google Ads"],
-         "B", "Achieving >= 40% 'very disappointed' responses is widely recognized as an empirical indicator of Product-Market Fit.", "Hard"),
-        ("What constitutes a 'network effect' in platform scaling?",
-         ["When the network cables in an office get upgraded", "When a product or service becomes more valuable to each user as the total number of users increases", "When telecom providers charge high roaming fees", "When a company advertises on television networks"],
-         "B", "Network effects (e.g., in WhatsApp, eBay) make platforms exponentially more valuable as the participant base grows.", "Easy"),
-        ("Which metric reflects virality by measuring how many new users each existing user refers?",
-         ["K-Factor (Viral Coefficient)", "Quick Ratio", "Current Ratio", "Gross Margin"],
-         "A", "A K-factor greater than 1 indicates organic exponential viral growth, as each user brings in more than one additional user.", "Medium"),
-        ("What is premature scaling in entrepreneurship?",
-         ["Spending large sums on aggressive marketing and massive hiring before achieving validated Product-Market Fit", "Expanding office space after 10 years of steady profitability", "Exporting goods to neighboring countries after dominating the domestic market", "Upgrading software servers to handle genuine organic traffic surges"],
-         "A", "Premature scaling—spending heavily on growth before the core engine and retention are proven—is a leading startup killer.", "Medium"),
-        ("Growth hacking differs from traditional marketing primarily through:",
-         ["Relying exclusively on expensive Super Bowl commercials", "Rapid experimentation across product channels, data-driven analytics, and low-cost scalable loops", "Ignoring digital analytics entirely", "Outsourcing sales entirely to door-to-door agents"],
-         "B", "Growth hacking emphasizes agile, hypothesis-driven digital experiments across the entire user acquisition funnel.", "Easy"),
-        ("In the Pirate Metrics framework (AARRR), what does the sequence represent?",
-         ["Acquisition, Activation, Retention, Referral, Revenue", "Accounting, Auditing, Reporting, Refunding, Retiring", "Advertising, Aligning, Restructuring, Resigning, Repeating", "Asset, Allocation, Risk, Return, Ratio"],
-         "A", "Dave McClure's AARRR framework maps the customer lifecycle: Acquisition, Activation, Retention, Referral, Revenue.", "Medium"),
-        ("Which of the following is considered an inorganic growth strategy?",
-         ["Organic search engine optimization (SEO)", "Mergers and Acquisitions (M&A)", "Word-of-mouth customer referrals", "Iterative internal feature improvements"],
-         "B", "Mergers and acquisitions (M&A) represent inorganic growth by absorbing external companies, assets, or technologies.", "Easy"),
-        ("What is an exit strategy for startup founders and investors?",
-         ["A plan to escape the country to evade debts", "A strategic pathway to monetize equity investments (such as an IPO or strategic trade acquisition)", "The fire escape floorplan in the office building", "The resignation letter given to a bank manager"],
-         "B", "Exit strategies (acquisitions, IPOs, secondary sales) provide liquidity to founders, employees, and investors.", "Easy"),
-        ("In an IPO (Initial Public Offering), what occurs?",
-         ["A private company offers shares to the public on an official stock exchange for the first time", "The company converts into an unregistered partnership", "All company software is released into the public domain", "The company sells all assets to liquidators"],
-         "A", "An IPO transitions a privately held enterprise into a publicly traded corporation on recognized stock exchanges.", "Easy"),
-        ("What is the primary risk of international market expansion for young startups?",
-         ["High local cultural, legal, and operational nuances diverting focus and depleting domestic capital", "Universal demand making it too easy to scale", "Zero exchange rate fluctuations worldwide", "International customers refusing to speak English"],
-         "A", "Cross-border expansion introduces regulatory hurdles, currency volatility, and local competitive dynamics.", "Medium"),
-        ("Customer Retention Rate is critical for long-term venture scaling because:",
-         ["High churn can be masked indefinitely by paid marketing", "Retaining existing customers costs substantially less than acquiring new ones and enables compounding revenue", "Retention metrics are ignored by venture capital investors", "Only new customers ever generate revenue"],
-         "B", "Compound growth relies on sticky retention; high churn leaks value and ruins customer acquisition unit economics.", "Easy"),
-        ("What does the 'Rule of 40' measure in growth-stage software companies?",
-         ["That annual revenue growth rate plus profit margin should exceed or equal 40%", "That the company must hire 40 engineers every quarter", "That gross margin cannot drop below 40%", "That founder equity must be capped at 40%"],
-         "A", "The Rule of 40 benchmarks healthy software scaling: Growth Rate % + Free Cash Flow / Profit Margin % >= 40%.", "Hard"),
-        ("What is a fly-wheel effect in technology businesses (Jim Collins)?",
-         ["A physical generator that powers the datacenter", "A self-reinforcing virtuous cycle where positive performance in one area accelerates gains in another", "A rapid executive turnover cycle", "A continuous drop in product quality"],
-         "B", "A flywheel effect describes compound momentum where each customer or action strengthens and propels future growth.", "Medium"),
-        ("What is international localization beyond simple translation?",
-         ["Adapting payment systems, cultural messaging, regulatory compliance, and customer support to local market expectations", "Renaming the product using random letters", "Hiring only foreign citizens for all positions", "Changing the company logo color every week"],
-         "A", "Localization tailors the user experience, legal policies, payment gateways, and cultural nuances to local markets.", "Easy")
-    ])
+import pypdf
+import os
+import re
+import json
+
+pdf_files = [
+    (1, 'Week_1_Assignment.pdf', 1, "Introduction to Innovation & Entrepreneurship"),
+    (2, 'Week_2_Assignment.pdf', 2, "Opportunity Identification & Idea Generation"),
+    (3, 'Week_3_Assignment_Final.pdf', 3, "Customer Value Proposition"),
+    (4, 'Week_4_Assignment_Final.pdf', 4, "New Product Development"),
+    (5, 'Week_5_Assignment_Final.pdf', 4, "New Product Development"),
+    (6, 'Week_6_Assignment_Final_updated.pdf', 5, "Marketing & Go-to-Market"),
+    (7, 'Week_7_Assignment_Final.pdf', 5, "Marketing & Go-to-Market"),
+    (8, 'Week_8_Assignment_Final.pdf', 6, "Finance for Entrepreneurs"),
+    (9, 'Week_9_Assignment.pdf', 6, "Finance for Entrepreneurs"),
+    (10, 'Week_10_Assignment.pdf', 7, "Strategy, Leadership & Business Planning"),
+    (11, 'Week_11_Assignment.pdf', 7, "Strategy, Leadership & Business Planning"),
+    (12, 'Week_12_Assignment_Final.pdf', 8, "Communication & Investor Pitching")
 ]
+
+base_dir = r'C:\Users\priya\Downloads'
+
+# Topic mappings for all 180 questions
+# (week, qnum) -> topic
+TOPIC_MAP = {
+    # Week 1
+    (1, 1): "Course Expectations",
+    (1, 2): "Why Entrepreneurship, Why Now",
+    (1, 3): "What It Entails to Be an Entrepreneur",
+    (1, 4): "The Indian Economy Rising",
+    (1, 5): "The Indian Economy Rising",
+    (1, 6): "The Indian Economy Rising",
+    (1, 7): "Atomberg Founder Case Study",
+    (1, 8): "Atomberg Founder Case Study",
+    (1, 9): "Creativity, Innovation, and Entrepreneurship",
+    (1, 10): "Creativity, Innovation, and Entrepreneurship",
+    (1, 11): "Creativity, Innovation, and Entrepreneurship",
+    (1, 12): "Course Expectations",
+    (1, 13): "What It Entails to Be an Entrepreneur",
+    (1, 14): "What It Entails to Be an Entrepreneur",
+    (1, 15): "Course Expectations",
+
+    # Week 2
+    (2, 1): "Problems, Opportunities, and Ideas",
+    (2, 2): "Problems, Opportunities, and Ideas",
+    (2, 3): "Problems, Opportunities, and Ideas",
+    (2, 4): "Healthcare Sector with Rizwan Koita",
+    (2, 5): "Demystifying AI with Anand Deshpande",
+    (2, 6): "Demystifying AI with Anand Deshpande",
+    (2, 7): "Demystifying AI with Anand Deshpande",
+    (2, 8): "Demystifying AI with Anand Deshpande",
+    (2, 9): "Demystifying AI with Anand Deshpande",
+    (2, 10): "Healthcare Sector with Rizwan Koita",
+    (2, 11): "Healthcare Sector with Rizwan Koita",
+    (2, 12): "Demystifying AI with Anand Deshpande",
+    (2, 13): "Opportunities Landscape in Multiple Domains",
+    (2, 14): "Opportunities Landscape in Multiple Domains",
+    (2, 15): "Healthcare Sector with Rizwan Koita",
+
+    # Week 3
+    (3, 1): "Concept of Customer Value",
+    (3, 2): "Market and Customer Segmentation",
+    (3, 3): "Market and Customer Segmentation",
+    (3, 4): "Creating a Customer Value Proposition",
+    (3, 5): "CVP Formats and References",
+    (3, 6): "CVP Formats and References",
+    (3, 7): "Creating a Customer Value Proposition",
+    (3, 8): "Customer Discovery",
+    (3, 9): "Customer Discovery",
+    (3, 10): "Customer Discovery Example",
+    (3, 11): "Concept of Customer Value",
+    (3, 12): "Business Models",
+    (3, 13): "Business Models",
+    (3, 14): "Business Models",
+    (3, 15): "Creating a Customer Value Proposition",
+
+    # Week 4
+    (4, 1): "Stages of New Product Development",
+    (4, 2): "CVP to Benefits and Features",
+    (4, 3): "CVP to Benefits and Features",
+    (4, 4): "Stages of New Product Development",
+    (4, 5): "Stages of New Product Development",
+    (4, 6): "Stages of New Product Development",
+    (4, 7): "Minimum Viable Product",
+    (4, 8): "Minimum Viable Product",
+    (4, 9): "Stages of New Product Development",
+    (4, 10): "Design Thinking",
+    (4, 11): "Stages of New Product Development",
+    (4, 12): "Minimum Viable Product",
+    (4, 13): "Minimum Viable Product",
+    (4, 14): "Minimum Viable Product",
+    (4, 15): "Stages of New Product Development",
+
+    # Week 5
+    (5, 1): "Britannia Case Study",
+    (5, 2): "Britannia Case Study",
+    (5, 3): "Britannia Case Study",
+    (5, 4): "Britannia Case Study",
+    (5, 5): "Stages of New Product Development",
+    (5, 6): "Medical Devices Case Study",
+    (5, 7): "Intellectual Property Basics",
+    (5, 8): "Intellectual Property Patents",
+    (5, 9): "Intellectual Property Patents",
+    (5, 10): "Intellectual Property Basics",
+    (5, 11): "Intellectual Property Basics",
+    (5, 12): "Intellectual Property Basics",
+    (5, 13): "Intellectual Property Basics",
+    (5, 14): "Intellectual Property Basics",
+    (5, 15): "Intellectual Property Patents",
+
+    # Week 6
+    (6, 1): "Go-to-Market Basics",
+    (6, 2): "Role of Marketing",
+    (6, 3): "Marketing Mix",
+    (6, 4): "Marketing Mix",
+    (6, 5): "Marketing Mix",
+    (6, 6): "Product Branding",
+    (6, 7): "Product Branding",
+    (6, 8): "Product Branding",
+    (6, 9): "Differentiation",
+    (6, 10): "Tanishq Case Study",
+    (6, 11): "Pricing Strategies",
+    (6, 12): "Pricing Strategies",
+    (6, 13): "Promotional Strategies",
+    (6, 14): "Promotional Strategies",
+    (6, 15): "Promotional Strategies",
+
+    # Week 7
+    (7, 1): "Digital Customer Journey",
+    (7, 2): "Digital Customer Journey",
+    (7, 3): "FinTech Customer Journey Case Study",
+    (7, 4): "Digital Customer Journey",
+    (7, 5): "Sales Strategies",
+    (7, 6): "Sales Strategies",
+    (7, 7): "Sales Strategies",
+    (7, 8): "Sales Strategies",
+    (7, 9): "Sales Channels",
+    (7, 10): "B2B Sales and Marketing",
+    (7, 11): "B2B Sales and Marketing",
+    (7, 12): "B2B Sales and Marketing",
+    (7, 13): "B2B Sales and Marketing",
+    (7, 14): "Role of Marketing",
+    (7, 15): "Go-to-Market Planning",
+
+    # Week 8
+    (8, 1): "Accounting and Finance Terminology",
+    (8, 2): "Accounting and Finance Terminology",
+    (8, 3): "Accounting and Finance Terminology",
+    (8, 4): "Accounting and Finance Terminology",
+    (8, 5): "Profit and Loss Statement",
+    (8, 6): "Balance Sheet",
+    (8, 7): "Profit and Loss Statement",
+    (8, 8): "Cash Flow Statement",
+    (8, 9): "Cash Flow Statement",
+    (8, 10): "Role of Finance in Startups",
+    (8, 11): "Balance Sheet",
+    (8, 12): "Financial Statements Case Study",
+    (8, 13): "Unit Economics",
+    (8, 14): "Unit Economics",
+    (8, 15): "Cash Flow Statement",
+
+    # Week 9
+    (9, 1): "Business Planning",
+    (9, 2): "Financial Planning",
+    (9, 3): "Financial Planning",
+    (9, 4): "Fundraising at Different Startup Stages",
+    (9, 5): "Fundraising at Different Startup Stages",
+    (9, 6): "Role of Finance in Startups",
+    (9, 7): "Venture Finance",
+    (9, 8): "Venture Finance",
+    (9, 9): "Investor Expectations",
+    (9, 10): "Investor Expectations",
+    (9, 11): "Finance as Strategy",
+    (9, 12): "Finance as Strategy",
+    (9, 13): "Finance as Strategy",
+    (9, 14): "Role of Finance in Startups",
+    (9, 15): "Role of Finance in Startups",
+
+    # Week 10
+    (10, 1): "Strategy Fundamentals",
+    (10, 2): "Strategy Fundamentals",
+    (10, 3): "Strategy Fundamentals",
+    (10, 4): "Ten Tests of Strategy",
+    (10, 5): "Strategy Fundamentals",
+    (10, 6): "Entrepreneurial Leadership",
+    (10, 7): "Entrepreneurial Leadership",
+    (10, 8): "Entrepreneurial Leadership",
+    (10, 9): "Infiheal Founder Case Study",
+    (10, 10): "Infiheal Founder Case Study",
+    (10, 11): "Entrepreneurial Leadership",
+    (10, 12): "Entrepreneurial Leadership",
+    (10, 13): "Ten Tests of Strategy",
+    (10, 14): "Strategy Fundamentals",
+    (10, 15): "Entrepreneurial Leadership",
+
+    # Week 11
+    (11, 1): "Business Models",
+    (11, 2): "Business Models",
+    (11, 3): "Business Model Canvas: Demand Side",
+    (11, 4): "Business Model Canvas: Demand Side",
+    (11, 5): "Business Model Canvas: Supply Side",
+    (11, 6): "Business Models",
+    (11, 7): "Business Models",
+    (11, 8): "Business Model Canvas: Demand Side",
+    (11, 9): "Business Models",
+    (11, 10): "Social Business Model",
+    (11, 11): "Social Business Model",
+    (11, 12): "Social Business Model",
+    (11, 13): "Social Business Model",
+    (11, 14): "Social Business Model",
+    (11, 15): "Business Model Canvas Examples",
+
+    # Week 12
+    (12, 1): "Pitching to Investors",
+    (12, 2): "Becoming a Good Communicator",
+    (12, 3): "Becoming a Good Communicator",
+    (12, 4): "Becoming a Good Communicator",
+    (12, 5): "Value Creation Potential",
+    (12, 6): "Value Creation Potential",
+    (12, 7): "Pitching to Investors",
+    (12, 8): "Pitching to Investors",
+    (12, 9): "Airth Founder Case Study",
+    (12, 10): "Airth Founder Case Study",
+    (12, 11): "Airth Founder Case Study",
+    (12, 12): "Airth Founder Case Study",
+    (12, 13): "Course Closure",
+    (12, 14): "Course Closure",
+    (12, 15): "Course Closure"
+}
+
+def clean_text(t):
+    if not t:
+        return ''
+    t = t.replace('\xa0', ' ').replace('\u200b', '')
+    t = re.sub(r'[ \t]+', ' ', t)
+    return t.strip()
+
+all_weeks_data = {}
+all_questions = []
+
+for week_num, fname, module_id, module_name in pdf_files:
+    fpath = os.path.join(base_dir, fname)
+    reader = pypdf.PdfReader(fpath)
+    full_text = '\n'.join([page.extract_text() or '' for page in reader.pages])
+    
+    q_indices = []
+    for qnum in range(1, 16):
+        pattern = rf'(?:^|\n)\s*{qnum}\.\s+'
+        m = re.search(pattern, full_text)
+        assert m, f"Week {week_num} missing Q{qnum}"
+        q_indices.append((qnum, m.start()))
+    q_indices.sort(key=lambda x: x[1])
+    
+    week_qs = []
+    for idx, (qnum, start_pos) in enumerate(q_indices):
+        end_pos = q_indices[idx + 1][1] if idx + 1 < len(q_indices) else len(full_text)
+        block = full_text[start_pos:end_pos].strip()
+        
+        # Ans line
+        ans_m = re.search(r'Ans:\s*([a-dA-D])(?:\)|:|\.|\s)?\s*(.*?)(?:\n|$)', block)
+        assert ans_m, f"Week {week_num} Q{qnum} missing Ans: line"
+        ans_letter = ans_m.group(1).upper()
+        
+        # Options
+        opt_a_m = re.search(r'(?:^|\n)\s*a\)\s*(.*?)(?=\n\s*b\)|\Z)', block, re.DOTALL)
+        opt_b_m = re.search(r'(?:^|\n)\s*b\)\s*(.*?)(?=\n\s*c\)|\Z)', block, re.DOTALL)
+        opt_c_m = re.search(r'(?:^|\n)\s*c\)\s*(.*?)(?=\n\s*d\)|\Z)', block, re.DOTALL)
+        opt_d_m = re.search(r'(?:^|\n)\s*d\)\s*(.*?)(?=\n\s*Ans:|\Z)', block, re.DOTALL)
+        
+        assert opt_a_m and opt_b_m and opt_c_m and opt_d_m, f"Week {week_num} Q{qnum} missing option"
+        
+        qm = re.search(rf'^{qnum}\.\s*(.*?)(?=\n\s*a\))', block, re.DOTALL)
+        assert qm, f"Week {week_num} Q{qnum} failed question text extraction"
+        q_text = clean_text(qm.group(1))
+        
+        opt_a = clean_text(opt_a_m.group(1))
+        opt_b = clean_text(opt_b_m.group(1))
+        opt_c = clean_text(opt_c_m.group(1))
+        opt_d = clean_text(opt_d_m.group(1))
+        
+        topic = TOPIC_MAP.get((week_num, qnum), "Entrepreneurship Concepts")
+        
+        q_id = f"ENT-W{week_num:02d}-Q{qnum:02d}"
+        
+        q_obj = {
+            "id": q_id,
+            "courseId": "entrepreneurship",
+            "week": week_num,
+            "moduleId": module_id,
+            "moduleName": module_name,
+            "topic": topic,
+            "sourceType": "Uploaded Weekly Assignment",
+            "sourceFile": fname,
+            "question": q_text,
+            "options": [
+                {"id": "A", "text": opt_a},
+                {"id": "B", "text": opt_b},
+                {"id": "C", "text": opt_c},
+                {"id": "D", "text": opt_d}
+            ],
+            "correctOptionId": ans_letter,
+            "explanation": "",
+            "difficulty": "Unclassified"
+        }
+        week_qs.append(q_obj)
+        all_questions.append(q_obj)
+        
+    all_weeks_data[week_num] = {
+        "week": week_num,
+        "moduleId": module_id,
+        "moduleName": module_name,
+        "assessmentTitle": f"Week {week_num} Assessment",
+        "sourceFile": fname,
+        "sourceNote": f"Official Week {week_num} Assignment (15 questions)",
+        "questions": week_qs
+    }
+
+print(f"Total weeks processed: {len(all_weeks_data)}")
+print(f"Total questions created: {len(all_questions)}")
+
+# Write weekly JSON files
+output_dir = r'c:\Users\priya\Downloads\Nptel\src\data\entrepreneurship'
+for week_num, wdata in all_weeks_data.items():
+    wfile = os.path.join(output_dir, f"week{week_num:02d}.json")
+    with open(wfile, 'w', encoding='utf-8') as f:
+        json.dump(wdata, f, indent=2, ensure_ascii=False)
+    print(f"Wrote {wfile} with {len(wdata['questions'])} questions.")
+
+# Write entrepreneurshipQuestions.json
+ent_questions_file = r'c:\Users\priya\Downloads\Nptel\src\data\entrepreneurshipQuestions.json'
+with open(ent_questions_file, 'w', encoding='utf-8') as f:
+    json.dump({
+        "courseId": "entrepreneurship",
+        "courseTitle": "Foundations of Entrepreneurship",
+        "totalQuestions": len(all_questions),
+        "questions": all_questions
+    }, f, indent=2, ensure_ascii=False)
+print(f"Wrote {ent_questions_file} with {len(all_questions)} questions.")
+
 
 # ----------------- Course 2: Introduction to Large Language Models -----------------
 llm_topics = [
@@ -671,14 +698,11 @@ def build_course_json(course_id, topic_list, base_id_prefix):
             
     return {"courseId": course_id, "totalQuestions": len(questions), "questions": questions}
 
-# Generate entrepreneurship questions
-ent_data = build_course_json("entrepreneurship", ent_topics, "ENT")
-with open("src/data/entrepreneurshipQuestions.json", "w", encoding="utf-8") as f:
-    json.dump(ent_data, f, indent=2, ensure_ascii=False)
-print(f"Generated {len(ent_data['questions'])} entrepreneurship questions.")
+
 
 # Generate LLM questions
 llm_data = build_course_json("llm", llm_topics, "LLM")
 with open("src/data/llmQuestions.json", "w", encoding="utf-8") as f:
     json.dump(llm_data, f, indent=2, ensure_ascii=False)
 print(f"Generated {len(llm_data['questions'])} LLM questions.")
+

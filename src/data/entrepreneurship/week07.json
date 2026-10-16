@@ -3,271 +3,488 @@
   "moduleId": 5,
   "moduleName": "Marketing & Go-to-Market",
   "assessmentTitle": "Week 7 Assessment",
-  "sourceNote": "Original practice questions. Official Week 7 assessment requires login at https://onlinecourses.nptel.ac.in/e-learning/course/noc26_mg80",
+  "sourceFile": "Week_7_Assignment_Final.pdf",
+  "sourceNote": "Official Week 7 Assignment (15 questions)",
   "questions": [
     {
-      "id": "ENT-W07-001",
+      "id": "ENT-W07-Q01",
       "courseId": "entrepreneurship",
       "week": 7,
       "moduleId": 5,
       "moduleName": "Marketing & Go-to-Market",
       "topic": "Digital Customer Journey",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 7 practice — noc26_mg80 Module 5",
-      "verified": true,
-      "difficulty": "Easy",
-      "question": "In the context of digital marketing, a 'customer journey' maps which of the following?",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_7_Assignment_Final.pdf",
+      "question": "According to Sandeep Bhushan, what is the first stage in a customer journey?",
       "options": [
         {
           "id": "A",
-          "text": "The physical location of each customer"
+          "text": "Purchase"
         },
         {
           "id": "B",
-          "text": "The series of interactions and touchpoints a customer has from awareness to purchase and beyond"
+          "text": "Awareness"
         },
         {
           "id": "C",
-          "text": "The shipping route from warehouse to customer"
+          "text": "Loyalty"
         },
         {
           "id": "D",
-          "text": "The internal process of manufacturing the product"
+          "text": "Manufacturing"
         }
       ],
       "correctOptionId": "B",
-      "explanation": "The digital customer journey tracks all interactions — from first discovering a brand to post-purchase advocacy — helping companies optimise each touchpoint."
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W07-002",
+      "id": "ENT-W07-Q02",
       "courseId": "entrepreneurship",
       "week": 7,
       "moduleId": 5,
       "moduleName": "Marketing & Go-to-Market",
-      "topic": "Sales Strategies",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 7 practice — noc26_mg80 Module 5",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "Which sales strategy involves a small number of high-value clients and typically requires long, relationship-driven sales cycles?",
+      "topic": "Digital Customer Journey",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_7_Assignment_Final.pdf",
+      "question": "In the context of a customer journey, what happens after a successful purchase and \nproduct usage?",
       "options": [
         {
           "id": "A",
-          "text": "High-velocity inside sales"
+          "text": "Consideration"
         },
         {
           "id": "B",
-          "text": "Enterprise or key account sales"
+          "text": "Awareness"
         },
         {
           "id": "C",
-          "text": "Self-serve e-commerce"
+          "text": "Loyalty"
         },
         {
           "id": "D",
-          "text": "Viral referral programmes"
+          "text": "Factory production"
         }
       ],
-      "correctOptionId": "B",
-      "explanation": "Enterprise sales targets a small number of large accounts with high contract values. It involves consultative selling, multiple stakeholders, and long negotiation cycles."
+      "correctOptionId": "C",
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W07-003",
-      "courseId": "entrepreneurship",
-      "week": 7,
-      "moduleId": 5,
-      "moduleName": "Marketing & Go-to-Market",
-      "topic": "B2B Sales and Marketing",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 7 practice — noc26_mg80 Module 5",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "Which is a key distinction between B2B and B2C buying behaviour?",
-      "options": [
-        {
-          "id": "A",
-          "text": "B2B purchases are always smaller in value than B2C purchases"
-        },
-        {
-          "id": "B",
-          "text": "B2B purchases typically involve multiple stakeholders, longer cycles, and more rational evaluation criteria"
-        },
-        {
-          "id": "C",
-          "text": "Emotional appeal is more important than logic in B2B decisions"
-        },
-        {
-          "id": "D",
-          "text": "B2B and B2C buying behaviour are identical"
-        }
-      ],
-      "correctOptionId": "B",
-      "explanation": "B2B purchases involve buying committees, defined procurement processes, long evaluation cycles, and emphasis on ROI and risk reduction rather than impulse or emotion."
-    },
-    {
-      "id": "ENT-W07-004",
-      "courseId": "entrepreneurship",
-      "week": 7,
-      "moduleId": 5,
-      "moduleName": "Marketing & Go-to-Market",
-      "topic": "Promotional Strategies",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 7 practice — noc26_mg80 Module 5",
-      "verified": true,
-      "difficulty": "Easy",
-      "question": "Content marketing as a promotional strategy primarily works by:",
-      "options": [
-        {
-          "id": "A",
-          "text": "Broadcasting paid advertisements to mass audiences"
-        },
-        {
-          "id": "B",
-          "text": "Creating valuable, relevant content that attracts and engages a target audience organically"
-        },
-        {
-          "id": "C",
-          "text": "Offering aggressive discounts on all products"
-        },
-        {
-          "id": "D",
-          "text": "Sponsoring large sporting events"
-        }
-      ],
-      "correctOptionId": "B",
-      "explanation": "Content marketing builds authority and trust by providing genuinely useful content (articles, videos, podcasts) that draws potential customers through organic search and sharing."
-    },
-    {
-      "id": "ENT-W07-005",
+      "id": "ENT-W07-Q03",
       "courseId": "entrepreneurship",
       "week": 7,
       "moduleId": 5,
       "moduleName": "Marketing & Go-to-Market",
       "topic": "FinTech Customer Journey Case Study",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 7 practice — noc26_mg80 Module 5",
-      "verified": true,
-      "difficulty": "Hard",
-      "question": "The FinTech customer journey case study primarily illustrates which marketing challenge?",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_7_Assignment_Final.pdf",
+      "question": "The 'Scripbox' case study discussed in the course is an example of a company in which \nsector?",
       "options": [
         {
           "id": "A",
-          "text": "The low cost of customer acquisition in financial services"
+          "text": "Food delivery"
         },
         {
           "id": "B",
-          "text": "Building trust and reducing friction at every digital touchpoint in a regulated, high-stakes industry"
+          "text": "Digital wealth management"
         },
         {
           "id": "C",
-          "text": "Why FinTech companies should avoid digital channels"
+          "text": "Clothing"
         },
         {
           "id": "D",
-          "text": "The ease of retaining customers in financial services"
+          "text": "Aerospace"
         }
       ],
       "correctOptionId": "B",
-      "explanation": "FinTech faces unique challenges in building customer trust, navigating regulatory requirements, and reducing friction in onboarding — every journey touchpoint must build confidence."
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W07-006",
+      "id": "ENT-W07-Q04",
+      "courseId": "entrepreneurship",
+      "week": 7,
+      "moduleId": 5,
+      "moduleName": "Marketing & Go-to-Market",
+      "topic": "Digital Customer Journey",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_7_Assignment_Final.pdf",
+      "question": "What does 'CTA' stand for in digital marketing communication?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cost to Acquire"
+        },
+        {
+          "id": "B",
+          "text": "Call to Action"
+        },
+        {
+          "id": "C",
+          "text": "Consumer Target Area"
+        },
+        {
+          "id": "D",
+          "text": "Company Tech Asset"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W07-Q05",
+      "courseId": "entrepreneurship",
+      "week": 7,
+      "moduleId": 5,
+      "moduleName": "Marketing & Go-to-Market",
+      "topic": "Sales Strategies",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_7_Assignment_Final.pdf",
+      "question": "According to the lesson on sales, while marketing is about winning minds, sales is about \nwinning:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Awards"
+        },
+        {
+          "id": "B",
+          "text": "Wallets"
+        },
+        {
+          "id": "C",
+          "text": "Elections"
+        },
+        {
+          "id": "D",
+          "text": "Debates"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W07-Q06",
+      "courseId": "entrepreneurship",
+      "week": 7,
+      "moduleId": 5,
+      "moduleName": "Marketing & Go-to-Market",
+      "topic": "Sales Strategies",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_7_Assignment_Final.pdf",
+      "question": "Which of the following is highlighted as an essential skill for a salesperson?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Passion and persistence"
+        },
+        {
+          "id": "B",
+          "text": "Being extremely angry"
+        },
+        {
+          "id": "C",
+          "text": "Knowing how to write code"
+        },
+        {
+          "id": "D",
+          "text": "Avoiding customers"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W07-Q07",
+      "courseId": "entrepreneurship",
+      "week": 7,
+      "moduleId": 5,
+      "moduleName": "Marketing & Go-to-Market",
+      "topic": "Sales Strategies",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_7_Assignment_Final.pdf",
+      "question": "In a sales funnel, a 'cold lead' who becomes interested in your product is called a:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Prospect"
+        },
+        {
+          "id": "B",
+          "text": "Enemy"
+        },
+        {
+          "id": "C",
+          "text": "Investor"
+        },
+        {
+          "id": "D",
+          "text": "Supplier"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W07-Q08",
+      "courseId": "entrepreneurship",
+      "week": 7,
+      "moduleId": 5,
+      "moduleName": "Marketing & Go-to-Market",
+      "topic": "Sales Strategies",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_7_Assignment_Final.pdf",
+      "question": "After closing a sale, the process of maintaining and growing the client account is called:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hunting"
+        },
+        {
+          "id": "B",
+          "text": "Farming"
+        },
+        {
+          "id": "C",
+          "text": "Manufacturing"
+        },
+        {
+          "id": "D",
+          "text": "Designing"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W07-Q09",
       "courseId": "entrepreneurship",
       "week": 7,
       "moduleId": 5,
       "moduleName": "Marketing & Go-to-Market",
       "topic": "Sales Channels",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 7 practice — noc26_mg80 Module 5",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "Which factor is most important when choosing between different sales channels for a startup?",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_7_Assignment_Final.pdf",
+      "question": "In a retail channel context, what is one of the important roles a physical store plays before \na purchase?",
       "options": [
         {
           "id": "A",
-          "text": "Whichever channel is used by the largest competitor"
+          "text": "Hiding the product"
         },
         {
           "id": "B",
-          "text": "Where the target customer actually discovers and purchases products in this category"
+          "text": "Providing information and answering questions"
         },
         {
           "id": "C",
-          "text": "The channel with the lowest one-time setup cost regardless of ongoing performance"
+          "text": "Manufacturing the product"
         },
         {
           "id": "D",
-          "text": "The channel that requires the most intermediaries"
+          "text": "Writing software"
         }
       ],
       "correctOptionId": "B",
-      "explanation": "Channel selection must align with actual customer behaviour — where they search, evaluate, and buy — not simply mirror competitors or minimise setup costs."
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W07-007",
+      "id": "ENT-W07-Q10",
       "courseId": "entrepreneurship",
       "week": 7,
       "moduleId": 5,
       "moduleName": "Marketing & Go-to-Market",
-      "topic": "Pricing Strategies",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 7 practice — noc26_mg80 Module 5",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "Penetration pricing sets a low initial price primarily to:",
+      "topic": "B2B Sales and Marketing",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_7_Assignment_Final.pdf",
+      "question": "The term 'B2B' in business models stands for:",
       "options": [
         {
           "id": "A",
-          "text": "Signal premium quality to early adopters"
+          "text": "Business to Business"
         },
         {
           "id": "B",
-          "text": "Rapidly acquire market share and deter competitors"
+          "text": "Brand to Brand"
         },
         {
           "id": "C",
-          "text": "Recover R&D investment immediately at launch"
+          "text": "Buyer to Buyer"
         },
         {
           "id": "D",
-          "text": "Charge different prices to different customer segments simultaneously"
+          "text": "Business to Buyer"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W07-Q11",
+      "courseId": "entrepreneurship",
+      "week": 7,
+      "moduleId": 5,
+      "moduleName": "Marketing & Go-to-Market",
+      "topic": "B2B Sales and Marketing",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_7_Assignment_Final.pdf",
+      "question": "In B2B sales, what does DMU stand for?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Data Management Unit"
+        },
+        {
+          "id": "B",
+          "text": "Decision Making Unit"
+        },
+        {
+          "id": "C",
+          "text": "Direct Marketing User"
+        },
+        {
+          "id": "D",
+          "text": "Digital Media Unit"
         }
       ],
       "correctOptionId": "B",
-      "explanation": "Penetration pricing uses a low price to quickly attract a large user base, establish market presence, and create barriers for competitors through scale and switching costs."
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W07-008",
+      "id": "ENT-W07-Q12",
+      "courseId": "entrepreneurship",
+      "week": 7,
+      "moduleId": 5,
+      "moduleName": "Marketing & Go-to-Market",
+      "topic": "B2B Sales and Marketing",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_7_Assignment_Final.pdf",
+      "question": "Why do B2B businesses typically need less mass advertising money than B2C \nbusinesses?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Because they have no money"
+        },
+        {
+          "id": "B",
+          "text": "Because they don't want customers"
+        },
+        {
+          "id": "C",
+          "text": "Because they use direct sales channels to reach specific known companies"
+        },
+        {
+          "id": "D",
+          "text": "Because they sell only to the government"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W07-Q13",
+      "courseId": "entrepreneurship",
+      "week": 7,
+      "moduleId": 5,
+      "moduleName": "Marketing & Go-to-Market",
+      "topic": "B2B Sales and Marketing",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_7_Assignment_Final.pdf",
+      "question": "Which business model involves selling solutions directly to the State or Central \nGovernment?",
+      "options": [
+        {
+          "id": "A",
+          "text": "B2C"
+        },
+        {
+          "id": "B",
+          "text": "B2B"
+        },
+        {
+          "id": "C",
+          "text": "B2G"
+        },
+        {
+          "id": "D",
+          "text": "C2C"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W07-Q14",
+      "courseId": "entrepreneurship",
+      "week": 7,
+      "moduleId": 5,
+      "moduleName": "Marketing & Go-to-Market",
+      "topic": "Role of Marketing",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_7_Assignment_Final.pdf",
+      "question": "What are the two fundamental questions that marketing asks and attempts to answer?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Who am I? and Why buy me?"
+        },
+        {
+          "id": "B",
+          "text": "What time is it? and Where am I?"
+        },
+        {
+          "id": "C",
+          "text": "How to code? and How to test?"
+        },
+        {
+          "id": "D",
+          "text": "What is the price? and What is the discount?"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W07-Q15",
       "courseId": "entrepreneurship",
       "week": 7,
       "moduleId": 5,
       "moduleName": "Marketing & Go-to-Market",
       "topic": "Go-to-Market Planning",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 7 practice — noc26_mg80 Module 5",
-      "verified": true,
-      "difficulty": "Hard",
-      "question": "Which metric is most directly used to measure the efficiency of customer acquisition efforts?",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_7_Assignment_Final.pdf",
+      "question": "According to the summary lesson, 'Go to Market' (GTM) is the combination of which \ntwo disciplines?",
       "options": [
         {
           "id": "A",
-          "text": "Gross Margin"
+          "text": "Finance and HR"
         },
         {
           "id": "B",
-          "text": "Customer Acquisition Cost (CAC)"
+          "text": "Marketing and Sales"
         },
         {
           "id": "C",
-          "text": "Net Promoter Score (NPS)"
+          "text": "Operations and Legal"
         },
         {
           "id": "D",
-          "text": "Return on Equity (ROE)"
+          "text": "R&D and Manufacturing"
         }
       ],
       "correctOptionId": "B",
-      "explanation": "CAC measures the total cost (marketing + sales) divided by the number of new customers acquired, indicating how efficiently the business converts spend into customers."
+      "explanation": "",
+      "difficulty": "Unclassified"
     }
   ]
 }

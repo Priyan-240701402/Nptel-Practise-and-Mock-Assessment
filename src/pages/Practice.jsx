@@ -540,7 +540,7 @@ export default function Practice() {
                 Number of Questions
               </label>
               <div className="grid grid-cols-4 gap-2">
-                {[10, 20, 30, 'all'].map((countVal) => (
+                {[10, 15, 30, 'all'].map((countVal) => (
                   <button
                     key={countVal}
                     type="button"

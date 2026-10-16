@@ -62,7 +62,7 @@ export default function MockTest() {
   );
 
   const course = COURSES[currentCourseId] || COURSES.entrepreneurship;
-  const availableCount = course.data?.questions?.length || 96;
+  const availableCount = course.data?.questions?.length || 180;
 
   // Configuration state
   const [selectedConfigId, setSelectedConfigId] = useState('short');
@@ -340,7 +340,7 @@ export default function MockTest() {
                   }`}
                 >
                   <p className="font-bold text-sm text-slate-900">Foundations of Entrepreneurship</p>
-                  <p className="text-xs text-slate-500 mt-1">96 Verified Questions • 12 Weeks • 8 Modules</p>
+                  <p className="text-xs text-slate-500 mt-1">180 Official Assignment Questions • 12 Weeks • 8 Modules</p>
                 </button>
 
                 <button

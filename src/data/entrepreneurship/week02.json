@@ -3,271 +3,488 @@
   "moduleId": 2,
   "moduleName": "Opportunity Identification & Idea Generation",
   "assessmentTitle": "Week 2 Assessment",
-  "sourceNote": "Original practice questions. Official Week 2 assessment requires login at https://onlinecourses.nptel.ac.in/e-learning/course/noc26_mg80",
+  "sourceFile": "Week_2_Assignment.pdf",
+  "sourceNote": "Official Week 2 Assignment (15 questions)",
   "questions": [
     {
-      "id": "ENT-W02-001",
+      "id": "ENT-W02-Q01",
       "courseId": "entrepreneurship",
       "week": 2,
       "moduleId": 2,
       "moduleName": "Opportunity Identification & Idea Generation",
       "topic": "Problems, Opportunities, and Ideas",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 2 practice — noc26_mg80 Module 2",
-      "verified": true,
-      "difficulty": "Easy",
-      "question": "What is the most reliable source of genuine entrepreneurial opportunities according to this course?",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_2_Assignment.pdf",
+      "question": "What are the three basic financial statements mentioned in the course?",
       "options": [
         {
           "id": "A",
-          "text": "Reading business bestsellers and copying their ideas"
+          "text": "Bank statement, Passbook, Chequebook"
         },
         {
           "id": "B",
-          "text": "Identifying real, unmet problems experienced by a specific group of people"
+          "text": "Cash flow, Profit and loss account, Balance sheet"
         },
         {
           "id": "C",
-          "text": "Choosing the most fashionable industry trend of the year"
+          "text": "Invoice, Receipt, Bill"
         },
         {
           "id": "D",
-          "text": "Launching a product that already has many competitors"
+          "text": "Ledger, Journal, Voucher"
         }
       ],
       "correctOptionId": "B",
-      "explanation": "Genuine opportunities arise from clearly defined problems faced by real people. Solving a specific, unmet need creates sustainable competitive advantage."
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W02-002",
+      "id": "ENT-W02-Q02",
       "courseId": "entrepreneurship",
       "week": 2,
       "moduleId": 2,
       "moduleName": "Opportunity Identification & Idea Generation",
       "topic": "Problems, Opportunities, and Ideas",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 2 practice — noc26_mg80 Module 2",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "How does a 'problem' differ from an 'opportunity' in the entrepreneurial context?",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_2_Assignment.pdf",
+      "question": "According to the lesson on finance, accounting primarily looks at the:",
       "options": [
         {
           "id": "A",
-          "text": "Problems are always negative and opportunities are always positive"
+          "text": "Past"
         },
         {
           "id": "B",
-          "text": "An opportunity is a problem that has been validated as worth solving and is addressable by a viable business"
+          "text": "Future"
         },
         {
           "id": "C",
-          "text": "They are the same thing — all problems are immediately business opportunities"
+          "text": "Competitors"
         },
         {
           "id": "D",
-          "text": "Opportunities exist only in technology sectors; problems exist everywhere"
+          "text": "Stock market"
         }
       ],
-      "correctOptionId": "B",
-      "explanation": "A problem becomes an entrepreneurial opportunity when there is a significant target market, willingness to pay, and a feasible solution that can be delivered as a business."
+      "correctOptionId": "A",
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W02-003",
+      "id": "ENT-W02-Q03",
       "courseId": "entrepreneurship",
       "week": 2,
       "moduleId": 2,
       "moduleName": "Opportunity Identification & Idea Generation",
-      "topic": "Opportunities Landscape in Multiple Domains",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 2 practice — noc26_mg80 Module 2",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "Which of the following domains is mentioned as offering significant entrepreneurial opportunities in India?",
+      "topic": "Problems, Opportunities, and Ideas",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_2_Assignment.pdf",
+      "question": "In the course, how are a 'problem' and an 'opportunity' described?",
       "options": [
         {
           "id": "A",
-          "text": "Only information technology"
+          "text": "As totally unrelated concepts"
         },
         {
           "id": "B",
-          "text": "Healthcare, agriculture, education, fintech, and clean energy among others"
+          "text": "As two sides of the same coin"
         },
         {
           "id": "C",
-          "text": "Only sectors where no existing companies operate"
+          "text": "As words with the exact same meaning"
         },
         {
           "id": "D",
-          "text": "Only government-regulated industries"
+          "text": "As negative events"
         }
       ],
       "correctOptionId": "B",
-      "explanation": "India presents vast entrepreneurial opportunities across healthcare, agritech, edtech, fintech, clean energy, and many other domains due to gaps in access, quality, and affordability."
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W02-004",
-      "courseId": "entrepreneurship",
-      "week": 2,
-      "moduleId": 2,
-      "moduleName": "Opportunity Identification & Idea Generation",
-      "topic": "Demystifying AI with Anand Deshpande",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 2 practice — noc26_mg80 Module 2",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "According to the guest session on AI, which aspect of AI is most directly relevant for entrepreneurs identifying new opportunities?",
-      "options": [
-        {
-          "id": "A",
-          "text": "The ability to replace all human workers immediately"
-        },
-        {
-          "id": "B",
-          "text": "AI as a tool to enhance productivity and create new product categories"
-        },
-        {
-          "id": "C",
-          "text": "AI as a replacement for entrepreneurial creativity and judgment"
-        },
-        {
-          "id": "D",
-          "text": "AI-generated business plans that require no human validation"
-        }
-      ],
-      "correctOptionId": "B",
-      "explanation": "AI is a powerful enabling technology that entrepreneurs can use to enhance productivity, personalise offerings, and create entirely new product categories, rather than a replacement for human judgment."
-    },
-    {
-      "id": "ENT-W02-005",
+      "id": "ENT-W02-Q04",
       "courseId": "entrepreneurship",
       "week": 2,
       "moduleId": 2,
       "moduleName": "Opportunity Identification & Idea Generation",
       "topic": "Healthcare Sector with Rizwan Koita",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 2 practice — noc26_mg80 Module 2",
-      "verified": true,
-      "difficulty": "Hard",
-      "question": "The healthcare guest session highlights which key challenge as an entrepreneurial opportunity in India?",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_2_Assignment.pdf",
+      "question": "According to guest speaker Rizwan Koita, approximately what percentage of the world's \npopulation lives in developing markets?",
       "options": [
         {
           "id": "A",
-          "text": "Excess supply of qualified doctors in rural areas"
+          "text": "18%"
         },
         {
           "id": "B",
-          "text": "Gaps in healthcare accessibility, affordability, and quality especially in underserved regions"
+          "text": "50%"
         },
         {
           "id": "C",
-          "text": "Over-digitalisation of patient records"
+          "text": "82%"
         },
         {
           "id": "D",
-          "text": "Absence of any government healthcare scheme"
+          "text": "99%"
         }
       ],
-      "correctOptionId": "B",
-      "explanation": "India faces significant gaps in healthcare access and quality, particularly in Tier 2/3 cities and rural areas, creating large addressable markets for health-tech entrepreneurs."
+      "correctOptionId": "C",
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W02-006",
+      "id": "ENT-W02-Q05",
       "courseId": "entrepreneurship",
       "week": 2,
       "moduleId": 2,
       "moduleName": "Opportunity Identification & Idea Generation",
-      "topic": "Problems, Opportunities, and Ideas",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 2 practice — noc26_mg80 Module 2",
-      "verified": true,
-      "difficulty": "Easy",
-      "question": "What is a key technique for identifying entrepreneurial opportunities from personal experience?",
+      "topic": "Demystifying AI with Anand Deshpande",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_2_Assignment.pdf",
+      "question": "Who is the founder of Persistent Systems introduced in the AI session?",
       "options": [
         {
           "id": "A",
-          "text": "Only observing what large companies are building"
+          "text": "Rizwan Koita"
         },
         {
           "id": "B",
-          "text": "Identifying pain points and frustrations in everyday life"
+          "text": "Dr. Anand Deshpande"
         },
         {
           "id": "C",
-          "text": "Randomly brainstorming products without any user research"
+          "text": "Salil Donde"
         },
         {
           "id": "D",
-          "text": "Selecting sectors purely based on stock market performance"
+          "text": "Shibam Das"
         }
       ],
       "correctOptionId": "B",
-      "explanation": "Many successful startups originate from founders who personally experienced a problem. Noticing friction points in daily life is a powerful opportunity identification technique."
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W02-007",
+      "id": "ENT-W02-Q06",
+      "courseId": "entrepreneurship",
+      "week": 2,
+      "moduleId": 2,
+      "moduleName": "Opportunity Identification & Idea Generation",
+      "topic": "Demystifying AI with Anand Deshpande",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_2_Assignment.pdf",
+      "question": "In which year was the term Artificial Intelligence (AI) first coined by John McCarthy?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1956"
+        },
+        {
+          "id": "B",
+          "text": "1980"
+        },
+        {
+          "id": "C",
+          "text": "2000"
+        },
+        {
+          "id": "D",
+          "text": "2023"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W02-Q07",
+      "courseId": "entrepreneurship",
+      "week": 2,
+      "moduleId": 2,
+      "moduleName": "Opportunity Identification & Idea Generation",
+      "topic": "Demystifying AI with Anand Deshpande",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_2_Assignment.pdf",
+      "question": "Why is it important for India to have 'sovereign models' in AI?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To ban all international software"
+        },
+        {
+          "id": "B",
+          "text": "To ensure local data, languages, and history are included"
+        },
+        {
+          "id": "C",
+          "text": "To increase the cost of internet"
+        },
+        {
+          "id": "D",
+          "text": "To stop students from learning AI"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W02-Q08",
+      "courseId": "entrepreneurship",
+      "week": 2,
+      "moduleId": 2,
+      "moduleName": "Opportunity Identification & Idea Generation",
+      "topic": "Demystifying AI with Anand Deshpande",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_2_Assignment.pdf",
+      "question": "What is an AI 'Agent' as described in the course?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A human being who sells software"
+        },
+        {
+          "id": "B",
+          "text": "An AI that can execute operations on your behalf, like booking tickets"
+        },
+        {
+          "id": "C",
+          "text": "A computer virus"
+        },
+        {
+          "id": "D",
+          "text": "A type of hardware server"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W02-Q09",
+      "courseId": "entrepreneurship",
+      "week": 2,
+      "moduleId": 2,
+      "moduleName": "Opportunity Identification & Idea Generation",
+      "topic": "Demystifying AI with Anand Deshpande",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_2_Assignment.pdf",
+      "question": "Which of the following is mentioned as a presentation tool in the AI session?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Canva"
+        },
+        {
+          "id": "B",
+          "text": "Excel"
+        },
+        {
+          "id": "C",
+          "text": "Notepad"
+        },
+        {
+          "id": "D",
+          "text": "Wordpad"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W02-Q10",
+      "courseId": "entrepreneurship",
+      "week": 2,
+      "moduleId": 2,
+      "moduleName": "Opportunity Identification & Idea Generation",
+      "topic": "Healthcare Sector with Rizwan Koita",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_2_Assignment.pdf",
+      "question": "Rizwan Koita started which technology services company in 2005?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Infosys"
+        },
+        {
+          "id": "B",
+          "text": "CitiusTech"
+        },
+        {
+          "id": "C",
+          "text": "Wipro"
+        },
+        {
+          "id": "D",
+          "text": "TCS"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W02-Q11",
+      "courseId": "entrepreneurship",
+      "week": 2,
+      "moduleId": 2,
+      "moduleName": "Opportunity Identification & Idea Generation",
+      "topic": "Healthcare Sector with Rizwan Koita",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_2_Assignment.pdf",
+      "question": "CitiusTech is a technology services company that primarily focuses on which sector?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Automobile"
+        },
+        {
+          "id": "B",
+          "text": "Healthcare"
+        },
+        {
+          "id": "C",
+          "text": "Agriculture"
+        },
+        {
+          "id": "D",
+          "text": "Mining"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W02-Q12",
+      "courseId": "entrepreneurship",
+      "week": 2,
+      "moduleId": 2,
+      "moduleName": "Opportunity Identification & Idea Generation",
+      "topic": "Demystifying AI with Anand Deshpande",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_2_Assignment.pdf",
+      "question": "According to Dr. Anand Deshpande, Work is essentially a product of Effort multiplied \nby what?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Productivity"
+        },
+        {
+          "id": "B",
+          "text": "Time"
+        },
+        {
+          "id": "C",
+          "text": "Money"
+        },
+        {
+          "id": "D",
+          "text": "Luck"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W02-Q13",
       "courseId": "entrepreneurship",
       "week": 2,
       "moduleId": 2,
       "moduleName": "Opportunity Identification & Idea Generation",
       "topic": "Opportunities Landscape in Multiple Domains",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 2 practice — noc26_mg80 Module 2",
-      "verified": true,
-      "difficulty": "Medium",
-      "question": "Which of the following best explains why the same problem can create different opportunities in different contexts?",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_2_Assignment.pdf",
+      "question": "How many co-founders is it recommended for every startup to ideally have?",
       "options": [
         {
           "id": "A",
-          "text": "Because problems have no universal solutions and context determines viability"
+          "text": "Only one"
         },
         {
           "id": "B",
-          "text": "Because all problems have exactly one correct solution"
+          "text": "At least two or three"
         },
         {
           "id": "C",
-          "text": "Because problems are identical across all geographies"
+          "text": "More than ten"
         },
         {
           "id": "D",
-          "text": "Because opportunities are independent of available technology"
+          "text": "Exactly zero"
         }
       ],
-      "correctOptionId": "A",
-      "explanation": "The same problem can yield different viable solutions depending on local infrastructure, regulatory environment, customer behaviour, technology availability, and willingness to pay."
+      "correctOptionId": "B",
+      "explanation": "",
+      "difficulty": "Unclassified"
     },
     {
-      "id": "ENT-W02-008",
+      "id": "ENT-W02-Q14",
       "courseId": "entrepreneurship",
       "week": 2,
       "moduleId": 2,
       "moduleName": "Opportunity Identification & Idea Generation",
-      "topic": "Problems, Opportunities, and Ideas",
-      "sourceType": "Original Practice Question",
-      "sourceReference": "Week 2 practice — noc26_mg80 Module 2",
-      "verified": true,
-      "difficulty": "Hard",
-      "question": "When evaluating a potential entrepreneurial opportunity, which criterion is LEAST important at the idea stage?",
+      "topic": "Opportunities Landscape in Multiple Domains",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_2_Assignment.pdf",
+      "question": "What is the Indian term used in the lecture for 'frugal innovation at low cost'?",
       "options": [
         {
           "id": "A",
-          "text": "Size of the addressable market"
+          "text": "Jugaad"
         },
         {
           "id": "B",
-          "text": "Existence of a genuine customer pain point"
+          "text": "Kaizen"
         },
         {
           "id": "C",
-          "text": "Exact final logo and brand name of the company"
+          "text": "Six Sigma"
         },
         {
           "id": "D",
-          "text": "Founder's ability to build or access the solution"
+          "text": "Agile"
         }
       ],
-      "correctOptionId": "C",
-      "explanation": "At the idea stage, market size, customer pain, and founder capability matter most. Branding details like logos are execution elements that come much later in the process."
+      "correctOptionId": "A",
+      "explanation": "",
+      "difficulty": "Unclassified"
+    },
+    {
+      "id": "ENT-W02-Q15",
+      "courseId": "entrepreneurship",
+      "week": 2,
+      "moduleId": 2,
+      "moduleName": "Opportunity Identification & Idea Generation",
+      "topic": "Healthcare Sector with Rizwan Koita",
+      "sourceType": "Uploaded Weekly Assignment",
+      "sourceFile": "Week_2_Assignment.pdf",
+      "question": "Which foundation's slide deck is referenced to share healthcare opportunities?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Desai Sethi Foundation"
+        },
+        {
+          "id": "B",
+          "text": "Koita Foundation"
+        },
+        {
+          "id": "C",
+          "text": "Persistent Foundation"
+        },
+        {
+          "id": "D",
+          "text": "Tata Foundation"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "",
+      "difficulty": "Unclassified"
     }
   ]
 }

@@ -223,6 +223,16 @@ export function selectQuestions({
  * Select questions spread evenly across all 8 modules for a full course mock test
  */
 export function selectFullCourseQuestions({ count = 48, shuffle = true, shuffleOptions = false }) {
+  if (count === 'all' || count >= 180) {
+    const all = getAllWeeklyQuestions();
+    const res = shuffle ? shuffleArray(all) : all;
+    return res.map(q => {
+      const cloned = { ...q, options: [...q.options] };
+      if (shuffleOptions) cloned.options = shuffleArray(cloned.options);
+      return cloned;
+    });
+  }
+
   const modules = SYLLABUS.modules;
   const perModule = Math.ceil(count / modules.length);
   const selected = [];
@@ -243,8 +253,21 @@ export function selectFullCourseQuestions({ count = 48, shuffle = true, shuffleO
     }
   });
 
+  if (selected.length < count) {
+    const allQs = shuffleArray(getAllWeeklyQuestions());
+    for (const q of allQs) {
+      if (selected.length >= count) break;
+      if (!seen.has(q.id)) {
+        seen.add(q.id);
+        const cloned = { ...q, options: [...q.options] };
+        if (shuffleOptions) cloned.options = shuffleArray(cloned.options);
+        selected.push(cloned);
+      }
+    }
+  }
+
   const res = shuffle ? shuffleArray(selected) : selected;
-  return count === 'all' ? res : res.slice(0, Math.min(Number(count), res.length));
+  return res.slice(0, Math.min(Number(count), res.length));
 }
 
 /**
