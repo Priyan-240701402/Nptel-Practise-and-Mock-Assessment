@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Practice from './pages/Practice';
 import MockTest from './pages/MockTest';
 import Results from './pages/Results';
+import WeeklyAssessments from './pages/WeeklyAssessments';
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
             <Route path="/practice/:courseId" element={<Practice />} />
             <Route path="/mock-test" element={<MockTest />} />
             <Route path="/mock-test/:courseId" element={<MockTest />} />
+            <Route path="/weekly-assessments" element={<WeeklyAssessments />} />
             <Route path="/results" element={<Results />} />
             <Route path="/results/:courseId" element={<Results />} />
             <Route path="*" element={<Navigate to="/" replace />} />

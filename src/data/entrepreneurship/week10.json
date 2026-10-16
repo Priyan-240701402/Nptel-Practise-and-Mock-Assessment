@@ -1,0 +1,273 @@
+{
+  "week": 10,
+  "moduleId": 7,
+  "moduleName": "Strategy, Leadership & Business Planning",
+  "assessmentTitle": "Week 10 Assessment",
+  "sourceNote": "Original practice questions. Official Week 10 assessment requires login at https://onlinecourses.nptel.ac.in/e-learning/course/noc26_mg80",
+  "questions": [
+    {
+      "id": "ENT-W10-001",
+      "courseId": "entrepreneurship",
+      "week": 10,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Strategy Fundamentals",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 10 practice — noc26_mg80 Module 7",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "In Michael Porter's framework, which two generic competitive strategies involve either cost leadership or differentiation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Blue Ocean and Red Ocean strategies"
+        },
+        {
+          "id": "B",
+          "text": "Cost leadership and differentiation (broad or focused)"
+        },
+        {
+          "id": "C",
+          "text": "Penetration and skimming strategies"
+        },
+        {
+          "id": "D",
+          "text": "Vertical integration and horizontal diversification"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Porter's Generic Strategies identify two primary sources of competitive advantage: having the lowest costs (cost leadership) or offering something uniquely valuable (differentiation), each applicable broadly or in a focused niche."
+    },
+    {
+      "id": "ENT-W10-002",
+      "courseId": "entrepreneurship",
+      "week": 10,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Business Model Canvas: Demand Side",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 10 practice — noc26_mg80 Module 7",
+      "verified": true,
+      "difficulty": "Easy",
+      "question": "Which components of the Business Model Canvas (BMC) represent the 'demand side' of the business?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Key activities, key resources, and key partners"
+        },
+        {
+          "id": "B",
+          "text": "Customer segments, customer relationships, channels, and value proposition"
+        },
+        {
+          "id": "C",
+          "text": "Cost structure and revenue streams"
+        },
+        {
+          "id": "D",
+          "text": "Patent portfolio and supplier agreements"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "The demand side of the BMC describes how value is delivered to customers: the segments targeted, the relationships maintained, the channels used, and the value proposition offered."
+    },
+    {
+      "id": "ENT-W10-003",
+      "courseId": "entrepreneurship",
+      "week": 10,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Business Model Canvas: Supply Side",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 10 practice — noc26_mg80 Module 7",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "The 'supply side' of the Business Model Canvas includes which key building blocks?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Customer segments, revenue streams, and value proposition"
+        },
+        {
+          "id": "B",
+          "text": "Key activities, key resources, and key partnerships"
+        },
+        {
+          "id": "C",
+          "text": "Channels, customer relationships, and cost structure"
+        },
+        {
+          "id": "D",
+          "text": "Revenue streams, channels, and market size"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "The supply side describes how value is created and delivered: the activities performed, the resources required, and the partners needed to operate the business model."
+    },
+    {
+      "id": "ENT-W10-004",
+      "courseId": "entrepreneurship",
+      "week": 10,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Ten Tests of Strategy",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 10 practice — noc26_mg80 Module 7",
+      "verified": true,
+      "difficulty": "Hard",
+      "question": "The 'Ten Tests of a Good Strategy' (Rumelt's criteria) includes which of the following?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The strategy must guarantee 100% market share within two years"
+        },
+        {
+          "id": "B",
+          "text": "The strategy must be coherent, feasible, and create a sustainable competitive advantage"
+        },
+        {
+          "id": "C",
+          "text": "The strategy must avoid all international markets"
+        },
+        {
+          "id": "D",
+          "text": "The strategy must be kept entirely secret from employees"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Good strategy (Rumelt's tests) requires internal coherence among objectives, policies, and actions; feasibility with available resources; and the creation of a durable competitive position."
+    },
+    {
+      "id": "ENT-W10-005",
+      "courseId": "entrepreneurship",
+      "week": 10,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Entrepreneurial Leadership",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 10 practice — noc26_mg80 Module 7",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "Which leadership style is most associated with inspiring followers by articulating a compelling vision and appealing to higher-order motivations?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Transactional leadership"
+        },
+        {
+          "id": "B",
+          "text": "Transformational leadership"
+        },
+        {
+          "id": "C",
+          "text": "Autocratic leadership"
+        },
+        {
+          "id": "D",
+          "text": "Laissez-faire leadership"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Transformational leaders motivate followers by connecting their work to a meaningful vision, inspiring intrinsic motivation and above-and-beyond performance rather than just exchanging rewards for compliance."
+    },
+    {
+      "id": "ENT-W10-006",
+      "courseId": "entrepreneurship",
+      "week": 10,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Strategy Fundamentals",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 10 practice — noc26_mg80 Module 7",
+      "verified": true,
+      "difficulty": "Easy",
+      "question": "A SWOT analysis helps an entrepreneur by:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Calculating the exact financial returns of a business plan"
+        },
+        {
+          "id": "B",
+          "text": "Systematically mapping internal strengths and weaknesses against external opportunities and threats"
+        },
+        {
+          "id": "C",
+          "text": "Automating the sales forecasting process"
+        },
+        {
+          "id": "D",
+          "text": "Determining the legal structure of the company"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "SWOT analysis provides a structured framework for evaluating a company's internal capabilities and external environment, informing strategic choices by matching strengths to opportunities and mitigating threats."
+    },
+    {
+      "id": "ENT-W10-007",
+      "courseId": "entrepreneurship",
+      "week": 10,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Business Model Canvas Examples",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 10 practice — noc26_mg80 Module 7",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "In a platform business model, what makes the model more valuable as more users join?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The company automatically raises prices when demand increases"
+        },
+        {
+          "id": "B",
+          "text": "Network effects — each additional user increases the value of the platform for all existing users"
+        },
+        {
+          "id": "C",
+          "text": "Platform costs decline below zero when scale is reached"
+        },
+        {
+          "id": "D",
+          "text": "Government subsidies increase proportionally with user count"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Network effects mean that the value of a platform increases with each additional participant — more buyers attract more sellers and vice versa — creating a self-reinforcing competitive moat."
+    },
+    {
+      "id": "ENT-W10-008",
+      "courseId": "entrepreneurship",
+      "week": 10,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Infiheal Founder Case Study",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 10 practice — noc26_mg80 Module 7",
+      "verified": true,
+      "difficulty": "Hard",
+      "question": "The Infiheal case study primarily demonstrates which intersection of entrepreneurship and social need?",
+      "options": [
+        {
+          "id": "A",
+          "text": "How to avoid the mental health sector entirely due to regulatory complexity"
+        },
+        {
+          "id": "B",
+          "text": "Building a digital mental health platform to address the large unmet need for accessible, affordable psychological support"
+        },
+        {
+          "id": "C",
+          "text": "Why hardware products are superior to digital health services"
+        },
+        {
+          "id": "D",
+          "text": "The importance of international expansion before achieving product-market fit domestically"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Infiheal illustrates how an entrepreneur can address a large, stigmatised, and underserved social need (mental health support) through a digital platform that improves accessibility and reduces cost."
+    }
+  ]
+}

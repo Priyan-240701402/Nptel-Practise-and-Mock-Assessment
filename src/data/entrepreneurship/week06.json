@@ -1,0 +1,273 @@
+{
+  "week": 6,
+  "moduleId": 5,
+  "moduleName": "Marketing & Go-to-Market",
+  "assessmentTitle": "Week 6 Assessment",
+  "sourceNote": "Original practice questions. Official Week 6 assessment requires login at https://onlinecourses.nptel.ac.in/e-learning/course/noc26_mg80",
+  "questions": [
+    {
+      "id": "ENT-W06-001",
+      "courseId": "entrepreneurship",
+      "week": 6,
+      "moduleId": 5,
+      "moduleName": "Marketing & Go-to-Market",
+      "topic": "Go-to-Market Basics",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 6 practice — noc26_mg80 Module 5",
+      "verified": true,
+      "difficulty": "Easy",
+      "question": "A go-to-market (GTM) strategy primarily answers which set of questions?",
+      "options": [
+        {
+          "id": "A",
+          "text": "How much equity to give to each co-founder"
+        },
+        {
+          "id": "B",
+          "text": "Which customer segments to target, through which channels, with what message, and at what price"
+        },
+        {
+          "id": "C",
+          "text": "How to register the company legally"
+        },
+        {
+          "id": "D",
+          "text": "Which programming language to use for the product"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "A GTM strategy defines the target market, the value proposition communicated to each segment, the channels through which the product reaches customers, and the pricing model."
+    },
+    {
+      "id": "ENT-W06-002",
+      "courseId": "entrepreneurship",
+      "week": 6,
+      "moduleId": 5,
+      "moduleName": "Marketing & Go-to-Market",
+      "topic": "Marketing Mix",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 6 practice — noc26_mg80 Module 5",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "The traditional marketing mix (4Ps) comprises which four elements?",
+      "options": [
+        {
+          "id": "A",
+          "text": "People, Process, Physical Evidence, Performance"
+        },
+        {
+          "id": "B",
+          "text": "Product, Price, Place, Promotion"
+        },
+        {
+          "id": "C",
+          "text": "Planning, Positioning, Pitching, Packaging"
+        },
+        {
+          "id": "D",
+          "text": "Platform, Partners, Profit, Penetration"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "The 4Ps marketing mix — Product, Price, Place, and Promotion — form the foundational framework for marketing strategy, each element reinforcing the others."
+    },
+    {
+      "id": "ENT-W06-003",
+      "courseId": "entrepreneurship",
+      "week": 6,
+      "moduleId": 5,
+      "moduleName": "Marketing & Go-to-Market",
+      "topic": "Product Branding",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 6 practice — noc26_mg80 Module 5",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "What distinguishes a 'brand' from a 'product' in the marketing context?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A brand is only the visual logo; a product includes all the features"
+        },
+        {
+          "id": "B",
+          "text": "A brand is the total perception, emotion, and identity associated with a product or company in the customer's mind"
+        },
+        {
+          "id": "C",
+          "text": "Products exist without brands in modern markets"
+        },
+        {
+          "id": "D",
+          "text": "A brand refers only to the advertising budget allocated"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "A brand encompasses the full experience — values, personality, trust, and promise — that a company creates in the mind of customers, far beyond just the product or logo."
+    },
+    {
+      "id": "ENT-W06-004",
+      "courseId": "entrepreneurship",
+      "week": 6,
+      "moduleId": 5,
+      "moduleName": "Marketing & Go-to-Market",
+      "topic": "Differentiation",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 6 practice — noc26_mg80 Module 5",
+      "verified": true,
+      "difficulty": "Easy",
+      "question": "Product differentiation in a competitive market primarily aims to:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Make the product identical to competitors so customers choose based on price alone"
+        },
+        {
+          "id": "B",
+          "text": "Create a distinct and valued difference in the customer's mind that reduces direct price competition"
+        },
+        {
+          "id": "C",
+          "text": "Expand into as many unrelated product categories as possible"
+        },
+        {
+          "id": "D",
+          "text": "Decrease the product's features to lower manufacturing costs"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Differentiation creates a perception of superiority or uniqueness that justifies premium pricing and builds customer loyalty, reducing vulnerability to direct competition."
+    },
+    {
+      "id": "ENT-W06-005",
+      "courseId": "entrepreneurship",
+      "week": 6,
+      "moduleId": 5,
+      "moduleName": "Marketing & Go-to-Market",
+      "topic": "Tanishq Case Study",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 6 practice — noc26_mg80 Module 5",
+      "verified": true,
+      "difficulty": "Hard",
+      "question": "The Tanishq case study is primarily cited to illustrate which marketing concept?",
+      "options": [
+        {
+          "id": "A",
+          "text": "How to compete purely on the lowest price in a commodity market"
+        },
+        {
+          "id": "B",
+          "text": "Brand repositioning and building trust in a traditionally unorganised market"
+        },
+        {
+          "id": "C",
+          "text": "Why gold jewellery should never be sold online"
+        },
+        {
+          "id": "D",
+          "text": "The failure of organised retail in India"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Tanishq successfully repositioned the jewellery category from an unorganised, trust-deficit market to a trusted branded experience through consistent quality, BIS hallmarking, and brand storytelling."
+    },
+    {
+      "id": "ENT-W06-006",
+      "courseId": "entrepreneurship",
+      "week": 6,
+      "moduleId": 5,
+      "moduleName": "Marketing & Go-to-Market",
+      "topic": "Role of Marketing",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 6 practice — noc26_mg80 Module 5",
+      "verified": true,
+      "difficulty": "Easy",
+      "question": "Which of the following best captures the modern role of marketing in an organisation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Only creating advertisements and press releases"
+        },
+        {
+          "id": "B",
+          "text": "Understanding customer needs and ensuring the entire organisation creates and delivers value that meets those needs"
+        },
+        {
+          "id": "C",
+          "text": "Managing the company's supply chain logistics"
+        },
+        {
+          "id": "D",
+          "text": "Solely responsible for setting the final product price"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Modern marketing is a cross-functional discipline that starts with deep customer understanding and ensures the entire organisation — from product to sales — aligns around delivering superior customer value."
+    },
+    {
+      "id": "ENT-W06-007",
+      "courseId": "entrepreneurship",
+      "week": 6,
+      "moduleId": 5,
+      "moduleName": "Marketing & Go-to-Market",
+      "topic": "Pricing Strategies",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 6 practice — noc26_mg80 Module 5",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "Which pricing strategy sets an initial high price to capture maximum revenue from early adopters before lowering the price over time?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Penetration pricing"
+        },
+        {
+          "id": "B",
+          "text": "Price skimming"
+        },
+        {
+          "id": "C",
+          "text": "Cost-plus pricing"
+        },
+        {
+          "id": "D",
+          "text": "Freemium pricing"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Price skimming starts high to extract surplus from early adopters who value exclusivity or novelty, then gradually reduces the price to attract more price-sensitive customers."
+    },
+    {
+      "id": "ENT-W06-008",
+      "courseId": "entrepreneurship",
+      "week": 6,
+      "moduleId": 5,
+      "moduleName": "Marketing & Go-to-Market",
+      "topic": "Go-to-Market Basics",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 6 practice — noc26_mg80 Module 5",
+      "verified": true,
+      "difficulty": "Hard",
+      "question": "What is a key difference between a 'direct' and an 'indirect' go-to-market channel?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Direct channels involve selling through intermediaries; indirect channels sell directly to customers"
+        },
+        {
+          "id": "B",
+          "text": "Direct channels sell directly to customers; indirect channels use distributors, resellers, or partners"
+        },
+        {
+          "id": "C",
+          "text": "Indirect channels are always more profitable than direct channels"
+        },
+        {
+          "id": "D",
+          "text": "Direct channels are only available to large corporations"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "In a direct channel the company sells directly to the end customer (e.g., e-commerce, own stores). Indirect channels use third parties such as distributors and retailers to reach customers."
+    }
+  ]
+}

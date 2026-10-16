@@ -36,6 +36,17 @@ export default function Navbar() {
               <Home className="w-4 h-4" />
               <span>Home</span>
             </Link>
+            <Link
+              to="/weekly-assessments"
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
+                location.pathname.startsWith('/weekly-assessments')
+                  ? 'bg-blue-50 text-blue-700 font-semibold'
+                  : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
+              }`}
+            >
+              <BookOpen className="w-4 h-4" />
+              <span>Weekly Assessments</span>
+            </Link>
             <div className="h-4 w-px bg-slate-200"></div>
             <span className="text-xs text-slate-500 font-medium hidden md:inline-flex items-center gap-1">
               <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />

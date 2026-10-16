@@ -1,0 +1,273 @@
+{
+  "week": 11,
+  "moduleId": 7,
+  "moduleName": "Strategy, Leadership & Business Planning",
+  "assessmentTitle": "Week 11 Assessment",
+  "sourceNote": "Original practice questions. Official Week 11 assessment requires login at https://onlinecourses.nptel.ac.in/e-learning/course/noc26_mg80",
+  "questions": [
+    {
+      "id": "ENT-W11-001",
+      "courseId": "entrepreneurship",
+      "week": 11,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Social Business Model with Dr. Narendra Shah",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 11 practice — noc26_mg80 Module 7",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "What distinguishes a social business model from a purely commercial one?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Social businesses must always be non-profit and cannot charge customers"
+        },
+        {
+          "id": "B",
+          "text": "Social businesses explicitly integrate a social or environmental mission alongside commercial viability"
+        },
+        {
+          "id": "C",
+          "text": "Social businesses do not require a revenue model"
+        },
+        {
+          "id": "D",
+          "text": "Social businesses operate exclusively in government-sponsored sectors"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Social businesses deliberately embed a social or environmental purpose into their business model and measure success on both impact metrics and financial sustainability."
+    },
+    {
+      "id": "ENT-W11-002",
+      "courseId": "entrepreneurship",
+      "week": 11,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Business Model Canvas: Demand Side",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 11 practice — noc26_mg80 Module 7",
+      "verified": true,
+      "difficulty": "Easy",
+      "question": "The 'Customer Relationships' block in the Business Model Canvas describes:",
+      "options": [
+        {
+          "id": "A",
+          "text": "The employment contracts between the company and its staff"
+        },
+        {
+          "id": "B",
+          "text": "The type of relationship the company establishes and maintains with each customer segment"
+        },
+        {
+          "id": "C",
+          "text": "Legal agreements with suppliers and partners"
+        },
+        {
+          "id": "D",
+          "text": "The CRM software tool the company uses"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Customer Relationships in the BMC describes the nature of the interaction with customers — self-service, personalised support, community, co-creation — and how relationships are acquired, retained, and grown."
+    },
+    {
+      "id": "ENT-W11-003",
+      "courseId": "entrepreneurship",
+      "week": 11,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Entrepreneurial Leadership",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 11 practice — noc26_mg80 Module 7",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "Which of the following best describes 'servant leadership' in an entrepreneurial context?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A leader who prioritises their own advancement above the team's needs"
+        },
+        {
+          "id": "B",
+          "text": "A leader who focuses on enabling, empowering, and removing obstacles for the team"
+        },
+        {
+          "id": "C",
+          "text": "A leader who gives all strategic decisions to employees without guidance"
+        },
+        {
+          "id": "D",
+          "text": "A leader who follows every instruction from investors without question"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Servant leaders see their primary role as supporting their team — providing resources, removing blockers, and enabling people to do their best work — rather than commanding from above."
+    },
+    {
+      "id": "ENT-W11-004",
+      "courseId": "entrepreneurship",
+      "week": 11,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Business Models",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 11 practice — noc26_mg80 Module 7",
+      "verified": true,
+      "difficulty": "Hard",
+      "question": "A 'freemium' business model generates revenue by:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Charging all users the same monthly fee regardless of usage"
+        },
+        {
+          "id": "B",
+          "text": "Offering a free basic tier to attract users and converting a proportion to a paid premium tier"
+        },
+        {
+          "id": "C",
+          "text": "Providing all features free of charge and monetising only through advertising"
+        },
+        {
+          "id": "D",
+          "text": "Charging once upfront for permanent access with no recurring revenue"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Freemium gives away a functional free version to grow a large user base, then monetises by converting a subset of users to paid tiers with advanced features or higher usage limits."
+    },
+    {
+      "id": "ENT-W11-005",
+      "courseId": "entrepreneurship",
+      "week": 11,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Strategy Fundamentals",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 11 practice — noc26_mg80 Module 7",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "Porter's Five Forces framework evaluates competitive intensity in an industry by examining which five forces?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cost, quality, speed, service, and innovation"
+        },
+        {
+          "id": "B",
+          "text": "Competitive rivalry, threat of new entrants, bargaining power of buyers, bargaining power of suppliers, threat of substitutes"
+        },
+        {
+          "id": "C",
+          "text": "Revenue growth, margin expansion, capital efficiency, market size, and regulatory risk"
+        },
+        {
+          "id": "D",
+          "text": "Leadership, culture, strategy, execution, and funding"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Porter's Five Forces analyses an industry's structural attractiveness by examining the rivalry among competitors, the threat from new entrants and substitutes, and the relative power of customers and suppliers."
+    },
+    {
+      "id": "ENT-W11-006",
+      "courseId": "entrepreneurship",
+      "week": 11,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Business Model Canvas Examples",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 11 practice — noc26_mg80 Module 7",
+      "verified": true,
+      "difficulty": "Easy",
+      "question": "In the Business Model Canvas, 'Revenue Streams' describes:",
+      "options": [
+        {
+          "id": "A",
+          "text": "The river networks near the company's manufacturing plant"
+        },
+        {
+          "id": "B",
+          "text": "The ways in which the company generates cash from each customer segment"
+        },
+        {
+          "id": "C",
+          "text": "Only one-time product sales"
+        },
+        {
+          "id": "D",
+          "text": "The company's bank account transaction history"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Revenue Streams in the BMC describes how a company monetises its value propositions — through asset sales, usage fees, subscriptions, licensing, commissions, advertising, etc."
+    },
+    {
+      "id": "ENT-W11-007",
+      "courseId": "entrepreneurship",
+      "week": 11,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Ten Tests of Strategy",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 11 practice — noc26_mg80 Module 7",
+      "verified": true,
+      "difficulty": "Hard",
+      "question": "Which of the following is the best example of a company 'stuck in the middle' as described by Porter?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A company that is the clear cost leader in its industry"
+        },
+        {
+          "id": "B",
+          "text": "A niche luxury brand with a focused differentiation strategy"
+        },
+        {
+          "id": "C",
+          "text": "A company that cannot claim either the lowest cost or a distinctly superior product"
+        },
+        {
+          "id": "D",
+          "text": "A startup that has achieved product-market fit in a defined segment"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "Being 'stuck in the middle' means having neither a cost advantage nor a meaningful differentiation — making the company vulnerable to both cost leaders below and differentiators above."
+    },
+    {
+      "id": "ENT-W11-008",
+      "courseId": "entrepreneurship",
+      "week": 11,
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "topic": "Entrepreneurial Leadership",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 11 practice — noc26_mg80 Module 7",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "Building a strong organisational culture as an entrepreneur primarily involves:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Writing a long culture document and filing it with HR"
+        },
+        {
+          "id": "B",
+          "text": "Consistently modelling the values, behaviours, and standards you want the organisation to embody"
+        },
+        {
+          "id": "C",
+          "text": "Hiring only experienced managers from large corporations"
+        },
+        {
+          "id": "D",
+          "text": "Avoiding any discussion of values in the workplace"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Culture is shaped by the founder's daily behaviour and decision-making. Employees observe what leaders do, not just what they say — consistent modelling is the most powerful culture-building tool."
+    }
+  ]
+}

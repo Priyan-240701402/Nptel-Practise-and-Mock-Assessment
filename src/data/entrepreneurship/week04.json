@@ -1,0 +1,273 @@
+{
+  "week": 4,
+  "moduleId": 4,
+  "moduleName": "New Product Development",
+  "assessmentTitle": "Week 4 Assessment",
+  "sourceNote": "Original practice questions. Official Week 4 assessment requires login at https://onlinecourses.nptel.ac.in/e-learning/course/noc26_mg80",
+  "questions": [
+    {
+      "id": "ENT-W04-001",
+      "courseId": "entrepreneurship",
+      "week": 4,
+      "moduleId": 4,
+      "moduleName": "New Product Development",
+      "topic": "CVP to Benefits and Features",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 4 practice — noc26_mg80 Module 4",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "What is the key difference between a product 'feature' and a customer 'benefit'?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Features describe what the product does; benefits describe the value the customer gains"
+        },
+        {
+          "id": "B",
+          "text": "Benefits are technical specifications; features are marketing slogans"
+        },
+        {
+          "id": "C",
+          "text": "They are identical — every feature is automatically a benefit"
+        },
+        {
+          "id": "D",
+          "text": "Features are more important than benefits in customer purchase decisions"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "Features are product attributes (e.g., '5000 mAh battery'); benefits are what those features mean to the customer (e.g., 'never run out of power during a long day'). Customers buy benefits, not features."
+    },
+    {
+      "id": "ENT-W04-002",
+      "courseId": "entrepreneurship",
+      "week": 4,
+      "moduleId": 4,
+      "moduleName": "New Product Development",
+      "topic": "Stages of New Product Development",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 4 practice — noc26_mg80 Module 4",
+      "verified": true,
+      "difficulty": "Easy",
+      "question": "In the traditional Stage-Gate new product development process, what happens at a 'gate'?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The product is automatically approved for launch"
+        },
+        {
+          "id": "B",
+          "text": "A review decision is made whether to proceed, revise, or terminate the project"
+        },
+        {
+          "id": "C",
+          "text": "The engineering team begins coding without any review"
+        },
+        {
+          "id": "D",
+          "text": "Customer feedback is collected for the first time"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "In the Stage-Gate model, gates are checkpoint reviews where management evaluates the project's progress, feasibility, and alignment with strategy before approving the next stage."
+    },
+    {
+      "id": "ENT-W04-003",
+      "courseId": "entrepreneurship",
+      "week": 4,
+      "moduleId": 4,
+      "moduleName": "New Product Development",
+      "topic": "Design Thinking",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 4 practice — noc26_mg80 Module 4",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "Which of the following correctly lists the five stages of Design Thinking?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Plan, Design, Build, Test, Launch"
+        },
+        {
+          "id": "B",
+          "text": "Empathise, Define, Ideate, Prototype, Test"
+        },
+        {
+          "id": "C",
+          "text": "Research, Strategy, Execution, Feedback, Scale"
+        },
+        {
+          "id": "D",
+          "text": "Discover, Define, Develop, Deliver, Deploy"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "The Stanford d.school Design Thinking framework comprises five stages: Empathise (understand users), Define (frame the problem), Ideate (generate solutions), Prototype (build), and Test (validate)."
+    },
+    {
+      "id": "ENT-W04-004",
+      "courseId": "entrepreneurship",
+      "week": 4,
+      "moduleId": 4,
+      "moduleName": "New Product Development",
+      "topic": "Minimum Viable Product",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 4 practice — noc26_mg80 Module 4",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "What is the primary purpose of a Minimum Viable Product (MVP)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To launch the most feature-complete product possible from day one"
+        },
+        {
+          "id": "B",
+          "text": "To test the riskiest assumptions with the minimum effort and investment"
+        },
+        {
+          "id": "C",
+          "text": "To create a product with zero bugs before any customer testing"
+        },
+        {
+          "id": "D",
+          "text": "To generate maximum revenue in the first month"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "An MVP is a product version with just enough features to test the most critical hypotheses and gather validated learning with minimum wasted effort."
+    },
+    {
+      "id": "ENT-W04-005",
+      "courseId": "entrepreneurship",
+      "week": 4,
+      "moduleId": 4,
+      "moduleName": "New Product Development",
+      "topic": "Design Thinking",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 4 practice — noc26_mg80 Module 4",
+      "verified": true,
+      "difficulty": "Easy",
+      "question": "The 'Empathise' stage of Design Thinking primarily involves:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Writing technical specifications for the product"
+        },
+        {
+          "id": "B",
+          "text": "Understanding users' needs, experiences, and motivations deeply"
+        },
+        {
+          "id": "C",
+          "text": "Presenting the final product to investors"
+        },
+        {
+          "id": "D",
+          "text": "Setting the price for the product"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Empathising means understanding the human perspective by observing users, conducting interviews, and immersing oneself in the user experience to discover real needs."
+    },
+    {
+      "id": "ENT-W04-006",
+      "courseId": "entrepreneurship",
+      "week": 4,
+      "moduleId": 4,
+      "moduleName": "New Product Development",
+      "topic": "Intellectual Property Basics",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 4 practice — noc26_mg80 Module 4",
+      "verified": true,
+      "difficulty": "Hard",
+      "question": "Which type of intellectual property protection is most appropriate for a unique software algorithm?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Trademark"
+        },
+        {
+          "id": "B",
+          "text": "Copyright alone (automatically applies to code)"
+        },
+        {
+          "id": "C",
+          "text": "Patent (if it meets novelty and non-obviousness criteria)"
+        },
+        {
+          "id": "D",
+          "text": "Trade dress"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "A novel and non-obvious software algorithm may be patentable. While code is automatically copyrighted, patents provide broader protection for the underlying functional method."
+    },
+    {
+      "id": "ENT-W04-007",
+      "courseId": "entrepreneurship",
+      "week": 4,
+      "moduleId": 4,
+      "moduleName": "New Product Development",
+      "topic": "Stages of New Product Development",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 4 practice — noc26_mg80 Module 4",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "At which stage of new product development does concept screening primarily occur?",
+      "options": [
+        {
+          "id": "A",
+          "text": "After full-scale manufacturing has begun"
+        },
+        {
+          "id": "B",
+          "text": "After idea generation, to evaluate which concepts merit further development"
+        },
+        {
+          "id": "C",
+          "text": "Only after the product has been sold to customers"
+        },
+        {
+          "id": "D",
+          "text": "During the advertising campaign planning stage"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Concept screening follows idea generation and uses criteria such as market potential, strategic fit, and technical feasibility to shortlist concepts worth investing in."
+    },
+    {
+      "id": "ENT-W04-008",
+      "courseId": "entrepreneurship",
+      "week": 4,
+      "moduleId": 4,
+      "moduleName": "New Product Development",
+      "topic": "Intellectual Property Basics",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 4 practice — noc26_mg80 Module 4",
+      "verified": true,
+      "difficulty": "Easy",
+      "question": "A trademark primarily protects which element of a company's intellectual property?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The technical design of the product's internal mechanism"
+        },
+        {
+          "id": "B",
+          "text": "A brand name, logo, or slogan that distinguishes goods or services"
+        },
+        {
+          "id": "C",
+          "text": "The company's financial statements"
+        },
+        {
+          "id": "D",
+          "text": "The confidential source code of software"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "A trademark protects brand identifiers — names, logos, slogans — that distinguish a company's goods or services from competitors, preventing consumer confusion."
+    }
+  ]
+}

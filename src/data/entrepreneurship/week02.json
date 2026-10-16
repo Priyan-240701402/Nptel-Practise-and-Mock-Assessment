@@ -1,0 +1,273 @@
+{
+  "week": 2,
+  "moduleId": 2,
+  "moduleName": "Opportunity Identification & Idea Generation",
+  "assessmentTitle": "Week 2 Assessment",
+  "sourceNote": "Original practice questions. Official Week 2 assessment requires login at https://onlinecourses.nptel.ac.in/e-learning/course/noc26_mg80",
+  "questions": [
+    {
+      "id": "ENT-W02-001",
+      "courseId": "entrepreneurship",
+      "week": 2,
+      "moduleId": 2,
+      "moduleName": "Opportunity Identification & Idea Generation",
+      "topic": "Problems, Opportunities, and Ideas",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 2 practice — noc26_mg80 Module 2",
+      "verified": true,
+      "difficulty": "Easy",
+      "question": "What is the most reliable source of genuine entrepreneurial opportunities according to this course?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Reading business bestsellers and copying their ideas"
+        },
+        {
+          "id": "B",
+          "text": "Identifying real, unmet problems experienced by a specific group of people"
+        },
+        {
+          "id": "C",
+          "text": "Choosing the most fashionable industry trend of the year"
+        },
+        {
+          "id": "D",
+          "text": "Launching a product that already has many competitors"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Genuine opportunities arise from clearly defined problems faced by real people. Solving a specific, unmet need creates sustainable competitive advantage."
+    },
+    {
+      "id": "ENT-W02-002",
+      "courseId": "entrepreneurship",
+      "week": 2,
+      "moduleId": 2,
+      "moduleName": "Opportunity Identification & Idea Generation",
+      "topic": "Problems, Opportunities, and Ideas",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 2 practice — noc26_mg80 Module 2",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "How does a 'problem' differ from an 'opportunity' in the entrepreneurial context?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Problems are always negative and opportunities are always positive"
+        },
+        {
+          "id": "B",
+          "text": "An opportunity is a problem that has been validated as worth solving and is addressable by a viable business"
+        },
+        {
+          "id": "C",
+          "text": "They are the same thing — all problems are immediately business opportunities"
+        },
+        {
+          "id": "D",
+          "text": "Opportunities exist only in technology sectors; problems exist everywhere"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "A problem becomes an entrepreneurial opportunity when there is a significant target market, willingness to pay, and a feasible solution that can be delivered as a business."
+    },
+    {
+      "id": "ENT-W02-003",
+      "courseId": "entrepreneurship",
+      "week": 2,
+      "moduleId": 2,
+      "moduleName": "Opportunity Identification & Idea Generation",
+      "topic": "Opportunities Landscape in Multiple Domains",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 2 practice — noc26_mg80 Module 2",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "Which of the following domains is mentioned as offering significant entrepreneurial opportunities in India?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Only information technology"
+        },
+        {
+          "id": "B",
+          "text": "Healthcare, agriculture, education, fintech, and clean energy among others"
+        },
+        {
+          "id": "C",
+          "text": "Only sectors where no existing companies operate"
+        },
+        {
+          "id": "D",
+          "text": "Only government-regulated industries"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "India presents vast entrepreneurial opportunities across healthcare, agritech, edtech, fintech, clean energy, and many other domains due to gaps in access, quality, and affordability."
+    },
+    {
+      "id": "ENT-W02-004",
+      "courseId": "entrepreneurship",
+      "week": 2,
+      "moduleId": 2,
+      "moduleName": "Opportunity Identification & Idea Generation",
+      "topic": "Demystifying AI with Anand Deshpande",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 2 practice — noc26_mg80 Module 2",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "According to the guest session on AI, which aspect of AI is most directly relevant for entrepreneurs identifying new opportunities?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The ability to replace all human workers immediately"
+        },
+        {
+          "id": "B",
+          "text": "AI as a tool to enhance productivity and create new product categories"
+        },
+        {
+          "id": "C",
+          "text": "AI as a replacement for entrepreneurial creativity and judgment"
+        },
+        {
+          "id": "D",
+          "text": "AI-generated business plans that require no human validation"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "AI is a powerful enabling technology that entrepreneurs can use to enhance productivity, personalise offerings, and create entirely new product categories, rather than a replacement for human judgment."
+    },
+    {
+      "id": "ENT-W02-005",
+      "courseId": "entrepreneurship",
+      "week": 2,
+      "moduleId": 2,
+      "moduleName": "Opportunity Identification & Idea Generation",
+      "topic": "Healthcare Sector with Rizwan Koita",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 2 practice — noc26_mg80 Module 2",
+      "verified": true,
+      "difficulty": "Hard",
+      "question": "The healthcare guest session highlights which key challenge as an entrepreneurial opportunity in India?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Excess supply of qualified doctors in rural areas"
+        },
+        {
+          "id": "B",
+          "text": "Gaps in healthcare accessibility, affordability, and quality especially in underserved regions"
+        },
+        {
+          "id": "C",
+          "text": "Over-digitalisation of patient records"
+        },
+        {
+          "id": "D",
+          "text": "Absence of any government healthcare scheme"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "India faces significant gaps in healthcare access and quality, particularly in Tier 2/3 cities and rural areas, creating large addressable markets for health-tech entrepreneurs."
+    },
+    {
+      "id": "ENT-W02-006",
+      "courseId": "entrepreneurship",
+      "week": 2,
+      "moduleId": 2,
+      "moduleName": "Opportunity Identification & Idea Generation",
+      "topic": "Problems, Opportunities, and Ideas",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 2 practice — noc26_mg80 Module 2",
+      "verified": true,
+      "difficulty": "Easy",
+      "question": "What is a key technique for identifying entrepreneurial opportunities from personal experience?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Only observing what large companies are building"
+        },
+        {
+          "id": "B",
+          "text": "Identifying pain points and frustrations in everyday life"
+        },
+        {
+          "id": "C",
+          "text": "Randomly brainstorming products without any user research"
+        },
+        {
+          "id": "D",
+          "text": "Selecting sectors purely based on stock market performance"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Many successful startups originate from founders who personally experienced a problem. Noticing friction points in daily life is a powerful opportunity identification technique."
+    },
+    {
+      "id": "ENT-W02-007",
+      "courseId": "entrepreneurship",
+      "week": 2,
+      "moduleId": 2,
+      "moduleName": "Opportunity Identification & Idea Generation",
+      "topic": "Opportunities Landscape in Multiple Domains",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 2 practice — noc26_mg80 Module 2",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "Which of the following best explains why the same problem can create different opportunities in different contexts?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Because problems have no universal solutions and context determines viability"
+        },
+        {
+          "id": "B",
+          "text": "Because all problems have exactly one correct solution"
+        },
+        {
+          "id": "C",
+          "text": "Because problems are identical across all geographies"
+        },
+        {
+          "id": "D",
+          "text": "Because opportunities are independent of available technology"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "The same problem can yield different viable solutions depending on local infrastructure, regulatory environment, customer behaviour, technology availability, and willingness to pay."
+    },
+    {
+      "id": "ENT-W02-008",
+      "courseId": "entrepreneurship",
+      "week": 2,
+      "moduleId": 2,
+      "moduleName": "Opportunity Identification & Idea Generation",
+      "topic": "Problems, Opportunities, and Ideas",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 2 practice — noc26_mg80 Module 2",
+      "verified": true,
+      "difficulty": "Hard",
+      "question": "When evaluating a potential entrepreneurial opportunity, which criterion is LEAST important at the idea stage?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Size of the addressable market"
+        },
+        {
+          "id": "B",
+          "text": "Existence of a genuine customer pain point"
+        },
+        {
+          "id": "C",
+          "text": "Exact final logo and brand name of the company"
+        },
+        {
+          "id": "D",
+          "text": "Founder's ability to build or access the solution"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "At the idea stage, market size, customer pain, and founder capability matter most. Branding details like logos are execution elements that come much later in the process."
+    }
+  ]
+}

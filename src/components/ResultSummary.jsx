@@ -38,7 +38,7 @@ export default function ResultSummary({
       <div className="bg-white rounded-2xl border border-slate-200 shadow-xs p-6 sm:p-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-6 border-b border-slate-100">
           <div className="text-center md:text-left">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold mb-3 border ${gradeBadge.color}">
+            <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold mb-3 border ${gradeBadge.color}`}>
               <Award className="w-3.5 h-3.5" />
               <span>{gradeBadge.text}</span>
             </div>
@@ -118,8 +118,19 @@ export default function ResultSummary({
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold text-sm bg-blue-600 text-white hover:bg-blue-700 active:bg-blue-800 transition-colors shadow-xs"
           >
             <RotateCcw className="w-4 h-4" />
-            <span>{isMockTest ? 'Retake Mock Test' : 'Practise Again'}</span>
+            <span>{isMockTest ? 'Take Another Mock Test' : 'Practise Again'}</span>
           </button>
+
+          {onReviewFilter && (
+            <button
+              type="button"
+              onClick={() => onReviewFilter('all')}
+              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl font-semibold text-sm bg-white text-slate-700 border border-slate-300 hover:bg-slate-50 transition-colors"
+            >
+              <Eye className="w-4 h-4 text-blue-600" />
+              <span>Review Answers</span>
+            </button>
+          )}
 
           {incorrectCount > 0 && onReviewFilter && (
             <button
@@ -127,20 +138,55 @@ export default function ResultSummary({
               onClick={() => onReviewFilter('incorrect')}
               className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl font-semibold text-sm bg-rose-50 text-rose-700 border border-rose-200 hover:bg-rose-100 transition-colors"
             >
-              <Eye className="w-4 h-4" />
-              <span>Review Incorrect ({incorrectCount})</span>
+              <XCircle className="w-4 h-4" />
+              <span>Practise Incorrect Questions ({incorrectCount})</span>
             </button>
           )}
 
           <Link
-            to="/"
-            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl font-semibold text-sm bg-white text-slate-700 border border-slate-300 hover:bg-slate-50 transition-colors ml-auto"
+            to={courseId ? `/practice/${courseId}` : '/'}
+            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl font-semibold text-sm bg-slate-50 text-slate-700 border border-slate-200 hover:bg-slate-100 transition-colors ml-auto"
           >
             <Home className="w-4 h-4" />
-            <span>Return Home</span>
+            <span>Return to Course</span>
           </Link>
         </div>
       </div>
+
+      {/* Module-Wise Performance Breakdown */}
+      {results.modulePerformance && results.modulePerformance.length > 0 && (
+        <div className="bg-white rounded-2xl border border-slate-200 shadow-xs p-6">
+          <h3 className="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+            <span>Module-wise Performance Breakdown</span>
+          </h3>
+
+          <div className="space-y-4">
+            {results.modulePerformance.map((item, index) => {
+              const pct = item.total > 0 ? Math.round((item.correct / item.total) * 100) : 0;
+              let barColor = 'bg-blue-600';
+              if (pct >= 75) barColor = 'bg-emerald-500';
+              else if (pct < 50) barColor = 'bg-amber-500';
+
+              return (
+                <div key={index} className="space-y-1.5">
+                  <div className="flex justify-between items-center text-xs sm:text-sm">
+                    <span className="font-semibold text-slate-800 truncate pr-2">{item.topic || item.name}</span>
+                    <span className="text-slate-600 font-mono text-xs shrink-0">
+                      {item.correct} / {item.total} ({pct}%)
+                    </span>
+                  </div>
+                  <div className="w-full h-2.5 bg-slate-100 rounded-full overflow-hidden">
+                    <div
+                      className={`h-full ${barColor} rounded-full transition-all duration-300`}
+                      style={{ width: `${pct}%` }}
+                    />
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
 
       {/* Topic-Wise Performance Breakdown */}
       {topicPerformance.length > 0 && (
@@ -151,7 +197,7 @@ export default function ResultSummary({
 
           <div className="space-y-4">
             {topicPerformance.map((topicItem, index) => {
-              const topicPct = Math.round((topicItem.correct / topicItem.total) * 100);
+              const topicPct = topicItem.total > 0 ? Math.round((topicItem.correct / topicItem.total) * 100) : 0;
               let barColor = 'bg-blue-600';
               if (topicPct >= 75) barColor = 'bg-emerald-500';
               else if (topicPct < 50) barColor = 'bg-amber-500';

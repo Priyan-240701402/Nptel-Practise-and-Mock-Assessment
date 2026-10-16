@@ -1,0 +1,273 @@
+{
+  "week": 9,
+  "moduleId": 6,
+  "moduleName": "Finance for Entrepreneurs",
+  "assessmentTitle": "Week 9 Assessment",
+  "sourceNote": "Original practice questions. Official Week 9 assessment requires login at https://onlinecourses.nptel.ac.in/e-learning/course/noc26_mg80",
+  "questions": [
+    {
+      "id": "ENT-W09-001",
+      "courseId": "entrepreneurship",
+      "week": 9,
+      "moduleId": 6,
+      "moduleName": "Finance for Entrepreneurs",
+      "topic": "Fundraising at Different Startup Stages",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 9 practice — noc26_mg80 Module 6",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "At the seed stage, startup funding is most commonly provided by:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Public stock exchanges"
+        },
+        {
+          "id": "B",
+          "text": "Founders, family, friends, angel investors, and early-stage seed funds"
+        },
+        {
+          "id": "C",
+          "text": "Large commercial banks without collateral"
+        },
+        {
+          "id": "D",
+          "text": "Government pension funds"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Seed-stage funding typically comes from founders' own capital, friends and family, angel investors, and seed-stage VC funds — before the company has enough traction for institutional Series A funding."
+    },
+    {
+      "id": "ENT-W09-002",
+      "courseId": "entrepreneurship",
+      "week": 9,
+      "moduleId": 6,
+      "moduleName": "Finance for Entrepreneurs",
+      "topic": "Venture Finance",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 9 practice — noc26_mg80 Module 6",
+      "verified": true,
+      "difficulty": "Hard",
+      "question": "What does a venture capital firm's 'term sheet' represent?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The final legally binding investment contract"
+        },
+        {
+          "id": "B",
+          "text": "A non-binding document outlining the key terms and conditions of a proposed investment"
+        },
+        {
+          "id": "C",
+          "text": "The company's monthly expense report"
+        },
+        {
+          "id": "D",
+          "text": "A government approval document for foreign investment"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "A term sheet is a non-binding letter of intent that outlines proposed investment terms — valuation, equity stake, governance rights, anti-dilution clauses — before a full legal agreement is drafted."
+    },
+    {
+      "id": "ENT-W09-003",
+      "courseId": "entrepreneurship",
+      "week": 9,
+      "moduleId": 6,
+      "moduleName": "Finance for Entrepreneurs",
+      "topic": "Investor Expectations",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 9 practice — noc26_mg80 Module 6",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "Venture capital investors typically target which type of investment return?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Moderate, stable 8-10% annual returns similar to public equity markets"
+        },
+        {
+          "id": "B",
+          "text": "Very high returns (10x or more) on successful investments to compensate for the majority that fail"
+        },
+        {
+          "id": "C",
+          "text": "Guaranteed 100% return on every investment"
+        },
+        {
+          "id": "D",
+          "text": "Returns primarily from interest on loans made to startups"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "VC investors accept very high failure rates (most portfolio companies fail) and therefore require home-run returns (10x-100x) from their successful investments to generate overall fund returns."
+    },
+    {
+      "id": "ENT-W09-004",
+      "courseId": "entrepreneurship",
+      "week": 9,
+      "moduleId": 6,
+      "moduleName": "Finance for Entrepreneurs",
+      "topic": "Incubation and Grant Programs",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 9 practice — noc26_mg80 Module 6",
+      "verified": true,
+      "difficulty": "Easy",
+      "question": "What is a primary advantage of joining an incubator for an early-stage startup?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Immediate profitability guaranteed by the incubator"
+        },
+        {
+          "id": "B",
+          "text": "Access to mentorship, networking, workspace, and sometimes non-dilutive funding or grants"
+        },
+        {
+          "id": "C",
+          "text": "Guaranteed acquisition by the incubator's parent company"
+        },
+        {
+          "id": "D",
+          "text": "Exemption from all tax obligations"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Incubators provide structured support including mentoring, co-working space, networks of investors and peers, and often non-dilutive grants — reducing early-stage risk and accelerating development."
+    },
+    {
+      "id": "ENT-W09-005",
+      "courseId": "entrepreneurship",
+      "week": 9,
+      "moduleId": 6,
+      "moduleName": "Finance for Entrepreneurs",
+      "topic": "Financial Planning",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 9 practice — noc26_mg80 Module 6",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "What is the primary purpose of a startup's financial forecast?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To predict the exact future revenue with no uncertainty"
+        },
+        {
+          "id": "B",
+          "text": "To provide a structured scenario for planning resources, testing assumptions, and communicating with investors"
+        },
+        {
+          "id": "C",
+          "text": "To satisfy accounting regulations under GAAP"
+        },
+        {
+          "id": "D",
+          "text": "To determine employee salaries only"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Financial forecasts are planning tools — they help test assumptions, identify funding needs, guide resource allocation, and communicate the business model's scalability to investors."
+    },
+    {
+      "id": "ENT-W09-006",
+      "courseId": "entrepreneurship",
+      "week": 9,
+      "moduleId": 6,
+      "moduleName": "Finance for Entrepreneurs",
+      "topic": "Product Costing",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 9 practice — noc26_mg80 Module 6",
+      "verified": true,
+      "difficulty": "Hard",
+      "question": "Contribution margin is calculated as:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Revenue minus all fixed costs"
+        },
+        {
+          "id": "B",
+          "text": "Revenue minus variable costs, representing how much each unit sold contributes to covering fixed costs"
+        },
+        {
+          "id": "C",
+          "text": "Total revenue minus total expenses"
+        },
+        {
+          "id": "D",
+          "text": "Net profit divided by number of units sold"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Contribution Margin = Revenue - Variable Costs. It shows the amount each unit sold contributes toward covering fixed overhead and generating profit."
+    },
+    {
+      "id": "ENT-W09-007",
+      "courseId": "entrepreneurship",
+      "week": 9,
+      "moduleId": 6,
+      "moduleName": "Finance for Entrepreneurs",
+      "topic": "Finance as Strategy",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 9 practice — noc26_mg80 Module 6",
+      "verified": true,
+      "difficulty": "Hard",
+      "question": "How can financing strategy serve as a competitive advantage for a startup?",
+      "options": [
+        {
+          "id": "A",
+          "text": "By raising as much money as possible regardless of dilution or terms"
+        },
+        {
+          "id": "B",
+          "text": "By securing capital at the right time and terms to outinvest competitors in key growth areas"
+        },
+        {
+          "id": "C",
+          "text": "By avoiding all forms of external investment"
+        },
+        {
+          "id": "D",
+          "text": "By spending the minimum possible on all business activities"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Strategic fundraising — timing raises at inflection points, securing favourable terms, and deploying capital into differentiating capabilities — can create durable competitive advantages."
+    },
+    {
+      "id": "ENT-W09-008",
+      "courseId": "entrepreneurship",
+      "week": 9,
+      "moduleId": 6,
+      "moduleName": "Finance for Entrepreneurs",
+      "topic": "Unit Economics",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 9 practice — noc26_mg80 Module 6",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "Break-even analysis determines which business milestone?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The point at which the company reaches its maximum possible profit"
+        },
+        {
+          "id": "B",
+          "text": "The level of sales at which total revenue equals total costs and the business neither makes a profit nor a loss"
+        },
+        {
+          "id": "C",
+          "text": "The market share required to become the category leader"
+        },
+        {
+          "id": "D",
+          "text": "The valuation at which the company should raise its Series A"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Break-even is the sales volume at which total revenue exactly covers total costs (fixed + variable). Beyond this point every additional unit sold generates profit."
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "week": 5,
+  "moduleId": 4,
+  "moduleName": "New Product Development",
+  "assessmentTitle": "Week 5 Assessment",
+  "sourceNote": "Original practice questions. Official Week 5 assessment requires login at https://onlinecourses.nptel.ac.in/e-learning/course/noc26_mg80",
+  "questions": [
+    {
+      "id": "ENT-W05-001",
+      "courseId": "entrepreneurship",
+      "week": 5,
+      "moduleId": 4,
+      "moduleName": "New Product Development",
+      "topic": "Britannia Case Study",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 5 practice — noc26_mg80 Module 4",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "The Britannia case study illustrates which critical lesson about product innovation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Established companies never need to innovate"
+        },
+        {
+          "id": "B",
+          "text": "Innovation in a legacy company requires understanding changing consumer needs and acting on them"
+        },
+        {
+          "id": "C",
+          "text": "Only startups can innovate in the food sector"
+        },
+        {
+          "id": "D",
+          "text": "Product innovation is less important than advertising spend"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Britannia's case demonstrates that even well-established legacy brands must continuously innovate in product lines and formats to stay relevant as consumer preferences evolve."
+    },
+    {
+      "id": "ENT-W05-002",
+      "courseId": "entrepreneurship",
+      "week": 5,
+      "moduleId": 4,
+      "moduleName": "New Product Development",
+      "topic": "Medical Devices Case Study",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 5 practice — noc26_mg80 Module 4",
+      "verified": true,
+      "difficulty": "Hard",
+      "question": "The medical devices case study highlights which unique challenge in product development for regulated industries?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Regulated industries have no product development challenges"
+        },
+        {
+          "id": "B",
+          "text": "Products must meet stringent regulatory and clinical validation requirements before launch"
+        },
+        {
+          "id": "C",
+          "text": "Medical devices can be launched without any testing"
+        },
+        {
+          "id": "D",
+          "text": "Regulation always accelerates the development process"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "In regulated sectors like medical devices, products must demonstrate clinical safety and efficacy through structured trials and receive regulatory approvals before market launch."
+    },
+    {
+      "id": "ENT-W05-003",
+      "courseId": "entrepreneurship",
+      "week": 5,
+      "moduleId": 4,
+      "moduleName": "New Product Development",
+      "topic": "Intellectual Property Patents",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 5 practice — noc26_mg80 Module 4",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "What are the three standard criteria an invention must meet to be patentable?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Expensive, complex, and technology-based"
+        },
+        {
+          "id": "B",
+          "text": "Novel, non-obvious, and industrially applicable"
+        },
+        {
+          "id": "C",
+          "text": "Profitable, unique-looking, and filed before launch"
+        },
+        {
+          "id": "D",
+          "text": "Registered, branded, and marketed"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Patent criteria require the invention to be novel (not previously known), non-obvious (not trivially derivable by someone skilled in the field), and have industrial applicability."
+    },
+    {
+      "id": "ENT-W05-004",
+      "courseId": "entrepreneurship",
+      "week": 5,
+      "moduleId": 4,
+      "moduleName": "New Product Development",
+      "topic": "Minimum Viable Product",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 5 practice — noc26_mg80 Module 4",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "Which of the following is an example of a high-fidelity concierge MVP?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A fully automated software platform serving 10,000 users"
+        },
+        {
+          "id": "B",
+          "text": "Manually fulfilling a service for early users to test demand before building automation"
+        },
+        {
+          "id": "C",
+          "text": "A printed brochure with no working product"
+        },
+        {
+          "id": "D",
+          "text": "Filing a patent application without any prototype"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "A concierge MVP delivers the promised value manually (e.g., a team personally performing what the software would eventually automate), allowing rapid learning about real demand."
+    },
+    {
+      "id": "ENT-W05-005",
+      "courseId": "entrepreneurship",
+      "week": 5,
+      "moduleId": 4,
+      "moduleName": "New Product Development",
+      "topic": "Design Thinking",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 5 practice — noc26_mg80 Module 4",
+      "verified": true,
+      "difficulty": "Easy",
+      "question": "In Design Thinking, the 'Ideate' stage is best described as:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Selecting the only one possible solution to the defined problem"
+        },
+        {
+          "id": "B",
+          "text": "Generating a broad range of creative ideas without immediate judgement"
+        },
+        {
+          "id": "C",
+          "text": "Presenting the final product to the board for approval"
+        },
+        {
+          "id": "D",
+          "text": "Conducting financial analysis of the business model"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "The Ideate stage encourages divergent thinking — generating as many creative ideas as possible (often via brainstorming) before converging on the most promising ones."
+    },
+    {
+      "id": "ENT-W05-006",
+      "courseId": "entrepreneurship",
+      "week": 5,
+      "moduleId": 4,
+      "moduleName": "New Product Development",
+      "topic": "CVP to Benefits and Features",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 5 practice — noc26_mg80 Module 4",
+      "verified": true,
+      "difficulty": "Hard",
+      "question": "How should the product roadmap be derived from the Customer Value Proposition?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The roadmap should list every possible feature regardless of CVP"
+        },
+        {
+          "id": "B",
+          "text": "Only features that directly deliver the promised customer benefit should be prioritised"
+        },
+        {
+          "id": "C",
+          "text": "The roadmap should be created before the CVP is finalised"
+        },
+        {
+          "id": "D",
+          "text": "CVP and product roadmap are unrelated planning documents"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "A CVP-driven roadmap ensures that development resources are allocated to features that deliver the core customer benefit, preventing feature bloat and misaligned investment."
+    },
+    {
+      "id": "ENT-W05-007",
+      "courseId": "entrepreneurship",
+      "week": 5,
+      "moduleId": 4,
+      "moduleName": "New Product Development",
+      "topic": "Intellectual Property Patents",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 5 practice — noc26_mg80 Module 4",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "Which statement about trade secrets is correct?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Trade secrets must be publicly disclosed to obtain protection"
+        },
+        {
+          "id": "B",
+          "text": "Trade secrets are protected as long as they remain confidential and have commercial value"
+        },
+        {
+          "id": "C",
+          "text": "Trade secrets expire after 20 years like patents"
+        },
+        {
+          "id": "D",
+          "text": "Trade secrets offer no legal protection"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Trade secrets (e.g., Coca-Cola's formula) are protected indefinitely as long as the holder takes reasonable steps to maintain confidentiality and the information has commercial value."
+    },
+    {
+      "id": "ENT-W05-008",
+      "courseId": "entrepreneurship",
+      "week": 5,
+      "moduleId": 4,
+      "moduleName": "New Product Development",
+      "topic": "Stages of New Product Development",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 5 practice — noc26_mg80 Module 4",
+      "verified": true,
+      "difficulty": "Easy",
+      "question": "What is a 'pilot launch' in the context of new product development?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A full national launch with maximum advertising"
+        },
+        {
+          "id": "B",
+          "text": "A limited market rollout to test the product and marketing mix before full launch"
+        },
+        {
+          "id": "C",
+          "text": "The internal testing of a product among employees only"
+        },
+        {
+          "id": "D",
+          "text": "A product recall due to quality issues"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "A pilot or test-market launch introduces the product in a limited geography or customer segment to validate assumptions about demand and execution before committing to a full launch."
+    }
+  ]
+}

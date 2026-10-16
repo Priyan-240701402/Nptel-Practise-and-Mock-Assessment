@@ -1,0 +1,273 @@
+{
+  "week": 12,
+  "moduleId": 8,
+  "moduleName": "Communication & Investor Pitching",
+  "assessmentTitle": "Week 12 Assessment",
+  "sourceNote": "Original practice questions. Official Week 12 assessment requires login at https://onlinecourses.nptel.ac.in/e-learning/course/noc26_mg80",
+  "questions": [
+    {
+      "id": "ENT-W12-001",
+      "courseId": "entrepreneurship",
+      "week": 12,
+      "moduleId": 8,
+      "moduleName": "Communication & Investor Pitching",
+      "topic": "Pitching to Investors",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 12 practice — noc26_mg80 Module 8",
+      "verified": true,
+      "difficulty": "Easy",
+      "question": "What is the primary purpose of an investor pitch deck?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To replace all verbal communication during an investor meeting"
+        },
+        {
+          "id": "B",
+          "text": "To concisely communicate the problem, solution, market, team, and business model to generate investor interest"
+        },
+        {
+          "id": "C",
+          "text": "To list every feature of the product in technical detail"
+        },
+        {
+          "id": "D",
+          "text": "To serve as the final legally binding investment document"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "A pitch deck is a storytelling tool that communicates enough for investors to understand the opportunity and decide whether to explore further — not a comprehensive product manual or legal document."
+    },
+    {
+      "id": "ENT-W12-002",
+      "courseId": "entrepreneurship",
+      "week": 12,
+      "moduleId": 8,
+      "moduleName": "Communication & Investor Pitching",
+      "topic": "Becoming a Good Communicator",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 12 practice — noc26_mg80 Module 8",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "Which of the following is a key principle of effective entrepreneurial communication?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Using maximum technical jargon to demonstrate domain expertise"
+        },
+        {
+          "id": "B",
+          "text": "Tailoring the message to the specific audience and their priorities"
+        },
+        {
+          "id": "C",
+          "text": "Using the same pitch word-for-word with every audience"
+        },
+        {
+          "id": "D",
+          "text": "Avoiding questions from the audience to maintain control"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Effective communication requires understanding who you are addressing. An investor wants ROI and market size; a customer wants the problem solved; an employee wants mission and growth — each needs a tailored message."
+    },
+    {
+      "id": "ENT-W12-003",
+      "courseId": "entrepreneurship",
+      "week": 12,
+      "moduleId": 8,
+      "moduleName": "Communication & Investor Pitching",
+      "topic": "Value Creation Potential",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 12 practice — noc26_mg80 Module 8",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "When pitching to investors, which component of 'value creation potential' is most important to demonstrate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The colour scheme and design quality of the pitch deck"
+        },
+        {
+          "id": "B",
+          "text": "A large, growing addressable market combined with a defensible business model"
+        },
+        {
+          "id": "C",
+          "text": "The number of years the founder has worked in unrelated industries"
+        },
+        {
+          "id": "D",
+          "text": "The number of product features relative to competitors"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Investors assess value creation potential through the size and growth of the opportunity and whether the company has or can build a defensible moat — making the return thesis believable."
+    },
+    {
+      "id": "ENT-W12-004",
+      "courseId": "entrepreneurship",
+      "week": 12,
+      "moduleId": 8,
+      "moduleName": "Communication & Investor Pitching",
+      "topic": "Airth Founder Case Study",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 12 practice — noc26_mg80 Module 8",
+      "verified": true,
+      "difficulty": "Hard",
+      "question": "What entrepreneurial lesson does the Airth case study primarily illustrate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The importance of operating in sectors with no existing competition"
+        },
+        {
+          "id": "B",
+          "text": "How effective communication of a social impact mission can help attract both customers and investors"
+        },
+        {
+          "id": "C",
+          "text": "Why avoiding media coverage is important for early-stage startups"
+        },
+        {
+          "id": "D",
+          "text": "The futility of pitching to venture capital investors"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Airth demonstrates that clearly communicating a compelling impact mission alongside strong unit economics can differentiate a company and attract mission-aligned investors and customers."
+    },
+    {
+      "id": "ENT-W12-005",
+      "courseId": "entrepreneurship",
+      "week": 12,
+      "moduleId": 8,
+      "moduleName": "Communication & Investor Pitching",
+      "topic": "Pitching to Investors",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 12 practice — noc26_mg80 Module 8",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "A standard investor pitch deck typically includes which of the following elements?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Full engineering schematics and source code"
+        },
+        {
+          "id": "B",
+          "text": "Problem, solution, market size, business model, traction, team, and funding ask"
+        },
+        {
+          "id": "C",
+          "text": "A comprehensive HR policy manual"
+        },
+        {
+          "id": "D",
+          "text": "Competitor source code and trade secrets"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "A strong pitch deck tells a narrative arc: the problem, the solution, the market opportunity, how the business makes money, current traction, the team's credentials, and what funding is sought and for what."
+    },
+    {
+      "id": "ENT-W12-006",
+      "courseId": "entrepreneurship",
+      "week": 12,
+      "moduleId": 8,
+      "moduleName": "Communication & Investor Pitching",
+      "topic": "Becoming a Good Communicator",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 12 practice — noc26_mg80 Module 8",
+      "verified": true,
+      "difficulty": "Easy",
+      "question": "What is a '30-second elevator pitch' in the entrepreneurial context?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A pitch delivered exclusively inside an elevator to building tenants"
+        },
+        {
+          "id": "B",
+          "text": "A very brief, compelling summary of your business that can be delivered in about 30 seconds"
+        },
+        {
+          "id": "C",
+          "text": "A formal 30-minute investor presentation"
+        },
+        {
+          "id": "D",
+          "text": "A video advertisement for social media"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "An elevator pitch condenses the essence of a business — the problem, solution, and why it matters — into a short compelling narrative usable in chance networking encounters."
+    },
+    {
+      "id": "ENT-W12-007",
+      "courseId": "entrepreneurship",
+      "week": 12,
+      "moduleId": 8,
+      "moduleName": "Communication & Investor Pitching",
+      "topic": "Value Creation Potential",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 12 practice — noc26_mg80 Module 8",
+      "verified": true,
+      "difficulty": "Hard",
+      "question": "Why do investors typically prefer startups addressing a large Total Addressable Market (TAM)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Large TAMs are always easier to capture than small ones"
+        },
+        {
+          "id": "B",
+          "text": "A large TAM allows a startup to build a substantial business even if it captures only a small market share"
+        },
+        {
+          "id": "C",
+          "text": "Large markets have less competition by definition"
+        },
+        {
+          "id": "D",
+          "text": "Investors are indifferent between large and small TAMs"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Venture investors need large outcomes to justify their risk. A large TAM means that even capturing 1-5% can produce a billion-dollar company, making the investment thesis viable for fund-level returns."
+    },
+    {
+      "id": "ENT-W12-008",
+      "courseId": "entrepreneurship",
+      "week": 12,
+      "moduleId": 8,
+      "moduleName": "Communication & Investor Pitching",
+      "topic": "Pitching to Investors",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 12 practice — noc26_mg80 Module 8",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "In an investor pitch, 'traction' refers to:",
+      "options": [
+        {
+          "id": "A",
+          "text": "The physical grip of product packaging on store shelves"
+        },
+        {
+          "id": "B",
+          "text": "Evidence that the market wants the product — such as revenue, users, growth rate, or letters of intent"
+        },
+        {
+          "id": "C",
+          "text": "The founder's personal network size on LinkedIn"
+        },
+        {
+          "id": "D",
+          "text": "The number of patents the company has filed"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Traction is market validation — concrete evidence (revenue, active users, growth metrics, partnerships, LOIs) that proves real demand and reduces investor risk."
+    }
+  ]
+}

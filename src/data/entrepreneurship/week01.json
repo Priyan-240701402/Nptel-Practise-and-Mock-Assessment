@@ -1,0 +1,273 @@
+{
+  "week": 1,
+  "moduleId": 1,
+  "moduleName": "Introduction to Innovation & Entrepreneurship",
+  "assessmentTitle": "Week 1 Assessment",
+  "sourceNote": "Original practice questions. Official Week 1 assessment requires login at https://onlinecourses.nptel.ac.in/e-learning/course/noc26_mg80",
+  "questions": [
+    {
+      "id": "ENT-W01-001",
+      "courseId": "entrepreneurship",
+      "week": 1,
+      "moduleId": 1,
+      "moduleName": "Introduction to Innovation & Entrepreneurship",
+      "topic": "Why Entrepreneurship, Why Now",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 1 practice — noc26_mg80 Module 1",
+      "verified": true,
+      "difficulty": "Easy",
+      "question": "Which of the following best describes the primary reason entrepreneurship is considered important in the current economic context?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It guarantees high personal income for all entrepreneurs"
+        },
+        {
+          "id": "B",
+          "text": "It drives innovation, creates jobs, and addresses societal challenges"
+        },
+        {
+          "id": "C",
+          "text": "It is the only career path with no financial risk"
+        },
+        {
+          "id": "D",
+          "text": "It eliminates competition in any given market"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Entrepreneurship is central to economic development because it generates innovation, creates employment, and can address critical societal problems at scale."
+    },
+    {
+      "id": "ENT-W01-002",
+      "courseId": "entrepreneurship",
+      "week": 1,
+      "moduleId": 1,
+      "moduleName": "Introduction to Innovation & Entrepreneurship",
+      "topic": "Creativity, Innovation, and Entrepreneurship",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 1 practice — noc26_mg80 Module 1",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "How does innovation differ from invention in the context of entrepreneurship?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Invention is the commercial application of a new idea; innovation is the idea itself"
+        },
+        {
+          "id": "B",
+          "text": "Innovation is the successful application of a creative idea to create value for customers"
+        },
+        {
+          "id": "C",
+          "text": "They are identical in meaning and used interchangeably"
+        },
+        {
+          "id": "D",
+          "text": "Invention requires market research; innovation does not"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Invention refers to creating something new, while innovation is translating that creation into a product, service, or process that delivers tangible value."
+    },
+    {
+      "id": "ENT-W01-003",
+      "courseId": "entrepreneurship",
+      "week": 1,
+      "moduleId": 1,
+      "moduleName": "Introduction to Innovation & Entrepreneurship",
+      "topic": "What It Entails to Be an Entrepreneur",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 1 practice — noc26_mg80 Module 1",
+      "verified": true,
+      "difficulty": "Easy",
+      "question": "Which of the following is NOT typically considered a core characteristic of an entrepreneur?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tolerance for uncertainty and ambiguity"
+        },
+        {
+          "id": "B",
+          "text": "Preference for delegating all decision-making to others"
+        },
+        {
+          "id": "C",
+          "text": "Passion and drive to solve a problem"
+        },
+        {
+          "id": "D",
+          "text": "Resilience in the face of failure"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Entrepreneurs must be decisive, especially in early stages when teams are small. Delegating all decisions is inconsistent with entrepreneurial drive."
+    },
+    {
+      "id": "ENT-W01-004",
+      "courseId": "entrepreneurship",
+      "week": 1,
+      "moduleId": 1,
+      "moduleName": "Introduction to Innovation & Entrepreneurship",
+      "topic": "The Indian Economy Rising",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 1 practice — noc26_mg80 Module 1",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "Which factor is highlighted as a key enabler of the growing entrepreneurial ecosystem in India?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Restriction of foreign direct investment"
+        },
+        {
+          "id": "B",
+          "text": "A large, young, and increasingly digital consumer base"
+        },
+        {
+          "id": "C",
+          "text": "Reduction in government infrastructure spending"
+        },
+        {
+          "id": "D",
+          "text": "Decline in mobile internet penetration"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "India's large youth population, growing smartphone and internet penetration, and an expanding middle class create fertile ground for entrepreneurial ventures."
+    },
+    {
+      "id": "ENT-W01-005",
+      "courseId": "entrepreneurship",
+      "week": 1,
+      "moduleId": 1,
+      "moduleName": "Introduction to Innovation & Entrepreneurship",
+      "topic": "Atomberg Founder Case Study",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 1 practice — noc26_mg80 Module 1",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "The Atomberg founder case study is primarily used to illustrate which entrepreneurial lesson?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The importance of copying existing products exactly"
+        },
+        {
+          "id": "B",
+          "text": "How identifying an inefficiency in a mainstream product can lead to a differentiated startup"
+        },
+        {
+          "id": "C",
+          "text": "Why large corporations always outperform startups"
+        },
+        {
+          "id": "D",
+          "text": "The need to avoid the consumer electronics sector"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Atomberg identified high energy consumption of conventional ceiling fans and built an energy-efficient BLDC motor fan, showing how product insight creates a market leader."
+    },
+    {
+      "id": "ENT-W01-006",
+      "courseId": "entrepreneurship",
+      "week": 1,
+      "moduleId": 1,
+      "moduleName": "Introduction to Innovation & Entrepreneurship",
+      "topic": "Creativity, Innovation, and Entrepreneurship",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 1 practice — noc26_mg80 Module 1",
+      "verified": true,
+      "difficulty": "Hard",
+      "question": "Which type of innovation involves creating an entirely new market rather than improving on existing offerings?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sustaining innovation"
+        },
+        {
+          "id": "B",
+          "text": "Incremental innovation"
+        },
+        {
+          "id": "C",
+          "text": "Disruptive or radical innovation"
+        },
+        {
+          "id": "D",
+          "text": "Process innovation"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "Disruptive or radical innovation creates entirely new markets or dramatically transforms existing ones, unlike sustaining or incremental innovations that improve current offerings."
+    },
+    {
+      "id": "ENT-W01-007",
+      "courseId": "entrepreneurship",
+      "week": 1,
+      "moduleId": 1,
+      "moduleName": "Introduction to Innovation & Entrepreneurship",
+      "topic": "Why Entrepreneurship, Why Now",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 1 practice — noc26_mg80 Module 1",
+      "verified": true,
+      "difficulty": "Easy",
+      "question": "Which statement best captures the relationship between entrepreneurship and employment?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Entrepreneurship only benefits the entrepreneur personally"
+        },
+        {
+          "id": "B",
+          "text": "Startups and new ventures are among the largest net creators of jobs in an economy"
+        },
+        {
+          "id": "C",
+          "text": "Large corporations create more net new jobs than startups in every economy"
+        },
+        {
+          "id": "D",
+          "text": "Entrepreneurship leads to unemployment by disrupting existing industries"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Research consistently shows that new and young firms are disproportionately responsible for net job creation in modern economies."
+    },
+    {
+      "id": "ENT-W01-008",
+      "courseId": "entrepreneurship",
+      "week": 1,
+      "moduleId": 1,
+      "moduleName": "Introduction to Innovation & Entrepreneurship",
+      "topic": "What It Entails to Be an Entrepreneur",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 1 practice — noc26_mg80 Module 1",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "Which of the following best describes the concept of an entrepreneurial mindset?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A fixed belief that success is determined solely by external circumstances"
+        },
+        {
+          "id": "B",
+          "text": "A way of thinking that embraces opportunity recognition, calculated risk, and continuous learning"
+        },
+        {
+          "id": "C",
+          "text": "An approach that avoids any form of failure at all costs"
+        },
+        {
+          "id": "D",
+          "text": "A mindset exclusive to people who start technology companies"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "An entrepreneurial mindset involves actively seeking opportunities, being comfortable with calculated risk, learning from failure, and continuously adapting — applicable across all industries."
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "courseId": "entrepreneurship",
+  "courseCode": "noc26_mg80",
+  "totalWeeks": 12,
+  "totalModules": 8,
+  "modules": [
+    {
+      "moduleId": 1,
+      "moduleName": "Introduction to Innovation & Entrepreneurship",
+      "weeks": [1],
+      "topics": [
+        "Course Expectations",
+        "Why Entrepreneurship, Why Now",
+        "The Indian Economy Rising",
+        "Atomberg Founder Case Study",
+        "Creativity, Innovation, and Entrepreneurship",
+        "What It Entails to Be an Entrepreneur"
+      ]
+    },
+    {
+      "moduleId": 2,
+      "moduleName": "Opportunity Identification & Idea Generation",
+      "weeks": [2],
+      "topics": [
+        "Problems, Opportunities, and Ideas",
+        "Opportunities Landscape in Multiple Domains",
+        "Demystifying AI with Anand Deshpande",
+        "Healthcare Sector with Rizwan Koita"
+      ]
+    },
+    {
+      "moduleId": 3,
+      "moduleName": "Customer Value Proposition",
+      "weeks": [3],
+      "topics": [
+        "Concept of Customer Value",
+        "Market and Customer Segmentation",
+        "Creating a Customer Value Proposition",
+        "CVP Formats and References",
+        "Customer Discovery",
+        "Customer Discovery Example",
+        "Business Models"
+      ]
+    },
+    {
+      "moduleId": 4,
+      "moduleName": "New Product Development",
+      "weeks": [4, 5],
+      "topics": [
+        "CVP to Benefits and Features",
+        "Stages of New Product Development",
+        "Design Thinking",
+        "Minimum Viable Product",
+        "Britannia Case Study",
+        "Medical Devices Case Study",
+        "Intellectual Property Basics",
+        "Intellectual Property Patents"
+      ]
+    },
+    {
+      "moduleId": 5,
+      "moduleName": "Marketing & Go-to-Market",
+      "weeks": [6, 7],
+      "topics": [
+        "Go-to-Market Basics",
+        "Role of Marketing",
+        "Marketing Mix",
+        "Product Branding",
+        "Differentiation",
+        "Tanishq Case Study",
+        "Pricing Strategies",
+        "Promotional Strategies",
+        "Digital Customer Journey",
+        "FinTech Customer Journey Case Study",
+        "Sales Strategies",
+        "Sales Channels",
+        "B2B Sales and Marketing",
+        "Go-to-Market Planning"
+      ]
+    },
+    {
+      "moduleId": 6,
+      "moduleName": "Finance for Entrepreneurs",
+      "weeks": [8, 9],
+      "topics": [
+        "Role of Finance in Startups",
+        "Accounting and Finance Terminology",
+        "Basic Financial Statements",
+        "Profit and Loss Statement",
+        "Balance Sheet",
+        "Cash Flow Statement",
+        "Financial Statements Case Study",
+        "Unit Economics",
+        "Product Costing",
+        "Business Planning",
+        "Financial Planning",
+        "Fundraising at Different Startup Stages",
+        "Incubation and Grant Programs",
+        "Venture Finance",
+        "Investor Expectations",
+        "Finance as Strategy"
+      ]
+    },
+    {
+      "moduleId": 7,
+      "moduleName": "Strategy, Leadership & Business Planning",
+      "weeks": [10, 11],
+      "topics": [
+        "Strategy Fundamentals",
+        "Ten Tests of Strategy",
+        "Infiheal Founder Case Study",
+        "Entrepreneurial Leadership",
+        "Business Models",
+        "Business Model Canvas: Demand Side",
+        "Business Model Canvas: Supply Side",
+        "Business Model Canvas Examples",
+        "Social Business Model"
+      ]
+    },
+    {
+      "moduleId": 8,
+      "moduleName": "Communication & Investor Pitching",
+      "weeks": [12],
+      "topics": [
+        "Becoming a Good Communicator",
+        "Value Creation Potential",
+        "Pitching to Investors",
+        "Airth Founder Case Study",
+        "Course Closure"
+      ]
+    }
+  ],
+  "weekToModule": {
+    "1": { "moduleId": 1, "moduleName": "Introduction to Innovation & Entrepreneurship" },
+    "2": { "moduleId": 2, "moduleName": "Opportunity Identification & Idea Generation" },
+    "3": { "moduleId": 3, "moduleName": "Customer Value Proposition" },
+    "4": { "moduleId": 4, "moduleName": "New Product Development" },
+    "5": { "moduleId": 4, "moduleName": "New Product Development" },
+    "6": { "moduleId": 5, "moduleName": "Marketing & Go-to-Market" },
+    "7": { "moduleId": 5, "moduleName": "Marketing & Go-to-Market" },
+    "8": { "moduleId": 6, "moduleName": "Finance for Entrepreneurs" },
+    "9": { "moduleId": 6, "moduleName": "Finance for Entrepreneurs" },
+    "10": { "moduleId": 7, "moduleName": "Strategy, Leadership & Business Planning" },
+    "11": { "moduleId": 7, "moduleName": "Strategy, Leadership & Business Planning" },
+    "12": { "moduleId": 8, "moduleName": "Communication & Investor Pitching" }
+  }
+}

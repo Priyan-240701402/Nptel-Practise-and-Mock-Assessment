@@ -1,0 +1,273 @@
+{
+  "week": 7,
+  "moduleId": 5,
+  "moduleName": "Marketing & Go-to-Market",
+  "assessmentTitle": "Week 7 Assessment",
+  "sourceNote": "Original practice questions. Official Week 7 assessment requires login at https://onlinecourses.nptel.ac.in/e-learning/course/noc26_mg80",
+  "questions": [
+    {
+      "id": "ENT-W07-001",
+      "courseId": "entrepreneurship",
+      "week": 7,
+      "moduleId": 5,
+      "moduleName": "Marketing & Go-to-Market",
+      "topic": "Digital Customer Journey",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 7 practice — noc26_mg80 Module 5",
+      "verified": true,
+      "difficulty": "Easy",
+      "question": "In the context of digital marketing, a 'customer journey' maps which of the following?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The physical location of each customer"
+        },
+        {
+          "id": "B",
+          "text": "The series of interactions and touchpoints a customer has from awareness to purchase and beyond"
+        },
+        {
+          "id": "C",
+          "text": "The shipping route from warehouse to customer"
+        },
+        {
+          "id": "D",
+          "text": "The internal process of manufacturing the product"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "The digital customer journey tracks all interactions — from first discovering a brand to post-purchase advocacy — helping companies optimise each touchpoint."
+    },
+    {
+      "id": "ENT-W07-002",
+      "courseId": "entrepreneurship",
+      "week": 7,
+      "moduleId": 5,
+      "moduleName": "Marketing & Go-to-Market",
+      "topic": "Sales Strategies",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 7 practice — noc26_mg80 Module 5",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "Which sales strategy involves a small number of high-value clients and typically requires long, relationship-driven sales cycles?",
+      "options": [
+        {
+          "id": "A",
+          "text": "High-velocity inside sales"
+        },
+        {
+          "id": "B",
+          "text": "Enterprise or key account sales"
+        },
+        {
+          "id": "C",
+          "text": "Self-serve e-commerce"
+        },
+        {
+          "id": "D",
+          "text": "Viral referral programmes"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Enterprise sales targets a small number of large accounts with high contract values. It involves consultative selling, multiple stakeholders, and long negotiation cycles."
+    },
+    {
+      "id": "ENT-W07-003",
+      "courseId": "entrepreneurship",
+      "week": 7,
+      "moduleId": 5,
+      "moduleName": "Marketing & Go-to-Market",
+      "topic": "B2B Sales and Marketing",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 7 practice — noc26_mg80 Module 5",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "Which is a key distinction between B2B and B2C buying behaviour?",
+      "options": [
+        {
+          "id": "A",
+          "text": "B2B purchases are always smaller in value than B2C purchases"
+        },
+        {
+          "id": "B",
+          "text": "B2B purchases typically involve multiple stakeholders, longer cycles, and more rational evaluation criteria"
+        },
+        {
+          "id": "C",
+          "text": "Emotional appeal is more important than logic in B2B decisions"
+        },
+        {
+          "id": "D",
+          "text": "B2B and B2C buying behaviour are identical"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "B2B purchases involve buying committees, defined procurement processes, long evaluation cycles, and emphasis on ROI and risk reduction rather than impulse or emotion."
+    },
+    {
+      "id": "ENT-W07-004",
+      "courseId": "entrepreneurship",
+      "week": 7,
+      "moduleId": 5,
+      "moduleName": "Marketing & Go-to-Market",
+      "topic": "Promotional Strategies",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 7 practice — noc26_mg80 Module 5",
+      "verified": true,
+      "difficulty": "Easy",
+      "question": "Content marketing as a promotional strategy primarily works by:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Broadcasting paid advertisements to mass audiences"
+        },
+        {
+          "id": "B",
+          "text": "Creating valuable, relevant content that attracts and engages a target audience organically"
+        },
+        {
+          "id": "C",
+          "text": "Offering aggressive discounts on all products"
+        },
+        {
+          "id": "D",
+          "text": "Sponsoring large sporting events"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Content marketing builds authority and trust by providing genuinely useful content (articles, videos, podcasts) that draws potential customers through organic search and sharing."
+    },
+    {
+      "id": "ENT-W07-005",
+      "courseId": "entrepreneurship",
+      "week": 7,
+      "moduleId": 5,
+      "moduleName": "Marketing & Go-to-Market",
+      "topic": "FinTech Customer Journey Case Study",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 7 practice — noc26_mg80 Module 5",
+      "verified": true,
+      "difficulty": "Hard",
+      "question": "The FinTech customer journey case study primarily illustrates which marketing challenge?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The low cost of customer acquisition in financial services"
+        },
+        {
+          "id": "B",
+          "text": "Building trust and reducing friction at every digital touchpoint in a regulated, high-stakes industry"
+        },
+        {
+          "id": "C",
+          "text": "Why FinTech companies should avoid digital channels"
+        },
+        {
+          "id": "D",
+          "text": "The ease of retaining customers in financial services"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "FinTech faces unique challenges in building customer trust, navigating regulatory requirements, and reducing friction in onboarding — every journey touchpoint must build confidence."
+    },
+    {
+      "id": "ENT-W07-006",
+      "courseId": "entrepreneurship",
+      "week": 7,
+      "moduleId": 5,
+      "moduleName": "Marketing & Go-to-Market",
+      "topic": "Sales Channels",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 7 practice — noc26_mg80 Module 5",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "Which factor is most important when choosing between different sales channels for a startup?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Whichever channel is used by the largest competitor"
+        },
+        {
+          "id": "B",
+          "text": "Where the target customer actually discovers and purchases products in this category"
+        },
+        {
+          "id": "C",
+          "text": "The channel with the lowest one-time setup cost regardless of ongoing performance"
+        },
+        {
+          "id": "D",
+          "text": "The channel that requires the most intermediaries"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Channel selection must align with actual customer behaviour — where they search, evaluate, and buy — not simply mirror competitors or minimise setup costs."
+    },
+    {
+      "id": "ENT-W07-007",
+      "courseId": "entrepreneurship",
+      "week": 7,
+      "moduleId": 5,
+      "moduleName": "Marketing & Go-to-Market",
+      "topic": "Pricing Strategies",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 7 practice — noc26_mg80 Module 5",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "Penetration pricing sets a low initial price primarily to:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Signal premium quality to early adopters"
+        },
+        {
+          "id": "B",
+          "text": "Rapidly acquire market share and deter competitors"
+        },
+        {
+          "id": "C",
+          "text": "Recover R&D investment immediately at launch"
+        },
+        {
+          "id": "D",
+          "text": "Charge different prices to different customer segments simultaneously"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Penetration pricing uses a low price to quickly attract a large user base, establish market presence, and create barriers for competitors through scale and switching costs."
+    },
+    {
+      "id": "ENT-W07-008",
+      "courseId": "entrepreneurship",
+      "week": 7,
+      "moduleId": 5,
+      "moduleName": "Marketing & Go-to-Market",
+      "topic": "Go-to-Market Planning",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 7 practice — noc26_mg80 Module 5",
+      "verified": true,
+      "difficulty": "Hard",
+      "question": "Which metric is most directly used to measure the efficiency of customer acquisition efforts?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Gross Margin"
+        },
+        {
+          "id": "B",
+          "text": "Customer Acquisition Cost (CAC)"
+        },
+        {
+          "id": "C",
+          "text": "Net Promoter Score (NPS)"
+        },
+        {
+          "id": "D",
+          "text": "Return on Equity (ROE)"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "CAC measures the total cost (marketing + sales) divided by the number of new customers acquired, indicating how efficiently the business converts spend into customers."
+    }
+  ]
+}

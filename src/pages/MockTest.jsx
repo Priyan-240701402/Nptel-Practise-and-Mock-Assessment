@@ -2,8 +2,12 @@ import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import {
   COURSES,
+  SYLLABUS,
   selectQuestions,
+  selectFullCourseQuestions,
+  selectMixedModuleQuestions,
   saveToStorage,
+  loadFromStorage,
   formatTime
 } from '../utils/quizUtils';
 import QuestionCard from '../components/QuestionCard';
@@ -19,30 +23,33 @@ import {
   Send,
   ArrowLeft,
   Layers,
-  ShieldAlert
+  ShieldAlert,
+  CalendarDays,
+  Target,
+  Filter
 } from 'lucide-react';
 
 const TEST_CONFIGS = [
   {
     id: 'short',
-    name: 'Short Test',
-    questionsCount: 20,
+    name: 'Short Practice Test',
+    questionsCount: 16,
     durationMinutes: 20,
-    description: 'Quick check of core concepts under timed conditions.'
+    description: 'Quick check of core concepts under timed exam conditions.'
   },
   {
     id: 'standard',
-    name: 'Standard Test',
-    questionsCount: 40,
+    name: 'Standard Practice Test',
+    questionsCount: 32,
     durationMinutes: 40,
     description: 'Balanced full-spectrum test across multiple syllabus modules.'
   },
   {
     id: 'full',
-    name: 'Full Practice Test',
-    questionsCount: 50,
-    durationMinutes: 50,
-    description: 'Comprehensive exam simulation assessing endurance and mastery.'
+    name: 'Full Practice Mock Exam',
+    questionsCount: 48,
+    durationMinutes: 60,
+    description: 'Comprehensive practice examination evenly covering all syllabus modules.'
   }
 ];
 
@@ -55,11 +62,18 @@ export default function MockTest() {
   );
 
   const course = COURSES[currentCourseId] || COURSES.entrepreneurship;
-  const availableCount = course.data?.questions?.length || 100;
+  const availableCount = course.data?.questions?.length || 96;
 
   // Configuration state
   const [selectedConfigId, setSelectedConfigId] = useState('short');
   const [isTestActive, setIsTestActive] = useState(false);
+
+  // Entrepreneurship Mock Test Scopes:
+  // 'full' | 'mixed' | 'module' | 'weekly'
+  const [mockScope, setMockScope] = useState('full');
+  const [selectedModule, setSelectedModule] = useState(1);
+  const [selectedWeek, setSelectedWeek] = useState(1);
+  const [selectedMixedModules, setSelectedMixedModules] = useState([1, 2, 3, 4]);
 
   // Active Test State
   const [questions, setQuestions] = useState([]);
@@ -78,15 +92,51 @@ export default function MockTest() {
 
   // Start Test
   const handleStartTest = () => {
-    const selected = selectQuestions({
-      courseId: currentCourseId,
-      count: activeConfig.questionsCount,
-      shuffle: true,
-      shuffleOptions: true
-    });
+    let selected = [];
+
+    if (currentCourseId === 'entrepreneurship') {
+      if (mockScope === 'full') {
+        selected = selectFullCourseQuestions({
+          count: activeConfig.questionsCount,
+          shuffle: true,
+          shuffleOptions: true
+        });
+      } else if (mockScope === 'mixed') {
+        selected = selectMixedModuleQuestions({
+          moduleIds: selectedMixedModules,
+          count: activeConfig.questionsCount,
+          shuffle: true,
+          shuffleOptions: true
+        });
+      } else if (mockScope === 'module') {
+        selected = selectQuestions({
+          courseId: 'entrepreneurship',
+          moduleId: Number(selectedModule),
+          count: activeConfig.questionsCount,
+          shuffle: true,
+          shuffleOptions: true
+        });
+      } else if (mockScope === 'weekly') {
+        selected = selectQuestions({
+          courseId: 'entrepreneurship',
+          week: Number(selectedWeek),
+          count: activeConfig.questionsCount,
+          shuffle: true,
+          shuffleOptions: true
+        });
+      }
+    } else {
+      // LLM Course
+      selected = selectQuestions({
+        courseId: 'llm',
+        count: activeConfig.questionsCount,
+        shuffle: true,
+        shuffleOptions: true
+      });
+    }
 
     if (selected.length === 0) {
-      alert('Unable to load questions for this test.');
+      alert('Unable to load questions for this test configuration.');
       return;
     }
 
@@ -136,19 +186,30 @@ export default function MockTest() {
     let incorrectCount = 0;
     let unansweredCount = 0;
     const topicStats = {};
+    const moduleStats = {};
 
     questions.forEach(q => {
       const chosen = answers[q.id];
-      if (!topicStats[q.topic]) {
-        topicStats[q.topic] = { total: 0, correct: 0 };
+      if (q.topic) {
+        if (!topicStats[q.topic]) {
+          topicStats[q.topic] = { total: 0, correct: 0 };
+        }
+        topicStats[q.topic].total += 1;
       }
-      topicStats[q.topic].total += 1;
+      const modName = q.moduleName || (q.moduleId ? `Module ${q.moduleId}` : null);
+      if (modName) {
+        if (!moduleStats[modName]) {
+          moduleStats[modName] = { total: 0, correct: 0 };
+        }
+        moduleStats[modName].total += 1;
+      }
 
       if (chosen === undefined || chosen === null) {
         unansweredCount += 1;
       } else if (chosen === q.correctOptionId) {
         correctCount += 1;
-        topicStats[q.topic].correct += 1;
+        if (q.topic) topicStats[q.topic].correct += 1;
+        if (modName) moduleStats[modName].correct += 1;
       } else {
         incorrectCount += 1;
       }
@@ -157,7 +218,7 @@ export default function MockTest() {
     const totalQuestions = questions.length;
     const score = correctCount;
     const maxScore = totalQuestions;
-    const percentage = Math.round((correctCount / totalQuestions) * 100);
+    const percentage = totalQuestions > 0 ? Math.round((correctCount / totalQuestions) * 100) : 0;
 
     const topicPerformance = Object.keys(topicStats).map(tName => ({
       topic: tName,
@@ -165,10 +226,38 @@ export default function MockTest() {
       total: topicStats[tName].total
     }));
 
+    const modulePerformance = Object.keys(moduleStats).map(mName => ({
+      name: mName,
+      correct: moduleStats[mName].correct,
+      total: moduleStats[mName].total
+    }));
+
+    // Save incorrect questions for targeted practice
+    const missed = questions.filter(q => {
+      const chosen = answers[q.id];
+      return chosen !== undefined && chosen !== q.correctOptionId;
+    });
+    if (missed.length > 0) {
+      const existing = loadFromStorage(`incorrect_questions_${currentCourseId}`) || [];
+      const combined = [...existing];
+      missed.forEach(m => {
+        if (!combined.some(x => x.id === m.id)) combined.push(m);
+      });
+      saveToStorage(`incorrect_questions_${currentCourseId}`, combined);
+    }
+
+    let configDisplayName = activeConfig.name;
+    if (currentCourseId === 'entrepreneurship') {
+      if (mockScope === 'full') configDisplayName = `Full-Course Practice Mock (${activeConfig.questionsCount} Qs)`;
+      else if (mockScope === 'mixed') configDisplayName = `Mixed-Module Practice Mock (${selectedMixedModules.length} Modules)`;
+      else if (mockScope === 'module') configDisplayName = `Module ${selectedModule} Practice Mock`;
+      else if (mockScope === 'weekly') configDisplayName = `Week ${selectedWeek} Assessment Practice Mock`;
+    }
+
     const resultPayload = {
       courseId: currentCourseId,
       courseTitle: course.title,
-      configName: activeConfig.name,
+      configName: configDisplayName,
       questions,
       answers,
       markedForReview,
@@ -182,6 +271,7 @@ export default function MockTest() {
       timeTakenSeconds: timeSpent,
       wasAutoSubmit,
       topicPerformance,
+      modulePerformance,
       submittedAt: new Date().toISOString()
     };
 
@@ -250,7 +340,7 @@ export default function MockTest() {
                   }`}
                 >
                   <p className="font-bold text-sm text-slate-900">Foundations of Entrepreneurship</p>
-                  <p className="text-xs text-slate-500 mt-1">100 Verified Syllabus Questions</p>
+                  <p className="text-xs text-slate-500 mt-1">96 Verified Questions • 12 Weeks • 8 Modules</p>
                 </button>
 
                 <button
@@ -267,6 +357,145 @@ export default function MockTest() {
                 </button>
               </div>
             </div>
+
+            {/* Scope Selection for Entrepreneurship */}
+            {currentCourseId === 'entrepreneurship' && (
+              <div className="mb-8 pb-8 border-b border-slate-100">
+                <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2.5">
+                  Mock Examination Scope
+                </label>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-4">
+                  {[
+                    {
+                      id: 'full',
+                      title: 'Full-Course Mock Test',
+                      desc: 'Even distribution across all 8 modules',
+                      icon: Target
+                    },
+                    {
+                      id: 'mixed',
+                      title: 'Mixed-Module Mock',
+                      desc: 'Custom multi-module selection',
+                      icon: Filter
+                    },
+                    {
+                      id: 'module',
+                      title: 'Module Mock Test',
+                      desc: 'Deep focus on a single module',
+                      icon: Layers
+                    },
+                    {
+                      id: 'weekly',
+                      title: 'Weekly Assessment',
+                      desc: 'Timed practice for 1 selected week',
+                      icon: CalendarDays
+                    }
+                  ].map(s => {
+                    const Icon = s.icon;
+                    const isSelected = mockScope === s.id;
+                    return (
+                      <button
+                        key={s.id}
+                        type="button"
+                        onClick={() => setMockScope(s.id)}
+                        className={`p-4 rounded-xl border text-left transition-all flex flex-col justify-between gap-2 ${
+                          isSelected
+                            ? 'border-blue-600 bg-blue-50/70 ring-1 ring-blue-600 shadow-xs'
+                            : 'border-slate-200 hover:bg-slate-50 bg-white'
+                        }`}
+                      >
+                        <div className="flex items-center gap-2">
+                          <Icon className={`w-4 h-4 ${isSelected ? 'text-blue-600' : 'text-slate-500'}`} />
+                          <span className={`text-xs font-bold ${isSelected ? 'text-blue-900' : 'text-slate-800'}`}>
+                            {s.title}
+                          </span>
+                        </div>
+                        <p className="text-[11px] text-slate-500 leading-tight">{s.desc}</p>
+                      </button>
+                    );
+                  })}
+                </div>
+
+                {/* Sub-selectors for Mixed, Module, or Weekly scope */}
+                {mockScope === 'module' && (
+                  <div className="mt-3">
+                    <label className="block text-xs font-semibold text-slate-700 mb-1.5">
+                      Select Module for Mock Test:
+                    </label>
+                    <select
+                      value={selectedModule}
+                      onChange={(e) => setSelectedModule(Number(e.target.value))}
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-800 text-sm focus:outline-hidden focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500"
+                    >
+                      {SYLLABUS.modules.map((m) => (
+                        <option key={m.moduleId} value={m.moduleId}>
+                          Module {m.moduleId}: {m.moduleName} (Weeks {m.weeks.join(' & ')})
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                )}
+
+                {mockScope === 'weekly' && (
+                  <div className="mt-3">
+                    <label className="block text-xs font-semibold text-slate-700 mb-1.5">
+                      Select Week for Timed Assessment Practice:
+                    </label>
+                    <select
+                      value={selectedWeek}
+                      onChange={(e) => setSelectedWeek(Number(e.target.value))}
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-800 text-sm focus:outline-hidden focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500"
+                    >
+                      {Array.from({ length: 12 }, (_, i) => i + 1).map((wk) => {
+                        const mod = SYLLABUS.weekToModule[String(wk)];
+                        return (
+                          <option key={wk} value={wk}>
+                            Week {wk} Assessment: {mod?.moduleName}
+                          </option>
+                        );
+                      })}
+                    </select>
+                  </div>
+                )}
+
+                {mockScope === 'mixed' && (
+                  <div className="mt-3">
+                    <label className="block text-xs font-semibold text-slate-700 mb-2">
+                      Choose Modules to Include (Select at least 2):
+                    </label>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                      {SYLLABUS.modules.map((m) => {
+                        const isChecked = selectedMixedModules.includes(m.moduleId);
+                        return (
+                          <label
+                            key={m.moduleId}
+                            className={`flex items-center gap-2.5 p-2.5 rounded-xl border text-xs cursor-pointer transition-colors ${
+                              isChecked
+                                ? 'bg-blue-50/70 border-blue-300 text-blue-900 font-semibold'
+                                : 'bg-white border-slate-200 text-slate-600 hover:bg-slate-50'
+                            }`}
+                          >
+                            <input
+                              type="checkbox"
+                              checked={isChecked}
+                              onChange={(e) => {
+                                if (e.target.checked) {
+                                  setSelectedMixedModules((prev) => [...prev, m.moduleId]);
+                                } else if (selectedMixedModules.length > 1) {
+                                  setSelectedMixedModules((prev) => prev.filter((id) => id !== m.moduleId));
+                                }
+                              }}
+                              className="rounded text-blue-600 focus:ring-blue-500"
+                            />
+                            <span>M{m.moduleId}: {m.moduleName}</span>
+                          </label>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
 
             {/* Test Length Options */}
             <div className="mb-8">

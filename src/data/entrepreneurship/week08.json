@@ -1,0 +1,273 @@
+{
+  "week": 8,
+  "moduleId": 6,
+  "moduleName": "Finance for Entrepreneurs",
+  "assessmentTitle": "Week 8 Assessment",
+  "sourceNote": "Original practice questions. Official Week 8 assessment requires login at https://onlinecourses.nptel.ac.in/e-learning/course/noc26_mg80",
+  "questions": [
+    {
+      "id": "ENT-W08-001",
+      "courseId": "entrepreneurship",
+      "week": 8,
+      "moduleId": 6,
+      "moduleName": "Finance for Entrepreneurs",
+      "topic": "Basic Financial Statements",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 8 practice — noc26_mg80 Module 6",
+      "verified": true,
+      "difficulty": "Easy",
+      "question": "Which three financial statements form the core set for any business?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sales report, HR report, and tax return"
+        },
+        {
+          "id": "B",
+          "text": "Profit and Loss statement, Balance Sheet, and Cash Flow statement"
+        },
+        {
+          "id": "C",
+          "text": "Budget, Forecast, and Variance report"
+        },
+        {
+          "id": "D",
+          "text": "Payroll register, Inventory list, and Fixed Asset schedule"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "The three core financial statements are: P&L (income statement) — profitability over a period; Balance Sheet — assets and liabilities at a point in time; Cash Flow — cash movements."
+    },
+    {
+      "id": "ENT-W08-002",
+      "courseId": "entrepreneurship",
+      "week": 8,
+      "moduleId": 6,
+      "moduleName": "Finance for Entrepreneurs",
+      "topic": "Profit and Loss Statement",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 8 practice — noc26_mg80 Module 6",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "Gross Profit is calculated as:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Total Revenue minus Operating Expenses"
+        },
+        {
+          "id": "B",
+          "text": "Total Revenue minus Cost of Goods Sold (COGS)"
+        },
+        {
+          "id": "C",
+          "text": "Total Revenue minus Taxes"
+        },
+        {
+          "id": "D",
+          "text": "Net Profit plus Depreciation"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Gross Profit = Revenue - COGS. It reflects the profit from core business activities before deducting operating expenses like salaries, rent, and marketing."
+    },
+    {
+      "id": "ENT-W08-003",
+      "courseId": "entrepreneurship",
+      "week": 8,
+      "moduleId": 6,
+      "moduleName": "Finance for Entrepreneurs",
+      "topic": "Balance Sheet",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 8 practice — noc26_mg80 Module 6",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "The fundamental accounting equation underlying every balance sheet is:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Revenue - Expenses = Profit"
+        },
+        {
+          "id": "B",
+          "text": "Assets = Liabilities + Shareholders' Equity"
+        },
+        {
+          "id": "C",
+          "text": "Cash In - Cash Out = Net Cash Flow"
+        },
+        {
+          "id": "D",
+          "text": "Assets - Liabilities = Revenue"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "The accounting equation Assets = Liabilities + Equity is always true by definition. It ensures the balance sheet always balances — every asset is funded either by debt or equity."
+    },
+    {
+      "id": "ENT-W08-004",
+      "courseId": "entrepreneurship",
+      "week": 8,
+      "moduleId": 6,
+      "moduleName": "Finance for Entrepreneurs",
+      "topic": "Cash Flow Statement",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 8 practice — noc26_mg80 Module 6",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "Why can a profitable company still run out of cash?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Because revenue is always equal to cash received"
+        },
+        {
+          "id": "B",
+          "text": "Because profit is an accounting concept that does not always reflect actual cash timing"
+        },
+        {
+          "id": "C",
+          "text": "Because profitable companies have no expenses"
+        },
+        {
+          "id": "D",
+          "text": "This situation cannot occur in practice"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Profit is accrual-based: a company records revenue when earned, not when cash is received. Customers may pay late, inventory requires upfront cash, and capex precedes revenue — creating cash gaps despite profitability."
+    },
+    {
+      "id": "ENT-W08-005",
+      "courseId": "entrepreneurship",
+      "week": 8,
+      "moduleId": 6,
+      "moduleName": "Finance for Entrepreneurs",
+      "topic": "Role of Finance in Startups",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 8 practice — noc26_mg80 Module 6",
+      "verified": true,
+      "difficulty": "Easy",
+      "question": "What is 'runway' in startup finance terminology?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The physical office space available to the team"
+        },
+        {
+          "id": "B",
+          "text": "The number of months a startup can operate at current burn rate before running out of cash"
+        },
+        {
+          "id": "C",
+          "text": "The growth rate of the startup in the last quarter"
+        },
+        {
+          "id": "D",
+          "text": "The amount of revenue generated per employee"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Runway = Cash Balance / Monthly Burn Rate. It tells founders how much time they have to achieve milestones before needing additional funding."
+    },
+    {
+      "id": "ENT-W08-006",
+      "courseId": "entrepreneurship",
+      "week": 8,
+      "moduleId": 6,
+      "moduleName": "Finance for Entrepreneurs",
+      "topic": "Unit Economics",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 8 practice — noc26_mg80 Module 6",
+      "verified": true,
+      "difficulty": "Hard",
+      "question": "What does it mean when a business has a Customer Lifetime Value (CLV) to Customer Acquisition Cost (CAC) ratio of less than 1?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The business is highly profitable and growing efficiently"
+        },
+        {
+          "id": "B",
+          "text": "The business loses money on each customer and the model is unsustainable"
+        },
+        {
+          "id": "C",
+          "text": "The business is breaking even on customer acquisition"
+        },
+        {
+          "id": "D",
+          "text": "The ratio has no meaningful interpretation"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "CLV/CAC < 1 means the company spends more acquiring each customer than it will ever recover from them — a fundamental unit economics problem that makes the business unsustainable."
+    },
+    {
+      "id": "ENT-W08-007",
+      "courseId": "entrepreneurship",
+      "week": 8,
+      "moduleId": 6,
+      "moduleName": "Finance for Entrepreneurs",
+      "topic": "Accounting and Finance Terminology",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 8 practice — noc26_mg80 Module 6",
+      "verified": true,
+      "difficulty": "Easy",
+      "question": "EBITDA stands for:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Earnings Before Income Tax and Depreciation Adjustments"
+        },
+        {
+          "id": "B",
+          "text": "Earnings Before Interest, Taxes, Depreciation, and Amortisation"
+        },
+        {
+          "id": "C",
+          "text": "Enterprise Budget Including Total Debt Allocation"
+        },
+        {
+          "id": "D",
+          "text": "Equity, Business Income, Tax Deductions, and Allowances"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortisation) is used as a proxy for operating cash generation and is widely used in startup and M&A valuations."
+    },
+    {
+      "id": "ENT-W08-008",
+      "courseId": "entrepreneurship",
+      "week": 8,
+      "moduleId": 6,
+      "moduleName": "Finance for Entrepreneurs",
+      "topic": "Financial Statements Case Study",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 8 practice — noc26_mg80 Module 6",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "When reading a startup's financial statements, which is the most critical warning sign for investors?",
+      "options": [
+        {
+          "id": "A",
+          "text": "High gross margins"
+        },
+        {
+          "id": "B",
+          "text": "Negative operating cash flow with no clear path to cash breakeven"
+        },
+        {
+          "id": "C",
+          "text": "Rapidly growing revenue"
+        },
+        {
+          "id": "D",
+          "text": "Low debt-to-equity ratio"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Persistent negative operating cash flow without a credible path to breakeven signals that the business cannot sustain itself without continuous external capital, posing an existential risk."
+    }
+  ]
+}

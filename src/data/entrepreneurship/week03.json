@@ -1,0 +1,273 @@
+{
+  "week": 3,
+  "moduleId": 3,
+  "moduleName": "Customer Value Proposition",
+  "assessmentTitle": "Week 3 Assessment",
+  "sourceNote": "Original practice questions. Official Week 3 assessment requires login at https://onlinecourses.nptel.ac.in/e-learning/course/noc26_mg80",
+  "questions": [
+    {
+      "id": "ENT-W03-001",
+      "courseId": "entrepreneurship",
+      "week": 3,
+      "moduleId": 3,
+      "moduleName": "Customer Value Proposition",
+      "topic": "Concept of Customer Value",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 3 practice — noc26_mg80 Module 3",
+      "verified": true,
+      "difficulty": "Easy",
+      "question": "A Customer Value Proposition (CVP) primarily answers which fundamental question?",
+      "options": [
+        {
+          "id": "A",
+          "text": "How much does it cost to manufacture our product?"
+        },
+        {
+          "id": "B",
+          "text": "Why should a specific customer buy from us rather than from competitors?"
+        },
+        {
+          "id": "C",
+          "text": "How many employees do we need to hire?"
+        },
+        {
+          "id": "D",
+          "text": "When should we file for an IPO?"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "A CVP clearly articulates the unique value delivered to a specific customer segment and why that customer should choose your offering over all available alternatives."
+    },
+    {
+      "id": "ENT-W03-002",
+      "courseId": "entrepreneurship",
+      "week": 3,
+      "moduleId": 3,
+      "moduleName": "Customer Value Proposition",
+      "topic": "Market and Customer Segmentation",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 3 practice — noc26_mg80 Module 3",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "Which of the following best describes 'customer segmentation'?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Dividing a market into distinct groups of buyers with different needs or behaviours"
+        },
+        {
+          "id": "B",
+          "text": "Selling the same product to all possible buyers without any targeting"
+        },
+        {
+          "id": "C",
+          "text": "A pricing strategy for premium products only"
+        },
+        {
+          "id": "D",
+          "text": "The process of hiring specialised sales teams"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanation": "Customer segmentation divides the market into groups sharing similar characteristics, needs, or behaviours, allowing targeted value creation and marketing."
+    },
+    {
+      "id": "ENT-W03-003",
+      "courseId": "entrepreneurship",
+      "week": 3,
+      "moduleId": 3,
+      "moduleName": "Customer Value Proposition",
+      "topic": "Creating a Customer Value Proposition",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 3 practice — noc26_mg80 Module 3",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "Which three components are central to a well-crafted Customer Value Proposition?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Price, place, and promotion"
+        },
+        {
+          "id": "B",
+          "text": "Target customer, jobs to be done (needs), and the unique benefit your solution provides"
+        },
+        {
+          "id": "C",
+          "text": "Revenue model, cost structure, and key partners"
+        },
+        {
+          "id": "D",
+          "text": "Technology stack, team size, and funding round"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "A strong CVP identifies who the customer is, what job or need they have, and why your offering uniquely addresses that need better than alternatives."
+    },
+    {
+      "id": "ENT-W03-004",
+      "courseId": "entrepreneurship",
+      "week": 3,
+      "moduleId": 3,
+      "moduleName": "Customer Value Proposition",
+      "topic": "Customer Discovery",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 3 practice — noc26_mg80 Module 3",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "What is the primary purpose of customer discovery in early-stage entrepreneurship?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To finalise the company logo and branding"
+        },
+        {
+          "id": "B",
+          "text": "To validate or invalidate assumptions about the customer and their problems before investing heavily in a solution"
+        },
+        {
+          "id": "C",
+          "text": "To negotiate contracts with suppliers"
+        },
+        {
+          "id": "D",
+          "text": "To determine the exact number of shares to issue"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Customer discovery involves talking to potential customers to test assumptions about the problem, solution, and business model before spending significant resources on development."
+    },
+    {
+      "id": "ENT-W03-005",
+      "courseId": "entrepreneurship",
+      "week": 3,
+      "moduleId": 3,
+      "moduleName": "Customer Value Proposition",
+      "topic": "Business Models",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 3 practice — noc26_mg80 Module 3",
+      "verified": true,
+      "difficulty": "Hard",
+      "question": "Which statement about business models is most accurate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A business model is a synonym for a financial projection spreadsheet"
+        },
+        {
+          "id": "B",
+          "text": "A business model describes how a company creates, delivers, and captures value"
+        },
+        {
+          "id": "C",
+          "text": "Business models are static and never need to change after launch"
+        },
+        {
+          "id": "D",
+          "text": "Only product companies need a defined business model"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "A business model describes the logic of how an organisation creates value for customers, delivers that value, and in return captures economic value for itself."
+    },
+    {
+      "id": "ENT-W03-006",
+      "courseId": "entrepreneurship",
+      "week": 3,
+      "moduleId": 3,
+      "moduleName": "Customer Value Proposition",
+      "topic": "CVP Formats and References",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 3 practice — noc26_mg80 Module 3",
+      "verified": true,
+      "difficulty": "Easy",
+      "question": "A standard CVP statement format typically includes which of the following elements?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Company registration number and tax ID"
+        },
+        {
+          "id": "B",
+          "text": "For [target customer], who [need or problem], our [product/service] provides [key benefit] unlike [alternative]"
+        },
+        {
+          "id": "C",
+          "text": "Monthly burn rate and runway"
+        },
+        {
+          "id": "D",
+          "text": "Number of GitHub commits and code coverage percentage"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "A CVP format explicitly names the target customer, their need, the solution, the key benefit delivered, and differentiation from alternatives — making it clear and testable."
+    },
+    {
+      "id": "ENT-W03-007",
+      "courseId": "entrepreneurship",
+      "week": 3,
+      "moduleId": 3,
+      "moduleName": "Customer Value Proposition",
+      "topic": "Market and Customer Segmentation",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 3 practice — noc26_mg80 Module 3",
+      "verified": true,
+      "difficulty": "Medium",
+      "question": "Which segmentation basis divides customers by their lifestyle, attitudes, and values?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Geographic segmentation"
+        },
+        {
+          "id": "B",
+          "text": "Demographic segmentation"
+        },
+        {
+          "id": "C",
+          "text": "Psychographic segmentation"
+        },
+        {
+          "id": "D",
+          "text": "Behavioural segmentation"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "Psychographic segmentation categorises customers by personality traits, values, interests, and lifestyles — going beyond demographics to understand motivations."
+    },
+    {
+      "id": "ENT-W03-008",
+      "courseId": "entrepreneurship",
+      "week": 3,
+      "moduleId": 3,
+      "moduleName": "Customer Value Proposition",
+      "topic": "Customer Discovery",
+      "sourceType": "Original Practice Question",
+      "sourceReference": "Week 3 practice — noc26_mg80 Module 3",
+      "verified": true,
+      "difficulty": "Hard",
+      "question": "Which of the following customer discovery practices is most likely to yield unreliable insights?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Conducting open-ended interviews without leading questions"
+        },
+        {
+          "id": "B",
+          "text": "Asking customers if they 'would buy' a hypothetical product"
+        },
+        {
+          "id": "C",
+          "text": "Observing customers in their natural environment"
+        },
+        {
+          "id": "D",
+          "text": "Analysing existing customer support complaints"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Asking hypothetical purchase-intent questions is notoriously unreliable — people say they would buy but often do not. Observational and behavioural data yield more reliable insights."
+    }
+  ]
+}

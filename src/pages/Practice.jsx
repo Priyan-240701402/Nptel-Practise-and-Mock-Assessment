@@ -2,11 +2,15 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import {
   COURSES,
+  SYLLABUS,
   getCourseTopics,
   selectQuestions,
   saveToStorage,
   loadFromStorage,
-  formatTime
+  formatTime,
+  shuffleArray,
+  getModuleQuestions,
+  getWeekQuestions
 } from '../utils/quizUtils';
 import QuestionCard from '../components/QuestionCard';
 import QuizControls from '../components/QuizControls';
@@ -23,7 +27,10 @@ import {
   ArrowLeft,
   ChevronDown,
   Eye,
-  ListOrdered
+  ListOrdered,
+  CalendarDays,
+  Target,
+  AlertCircle
 } from 'lucide-react';
 
 export default function Practice() {
@@ -37,6 +44,12 @@ export default function Practice() {
 
   const course = COURSES[currentCourseId] || COURSES.entrepreneurship;
   const availableTopics = useMemo(() => getCourseTopics(currentCourseId), [currentCourseId]);
+
+  // Practice Modes for Entrepreneurship:
+  // 'topic' | 'module' | 'weekly' | 'all-course' | 'mixed' | 'incorrect'
+  const [practiceMode, setPracticeMode] = useState('topic');
+  const [selectedModule, setSelectedModule] = useState(1);
+  const [selectedWeek, setSelectedWeek] = useState(1);
 
   // Practice Configuration State
   const [selectedTopic, setSelectedTopic] = useState('all');
@@ -83,14 +96,84 @@ export default function Practice() {
 
   // Start Practice Session
   const handleStartPractice = () => {
-    const selected = selectQuestions({
-      courseId: currentCourseId,
-      topic: selectedTopic,
-      difficulty: selectedDifficulty,
-      count: questionCount,
-      shuffle: true,
-      shuffleOptions: true
-    });
+    let selected = [];
+
+    if (currentCourseId === 'entrepreneurship') {
+      if (practiceMode === 'weekly') {
+        selected = selectQuestions({
+          courseId: 'entrepreneurship',
+          week: Number(selectedWeek),
+          difficulty: selectedDifficulty,
+          count: questionCount,
+          shuffle: true,
+          shuffleOptions: true
+        });
+      } else if (practiceMode === 'module') {
+        selected = selectQuestions({
+          courseId: 'entrepreneurship',
+          moduleId: Number(selectedModule),
+          difficulty: selectedDifficulty,
+          count: questionCount,
+          shuffle: true,
+          shuffleOptions: true
+        });
+      } else if (practiceMode === 'incorrect') {
+        const storedMissed = loadFromStorage(`incorrect_questions_${currentCourseId}`) || [];
+        if (!storedMissed.length) {
+          alert('No incorrect questions recorded yet! Practise other modes first to generate a missed question set.');
+          return;
+        }
+        let pool = [...storedMissed];
+        if (selectedDifficulty !== 'all') {
+          pool = pool.filter(q => q.difficulty?.toLowerCase() === selectedDifficulty.toLowerCase());
+        }
+        if (!pool.length) {
+          alert('No incorrect questions matching the selected difficulty level.');
+          return;
+        }
+        const actualCount = questionCount === 'all' ? pool.length : Math.min(Number(questionCount), pool.length);
+        selected = shuffleArray(pool).slice(0, actualCount).map(q => ({
+          ...q,
+          options: shuffleArray([...q.options])
+        }));
+      } else if (practiceMode === 'all-course') {
+        selected = selectQuestions({
+          courseId: 'entrepreneurship',
+          difficulty: selectedDifficulty,
+          count: questionCount,
+          shuffle: true,
+          shuffleOptions: true
+        });
+      } else if (practiceMode === 'mixed') {
+        selected = selectQuestions({
+          courseId: 'entrepreneurship',
+          difficulty: selectedDifficulty,
+          count: questionCount,
+          shuffle: true,
+          shuffleOptions: true
+        });
+      } else {
+        // topic-wise
+        selected = selectQuestions({
+          courseId: 'entrepreneurship',
+          topic: selectedTopic,
+          difficulty: selectedDifficulty,
+          count: questionCount,
+          shuffle: true,
+          shuffleOptions: true
+        });
+      }
+    } else {
+      // LLM Course
+      selected = selectQuestions({
+        courseId: 'llm',
+        topic: selectedTopic,
+        difficulty: selectedDifficulty,
+        count: questionCount,
+        shuffle: true,
+        shuffleOptions: true
+      });
+    }
 
     if (selected.length === 0) {
       alert('No questions match your selected filters. Please adjust your criteria.');
@@ -124,6 +207,20 @@ export default function Practice() {
     setIsSessionActive(false);
     setIsSessionFinished(true);
     setIsReviewMode(false);
+
+    // Save incorrect questions for "Incorrect-answer practice"
+    const missed = questions.filter(q => {
+      const chosen = answers[q.id];
+      return chosen !== undefined && chosen !== q.correctOptionId;
+    });
+    if (missed.length > 0) {
+      const existing = loadFromStorage(`incorrect_questions_${currentCourseId}`) || [];
+      const combined = [...existing];
+      missed.forEach(m => {
+        if (!combined.some(x => x.id === m.id)) combined.push(m);
+      });
+      saveToStorage(`incorrect_questions_${currentCourseId}`, combined);
+    }
   };
 
   // Calculate Results
@@ -134,19 +231,26 @@ export default function Practice() {
     let incorrectCount = 0;
     let unansweredCount = 0;
     const topicStats = {};
+    const moduleStats = {};
 
     questions.forEach(q => {
       const chosen = answers[q.id];
-      if (!topicStats[q.topic]) {
-        topicStats[q.topic] = { total: 0, correct: 0 };
+      if (q.topic) {
+        if (!topicStats[q.topic]) topicStats[q.topic] = { total: 0, correct: 0 };
+        topicStats[q.topic].total += 1;
       }
-      topicStats[q.topic].total += 1;
+      const modName = q.moduleName || (q.moduleId ? `Module ${q.moduleId}` : null);
+      if (modName) {
+        if (!moduleStats[modName]) moduleStats[modName] = { total: 0, correct: 0 };
+        moduleStats[modName].total += 1;
+      }
 
       if (chosen === undefined || chosen === null) {
         unansweredCount += 1;
       } else if (chosen === q.correctOptionId) {
         correctCount += 1;
-        topicStats[q.topic].correct += 1;
+        if (q.topic) topicStats[q.topic].correct += 1;
+        if (modName) moduleStats[modName].correct += 1;
       } else {
         incorrectCount += 1;
       }
@@ -155,12 +259,18 @@ export default function Practice() {
     const totalQuestions = questions.length;
     const score = correctCount;
     const maxScore = totalQuestions;
-    const percentage = Math.round((correctCount / totalQuestions) * 100);
+    const percentage = totalQuestions > 0 ? Math.round((correctCount / totalQuestions) * 100) : 0;
 
     const topicPerformance = Object.keys(topicStats).map(topName => ({
       topic: topName,
       correct: topicStats[topName].correct,
       total: topicStats[topName].total
+    }));
+
+    const modulePerformance = Object.keys(moduleStats).map(mName => ({
+      name: mName,
+      correct: moduleStats[mName].correct,
+      total: moduleStats[mName].total
     }));
 
     return {
@@ -172,7 +282,8 @@ export default function Practice() {
       maxScore,
       percentage,
       timeTakenSeconds: elapsedSeconds,
-      topicPerformance
+      topicPerformance,
+      modulePerformance
     };
   }, [questions, answers, elapsedSeconds]);
 
@@ -191,6 +302,12 @@ export default function Practice() {
   // Current Question
   const currentQuestion = questions[currentIndex];
   const currentAnswer = currentQuestion ? answers[currentQuestion.id] : null;
+
+  // Stored missed questions count
+  const missedCount = useMemo(() => {
+    const list = loadFromStorage(`incorrect_questions_${currentCourseId}`) || [];
+    return list.length;
+  }, [currentCourseId, isSessionFinished]);
 
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
@@ -275,23 +392,130 @@ export default function Practice() {
             <h2 className="text-lg font-bold text-slate-900">Configure Practice Session</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Topic Select */}
-            <div>
-              <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
-                Syllabus Topic
+          {/* Practice Mode Selector for Entrepreneurship */}
+          {currentCourseId === 'entrepreneurship' && (
+            <div className="mb-6 pb-6 border-b border-slate-100">
+              <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2.5">
+                Practice Mode
               </label>
-              <select
-                value={selectedTopic}
-                onChange={(e) => setSelectedTopic(e.target.value)}
-                className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-800 text-sm focus:outline-hidden focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500"
-              >
-                <option value="all">All Syllabus Topics ({course.data?.questions?.length || 100} Questions)</option>
-                {availableTopics.map((topic, i) => (
-                  <option key={i} value={topic}>{topic}</option>
-                ))}
-              </select>
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2">
+                {[
+                  { id: 'weekly', label: 'Weekly Assessment', icon: CalendarDays },
+                  { id: 'topic', label: 'Topic-Wise', icon: BookOpen },
+                  { id: 'module', label: 'Module-Wise', icon: Layers },
+                  { id: 'all-course', label: 'All-Course', icon: Target },
+                  { id: 'mixed', label: 'Mixed Practice', icon: Filter },
+                  { id: 'incorrect', label: `Incorrect (${missedCount})`, icon: AlertCircle }
+                ].map((mode) => {
+                  const Icon = mode.icon;
+                  const isActive = practiceMode === mode.id;
+                  return (
+                    <button
+                      key={mode.id}
+                      type="button"
+                      onClick={() => setPracticeMode(mode.id)}
+                      className={`p-3 rounded-xl border text-left transition-all flex flex-col justify-between gap-2 ${
+                        isActive
+                          ? 'border-blue-600 bg-blue-50/70 ring-1 ring-blue-600 shadow-xs'
+                          : 'border-slate-200 hover:bg-slate-50 bg-white'
+                      }`}
+                    >
+                      <Icon className={`w-4 h-4 ${isActive ? 'text-blue-600' : 'text-slate-500'}`} />
+                      <span className={`text-xs font-bold ${isActive ? 'text-blue-900' : 'text-slate-700'}`}>
+                        {mode.label}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
             </div>
+          )}
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Contextual Selector based on Practice Mode */}
+            {currentCourseId === 'entrepreneurship' && practiceMode === 'weekly' && (
+              <div>
+                <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+                  Select Week (Weeks 1 – 12)
+                </label>
+                <select
+                  value={selectedWeek}
+                  onChange={(e) => setSelectedWeek(Number(e.target.value))}
+                  className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-800 text-sm focus:outline-hidden focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500"
+                >
+                  {Array.from({ length: 12 }, (_, i) => i + 1).map((wk) => {
+                    const mod = SYLLABUS.weekToModule[String(wk)];
+                    return (
+                      <option key={wk} value={wk}>
+                        Week {wk}: {mod?.moduleName}
+                      </option>
+                    );
+                  })}
+                </select>
+              </div>
+            )}
+
+            {currentCourseId === 'entrepreneurship' && practiceMode === 'module' && (
+              <div>
+                <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+                  Select Module (Modules 1 – 8)
+                </label>
+                <select
+                  value={selectedModule}
+                  onChange={(e) => setSelectedModule(Number(e.target.value))}
+                  className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-800 text-sm focus:outline-hidden focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500"
+                >
+                  {SYLLABUS.modules.map((m) => (
+                    <option key={m.moduleId} value={m.moduleId}>
+                      Module {m.moduleId}: {m.moduleName} (Weeks {m.weeks.join(' & ')})
+                    </option>
+                  ))}
+                </select>
+              </div>
+            )}
+
+            {/* Topic Select: Shown for LLM or when Entrepreneurship is in topic mode */}
+            {(currentCourseId === 'llm' || practiceMode === 'topic') && (
+              <div>
+                <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+                  Syllabus Topic
+                </label>
+                <select
+                  value={selectedTopic}
+                  onChange={(e) => setSelectedTopic(e.target.value)}
+                  className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-800 text-sm focus:outline-hidden focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500"
+                >
+                  <option value="all">All Syllabus Topics ({course.data?.questions?.length || 100} Questions)</option>
+                  {availableTopics.map((topic, i) => (
+                    <option key={i} value={topic}>{topic}</option>
+                  ))}
+                </select>
+              </div>
+            )}
+
+            {/* Banner for All-Course or Mixed Practice */}
+            {currentCourseId === 'entrepreneurship' && (practiceMode === 'all-course' || practiceMode === 'mixed') && (
+              <div className="flex items-center gap-3 p-3.5 rounded-xl bg-blue-50/80 border border-blue-200 text-xs text-blue-900">
+                <Target className="w-5 h-5 text-blue-600 shrink-0" />
+                <span>
+                  {practiceMode === 'all-course'
+                    ? 'All-course practice pulls questions systematically across all 8 modules and 12 weekly assessments.'
+                    : 'Mixed-question practice draws randomized questions across all verified course modules and difficulty tiers.'}
+                </span>
+              </div>
+            )}
+
+            {/* Banner for Incorrect Answers */}
+            {currentCourseId === 'entrepreneurship' && practiceMode === 'incorrect' && (
+              <div className="flex items-center gap-3 p-3.5 rounded-xl bg-amber-50 border border-amber-200 text-xs text-amber-900">
+                <AlertCircle className="w-5 h-5 text-amber-600 shrink-0" />
+                <span>
+                  {missedCount > 0
+                    ? `You have ${missedCount} recorded incorrect question(s) available to drill.`
+                    : 'No incorrect questions saved yet. Complete a practice session or mock test to record missed items.'}
+                </span>
+              </div>
+            )}
 
             {/* Difficulty Select */}
             <div>
