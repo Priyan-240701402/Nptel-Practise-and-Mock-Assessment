@@ -2,6 +2,7 @@ import React from 'react';
 import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
+import CourseDetail from './pages/CourseDetail';
 import Practice from './pages/Practice';
 import MockTest from './pages/MockTest';
 import Results from './pages/Results';
@@ -16,6 +17,7 @@ export default function App() {
         <main className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/course/:courseId" element={<CourseDetail />} />
             <Route path="/practice" element={<Practice />} />
             <Route path="/practice/:courseId" element={<Practice />} />
             <Route path="/mock-test" element={<MockTest />} />

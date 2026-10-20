@@ -353,7 +353,7 @@ export default function MockTest() {
                   }`}
                 >
                   <p className="font-bold text-sm text-slate-900">Intro to Large Language Models</p>
-                  <p className="text-xs text-slate-500 mt-1">100 Verified Syllabus Questions</p>
+                  <p className="text-xs text-slate-500 mt-1">200 Verified MCQs • 12 Weeks • All Concepts</p>
                 </button>
               </div>
             </div>

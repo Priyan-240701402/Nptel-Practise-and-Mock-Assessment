@@ -61,6 +61,7 @@ export default function Practice() {
   const [isSessionActive, setIsSessionActive] = useState(false);
   const [isSessionFinished, setIsSessionFinished] = useState(false);
   const [isReviewMode, setIsReviewMode] = useState(false);
+  const [isSyllabusOpen, setIsSyllabusOpen] = useState(false);
 
   // Active Questions & Answers
   const [questions, setQuestions] = useState([]);
@@ -474,8 +475,54 @@ export default function Practice() {
               </div>
             )}
 
-            {/* Topic Select: Shown for LLM or when Entrepreneurship is in topic mode */}
-            {(currentCourseId === 'llm' || practiceMode === 'topic') && (
+            {/* Syllabus View & Banner for LLM */}
+            {currentCourseId === 'llm' && (
+              <div className="md:col-span-2 space-y-3">
+                <div className="p-4 rounded-2xl bg-indigo-50/70 border border-indigo-200 text-indigo-950 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                  <div>
+                    <p className="font-bold text-sm">200 Verified MCQs Across All 12 Weeks</p>
+                    <p className="text-xs text-indigo-700/90 mt-0.5">
+                      Curriculum aligned with NPTEL Introduction to Large Language Models (noc26_cs171).
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => setIsSyllabusOpen(prev => !prev)}
+                    className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold bg-white text-indigo-700 border border-indigo-300 hover:bg-indigo-50 transition-colors shadow-2xs shrink-0 self-start sm:self-auto"
+                  >
+                    <Layers className="w-3.5 h-3.5" />
+                    <span>{isSyllabusOpen ? 'Hide Syllabus' : 'View 12-Week Syllabus'}</span>
+                    {isSyllabusOpen ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
+                  </button>
+                </div>
+
+                {/* Expandable 12-Week Syllabus */}
+                {isSyllabusOpen && course.data?.syllabus && (
+                  <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-2xs max-h-80 overflow-y-auto space-y-3">
+                    <p className="text-xs font-bold text-slate-700 uppercase tracking-wider">
+                      Complete 12-Week Course Syllabus:
+                    </p>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      {course.data.syllabus.map((item) => (
+                        <div key={item.week} className="p-3 rounded-xl bg-slate-50 border border-slate-100 text-xs">
+                          <p className="font-bold text-slate-900 mb-1">
+                            Week {item.week}: {item.title.replace(/^Week \d+ — /, '')}
+                          </p>
+                          <ul className="space-y-0.5 text-slate-600 list-disc list-inside">
+                            {item.topics.map((t, idx) => (
+                              <li key={idx} className="leading-tight">{t}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
+
+            {/* Topic Select: Shown for Entrepreneurship when in topic mode */}
+            {currentCourseId === 'entrepreneurship' && practiceMode === 'topic' && (
               <div>
                 <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
                   Syllabus Topic
@@ -485,7 +532,7 @@ export default function Practice() {
                   onChange={(e) => setSelectedTopic(e.target.value)}
                   className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-800 text-sm focus:outline-hidden focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500"
                 >
-                  <option value="all">All Syllabus Topics ({course.data?.questions?.length || 100} Questions)</option>
+                  <option value="all">All Syllabus Topics ({course.data?.questions?.length || 180} Questions)</option>
                   {availableTopics.map((topic, i) => (
                     <option key={i} value={topic}>{topic}</option>
                   ))}
@@ -540,7 +587,7 @@ export default function Practice() {
                 Number of Questions
               </label>
               <div className="grid grid-cols-4 gap-2">
-                {[10, 15, 30, 'all'].map((countVal) => (
+                {[10, 20, 50, 'all'].map((countVal) => (
                   <button
                     key={countVal}
                     type="button"
@@ -551,7 +598,7 @@ export default function Practice() {
                         : 'bg-white text-slate-700 border-slate-200 hover:bg-slate-50'
                     }`}
                   >
-                    {countVal === 'all' ? 'All' : `${countVal} Qs`}
+                    {countVal === 'all' ? (currentCourseId === 'llm' ? 'All (200)' : 'All') : `${countVal} Qs`}
                   </button>
                 ))}
               </div>

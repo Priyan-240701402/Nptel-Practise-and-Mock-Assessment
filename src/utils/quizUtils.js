@@ -49,23 +49,79 @@ export const COURSES = {
     title: 'Introduction to Large Language Models',
     code: 'noc26_cs171',
     url: 'https://onlinecourses.nptel.ac.in/e-learning/course/noc26_cs171',
-    description: 'Explore statistical NLP, Transformer self-attention, pre-training, PEFT/LoRA fine-tuning, RLHF alignment, prompt engineering, RAG, and agentic workflows.',
+    description: 'Updated 12-week NPTEL curriculum covering statistical NLP, neural LMs, PyTorch deep learning, Transformers, pre-training (BERT/ELMo), instruction tuning & RLHF, open-book QA & RAG, Knowledge Graphs, PEFT/LoRA, modern foundation models (GPT-4, Llama 3, Gemini), and ethical NLP.',
     instructor: 'NPTEL Computer Science',
     data: llmData,
+    syllabus: llmData.syllabus,
     badgeColor: 'bg-indigo-100 text-indigo-800 border-indigo-200',
-    hasWeeklyAssessments: false
+    hasWeeklyAssessments: false,
+    totalQuestions: 200,
+    totalWeeks: 12
   }
 };
+
+/**
+ * Normalizes question structure so both array options and object options work seamlessly.
+ */
+export function normalizeQuestion(q) {
+  if (!q) return q;
+  let optionsList = [];
+  if (Array.isArray(q.options)) {
+    optionsList = q.options.map(opt => ({ ...opt }));
+  } else if (q.options && typeof q.options === 'object') {
+    optionsList = ['A', 'B', 'C', 'D'].map(letter => ({
+      id: letter,
+      text: q.options[letter] || ''
+    }));
+  }
+  const correct = q.correctOptionId || q.correctAnswer || 'A';
+  return {
+    ...q,
+    options: optionsList,
+    correctOptionId: correct,
+    correctAnswer: correct
+  };
+}
+
+/**
+ * Safely shuffles options for a question while guaranteeing correctOptionId mapping is updated.
+ */
+export function applyOptionShuffle(q, shuffleOptions = false) {
+  const normalized = normalizeQuestion(q);
+  if (!shuffleOptions || !normalized.options || normalized.options.length < 2) {
+    return normalized;
+  }
+  const originalCorrectId = normalized.correctOptionId || normalized.correctAnswer;
+  const correctItem = normalized.options.find(o => o.id === originalCorrectId);
+  const correctText = correctItem ? correctItem.text : normalized.options[0].text;
+  
+  const shuffledTexts = shuffleArray(normalized.options.map(o => o.text));
+  const letters = ['A', 'B', 'C', 'D'];
+  const newOptions = letters.map((letter, idx) => ({
+    id: letter,
+    text: shuffledTexts[idx] !== undefined ? shuffledTexts[idx] : ''
+  }));
+  const newCorrectIndex = shuffledTexts.indexOf(correctText);
+  const newCorrectLetter = newCorrectIndex >= 0 ? letters[newCorrectIndex] : originalCorrectId;
+
+  return {
+    ...normalized,
+    options: newOptions,
+    correctOptionId: newCorrectLetter,
+    correctAnswer: newCorrectLetter
+  };
+}
 
 /**
  * Get all questions for a specific course (main question bank)
  */
 export function getCourseQuestions(courseId) {
   if (courseId === 'entrepreneurship') {
-    return getAllWeeklyQuestions();
+    return getAllWeeklyQuestions().map(normalizeQuestion);
   }
   const course = COURSES[courseId];
-  return course && course.data ? course.data.questions : [];
+  const questions = course && course.data ? course.data.questions : [];
+  return questions.map(normalizeQuestion);
 }
 
 /**
@@ -210,13 +266,7 @@ export function selectQuestions({
   const actualCount = count === 'all' ? pool.length : Math.min(Number(count), pool.length);
   const selected = pool.slice(0, actualCount);
 
-  return selected.map(q => {
-    const cloned = { ...q, options: [...q.options] };
-    if (shuffleOptions) {
-      cloned.options = shuffleArray(cloned.options);
-    }
-    return cloned;
-  });
+  return selected.map(q => applyOptionShuffle(q, shuffleOptions));
 }
 
 /**
@@ -226,11 +276,7 @@ export function selectFullCourseQuestions({ count = 48, shuffle = true, shuffleO
   if (count === 'all' || count >= 180) {
     const all = getAllWeeklyQuestions();
     const res = shuffle ? shuffleArray(all) : all;
-    return res.map(q => {
-      const cloned = { ...q, options: [...q.options] };
-      if (shuffleOptions) cloned.options = shuffleArray(cloned.options);
-      return cloned;
-    });
+    return res.map(q => applyOptionShuffle(q, shuffleOptions));
   }
 
   const modules = SYLLABUS.modules;
@@ -245,9 +291,7 @@ export function selectFullCourseQuestions({ count = 48, shuffle = true, shuffleO
       if (added >= perModule) break;
       if (!seen.has(q.id)) {
         seen.add(q.id);
-        const cloned = { ...q, options: [...q.options] };
-        if (shuffleOptions) cloned.options = shuffleArray(cloned.options);
-        selected.push(cloned);
+        selected.push(applyOptionShuffle(q, shuffleOptions));
         added++;
       }
     }
@@ -259,9 +303,7 @@ export function selectFullCourseQuestions({ count = 48, shuffle = true, shuffleO
       if (selected.length >= count) break;
       if (!seen.has(q.id)) {
         seen.add(q.id);
-        const cloned = { ...q, options: [...q.options] };
-        if (shuffleOptions) cloned.options = shuffleArray(cloned.options);
-        selected.push(cloned);
+        selected.push(applyOptionShuffle(q, shuffleOptions));
       }
     }
   }
@@ -293,11 +335,7 @@ export function selectMixedModuleQuestions({
 
   const pool = shuffle ? shuffleArray(allQs) : allQs;
   const actualCount = count === 'all' ? pool.length : Math.min(Number(count), pool.length);
-  return pool.slice(0, actualCount).map((q) => {
-    const cloned = { ...q, options: [...q.options] };
-    if (shuffleOptions) cloned.options = shuffleArray(cloned.options);
-    return cloned;
-  });
+  return pool.slice(0, actualCount).map((q) => applyOptionShuffle(q, shuffleOptions));
 }
 
 /**

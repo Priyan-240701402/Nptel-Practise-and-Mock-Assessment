@@ -66,24 +66,32 @@ export default function CourseCard({ course }) {
         </div>
       </div>
 
-      <div className="p-6 bg-slate-50/70 border-t border-slate-100 flex flex-col gap-3">
+      <div className="p-6 bg-slate-50/70 border-t border-slate-100 flex flex-col gap-2.5">
+        <Link
+          to={`/course/${course.id}`}
+          className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl font-bold text-sm bg-slate-900 text-white hover:bg-slate-800 active:bg-slate-950 transition-colors shadow-xs"
+        >
+          <span>Open Course</span>
+          <ChevronRight className="w-4 h-4" />
+        </Link>
+
         {course.hasWeeklyAssessments && (
           <Link
             to="/weekly-assessments"
             className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl font-semibold text-sm bg-indigo-600 text-white hover:bg-indigo-700 active:bg-indigo-800 transition-colors shadow-xs"
           >
             <CalendarDays className="w-4 h-4" />
-            <span>Weekly Assessments</span>
+            <span>Weekly Assessments (PDF Bank)</span>
             <ChevronRight className="w-4 h-4" />
           </Link>
         )}
-        <div className="flex flex-col sm:flex-row gap-3">
+        <div className="flex flex-col sm:flex-row gap-2.5">
           <Link
             to={`/practice/${course.id}`}
             className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl font-semibold text-sm bg-white text-blue-700 border border-blue-300 hover:bg-blue-50 active:bg-blue-100 transition-colors shadow-xs"
           >
             <BookOpen className="w-4 h-4" />
-            <span>Practise MCQs</span>
+            <span>Practice Mode</span>
           </Link>
 
           <Link
@@ -91,7 +99,7 @@ export default function CourseCard({ course }) {
             className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl font-semibold text-sm bg-blue-600 text-white hover:bg-blue-700 active:bg-blue-800 transition-colors shadow-sm"
           >
             <Clock className="w-4 h-4" />
-            <span>Start Mock Test</span>
+            <span>Mock Test</span>
             <ChevronRight className="w-4 h-4" />
           </Link>
         </div>
